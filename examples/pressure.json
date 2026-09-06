@@ -1,0 +1,19 @@
+{
+  "calculation": "magnetic_pressure",
+  "inputs": {
+    "current_A": 1000000.0,
+    "radius_m": 0.0005
+  },
+  "result": {
+    "value": 63661977236.75813,
+    "unit": "Pa",
+    "field_T": 400.0,
+    "equation": "B=mu0 I/(2 pi R); p=B^2/(2 mu0)",
+    "assumptions": [
+      "long cylindrical conductor",
+      "exterior azimuthal field only",
+      "specified mu0 approximation"
+    ]
+  },
+  "status": "analytic_check_under_stated_assumptions"
+}

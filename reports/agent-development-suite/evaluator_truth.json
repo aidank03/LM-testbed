@@ -1,0 +1,208 @@
+{
+  "schema_version": "factor-truth/1",
+  "split": "development",
+  "contract_hash": "702662170407f6fa0f3e8c57f84709afc19af48b56a1b3f2b30e9ef3e920bb29",
+  "public_hash": "a5f2651b523c73f27e17eb41707736fecc33785169518b73c914da2d8f9e7552",
+  "generator_version": "factor-generator/1",
+  "seed": 20260905,
+  "cases": [
+    {
+      "case_id": "8ee872806baf1b6eb217bb3e",
+      "condition": "ambiguous",
+      "experiment_id": "63261049005b0ccebc36785d",
+      "pair_id": "63261049005b0ccebc36785d",
+      "displacement_m": -3.5e-08,
+      "expected_decision": "ambiguous",
+      "ambiguity_reason": "structural",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "fd22464cadbc43876cfe0ce6",
+      "condition": "reference",
+      "experiment_id": "63261049005b0ccebc36785d",
+      "pair_id": "63261049005b0ccebc36785d",
+      "displacement_m": -3.5e-08,
+      "expected_decision": "compression_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "8a9f452c576137d99a4aceb3",
+      "condition": "ambiguous",
+      "experiment_id": "63261049005b0ccebc36785d",
+      "pair_id": "63261049005b0ccebc36785d",
+      "displacement_m": 2e-08,
+      "expected_decision": "ambiguous",
+      "ambiguity_reason": "structural",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "a768cf09af1b437f9066f05a",
+      "condition": "reference",
+      "experiment_id": "63261049005b0ccebc36785d",
+      "pair_id": "63261049005b0ccebc36785d",
+      "displacement_m": 2e-08,
+      "expected_decision": "compression_not_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "2967c05de3d32b58b3850f73",
+      "condition": "clean",
+      "experiment_id": "2967c05de3d32b58b3850f73",
+      "pair_id": null,
+      "displacement_m": 5.1019602469207795e-08,
+      "expected_decision": "compression_not_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "e16353c6393d599954792a41",
+      "condition": "bounded_drift",
+      "experiment_id": "e16353c6393d599954792a41",
+      "pair_id": null,
+      "displacement_m": -2.5805744183998228e-08,
+      "expected_decision": "compression_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "3deb370c0400d64c15aa9966",
+      "condition": "unseen_drift",
+      "experiment_id": "3deb370c0400d64c15aa9966",
+      "pair_id": null,
+      "displacement_m": 3.012251593056294e-08,
+      "expected_decision": "compression_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": true
+    },
+    {
+      "case_id": "43107d80fba56c6534ce80e1",
+      "condition": "reference_noisy",
+      "experiment_id": "43107d80fba56c6534ce80e1",
+      "pair_id": null,
+      "displacement_m": -2.6987556526235247e-08,
+      "expected_decision": "ambiguous",
+      "ambiguity_reason": "boundary_uncertainty",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "8cc397a1d02966e43fc04641",
+      "condition": "reference_mismatch",
+      "experiment_id": "8cc397a1d02966e43fc04641",
+      "pair_id": null,
+      "displacement_m": -4.883854098491855e-08,
+      "expected_decision": "compression_not_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_supported",
+      "model_mismatch": true
+    },
+    {
+      "case_id": "1b9731a66ea899ff5478897d",
+      "condition": "ambiguous",
+      "experiment_id": "625c370749f854a935d74380",
+      "pair_id": "625c370749f854a935d74380",
+      "displacement_m": -3.5e-08,
+      "expected_decision": "ambiguous",
+      "ambiguity_reason": "structural",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "25ee1387151be1953fa8f776",
+      "condition": "reference",
+      "experiment_id": "625c370749f854a935d74380",
+      "pair_id": "625c370749f854a935d74380",
+      "displacement_m": -3.5e-08,
+      "expected_decision": "compression_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "80aed0317b7c8c0698b42400",
+      "condition": "ambiguous",
+      "experiment_id": "625c370749f854a935d74380",
+      "pair_id": "625c370749f854a935d74380",
+      "displacement_m": 2e-08,
+      "expected_decision": "ambiguous",
+      "ambiguity_reason": "structural",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "1d75ce018d9ee908a9fd73a9",
+      "condition": "reference",
+      "experiment_id": "625c370749f854a935d74380",
+      "pair_id": "625c370749f854a935d74380",
+      "displacement_m": 2e-08,
+      "expected_decision": "compression_not_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "b6dbe9ec0d6c572e7213cc48",
+      "condition": "clean",
+      "experiment_id": "b6dbe9ec0d6c572e7213cc48",
+      "pair_id": null,
+      "displacement_m": -3.176622278440476e-08,
+      "expected_decision": "compression_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "ec0ace949323cc0e7e6d3eaf",
+      "condition": "bounded_drift",
+      "experiment_id": "ec0ace949323cc0e7e6d3eaf",
+      "pair_id": null,
+      "displacement_m": -5.1127012770142415e-08,
+      "expected_decision": "compression_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "02e0afbdf83dae5bbd46167d",
+      "condition": "unseen_drift",
+      "experiment_id": "02e0afbdf83dae5bbd46167d",
+      "pair_id": null,
+      "displacement_m": -5.3021539885137405e-08,
+      "expected_decision": "compression_not_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_supported",
+      "model_mismatch": true
+    },
+    {
+      "case_id": "821083ae486c3e7c46ea17e6",
+      "condition": "reference_noisy",
+      "experiment_id": "821083ae486c3e7c46ea17e6",
+      "pair_id": null,
+      "displacement_m": 4.7631894112397036e-08,
+      "expected_decision": "ambiguous",
+      "ambiguity_reason": "boundary_uncertainty",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": false
+    },
+    {
+      "case_id": "33491b3112360d1d629ad782",
+      "condition": "reference_mismatch",
+      "experiment_id": "33491b3112360d1d629ad782",
+      "pair_id": null,
+      "displacement_m": 3.0116778578332556e-08,
+      "expected_decision": "compression_supported",
+      "ambiguity_reason": "resolved",
+      "physical_decision": "compression_not_supported",
+      "model_mismatch": true
+    }
+  ]
+}

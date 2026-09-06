@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_5fb98555ce1d4a77ae0ef3f6e1b03473",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_5fb98555ce1d4a77ae0ef3f6e1b03473",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_40ecda42268e11a0944ed9b2"
+    ],
+    "explanation": "Using the reference, center = -5.938e-09 - (-2.333e-08) = 1.739e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.96*1.414e-09 + 1e-09 = 3.77e-09 m. Interval: [1.36e-08, 2.12e-08] m. T = -1e-08 m. Since upper (2.12e-08) <= T (-1e-08) is false and lower (1.36e-08) > T (-1e-08) is true, the entire interval lies above T, ruling out inward motion beyond resolution.",
+    "next_step": "Report compression_supported with 95% CI [1.36e-08, 2.12e-08] m."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1704,
+    "output_tokens": 301,
+    "elapsed_seconds": 8.538665749999382
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_c465155ea7f4999fafc4932c": {
+      "id": "artifact_c465155ea7f4999fafc4932c",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_c465155ea7f4999fafc4932c.json",
+      "sha256": "4d88a1f1004809027635bd31e97d317403529f18860200d1105887729735832b"
+    },
+    "artifact_40ecda42268e11a0944ed9b2": {
+      "id": "artifact_40ecda42268e11a0944ed9b2",
+      "kind": "observation",
+      "path": "artifacts/artifact_40ecda42268e11a0944ed9b2.json",
+      "sha256": "73b1464e1dbb81556b78c9cec967012a30a537e602c2ae364de328d29f346ba9"
+    },
+    "artifact_22197653e6cb0d434d545872": {
+      "id": "artifact_22197653e6cb0d434d545872",
+      "kind": "request",
+      "path": "artifacts/artifact_22197653e6cb0d434d545872.json",
+      "sha256": "10c5b191f5eaeb618620ce7f44a538040ba5527c9c32172c79ae65f7ed12265a"
+    }
+  }
+}

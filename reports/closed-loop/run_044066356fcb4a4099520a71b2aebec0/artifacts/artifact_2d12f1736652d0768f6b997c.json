@@ -1,0 +1,13 @@
+{
+  "hypothesis_id": "optical-drift",
+  "statement": "The synthetic development job (artifact_91a4201106329c66c0f2d27e) and its diagnostics (artifact_fa94c6b5b139e74755b74f5f) cannot determine the true material motion of the supplied observation (artifact_4d151cc809d79abcb48c0d37) or identify melting/ETI/MRTI mechanisms. The inference (artifact_9443d7b3b4cd1e18613a674d) is ambiguous due to unbounded nuisance parameters and lack of causal inference.",
+  "state": "unresolved",
+  "evidence_ids": [
+    "artifact_4d151cc809d79abcb48c0d37",
+    "artifact_91a4201106329c66c0f2d27e",
+    "artifact_fa94c6b5b139e74755b74f5f",
+    "artifact_9443d7b3b4cd1e18613a674d"
+  ],
+  "scope": "conditional_synthetic_development",
+  "version": 1
+}

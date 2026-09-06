@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:17:29.860905+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_b77a88941760d0301461455a"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "7b09c7a8b8e8bf360a38417676c221221db2c0824310db68fb547958faa603a3"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:17:33.447211+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_b77a88941760d0301461455a"
+        ],
+        "explanation": "The observation provides an apparent displacement of 5.41e-08 m with a noise sigma of 1e-09 m and a drift bound of 0.0 (null). Since the reference is null, the applicable nuisance bound B is null per the contract rules. When B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision regardless of the interval crossing T.",
+        "next_step": "Await further observations or acquisition of a valid reference to resolve the ambiguity."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 3.5858394580000095,
+        "usage": {
+          "input_tokens": 1350,
+          "total_output_tokens": 149,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 52.2845707878331,
+          "time_to_first_token_seconds": 0.752
+        },
+        "request_sha256": "e63e442d0750ee885f11859276d8cdc0b216bc97ca68fab45a803c89d22f84c9",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1350,
+        "output_tokens": 149
+      }
+    },
+    "previous_hash": "7b09c7a8b8e8bf360a38417676c221221db2c0824310db68fb547958faa603a3",
+    "hash": "9523c327d2b9b856e26c09ee5c3df0cf2adda6062e7f92ec010cbf50a425be16"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:17:33.448938+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_b77a88941760d0301461455a"
+      ],
+      "explanation": "The observation provides an apparent displacement of 5.41e-08 m with a noise sigma of 1e-09 m and a drift bound of 0.0 (null). Since the reference is null, the applicable nuisance bound B is null per the contract rules. When B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision regardless of the interval crossing T.",
+      "next_step": "Await further observations or acquisition of a valid reference to resolve the ambiguity."
+    },
+    "previous_hash": "9523c327d2b9b856e26c09ee5c3df0cf2adda6062e7f92ec010cbf50a425be16",
+    "hash": "4096aee41ab4d01d84be8379532895ae48de5718a7c5034ef3d6ffdd4ad1f225"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:17:33.450265+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1350,
+        "output_tokens": 149,
+        "elapsed_seconds": 3.5919840000005934
+      },
+      "cleanup": []
+    },
+    "previous_hash": "4096aee41ab4d01d84be8379532895ae48de5718a7c5034ef3d6ffdd4ad1f225",
+    "hash": "ab7e9fcb8e3d264dc315ca62ce99d000f72572b5334ad361a10ea730612bdc33"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:17:33.451618+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "caf99f1995380ccb7e2e9282464b620438db40f0c454b165fef20e08f182408f"
+    },
+    "previous_hash": "ab7e9fcb8e3d264dc315ca62ce99d000f72572b5334ad361a10ea730612bdc33",
+    "hash": "f077d01c6a1b03629a1b57e850303a01b72f863f603ea0e745cf66f19e68e981"
+  }
+]

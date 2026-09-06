@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_fba5508357fb456aaf4fc3d04aca3a60",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_fba5508357fb456aaf4fc3d04aca3a60",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_7383614cd691cbf99155d6f0"
+    ],
+    "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the conditional interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+    "next_step": "Await further observations with a reference measurement or a finite drift bound to resolve the ambiguity."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1641,
+    "output_tokens": 201,
+    "elapsed_seconds": 6.534936249999191
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_b196cb5998ded61b675935c4": {
+      "id": "artifact_b196cb5998ded61b675935c4",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_b196cb5998ded61b675935c4.json",
+      "sha256": "97e1d38e27b6f0ce76b594b4d92ca3cd80eef344b4cbe1e0a65f60829980b339"
+    },
+    "artifact_7383614cd691cbf99155d6f0": {
+      "id": "artifact_7383614cd691cbf99155d6f0",
+      "kind": "observation",
+      "path": "artifacts/artifact_7383614cd691cbf99155d6f0.json",
+      "sha256": "8cd9c490ea089a457d8f31ead8455a12c7f80819eaf1fb38fe93b22c9c50caca"
+    },
+    "artifact_bf15824aff2cb2eb1e288aec": {
+      "id": "artifact_bf15824aff2cb2eb1e288aec",
+      "kind": "request",
+      "path": "artifacts/artifact_bf15824aff2cb2eb1e288aec.json",
+      "sha256": "b4f8633a7fe38727a14cece28c7bd3f58ca0fbc4482a4d9d9856ad61086602f2"
+    }
+  }
+}

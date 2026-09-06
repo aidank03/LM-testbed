@@ -1,0 +1,42 @@
+{
+  "status": "illustrative_not_facility_predictions",
+  "ranking": [
+    {
+      "candidate_id": "transition_gate",
+      "squared_standardized_separation": 13.846153846153847,
+      "usable_probability": 0.8,
+      "relative_cost": 1.0,
+      "screening_utility": 11.076923076923078
+    },
+    {
+      "candidate_id": "late_gate",
+      "squared_standardized_separation": 5.777777777777778,
+      "usable_probability": 0.4,
+      "relative_cost": 1.0,
+      "screening_utility": 2.3111111111111113
+    },
+    {
+      "candidate_id": "early_gate",
+      "squared_standardized_separation": 0.3125,
+      "usable_probability": 0.95,
+      "relative_cost": 1.0,
+      "screening_utility": 0.296875
+    }
+  ],
+  "criterion": "usable_probability * (delta.T covariance^-1 delta) / relative_cost",
+  "limitations": [
+    "a two-model screening heuristic, not Bayesian expected information gain",
+    "depends on supplied predictions, covariance, usability and cost",
+    "does not establish facility feasibility or a causal mechanism"
+  ],
+  "observables": [
+    {
+      "name": "mode_amplitude",
+      "unit": "um"
+    },
+    {
+      "name": "event_delay",
+      "unit": "ns"
+    }
+  ]
+}

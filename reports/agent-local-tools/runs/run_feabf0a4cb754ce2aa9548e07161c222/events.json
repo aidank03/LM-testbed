@@ -1,0 +1,159 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:59:00.715674+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_a2e24372fb3ad458174d0972"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "de4170484c173acb746241c383377384ce70656462671ddf00047d5f76835b1b"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:59:01.825051+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 1.108962917000099,
+        "usage": {
+          "input_tokens": 1144,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 52.48411346257883,
+          "time_to_first_token_seconds": 0.868
+        },
+        "request_sha256": "4d7c936cf233a8389414be4250eeefb887379e8fb33a0ee4525142c8a48a7549",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "de4170484c173acb746241c383377384ce70656462671ddf00047d5f76835b1b",
+    "hash": "9b6e05db1f4c0b3b4bef11e6c9c5705a3675e814fd28900bac5e0adfd4858042"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:59:01.825905+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_09ebf20447dfb9a6a41f17f1",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "2967c05de3d32b58b3850f73",
+        "apparent_displacement_m": 5.0622255802690204e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "9b6e05db1f4c0b3b4bef11e6c9c5705a3675e814fd28900bac5e0adfd4858042",
+    "hash": "64d5185e084387dd6037ed390e9951bd0805a2168df892ef21fdd3e951351255"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:59:06.206640+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_a2e24372fb3ad458174d0972"
+        ],
+        "explanation": "The apparent displacement (5.06e-08 m) exceeds the stated resolution limit (1e-08 m) by a factor of approximately 5. Given the noise sigma (1e-09 m), this signal is statistically significant (SNR ~50). The drift bound is zero, and the observation is synthetic-reconstructed with valid calibration, supporting the conclusion that fixed-window radial displacement supports compression beyond the stated resolution.",
+        "next_step": "Proceed to validate with additional independent measurements or higher-resolution calibration if required by protocol."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 4.380331542000022,
+        "usage": {
+          "input_tokens": 1341,
+          "total_output_tokens": 165,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.644515683085324,
+          "time_to_first_token_seconds": 1.21
+        },
+        "request_sha256": "49555d097a18c4d65ddf71237feda193e91e34b4a2cc0a48e652527a1698e46d",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "64d5185e084387dd6037ed390e9951bd0805a2168df892ef21fdd3e951351255",
+    "hash": "b0cb0be523940846bae43ac8e4c67d20ca974cb15ee1c9f1d6fffd49d04be800"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:59:06.208026+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_supported",
+      "evidence_ids": [
+        "artifact_a2e24372fb3ad458174d0972"
+      ],
+      "explanation": "The apparent displacement (5.06e-08 m) exceeds the stated resolution limit (1e-08 m) by a factor of approximately 5. Given the noise sigma (1e-09 m), this signal is statistically significant (SNR ~50). The drift bound is zero, and the observation is synthetic-reconstructed with valid calibration, supporting the conclusion that fixed-window radial displacement supports compression beyond the stated resolution.",
+      "next_step": "Proceed to validate with additional independent measurements or higher-resolution calibration if required by protocol."
+    },
+    "previous_hash": "b0cb0be523940846bae43ac8e4c67d20ca974cb15ee1c9f1d6fffd49d04be800",
+    "hash": "d51d4b37b6413c3b26d50fef23501095440b0613a8d11a68d31336ef06513c3c"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:59:06.209198+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 5.495598375000554
+      },
+      "cleanup": []
+    },
+    "previous_hash": "d51d4b37b6413c3b26d50fef23501095440b0613a8d11a68d31336ef06513c3c",
+    "hash": "0e4b71408459e56c008f7546634b589be59f8f16f2b8a2be0c8352011bce10ae"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_32f0e71e074f4e8aa489fc190a93c62f",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_32f0e71e074f4e8aa489fc190a93c62f",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_c782f49bf6902f8157338ff7"
+    ],
+    "explanation": "With reference, center = -4.1758847507673805e-09 - (-2.4465861965711105e-08) = 2.029e-08 m. sigma = sqrt(1e-18 + 1e-18 - 0) = 1.4142e-09 m. B = 1e-09 m. h = 1.959963984540054*1.4142e-09 + 1e-09 = 3.771e-09 m. upper = 2.029e-08 + 3.771e-09 = 2.406e-08 m. T = -resolution_m = -1e-08 m. Since upper (2.406e-08) > T (-1e-08), the interval does not rule out inward motion beyond resolution; thus compression is supported.",
+    "next_step": "Report compression_supported with 95% CI [1.615e-08, 2.406e-08] m and proceed to next measurement."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1411,
+    "output_tokens": 335,
+    "elapsed_seconds": 7.407431917000395
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_6e4fcf7e1a73e797991bc81c": {
+      "id": "artifact_6e4fcf7e1a73e797991bc81c",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_6e4fcf7e1a73e797991bc81c.json",
+      "sha256": "55b3352362c64d71e95062a1542e757be07df4301fb3b547bef8b3dcbb651f64"
+    },
+    "artifact_c782f49bf6902f8157338ff7": {
+      "id": "artifact_c782f49bf6902f8157338ff7",
+      "kind": "observation",
+      "path": "artifacts/artifact_c782f49bf6902f8157338ff7.json",
+      "sha256": "d9d17a4d8e76cc59ad1b4bf2ef75c70a82afa3eb4f8a68707360e905cf0ece1e"
+    },
+    "artifact_49615a9c7441241a5e4b3a84": {
+      "id": "artifact_49615a9c7441241a5e4b3a84",
+      "kind": "request",
+      "path": "artifacts/artifact_49615a9c7441241a5e4b3a84.json",
+      "sha256": "404369d133e653735ad4fcfb4f06a1df6d497581eb7d693237ce1a07e72bd925"
+    }
+  }
+}

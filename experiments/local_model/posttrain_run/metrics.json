@@ -1,0 +1,69 @@
+{
+  "before": {
+    "n": 48,
+    "accuracy": 0.3125,
+    "invalid_label_rate": 0.0,
+    "per_class": {
+      "recorded": {
+        "n": 12,
+        "accuracy": 0.8333333333333334
+      },
+      "reconstructed": {
+        "n": 12,
+        "accuracy": 0.4166666666666667
+      },
+      "model_inferred": {
+        "n": 12,
+        "accuracy": 0.0
+      },
+      "unresolved": {
+        "n": 12,
+        "accuracy": 0.0
+      }
+    },
+    "per_family": {
+      "neutrons": 0.25,
+      "reflectometry": 0.25,
+      "strain": 0.25,
+      "velocimetry": 0.5
+    }
+  },
+  "after": {
+    "n": 48,
+    "accuracy": 0.6875,
+    "invalid_label_rate": 0.0,
+    "per_class": {
+      "recorded": {
+        "n": 12,
+        "accuracy": 1.0
+      },
+      "reconstructed": {
+        "n": 12,
+        "accuracy": 0.5
+      },
+      "model_inferred": {
+        "n": 12,
+        "accuracy": 0.25
+      },
+      "unresolved": {
+        "n": 12,
+        "accuracy": 1.0
+      }
+    },
+    "per_family": {
+      "neutrons": 0.75,
+      "reflectometry": 0.5,
+      "strain": 0.5,
+      "velocimetry": 1.0
+    }
+  },
+  "accuracy_difference": 0.375,
+  "paired_improved": 20,
+  "paired_regressed": 2,
+  "majority_baseline_accuracy": 0.25,
+  "shuffled_truth_negative_control_accuracy": 0.2916666666666667,
+  "elapsed_seconds": 81.90228512500016,
+  "conclusion_scope": "One-seed generative LoRA result on four held-out synthetic families; no independent real data, no physics or agent-transfer claim",
+  "split_dependence": "48 vignettes but only4 held-out families; variants are dependent",
+  "post_training_completed": true
+}

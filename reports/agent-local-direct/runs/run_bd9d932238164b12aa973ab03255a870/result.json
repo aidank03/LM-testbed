@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_bd9d932238164b12aa973ab03255a870",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_bd9d932238164b12aa973ab03255a870",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_478b9c6bfd0cb5bbf2f81dd5"
+    ],
+    "explanation": "The observation shows an apparent displacement of -1.05e-08 m, which is approximately 1.05 times the stated resolution limit of 1e-08 m. The reference displacement is -5.85e-08 m (approx 5.85x resolution). Since the observed displacement magnitude does not exceed the reference magnitude by a factor sufficient to support compression beyond the resolution limit (and is actually smaller in magnitude), the data does not support the hypothesis of compression beyond the stated resolution.",
+    "next_step": "Report that fixed-window radial displacement does not support compression beyond the stated resolution based on the provided observation."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 4.274643499999911
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_57771c9ee9f0cc091fedffbd": {
+      "id": "artifact_57771c9ee9f0cc091fedffbd",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_57771c9ee9f0cc091fedffbd.json",
+      "sha256": "f8ad55e6d5cb0c88e76089e60a31eee7800cf3fdd1a682d9b6f02e032696aff9"
+    },
+    "artifact_478b9c6bfd0cb5bbf2f81dd5": {
+      "id": "artifact_478b9c6bfd0cb5bbf2f81dd5",
+      "kind": "observation",
+      "path": "artifacts/artifact_478b9c6bfd0cb5bbf2f81dd5.json",
+      "sha256": "133a7645103387979f4e0feca88e1a30c6f37a3b52c760ecde5f50fd991274be"
+    },
+    "artifact_09308eb6af14f7ec29752a71": {
+      "id": "artifact_09308eb6af14f7ec29752a71",
+      "kind": "request",
+      "path": "artifacts/artifact_09308eb6af14f7ec29752a71.json",
+      "sha256": "711a565d0a7279ce518fc24250a3d4a09fd4c1c174838b0605becb0c6435a2d7"
+    }
+  }
+}

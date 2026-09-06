@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_2dd7ec5f78b4418781d07713519a3283",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_2dd7ec5f78b4418781d07713519a3283",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_8c6c7802a6d9bf7e3e0360e4"
+    ],
+    "explanation": "The apparent displacement (-5.63e-08 m) exceeds the stated resolution (1e-08 m) by a factor of ~5.6, and its magnitude is significantly larger than the noise floor (1e-09 m) and drift bound (8e-09 m). This supports compression beyond the stated resolution.",
+    "next_step": "Proceed with next measurement or finalize analysis."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 2.630688834000466
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_1dfad0e8ad84479aaee38197": {
+      "id": "artifact_1dfad0e8ad84479aaee38197",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_1dfad0e8ad84479aaee38197.json",
+      "sha256": "6e078d1bc6419c68a2523f732466b25803f8999a2517f58d506cd7458fe984fe"
+    },
+    "artifact_8c6c7802a6d9bf7e3e0360e4": {
+      "id": "artifact_8c6c7802a6d9bf7e3e0360e4",
+      "kind": "observation",
+      "path": "artifacts/artifact_8c6c7802a6d9bf7e3e0360e4.json",
+      "sha256": "118871347323b7c0259401bea7e3c2bd5fd1790a3bd3d301c7c050d18e39e1d6"
+    },
+    "artifact_58f7fd2dd76218fad8ac573e": {
+      "id": "artifact_58f7fd2dd76218fad8ac573e",
+      "kind": "request",
+      "path": "artifacts/artifact_58f7fd2dd76218fad8ac573e.json",
+      "sha256": "02e3a80dd8f1951806b8f14eedb2fbe41eab35287fdcf7bd8128c11101da48fe"
+    }
+  }
+}

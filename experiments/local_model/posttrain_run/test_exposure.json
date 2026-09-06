@@ -1,0 +1,5 @@
+{
+  "stage": "final_evaluation",
+  "adapter_sha256": "728568751cba991b88660bfecdc1058949e3d0b3efa1c9203abef16fd3e66fbd",
+  "policy": "No further tuning or test reuse as unseen data"
+}

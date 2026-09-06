@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_8952915b627645059715f432b7625278",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_8952915b627645059715f432b7625278",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_87a48ca7cde816bca02abdd4"
+    ],
+    "explanation": "The conditional interval for signed radial displacement x is [-3.27e-08 \u00b1 1.959963984540054*1e-09 + 0, -3.27e-08 \u00b1 1.959963984540054*1e-09] \u2248 [-3.27e-08, -3.27e-08], which is entirely negative and below the resolution threshold of 1e-08 m. Thus compression (inward motion) is supported.",
+    "next_step": "No further action required; decision finalized."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 2835,
+    "output_tokens": 383,
+    "elapsed_seconds": 6.157111457999235
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_33b5d658ed40b76e5f879250": {
+      "id": "artifact_33b5d658ed40b76e5f879250",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_33b5d658ed40b76e5f879250.json",
+      "sha256": "21eadd003267968a8492e5bc7d3aedcd47d2b719936242ba7ea31474f846c9c0"
+    },
+    "artifact_87a48ca7cde816bca02abdd4": {
+      "id": "artifact_87a48ca7cde816bca02abdd4",
+      "kind": "observation",
+      "path": "artifacts/artifact_87a48ca7cde816bca02abdd4.json",
+      "sha256": "276be9607e5fdf9cd73f03b2e5065e06320e4b2bf2cc156c29f59528af261ecf"
+    },
+    "artifact_091befc96f41897142b2478c": {
+      "id": "artifact_091befc96f41897142b2478c",
+      "kind": "request",
+      "path": "artifacts/artifact_091befc96f41897142b2478c.json",
+      "sha256": "95e0efcd4a403f709145d58bba718b4329e3d0abc8396d5d2d1e034d34bd0436"
+    }
+  }
+}

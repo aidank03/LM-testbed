@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_9fa004c0b96146dca1a73a4aecc94cbb",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_9fa004c0b96146dca1a73a4aecc94cbb",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_7383614cd691cbf99155d6f0"
+    ],
+    "explanation": "The observation has no reference (reference=null) and a null drift bound (drift_bound_m=null). Per the decision contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The 95% Gaussian confidence set cannot be enlarged by a finite nuisance bound to rule out inward motion.",
+    "next_step": "Acquire a reference measurement or obtain a finite drift bound to resolve the ambiguity."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1348,
+    "output_tokens": 133,
+    "elapsed_seconds": 3.4047304169998824
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_cd70070de8b6073a72b6a95e": {
+      "id": "artifact_cd70070de8b6073a72b6a95e",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_cd70070de8b6073a72b6a95e.json",
+      "sha256": "50a7fb3ba17661fcd05477ce6d0b0e408b6c90c5147d8d6fdfa3327139da3ee5"
+    },
+    "artifact_7383614cd691cbf99155d6f0": {
+      "id": "artifact_7383614cd691cbf99155d6f0",
+      "kind": "observation",
+      "path": "artifacts/artifact_7383614cd691cbf99155d6f0.json",
+      "sha256": "8cd9c490ea089a457d8f31ead8455a12c7f80819eaf1fb38fe93b22c9c50caca"
+    },
+    "artifact_bf15824aff2cb2eb1e288aec": {
+      "id": "artifact_bf15824aff2cb2eb1e288aec",
+      "kind": "request",
+      "path": "artifacts/artifact_bf15824aff2cb2eb1e288aec.json",
+      "sha256": "b4f8633a7fe38727a14cece28c7bd3f58ca0fbc4482a4d9d9856ad61086602f2"
+    }
+  }
+}

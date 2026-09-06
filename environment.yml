@@ -1,0 +1,22 @@
+name: factor-ai
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      # One wheel stack avoids duplicate OpenMP runtimes on Apple Silicon.
+      - ipykernel
+      - jupyterlab
+      - notebook
+      - ipywidgets
+      - numpy
+      - scipy
+      - pandas
+      - matplotlib
+      - seaborn
+      - scikit-learn
+      - tqdm
+      - torch
+      - torchvision
+      - jax

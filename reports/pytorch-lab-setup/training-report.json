@@ -1,0 +1,23 @@
+{
+  "scope": "Interactive development experiment; no final-test or physics-validity claim",
+  "steps": 2,
+  "seed": 42,
+  "device": "mps",
+  "torch": "2.8.0",
+  "trainable_parameters": 1146880,
+  "development_examples": 24,
+  "development_loss_before": 0.8901878205629495,
+  "development_loss_after": 0.948378096979398,
+  "training_losses": [
+    1.719063401222229,
+    1.5825825929641724
+  ],
+  "training_and_final_dev_seconds": 2.240595416999895,
+  "base_sha256": "f47f71177f32bcd101b7573ec9171e6a57f4f4d31148d38e382306f42996874b",
+  "source_sha256": "ce341f9be16ba877b0efcf8744c49a74a168290f63ab6434df3e9b9e27d17212",
+  "partition_sha256": {
+    "train": "323fec39bfdc324fc199d8a1d7a50ecfbb50cfc430b444de235011b022d6da1e",
+    "dev": "6ac451ccbe18006e3e5c25f22d9f403e8415a27906825ea855b7979f806178ac"
+  },
+  "adapter_sha256": "2b612148a072a601e2696160a7b1dafb4fc4f9b5621ddd2e4a5b5849d9bdc0e2"
+}

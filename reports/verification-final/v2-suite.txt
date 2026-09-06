@@ -1,0 +1,6 @@
+{
+  "contract": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/suite/contract.json",
+  "public_cases": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/suite/public_cases.json",
+  "evaluator_truth": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/suite/evaluator_truth.json",
+  "exposure": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/suite/exposure.json"
+}

@@ -1,0 +1,4 @@
+{
+  "calculation": "magnetic_pressure",
+  "parameters": {"current_A": 1000000.0, "radius_m": 0.0005}
+}

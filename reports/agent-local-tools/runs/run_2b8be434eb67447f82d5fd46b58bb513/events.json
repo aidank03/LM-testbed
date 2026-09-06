@@ -1,0 +1,159 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:57:11.398735+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_312a6c2c757c7a3d723bf376"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "67833587ab5a82a68220104d5b139aeec85134ccb50dd71e4e478e16dc8ac52f"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:57:13.492010+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.0927737500005605,
+        "usage": {
+          "input_tokens": 1144,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.36248878914908,
+          "time_to_first_token_seconds": 1.851
+        },
+        "request_sha256": "a5f79623d42c411994cb8f6221d1d7a5adc09dca7c9f7cbf545f24174ba5dd2a",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "67833587ab5a82a68220104d5b139aeec85134ccb50dd71e4e478e16dc8ac52f",
+    "hash": "f4e8612429ab823a1b67b709b9f1115a5e518eb906b1c90bee3cad6a27e2dffe"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:57:13.494499+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_e1c306a97f6dc4a50d55863b",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3deb370c0400d64c15aa9966",
+        "apparent_displacement_m": -3.0615369571437684e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "f4e8612429ab823a1b67b709b9f1115a5e518eb906b1c90bee3cad6a27e2dffe",
+    "hash": "cdd15259cebf2c97ea86f0f6423844ff0035cf746e1ba8be7af5f0116b3b0ec4"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:57:18.151902+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_312a6c2c757c7a3d723bf376"
+        ],
+        "explanation": "The apparent displacement (-3.06e-08 m) is approximately 3 times the stated resolution (1e-08 m). However, the observation source is 'synthetic_reconstructed' with a null reference and zero drift bound, indicating this is a reconstruction artifact or synthetic signal rather than a physical motion measurement exceeding the resolution limit. Without a valid reference to distinguish true displacement from reconstruction noise or artifacts, we cannot conclude that compression supports displacement beyond the stated resolution.",
+        "next_step": "Acquire a new observation with a non-null reference and verify if the displacement persists as a physical signal."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 4.656410750000759,
+        "usage": {
+          "input_tokens": 1339,
+          "total_output_tokens": 179,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.5542894182504,
+          "time_to_first_token_seconds": 1.209
+        },
+        "request_sha256": "b374fb8c85ff713df26780e2e0f9565447b2a3d0386223e4007edd01543cf79b",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "cdd15259cebf2c97ea86f0f6423844ff0035cf746e1ba8be7af5f0116b3b0ec4",
+    "hash": "4849dfe4ba2578d6bbb2d884a33c7dd46f361598f7a5f6fbc661a299e14ac479"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:57:18.152469+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_312a6c2c757c7a3d723bf376"
+      ],
+      "explanation": "The apparent displacement (-3.06e-08 m) is approximately 3 times the stated resolution (1e-08 m). However, the observation source is 'synthetic_reconstructed' with a null reference and zero drift bound, indicating this is a reconstruction artifact or synthetic signal rather than a physical motion measurement exceeding the resolution limit. Without a valid reference to distinguish true displacement from reconstruction noise or artifacts, we cannot conclude that compression supports displacement beyond the stated resolution.",
+      "next_step": "Acquire a new observation with a non-null reference and verify if the displacement persists as a physical signal."
+    },
+    "previous_hash": "4849dfe4ba2578d6bbb2d884a33c7dd46f361598f7a5f6fbc661a299e14ac479",
+    "hash": "2ac76d25f30a9e6b9e1c3d2e4e567cbff173b4f239ec6bf0628fcbffc185492f"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:57:18.152825+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 6.7564280830001735
+      },
+      "cleanup": []
+    },
+    "previous_hash": "2ac76d25f30a9e6b9e1c3d2e4e567cbff173b4f239ec6bf0628fcbffc185492f",
+    "hash": "2c6668b1b36b5d7bcfa506945e1c3eb04dc608cb2f7a23d796dde5a9b77f8500"
+  }
+]

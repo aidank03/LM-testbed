@@ -1,0 +1,87 @@
+{
+  "status": "Automatic label/number checks only; explanations, sources and tool lineage require separate review",
+  "n_cases": 12,
+  "n_correct": 5,
+  "accuracy_all_cases": 0.4166666666666667,
+  "answer_rate": 1.0,
+  "results": [
+    {
+      "case_id": "A01",
+      "category": "units_and_physics",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "case_id": "A02",
+      "category": "units_and_physics",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "case_id": "A03",
+      "category": "units_and_physics",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "case_id": "A04",
+      "category": "diagnostic_inversion",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "case_id": "A05",
+      "category": "uncertainty",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "case_id": "A06",
+      "category": "phase_evidence",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "A07",
+      "category": "cross_shot_reasoning",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "A08",
+      "category": "diagnostic_identifiability",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "A09",
+      "category": "mechanism_abstention",
+      "correct": false,
+      "abstained": false
+    },
+    {
+      "case_id": "A10",
+      "category": "leakage",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "A11",
+      "category": "uncertainty",
+      "correct": true,
+      "abstained": false
+    },
+    {
+      "case_id": "A12",
+      "category": "experiment_design",
+      "correct": false,
+      "abstained": false
+    }
+  ],
+  "model": "factor-qwen35-9b",
+  "elapsed_seconds": 12.585426250000637,
+  "transport": "lmstudio-native",
+  "test_status": "PUBLIC_DEVELOPMENT_ONLY",
+  "actual_local_inference": true,
+  "claims": "Structured answer checks only; not physics or agent validation"
+}

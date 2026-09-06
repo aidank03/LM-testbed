@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_0da38c451ab64d289fbc0b6414a15f3d",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_0da38c451ab64d289fbc0b6414a15f3d",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_3b38bfca1b00ff86e78ad4eb"
+    ],
+    "explanation": "The observation artifact 3b38bfca1b00ff86e78ad4eb reports an apparent displacement of -6.16e-09 m within a window of 1e-07 s. The stated resolution is 1e-08 m. Since the magnitude of the displacement (6.16e-09 m) exceeds the resolution limit (1e-08 m) in absolute terms? No, 6.16e-09 < 1e-08. Wait, let me re-evaluate. The displacement is -6.16e-09 m. The resolution is 1e-08 m. The magnitude of the displacement is 6.16 nm? No, it's 6.16e-09 m = 6.16 nm? No, 1e-09 m = 1 nm. So 6.16e-09 m = 6.16 nm. Resolution is 1e-08 m = 10 nm. The displacement magnitude (6.16 nm) is less than the resolution (10 nm). Therefore, the displacement is not statistically significant beyond the resolution limit. Thus, compression is NOT supported.\n\nWait, let's re-read the numbers carefully.\napparent_displacement_m: -6.160838054352691e-09 (approx -6.16 nm)\nresolution_m: 1e-08 (10 nm)\n\nThe displacement magnitude is 6.16 nm, which is less than the resolution of 10 nm. Therefore, the observation does not support compression beyond the stated resolution.\n\nDecision: compression_not_supported",
+    "next_step": "No further measurements are required as the current data indicates the displacement is within the resolution limit."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 8.864950125000178
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_358ba02dec6380c18cbb51bb": {
+      "id": "artifact_358ba02dec6380c18cbb51bb",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_358ba02dec6380c18cbb51bb.json",
+      "sha256": "c5de4ad7540c382723ea0f646a08970ad0b300c1d8880e1d9be224952625d5bd"
+    },
+    "artifact_3b38bfca1b00ff86e78ad4eb": {
+      "id": "artifact_3b38bfca1b00ff86e78ad4eb",
+      "kind": "observation",
+      "path": "artifacts/artifact_3b38bfca1b00ff86e78ad4eb.json",
+      "sha256": "c44450fe82d042bc60b5a10b7dffc78c46dbe9704b73f43d91aae2baa468b691"
+    },
+    "artifact_ac727dde474443b84d3a0cf5": {
+      "id": "artifact_ac727dde474443b84d3a0cf5",
+      "kind": "request",
+      "path": "artifacts/artifact_ac727dde474443b84d3a0cf5.json",
+      "sha256": "d550c2a75f48f9ad4f5de76c2b53f0045d7b5b7372e908cb0c78d10a00857b41"
+    }
+  }
+}

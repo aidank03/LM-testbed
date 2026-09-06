@@ -1,0 +1,338 @@
+[
+  {
+    "id": "strain-0-unresolved",
+    "family": "strain",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-0-unresolved",
+    "family": "neutrons",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-0-recorded",
+    "family": "velocimetry",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-2-unresolved",
+    "family": "neutrons",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-2-unresolved",
+    "family": "reflectometry",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-0-reconstructed",
+    "family": "neutrons",
+    "label": "reconstructed",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-0-model_inferred",
+    "family": "reflectometry",
+    "label": "model_inferred",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-0-recorded",
+    "family": "neutrons",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-2-reconstructed",
+    "family": "velocimetry",
+    "label": "reconstructed",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-0-recorded",
+    "family": "reflectometry",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-0-model_inferred",
+    "family": "velocimetry",
+    "label": "model_inferred",
+    "prediction": "model_inferred",
+    "generated_tokens": 4
+  },
+  {
+    "id": "strain-1-unresolved",
+    "family": "strain",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-2-model_inferred",
+    "family": "velocimetry",
+    "label": "model_inferred",
+    "prediction": "model_inferred",
+    "generated_tokens": 4
+  },
+  {
+    "id": "velocimetry-0-reconstructed",
+    "family": "velocimetry",
+    "label": "reconstructed",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-2-recorded",
+    "family": "strain",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-0-model_inferred",
+    "family": "neutrons",
+    "label": "model_inferred",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-2-reconstructed",
+    "family": "neutrons",
+    "label": "reconstructed",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-2-reconstructed",
+    "family": "reflectometry",
+    "label": "reconstructed",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-0-recorded",
+    "family": "strain",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-1-unresolved",
+    "family": "neutrons",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-0-reconstructed",
+    "family": "reflectometry",
+    "label": "reconstructed",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-2-model_inferred",
+    "family": "strain",
+    "label": "model_inferred",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-2-reconstructed",
+    "family": "strain",
+    "label": "reconstructed",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-1-unresolved",
+    "family": "velocimetry",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-1-model_inferred",
+    "family": "neutrons",
+    "label": "model_inferred",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-2-model_inferred",
+    "family": "reflectometry",
+    "label": "model_inferred",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-1-recorded",
+    "family": "strain",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-0-unresolved",
+    "family": "reflectometry",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-1-reconstructed",
+    "family": "neutrons",
+    "label": "reconstructed",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-1-unresolved",
+    "family": "reflectometry",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-2-model_inferred",
+    "family": "neutrons",
+    "label": "model_inferred",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-2-unresolved",
+    "family": "strain",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-1-model_inferred",
+    "family": "velocimetry",
+    "label": "model_inferred",
+    "prediction": "model_inferred",
+    "generated_tokens": 4
+  },
+  {
+    "id": "velocimetry-2-unresolved",
+    "family": "velocimetry",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-2-recorded",
+    "family": "velocimetry",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-0-reconstructed",
+    "family": "strain",
+    "label": "reconstructed",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-1-recorded",
+    "family": "neutrons",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-0-unresolved",
+    "family": "velocimetry",
+    "label": "unresolved",
+    "prediction": "unresolved",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-1-recorded",
+    "family": "velocimetry",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-1-model_inferred",
+    "family": "strain",
+    "label": "model_inferred",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-1-reconstructed",
+    "family": "strain",
+    "label": "reconstructed",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-1-reconstructed",
+    "family": "reflectometry",
+    "label": "reconstructed",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-1-model_inferred",
+    "family": "reflectometry",
+    "label": "model_inferred",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-1-recorded",
+    "family": "reflectometry",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "reflectometry-2-recorded",
+    "family": "reflectometry",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "neutrons-2-recorded",
+    "family": "neutrons",
+    "label": "recorded",
+    "prediction": "recorded",
+    "generated_tokens": 3
+  },
+  {
+    "id": "velocimetry-1-reconstructed",
+    "family": "velocimetry",
+    "label": "reconstructed",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  },
+  {
+    "id": "strain-0-model_inferred",
+    "family": "strain",
+    "label": "model_inferred",
+    "prediction": "reconstructed",
+    "generated_tokens": 3
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_82e3f40e6ec1465592fd4084d686d131",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_82e3f40e6ec1465592fd4084d686d131",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_8782acceb77e79f37ea5cdcf"
+    ],
+    "explanation": "Using the reference, center = -4.176e-09 - 2.958e-08 = -3.376e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.95996*1.414e-09 + 1e-09 = 3.772e-09 m. Interval: [-3.753e-08, -2.999e-08] m. T = -1e-08 m. Since upper (-2.999e-08) <= T, compression is supported.",
+    "next_step": "Report compression_supported with interval [-3.75e-08, -3.00e-08] m."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1701,
+    "output_tokens": 258,
+    "elapsed_seconds": 7.712234875000831
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_68a5fe25cf1410c1c1a5571e": {
+      "id": "artifact_68a5fe25cf1410c1c1a5571e",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_68a5fe25cf1410c1c1a5571e.json",
+      "sha256": "a29bbeb1b91499e0314254373d5357c6cbc95b4440519758691db8e986abad8f"
+    },
+    "artifact_8782acceb77e79f37ea5cdcf": {
+      "id": "artifact_8782acceb77e79f37ea5cdcf",
+      "kind": "observation",
+      "path": "artifacts/artifact_8782acceb77e79f37ea5cdcf.json",
+      "sha256": "392f6085d9f5bae3cebf26b7967a9cb0a848ae32a02e1cb0e471c74c02d0c180"
+    },
+    "artifact_50c7c9af5bc53de057ae92d8": {
+      "id": "artifact_50c7c9af5bc53de057ae92d8",
+      "kind": "request",
+      "path": "artifacts/artifact_50c7c9af5bc53de057ae92d8.json",
+      "sha256": "4ee62d07aa7e88091dfabc0f5d1f8af27b344784416c8888ffad61b0ba71ede1"
+    }
+  }
+}

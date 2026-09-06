@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_5659e6f3ce8f4574931d30ddf5e9ed3d",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_5659e6f3ce8f4574931d30ddf5e9ed3d",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_9d22f03a8da955cfb7ed0cc6"
+    ],
+    "explanation": "The observation shows an apparent displacement of 1.53e-08 m, which is smaller than the reference displacement of 4.37e-08 m. The difference (approx 2.8e-08 m) exceeds the noise floor (1e-09 m), indicating a real reduction in measured displacement rather than measurement uncertainty. This supports the conclusion that compression is not supported beyond the stated resolution.",
+    "next_step": "Report compression_not_supported."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 2.8875844579997647
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_93d6531e869df5b7f91c5e0d": {
+      "id": "artifact_93d6531e869df5b7f91c5e0d",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_93d6531e869df5b7f91c5e0d.json",
+      "sha256": "a9d2864eabf1f8012f9811557938bbe4c8e1686f5079533775ed168dd4942828"
+    },
+    "artifact_9d22f03a8da955cfb7ed0cc6": {
+      "id": "artifact_9d22f03a8da955cfb7ed0cc6",
+      "kind": "observation",
+      "path": "artifacts/artifact_9d22f03a8da955cfb7ed0cc6.json",
+      "sha256": "49a3325a7b2aa68523b16547505b66950f70b054bc65d7f9836c2ef458eb7f1b"
+    },
+    "artifact_e41528412165c1fa9a19e1fb": {
+      "id": "artifact_e41528412165c1fa9a19e1fb",
+      "kind": "request",
+      "path": "artifacts/artifact_e41528412165c1fa9a19e1fb.json",
+      "sha256": "6c976cb08cdbe0fc0e68552550e60652b6be659b1b0aac7df03c6047dcdbd843"
+    }
+  }
+}

@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:14:05.663894+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_05792fc4a90c2582e7bb7b53"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "f6eebad69e931f3e41485bd19f109eec63ef154310ecf4e3693b6f38aad484bc"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:14:11.151327+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_05792fc4a90c2582e7bb7b53"
+        ],
+        "explanation": "Without a reference, the conditional center is apparent_displacement_m (3.6e-08 m) and sigma is noise_sigma_m (1e-09 m). The nuisance bound B is drift_bound_m (8e-09 m). The 95% Gaussian half-width h = 1.96*sigma + B = 1.96e-09 + 8e-09 = 9.96e-09 m. Thus the interval is [center-h, center+h] = [-6.34e-09, 1.59e-07] m. The resolution threshold T = -resolution_m = -1e-08 m. Since upper > T and lower < T, the interval crosses T; therefore compression is ambiguous.",
+        "next_step": "Acquire a reference measurement to remove optical drift uncertainty and tighten the conditional interval before re-evaluating compression support."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.486895750000258,
+        "usage": {
+          "input_tokens": 1353,
+          "total_output_tokens": 241,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.936985854799026,
+          "time_to_first_token_seconds": 0.768
+        },
+        "request_sha256": "c20e547345065593d712d9bf36f790a55b76b66519681406fc08d33461421791",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1353,
+        "output_tokens": 241
+      }
+    },
+    "previous_hash": "f6eebad69e931f3e41485bd19f109eec63ef154310ecf4e3693b6f38aad484bc",
+    "hash": "6710f202d524fb9e73b9bb392fba21f48c68d8d80bec18932e02ea5745083ce4"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:14:11.152624+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_05792fc4a90c2582e7bb7b53"
+      ],
+      "explanation": "Without a reference, the conditional center is apparent_displacement_m (3.6e-08 m) and sigma is noise_sigma_m (1e-09 m). The nuisance bound B is drift_bound_m (8e-09 m). The 95% Gaussian half-width h = 1.96*sigma + B = 1.96e-09 + 8e-09 = 9.96e-09 m. Thus the interval is [center-h, center+h] = [-6.34e-09, 1.59e-07] m. The resolution threshold T = -resolution_m = -1e-08 m. Since upper > T and lower < T, the interval crosses T; therefore compression is ambiguous.",
+      "next_step": "Acquire a reference measurement to remove optical drift uncertainty and tighten the conditional interval before re-evaluating compression support."
+    },
+    "previous_hash": "6710f202d524fb9e73b9bb392fba21f48c68d8d80bec18932e02ea5745083ce4",
+    "hash": "f11ad78f8ebded65f79bd35fa1b5a4f64516dd6064484aa17b96c00a57240ced"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:14:11.153521+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1353,
+        "output_tokens": 241,
+        "elapsed_seconds": 5.493872459000158
+      },
+      "cleanup": []
+    },
+    "previous_hash": "f11ad78f8ebded65f79bd35fa1b5a4f64516dd6064484aa17b96c00a57240ced",
+    "hash": "0fb2b73c1518fe374584dffbd8c1be9c55a49d8042962e6a2925e14ae56a62fc"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:14:11.155119+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "9d3e004924cd1167df415d02bc4687a925a7a70cab9d2045a113432309d7c0e4"
+    },
+    "previous_hash": "0fb2b73c1518fe374584dffbd8c1be9c55a49d8042962e6a2925e14ae56a62fc",
+    "hash": "f5e4e8bbf5cead268fbfaad0ee43007a84bb005425006c1ed5c7ffa712623be8"
+  }
+]

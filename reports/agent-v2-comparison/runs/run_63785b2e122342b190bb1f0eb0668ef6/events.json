@@ -1,0 +1,189 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:18:23.702333+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_05792fc4a90c2582e7bb7b53"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "5deb3b9d8ef57c2fc12dcca4e731d14a0b58370e2fc83fd6b2d973383d6d906f"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:18:25.854987+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "infer_motion",
+      "arguments": {
+        "method": "bounded"
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.1520982080000977,
+        "usage": {
+          "input_tokens": 1715,
+          "total_output_tokens": 28,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 75.7237932572169,
+          "time_to_first_token_seconds": 1.787
+        },
+        "request_sha256": "5a79518561ef84c74514099184c42586240f431b1afd918999f305e9f1d7bdec",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1715,
+        "output_tokens": 28
+      }
+    },
+    "previous_hash": "5deb3b9d8ef57c2fc12dcca4e731d14a0b58370e2fc83fd6b2d973383d6d906f",
+    "hash": "95b3d714273eb0d69dfe259b5487d1d4bee9f36dcf8e1081581e886e15e1cfaa"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:18:25.857746+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "infer_motion",
+      "ok": true,
+      "artifact_id": "artifact_24988c482dd400f0f0da1a51",
+      "result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 3.598997984157082e-08,
+        "interval_m": [
+          2.6030015857030765e-08,
+          4.594994382611087e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      }
+    },
+    "previous_hash": "95b3d714273eb0d69dfe259b5487d1d4bee9f36dcf8e1081581e886e15e1cfaa",
+    "hash": "363d85bbe093d3434eb9d98f0d0a4efebe157b075243cd8bfaf800699ffa46d4"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:18:28.521791+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_24988c482dd400f0f0da1a51"
+        ],
+        "explanation": "The conditional interval [2.6e-08, 4.6e-08] m lies entirely above the resolution threshold (T = -1e-08), meaning no inward motion is supported within measurement limits.",
+        "next_step": "Validate calibration and noise assumptions independently."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.6630829579999045,
+        "usage": {
+          "input_tokens": 2079,
+          "total_output_tokens": 132,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 75.61593799262197,
+          "time_to_first_token_seconds": 0.926
+        },
+        "request_sha256": "ba2cf41b1d202254fae212e9a28b489d9318119af19647a533108f6980566e82",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2079,
+        "output_tokens": 132
+      }
+    },
+    "previous_hash": "363d85bbe093d3434eb9d98f0d0a4efebe157b075243cd8bfaf800699ffa46d4",
+    "hash": "3a55e30e027cc49747cbf9c3a3caad619e68e0aeb23068747ff2516aa24e83c0"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:18:28.523176+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_24988c482dd400f0f0da1a51"
+      ],
+      "explanation": "The conditional interval [2.6e-08, 4.6e-08] m lies entirely above the resolution threshold (T = -1e-08), meaning no inward motion is supported within measurement limits.",
+      "next_step": "Validate calibration and noise assumptions independently."
+    },
+    "previous_hash": "3a55e30e027cc49747cbf9c3a3caad619e68e0aeb23068747ff2516aa24e83c0",
+    "hash": "2219e761ca5218a3fdebecfe6670a69a9a7c7e14e9407875487d57434495e27f"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T21:18:28.524006+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3794,
+        "output_tokens": 160,
+        "elapsed_seconds": 4.825132874999326
+      },
+      "cleanup": []
+    },
+    "previous_hash": "2219e761ca5218a3fdebecfe6670a69a9a7c7e14e9407875487d57434495e27f",
+    "hash": "3923a164e9591e73b66dbd80d324a4a979a194256f5d2f01d3411fedd4cd8af5"
+  },
+  {
+    "sequence": 6,
+    "timestamp": "2026-09-05T21:18:28.526869+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "7fa89203630cd4f72ffc7e66898c740c467411443842995e4d71bbbbc57c98e1"
+    },
+    "previous_hash": "3923a164e9591e73b66dbd80d324a4a979a194256f5d2f01d3411fedd4cd8af5",
+    "hash": "d833b16cb6942a773be41fad2093a4e8726717beee87abf4e298547ccb215c00"
+  }
+]

@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_f8d6bd5cd7cc4cebafb6efa8a0b759d5",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_f8d6bd5cd7cc4cebafb6efa8a0b759d5",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_9aaae14d45acc524240e7969"
+    ],
+    "explanation": "With a reference, center = apparent_displacement_m - reference.displacement_m = -5.938e-09 - 3.268e-08 = -3.862e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = reference.residual_bound_m = 1e-09 m. The 95% interval half-width h = 1.96*sigma + B = 3.72e-09 m. Interval: [-4.234e-08, -3.490e-08] m. Resolution T = -1e-08 m. Since upper (-3.49e-08) <= T, compression is supported.",
+    "next_step": "Report compression_supported with interval [-4.23e-08, -3.49e-08] m and resolution limit -1e-08 m."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1407,
+    "output_tokens": 267,
+    "elapsed_seconds": 6.084050415999627
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_8aaeb3014f8007ebe6af97db": {
+      "id": "artifact_8aaeb3014f8007ebe6af97db",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_8aaeb3014f8007ebe6af97db.json",
+      "sha256": "79aaaba82340a6b5f3e70ab21056959d6ca7bcfbfa9611052384374f06648332"
+    },
+    "artifact_9aaae14d45acc524240e7969": {
+      "id": "artifact_9aaae14d45acc524240e7969",
+      "kind": "observation",
+      "path": "artifacts/artifact_9aaae14d45acc524240e7969.json",
+      "sha256": "d14f1990c46c0188f0f425a9aca97346152141799151d0dc6a05e4fb8a4520b0"
+    },
+    "artifact_cf30e39a92f81cbe45638bf3": {
+      "id": "artifact_cf30e39a92f81cbe45638bf3",
+      "kind": "request",
+      "path": "artifacts/artifact_cf30e39a92f81cbe45638bf3.json",
+      "sha256": "85e16f546892ca35914bde136d762fe18db38b300c4cf8d0e6cffd937cb0dd6a"
+    }
+  }
+}

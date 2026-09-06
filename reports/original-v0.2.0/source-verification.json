@@ -1,0 +1,349 @@
+{
+  "source_directory": "/Users/operator/Desktop/Factor_v0",
+  "copy_directory": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/recovered/Factor_v0-0.2.0",
+  "source_release_commit": "d3f48b01819738dcd1531f904833a61c3868e789",
+  "release_hashes_matched": 68,
+  "source_release_sha256": "6cc951c071bf9d88be98c4d694a359c0d6d9c0dc3e6e84396c9a0ed570c858f0",
+  "files": [
+    {
+      "path": ".env.example",
+      "match": true,
+      "sha256": "e68b312059ba547b254643b493d903abfbcab471f13fbbf228151862ae355f0c"
+    },
+    {
+      "path": ".gitattributes",
+      "match": true,
+      "sha256": "5398dfa02a8e8a0c0bef9b61188a3cca9c8bcecb7a95c4917f0ba19eda5761b9"
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "match": true,
+      "sha256": "f8f4c9b7febf1bbb57eb458b4fc3fe693cd2f89a4234ac4785270e02fedf6223"
+    },
+    {
+      "path": ".gitignore",
+      "match": true,
+      "sha256": "79dd47fbd05c3f4a5bc7d707ac0423ff9b1c73622175b05424f42082cab7a679"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "match": true,
+      "sha256": "34d80b699bc84293eb02025b8fb681a1d9815d6db8edb39c276ba694b126d2c8"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "match": true,
+      "sha256": "d2d731348dc636006280db21e4a275cac3a33e1e5dafa7f925474cf674dfe272"
+    },
+    {
+      "path": "MANIFEST.in",
+      "match": true,
+      "sha256": "081e14444c4ef875ae6d49a79a49d1a8add077d137b801e5e7375469dbe035fa"
+    },
+    {
+      "path": "Makefile",
+      "match": true,
+      "sha256": "fa7329ab1b4c4687fe4e6ed2872ecd2f114b7dd81bc0cab8c75a56b5e35b8c09"
+    },
+    {
+      "path": "README.md",
+      "match": true,
+      "sha256": "e1d43c62e6734ff0801d587e2d7a0b4c44d1b1e072ab1bb6f311864cdd90346c"
+    },
+    {
+      "path": "configs/demo.json",
+      "match": true,
+      "sha256": "0fa94349e48d57c1ae0848e7cc59b5528ba17446d1c6dab14cae6e3f38b99561"
+    },
+    {
+      "path": "configs/design_example.json",
+      "match": true,
+      "sha256": "abf0dc4ea5cde43bdfc666b484ec09059fac2bc4d2b84b3160e66390785dbb04"
+    },
+    {
+      "path": "configs/physics_example.json",
+      "match": true,
+      "sha256": "ae274390d28c27c5411b0463376bf3ec6581f9ffd361600c9f17b3c09c15ee8b"
+    },
+    {
+      "path": "docs/ARCHITECTURE.md",
+      "match": true,
+      "sha256": "a399f09d8949824fbcc0694142b9965319d4e2bc8f89f314e7f2791050608a96"
+    },
+    {
+      "path": "docs/Liner_Stability_Evaluation_Plan.pdf",
+      "match": true,
+      "sha256": "c905ff9bb63dc9f039458258cd747bf8042dc242ee3ae9a3404bcb4a2b7a462b"
+    },
+    {
+      "path": "docs/MODEL_CARD.md",
+      "match": true,
+      "sha256": "297795eca19813ba2db02cb22f56412dd57671828c325c51e442c54fbd06227c"
+    },
+    {
+      "path": "docs/PROJECT_SECTION.md",
+      "match": true,
+      "sha256": "98e76c101a091f41b77923f23374607668a6cadc9cfad033d652c4d03bf42b76"
+    },
+    {
+      "path": "docs/ROADMAP.md",
+      "match": true,
+      "sha256": "6cc06eb5371ce4e76d6f2a9b67fea87ff8e1864c8e1393aa41d4be0ca56ea583"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "match": true,
+      "sha256": "aa2e46995374d9902b8b252f42423b88795c7e21d8fe03e3e59021c10f0c8b86"
+    },
+    {
+      "path": "examples/ai_cases/candidate_inputs.json",
+      "match": true,
+      "sha256": "b4f282b9028b3c298cd1d181b18f9ff259d7d47fdb3090a0880365277b4030b4"
+    },
+    {
+      "path": "examples/ai_cases/candidate_output_template.json",
+      "match": true,
+      "sha256": "76bbe3c4618f29a5822970d97c34552e33c6542505fe03dff822c95667824311"
+    },
+    {
+      "path": "examples/ai_cases/evaluator_key.json",
+      "match": true,
+      "sha256": "af8141b5fa7c7d13f0f3bdd6c9ad45a2e52a59add50b3be3b90ea1fe1455609d"
+    },
+    {
+      "path": "examples/design_ranking.json",
+      "match": true,
+      "sha256": "0c65eceb89aab7aee87776ea2060e8ebb738b8c2484eba07bc2b308fa0029017"
+    },
+    {
+      "path": "examples/pressure.json",
+      "match": true,
+      "sha256": "be1d6d8901936c43034634d2ec65bb299a536a6dae55123fa4ef5ec2bba2c1fd"
+    },
+    {
+      "path": "examples/reference_run/EVALUATION_CARD.md",
+      "match": true,
+      "sha256": "bb5d6a91bd34b9a93ec54bf9daf5a1fe1922e78e1266a553fda462eca2914eb1"
+    },
+    {
+      "path": "examples/reference_run/RESULTS.md",
+      "match": true,
+      "sha256": "f4de15e5cc0685542c05129254ee7aa8c3e79a7d31046c5e13a4b69b108f8dad"
+    },
+    {
+      "path": "examples/reference_run/diagnostic_examples.png",
+      "match": true,
+      "sha256": "74d5b12efc4f527f28ca063fe7a1e0d3428bcfe470aabfd3067fa9eb23362496"
+    },
+    {
+      "path": "examples/reference_run/example_blurred.npz",
+      "match": true,
+      "sha256": "eac47c9f4c8c0b577a80c71d7179dc812af371984d87f1a1afddeb418e6f4046"
+    },
+    {
+      "path": "examples/reference_run/example_blurred_metadata.json",
+      "match": true,
+      "sha256": "46c69e2f7dd11dddd8f36c7192967a24a1ce39ebc9d4acd7c70049acaa57f195"
+    },
+    {
+      "path": "examples/reference_run/example_no_structure.npz",
+      "match": true,
+      "sha256": "3aa7ea739ed40c6e7fe8cab2239665e5166b83904762794b2028edff7a4e33c5"
+    },
+    {
+      "path": "examples/reference_run/example_no_structure_metadata.json",
+      "match": true,
+      "sha256": "98edd69124cb6d7deadda0db4413e77d664e684bc42c380bf35c4dd8ca826f48"
+    },
+    {
+      "path": "examples/reference_run/example_nominal.npz",
+      "match": true,
+      "sha256": "7e70324338f8bf42356dd908aa251123b24f7e50cc6d5bc7067bdafd36c7ae2e"
+    },
+    {
+      "path": "examples/reference_run/example_nominal_metadata.json",
+      "match": true,
+      "sha256": "cdac157d1cff2b6a97cc5f7b5ee0751c626c265c6b0fdce4f45776f79dca7d32"
+    },
+    {
+      "path": "examples/reference_run/example_omitted_optical_drift.npz",
+      "match": true,
+      "sha256": "302d6b6979eb979b60852ce5013ea5b4e7ec24a1ce9154238717ca0dae461d4e"
+    },
+    {
+      "path": "examples/reference_run/example_omitted_optical_drift_metadata.json",
+      "match": true,
+      "sha256": "db9558f1707b3e082a33dfd606cceee8edf37cc139c2a290556dec066719aace"
+    },
+    {
+      "path": "examples/reference_run/example_pdv_dropout.npz",
+      "match": true,
+      "sha256": "1217ca7aca315cebfaffebfec9f38f9ce2934b38287f0366ff46768607923c44"
+    },
+    {
+      "path": "examples/reference_run/example_pdv_dropout_metadata.json",
+      "match": true,
+      "sha256": "70d2ab00bd50700ae88502f8d33afb357d0729861408f69b7af45dc5c6913bb3"
+    },
+    {
+      "path": "examples/reference_run/example_timing_jitter.npz",
+      "match": true,
+      "sha256": "30e571782e756ad54475fee48cdae0395335d095a3db38560d62b1483d6535eb"
+    },
+    {
+      "path": "examples/reference_run/example_timing_jitter_metadata.json",
+      "match": true,
+      "sha256": "28fac8a7bad295cd8facbd1876109ca2b2a4abf2b7f6a81307a7bba8ef7c91ca"
+    },
+    {
+      "path": "examples/reference_run/experiment_config.json",
+      "match": true,
+      "sha256": "0fa94349e48d57c1ae0848e7cc59b5528ba17446d1c6dab14cae6e3f38b99561"
+    },
+    {
+      "path": "examples/reference_run/metrics.json",
+      "match": true,
+      "sha256": "8886c8382fcffc7883e6f167337ec8873aaadbd35dd240e1c8e08d675edb0404"
+    },
+    {
+      "path": "examples/reference_run/predictions_calibrated.jsonl",
+      "match": true,
+      "sha256": "fcae8d9d9a035d22ebe6953197d2a8524ac1cfe4be084f8470ec698f7233b957"
+    },
+    {
+      "path": "examples/reference_run/predictions_simple.jsonl",
+      "match": true,
+      "sha256": "a59ddd5e70045a6919e652467eb1971b97cd4fd9618a27372260bfdef3c3181f"
+    },
+    {
+      "path": "examples/reference_run/run_manifest.json",
+      "match": true,
+      "sha256": "177c12ef4b1b625abf5e75b424566586714919cdfeb0891f6d816752a6fe4886"
+    },
+    {
+      "path": "examples/reference_run/status.json",
+      "match": true,
+      "sha256": "74d3e190fe06a067835218a04922bbff7a50d6f619433d16e326d32e2eae9c70"
+    },
+    {
+      "path": "examples/reference_run/truth.jsonl",
+      "match": true,
+      "sha256": "05c576b4c63e2bf2dd226293f7ba85bede95675c4ef4f8b6c4664c2980b8d261"
+    },
+    {
+      "path": "pyproject.toml",
+      "match": true,
+      "sha256": "10466ac190e4c2dba3c296156b887abe1c810dabbc190227326e15641fffe0f3"
+    },
+    {
+      "path": "src/liner_stability/__init__.py",
+      "match": true,
+      "sha256": "6c485ce75c797f3a8acc745e82d6139456395a6854ede1156b671edd72e56576"
+    },
+    {
+      "path": "src/liner_stability/__main__.py",
+      "match": true,
+      "sha256": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a"
+    },
+    {
+      "path": "src/liner_stability/benchmarks.py",
+      "match": true,
+      "sha256": "a126796485760c27da24f4011fa77d5159c68e4b1b9647788bc7c31f361aabe3"
+    },
+    {
+      "path": "src/liner_stability/cli.py",
+      "match": true,
+      "sha256": "66af22cb8dbaf0593665af6bfe6d561bd1899262de90731d1cc5d170d608608c"
+    },
+    {
+      "path": "src/liner_stability/constants.py",
+      "match": true,
+      "sha256": "c522ba415a61bdd1ea3a4a44e31daa160990f6f8248cd00326c3f6aaf9249c27"
+    },
+    {
+      "path": "src/liner_stability/design.py",
+      "match": true,
+      "sha256": "72e48b3169421c1071928214ea6ca354e174ad95de614ee82719a9c3f69d5ca6"
+    },
+    {
+      "path": "src/liner_stability/diagnostics.py",
+      "match": true,
+      "sha256": "c8313bf3686577f93348bf49ecf161e5b9ac8330c872d68449f7855bfc2d9f1a"
+    },
+    {
+      "path": "src/liner_stability/evaluation.py",
+      "match": true,
+      "sha256": "9b76ab30fa2ac661a7e0f06f3beddcd2647621596b2c416ef274ca84da8a9681"
+    },
+    {
+      "path": "src/liner_stability/evidence.py",
+      "match": true,
+      "sha256": "55f6aa1709b15c16141c809a61e0a2c3ab525061bc9347e7b4d00e02698d7c04"
+    },
+    {
+      "path": "src/liner_stability/io.py",
+      "match": true,
+      "sha256": "1c0f09d919b79963f8b82e3ea9fca2c405ffd1f30ba35c885ac85f5d736d1df8"
+    },
+    {
+      "path": "src/liner_stability/llm.py",
+      "match": true,
+      "sha256": "55249d9d246f080698bf5603657c7966c9e3280c8bd9e01fae950ab1ba9a991a"
+    },
+    {
+      "path": "src/liner_stability/physics.py",
+      "match": true,
+      "sha256": "cf73eedb984080fbe70b3c6ef1a6fd40ca3c2823228086aae9b1d5c5c9859dc1"
+    },
+    {
+      "path": "src/liner_stability/py.typed",
+      "match": true,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "src/liner_stability/reporting.py",
+      "match": true,
+      "sha256": "bf1045bf246fac6a3b21662dd81b10056b4c9394bf80582458b1d3b1f901668e"
+    },
+    {
+      "path": "src/liner_stability/simulation.py",
+      "match": true,
+      "sha256": "8771a5da6e37ec094c08f66275813700037812034fbc988de233d76c59ded0f9"
+    },
+    {
+      "path": "src/liner_stability/workflow.py",
+      "match": true,
+      "sha256": "9d53073fadee41c370d758dde61b73e45cb06807d4b3338ebbea7f5bf9ac8335"
+    },
+    {
+      "path": "templates/EVALUATION_CARD_TEMPLATE.md",
+      "match": true,
+      "sha256": "55a6db272090e2e37a1cf68460e6b150e9685f732a05a527dc7997806a039fce"
+    },
+    {
+      "path": "templates/shot_record_template.json",
+      "match": true,
+      "sha256": "d6f63e9ee4d37718d39ab7b49e47535c8c50d45278d6e7e5e60c69091065f9f3"
+    },
+    {
+      "path": "tests/test_diagnostics_and_grading.py",
+      "match": true,
+      "sha256": "03a25fd86ff9f5893bcf2b0fa62b60f122dd8385d004877507a8fe9e9e66c6ee"
+    },
+    {
+      "path": "tests/test_workflow_and_assistant.py",
+      "match": true,
+      "sha256": "72658e3c479e0661654559c5bcd88f60fa0aad8896f9759c38fce914388bc71a"
+    },
+    {
+      "path": "liner-stability.bundle",
+      "match": true,
+      "sha256": "01b892053bba0a2efecee28a90921b9d6b97c630df6e8350bcb5337a03c6f610"
+    },
+    {
+      "path": "dist/liner_stability-0.2.0-py3-none-any.whl",
+      "match": true,
+      "sha256": "2bccdfb529405b2ee5a93c0f1aa0b85cbc71d216b9feb067c9da22f15a60b88f"
+    }
+  ]
+}

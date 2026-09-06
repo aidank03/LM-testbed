@@ -1,0 +1,10 @@
+WARNING: The directory '/Users/operator/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/project
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: liner-stability
+  Building wheel for liner-stability (pyproject.toml): started
+  Building wheel for liner-stability (pyproject.toml): finished with status 'done'
+  Created wheel for liner-stability: filename=liner_stability-0.3.0-py3-none-any.whl size=75429 sha256=63afb852fa825639bde4c90eef1ab818bd78eccdb9cf15005bf3cb55518a226f
+  Stored in directory: /private/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/pip-ephem-wheel-cache-zonoeybi/wheels/23/d4/65/3da2393fa05a4683a42d593d70c225088c3ffb80fb30715c63
+Successfully built liner-stability

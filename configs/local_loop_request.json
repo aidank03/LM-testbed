@@ -1,0 +1,16 @@
+{
+  "schema_version": "factor-request/1",
+  "question": "Complete this bounded scientific workflow. First submit one local prescribed-motion synthetic development job with 2 cases per scenario and seed 1701. Poll its status until terminal and collect its synthetic diagnostic evaluation. Then infer the supplied motion using the bounded method. Record an unresolved hypothesis update named optical-drift, supported by actual collected and inference artifact IDs, explaining why these synthetic results cannot determine this observation's true material motion or identify melting/ETI/MRTI. Finish with the supplied observation's decision, evidence IDs and a specific additional measurement. Do not treat the simulation as a real shot or as the truth for the supplied observation.",
+  "observation": {
+    "schema_version": "motion-observation/1",
+    "observation_id": "loop-demo-motion-001",
+    "apparent_displacement_m": -3e-8,
+    "noise_sigma_m": 1e-9,
+    "drift_bound_m": null,
+    "reference": null,
+    "window_s": [3e-8, 6e-8],
+    "resolution_m": 5e-9,
+    "source_kind": "synthetic_reconstructed",
+    "calibration_id": "loop-demo-unknown-drift"
+  }
+}

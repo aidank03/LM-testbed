@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_2f1ecfe2c06242d4a01d2eae86230256",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_2f1ecfe2c06242d4a01d2eae86230256",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_c782f49bf6902f8157338ff7"
+    ],
+    "explanation": "Using the reference, center = -4.1758847507673805e-09 - (-2.4465861965711105e-08) = 2.029e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.959963984540054*1.414e-09 + 1e-09 = 3.77e-09 m. Upper bound = 2.029e-08 + 3.77e-09 = 2.406e-08 m. Resolution T = -1e-08 m. Since upper (2.406e-08) > T (-1e-08), the interval does not rule out compression beyond resolution. Lower bound = 2.029e-08 - 3.77e-09 = 1.652e-08 m. Since lower (1.652e-08) > T (-1e-08), the entire interval is above T, meaning compression beyond resolution is supported.",
+    "next_step": "Report compression_supported with interval [1.652e-08, 2.406e-08] m."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1704,
+    "output_tokens": 394,
+    "elapsed_seconds": 10.40458016699995
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_32791934d0f7d527436181bc": {
+      "id": "artifact_32791934d0f7d527436181bc",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_32791934d0f7d527436181bc.json",
+      "sha256": "ed042d4b52cfa5da3a8067ff5d5ae2eb0803d60bc9d3a779e345fafc6f183a76"
+    },
+    "artifact_c782f49bf6902f8157338ff7": {
+      "id": "artifact_c782f49bf6902f8157338ff7",
+      "kind": "observation",
+      "path": "artifacts/artifact_c782f49bf6902f8157338ff7.json",
+      "sha256": "d9d17a4d8e76cc59ad1b4bf2ef75c70a82afa3eb4f8a68707360e905cf0ece1e"
+    },
+    "artifact_49615a9c7441241a5e4b3a84": {
+      "id": "artifact_49615a9c7441241a5e4b3a84",
+      "kind": "request",
+      "path": "artifacts/artifact_49615a9c7441241a5e4b3a84.json",
+      "sha256": "404369d133e653735ad4fcfb4f06a1df6d497581eb7d693237ce1a07e72bd925"
+    }
+  }
+}

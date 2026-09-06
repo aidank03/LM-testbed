@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_844992ea5a544c829a8a91790a014a24",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_844992ea5a544c829a8a91790a014a24",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_d5b1cc556fb429bd98998435"
+    ],
+    "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -4.176e-09 m with noise sigma 1e-09 m. Without a finite bound B to construct a confidence set h = 1.96*sigma + B, we cannot form an interval to test against T = -resolution_m (-1e-08 m). Thus, ambiguity is the correct classification.",
+    "next_step": "Acquire a reference measurement or obtain a non-null drift_bound_m to enable bounded inference."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1639,
+    "output_tokens": 191,
+    "elapsed_seconds": 6.34128258400051
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_7b7b53b3270f7f5f8bcd1820": {
+      "id": "artifact_7b7b53b3270f7f5f8bcd1820",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_7b7b53b3270f7f5f8bcd1820.json",
+      "sha256": "433d51db86be83eab26b98d6b3a55549f59dd7826410bac67ebac2c347d51048"
+    },
+    "artifact_d5b1cc556fb429bd98998435": {
+      "id": "artifact_d5b1cc556fb429bd98998435",
+      "kind": "observation",
+      "path": "artifacts/artifact_d5b1cc556fb429bd98998435.json",
+      "sha256": "f177f2cfc501aefaae1601967fe449be3d64a670ed12cf0ed43135b2a1aa4473"
+    },
+    "artifact_47999fdfa5089c10f9ec6249": {
+      "id": "artifact_47999fdfa5089c10f9ec6249",
+      "kind": "request",
+      "path": "artifacts/artifact_47999fdfa5089c10f9ec6249.json",
+      "sha256": "284a782a304f7c2458f4deb7fb0b29f6d5aad5d7482e91208a0f91b8e4655160"
+    }
+  }
+}

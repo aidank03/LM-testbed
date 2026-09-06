@@ -1,0 +1,797 @@
+{
+  "status": "SYNTHETIC DEVELOPMENT DEMO; no real data or LLM evaluated",
+  "simple": {
+    "all": {
+      "n_cases": 240,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 240,
+        "answer_rate": 1.0,
+        "mae": 159.94501416397563,
+        "rmse": 537.067721675738,
+        "coverage90": 0.7083333333333334,
+        "coverage95_wilson": [
+          0.6479068175996721,
+          0.7621957157580119
+        ],
+        "mean_width90": 542.7057260499317,
+        "mean_interval_score90": 835.1062990924455,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 240,
+        "answer_rate": 1.0,
+        "mae": 2.0131013916672655,
+        "rmse": 3.5609175840792853,
+        "coverage90": 0.7583333333333333,
+        "coverage95_wilson": [
+          0.70037769496489,
+          0.808149446398638
+        ],
+        "mean_width90": 6.400613644338242,
+        "mean_interval_score90": 11.319529457210406,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 240,
+        "answer_rate": 1.0,
+        "mae": 1.18466712001014,
+        "rmse": 2.4422158400822376,
+        "coverage90": 0.12916666666666668,
+        "coverage95_wilson": [
+          0.09250965860659055,
+          0.17750783201673226
+        ],
+        "mean_width90": 0.15050152139366207,
+        "mean_interval_score90": 22.379336502482282,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 40,
+        "n_positive": 200,
+        "false_positives": 1,
+        "true_positives": 200,
+        "false_positive_rate": 0.025,
+        "false_positive_rate95_wilson": [
+          0.0044268315026814095,
+          0.1288136896347409
+        ],
+        "sensitivity": 1.0
+      }
+    },
+    "blurred": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.2502359790593577,
+        "rmse": 0.3143279426026439,
+        "coverage90": 0.95,
+        "coverage95_wilson": [
+          0.8349612263085903,
+          0.9861793326138516
+        ],
+        "mean_width90": 1.161793217770398,
+        "mean_interval_score90": 1.376281636454523,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.6550283261372074,
+        "rmse": 0.7706847530703336,
+        "coverage90": 0.825,
+        "coverage95_wilson": [
+          0.6805000966821229,
+          0.9125458625396408
+        ],
+        "mean_width90": 2.3510230001726145,
+        "mean_interval_score90": 3.3314309881726603,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 5.652312800646299,
+        "rmse": 5.936748473260318,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.08762160119728664
+        ],
+        "mean_width90": 0.15455303573828943,
+        "mean_interval_score90": 111.65527869128138,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "no_structure": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.3598054323591951,
+        "rmse": 0.4270037534025875,
+        "coverage90": 0.825,
+        "coverage95_wilson": [
+          0.6805000966821229,
+          0.9125458625396408
+        ],
+        "mean_width90": 1.1658056320302144,
+        "mean_interval_score90": 1.6747310285446673,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.6991087864346772,
+        "rmse": 0.8441822450809767,
+        "coverage90": 0.825,
+        "coverage95_wilson": [
+          0.6805000966821229,
+          0.9125458625396408
+        ],
+        "mean_width90": 2.559786798471248,
+        "mean_interval_score90": 3.297799041659688,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.059107318873733904,
+        "rmse": 0.06723181362549094,
+        "coverage90": 0.775,
+        "coverage95_wilson": [
+          0.6249690325768998,
+          0.8768390867645927
+        ],
+        "mean_width90": 0.1302439448514524,
+        "mean_interval_score90": 0.25299764274628406,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 40,
+        "n_positive": 0,
+        "false_positives": 1,
+        "true_positives": 0,
+        "false_positive_rate": 0.025,
+        "false_positive_rate95_wilson": [
+          0.0044268315026814095,
+          0.1288136896347409
+        ],
+        "sensitivity": null
+      }
+    },
+    "nominal": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.23498879621428542,
+        "rmse": 0.2967481477648902,
+        "coverage90": 0.925,
+        "coverage95_wilson": [
+          0.8013576647568946,
+          0.9741639742254119
+        ],
+        "mean_width90": 1.15201625522343,
+        "mean_interval_score90": 1.3351969440518716,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.6643227460825087,
+        "rmse": 0.8145755471186563,
+        "coverage90": 0.8,
+        "coverage95_wilson": [
+          0.652426936536005,
+          0.895000102745623
+        ],
+        "mean_width90": 2.2981658638054347,
+        "mean_interval_score90": 4.0529154024887095,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.3427203139402559,
+        "rmse": 0.3547729411163742,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.08762160119728664
+        ],
+        "mean_width90": 0.15455103537969092,
+        "mean_interval_score90": 5.4634469603879,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "omitted_optical_drift": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 3.417406397309635,
+        "rmse": 3.457373156967565,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.08762160119728664
+        ],
+        "mean_width90": 1.1659169431670413,
+        "mean_interval_score90": 57.85487545768932,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.99509819899161,
+        "rmse": 1.1647036396432884,
+        "coverage90": 0.7,
+        "coverage95_wilson": [
+          0.5456998118185507,
+          0.8192515477025347
+        ],
+        "mean_width90": 2.4024192100893647,
+        "mean_interval_score90": 5.785076365168559,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.36228304006685724,
+        "rmse": 0.37749028217082126,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.08762160119728664
+        ],
+        "mean_width90": 0.1545531687881502,
+        "mean_interval_score90": 5.854682282243793,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "pdv_dropout": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 955.0414347906508,
+        "rmse": 1315.537124034234,
+        "coverage90": 0.75,
+        "coverage95_wilson": [
+          0.5980603857923197,
+          0.858128813609037
+        ],
+        "mean_width90": 3250.4094410238113,
+        "mean_interval_score90": 4946.714415829885,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 6.997639895050933,
+        "rmse": 8.130376047443399,
+        "coverage90": 0.975,
+        "coverage95_wilson": [
+          0.8711863103652591,
+          0.9955731684973186
+        ],
+        "mean_width90": 25.957463715281694,
+        "mean_interval_score90": 27.37485737161329,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.3275711366264086,
+        "rmse": 0.35050077100930926,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.08762160119728664
+        ],
+        "mean_width90": 0.1545557330120631,
+        "mean_interval_score90": 5.160421135419604,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "timing_jitter": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.3662135882606573,
+        "rmse": 0.422682709365702,
+        "coverage90": 0.8,
+        "coverage95_wilson": [
+          0.652426936536005,
+          0.895000102745623
+        ],
+        "mean_width90": 1.1793832275881226,
+        "mean_interval_score90": 1.6822936580468082,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 2.0674103973066567,
+        "rmse": 2.5789771284565433,
+        "coverage90": 0.425,
+        "coverage95_wilson": [
+          0.28509392559950375,
+          0.5780493145800892
+        ],
+        "mean_width90": 2.8348232782090923,
+        "mean_interval_score90": 24.07509757415952,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.36400810990728505,
+        "rmse": 0.381828708205074,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.08762160119728664
+        ],
+        "mean_width90": 0.15455221059232632,
+        "mean_interval_score90": 5.889192302814765,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    }
+  },
+  "calibrated": {
+    "all": {
+      "n_cases": 240,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 200,
+        "answer_rate": 0.8333333333333334,
+        "mae": 0.925730038640626,
+        "rmse": 1.581220006415249,
+        "coverage90": 0.725,
+        "coverage95_wilson": [
+          0.6593166064233035,
+          0.7822029967069265
+        ],
+        "mean_width90": 1.2165669353519928,
+        "mean_interval_score90": 12.70705808080389,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 200,
+        "answer_rate": 0.8333333333333334,
+        "mae": 1.016193690990532,
+        "rmse": 1.412642174847472,
+        "coverage90": 0.83,
+        "coverage95_wilson": [
+          0.7718411637168737,
+          0.8757209208741302
+        ],
+        "mean_width90": 3.730344689294634,
+        "mean_interval_score90": 5.279052099584208,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 240,
+        "answer_rate": 1.0,
+        "mae": 0.13233204427712844,
+        "rmse": 0.27217851623833467,
+        "coverage90": 0.8833333333333333,
+        "coverage95_wilson": [
+          0.8365512512191454,
+          0.9180374101589929
+        ],
+        "mean_width90": 0.5007601540655001,
+        "mean_interval_score90": 0.6171177901599727,
+        "conservative_bound_count": 39
+      },
+      "detection": {
+        "n_null": 40,
+        "n_positive": 200,
+        "false_positives": 1,
+        "true_positives": 200,
+        "false_positive_rate": 0.025,
+        "false_positive_rate95_wilson": [
+          0.0044268315026814095,
+          0.1288136896347409
+        ],
+        "sensitivity": 1.0
+      }
+    },
+    "blurred": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.2502359790593577,
+        "rmse": 0.3143279426026439,
+        "coverage90": 0.95,
+        "coverage95_wilson": [
+          0.8349612263085903,
+          0.9861793326138516
+        ],
+        "mean_width90": 1.2200685597250702,
+        "mean_interval_score90": 1.4138587474840287,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.6550283261372074,
+        "rmse": 0.7706847530703336,
+        "coverage90": 0.85,
+        "coverage95_wilson": [
+          0.709276756335103,
+          0.9293881228267964
+        ],
+        "mean_width90": 2.4098726344230865,
+        "mean_interval_score90": 3.271258568926038,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.4971799979329109,
+        "rmse": 0.6469237484657795,
+        "coverage90": 0.9,
+        "coverage95_wilson": [
+          0.7694822477247771,
+          0.9604204713173936
+        ],
+        "mean_width90": 1.9262061920137357,
+        "mean_interval_score90": 2.3604101076925077,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "no_structure": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.3598054323591951,
+        "rmse": 0.4270037534025875,
+        "coverage90": 0.875,
+        "coverage95_wilson": [
+          0.738878801611489,
+          0.945404997490546
+        ],
+        "mean_width90": 1.216038604303869,
+        "mean_interval_score90": 1.6539542675163106,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.6991087864346772,
+        "rmse": 0.8441822450809767,
+        "coverage90": 0.85,
+        "coverage95_wilson": [
+          0.709276756335103,
+          0.9293881228267964
+        ],
+        "mean_width90": 2.6152886482365814,
+        "mean_interval_score90": 3.242962678636629,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.061727345921116394,
+        "rmse": 0.07021197197981685,
+        "coverage90": 0.975,
+        "coverage95_wilson": [
+          0.8711863103652591,
+          0.9955731684973186
+        ],
+        "mean_width90": 0.16399287924272712,
+        "mean_interval_score90": 0.21218851250571102,
+        "conservative_bound_count": 39
+      },
+      "detection": {
+        "n_null": 40,
+        "n_positive": 0,
+        "false_positives": 1,
+        "true_positives": 0,
+        "false_positive_rate": 0.025,
+        "false_positive_rate95_wilson": [
+          0.0044268315026814095,
+          0.1288136896347409
+        ],
+        "sensitivity": null
+      }
+    },
+    "nominal": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.23498879621428542,
+        "rmse": 0.2967481477648902,
+        "coverage90": 0.925,
+        "coverage95_wilson": [
+          0.8013576647568946,
+          0.9741639742254119
+        ],
+        "mean_width90": 1.20392524845952,
+        "mean_interval_score90": 1.3555156706696256,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.6643227460825087,
+        "rmse": 0.8145755471186563,
+        "coverage90": 0.825,
+        "coverage95_wilson": [
+          0.6805000966821229,
+          0.9125458625396408
+        ],
+        "mean_width90": 2.361033643586307,
+        "mean_interval_score90": 3.9645680513070687,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.059084569856936886,
+        "rmse": 0.0718468047770612,
+        "coverage90": 0.825,
+        "coverage95_wilson": [
+          0.6805000966821229,
+          0.9125458625396408
+        ],
+        "mean_width90": 0.22676778370338221,
+        "mean_interval_score90": 0.2719014708878905,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "omitted_optical_drift": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 3.417406397309635,
+        "rmse": 3.457373156967565,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.08762160119728664
+        ],
+        "mean_width90": 1.208985280083746,
+        "mean_interval_score90": 57.46726042543897,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.99509819899161,
+        "rmse": 1.1647036396432884,
+        "coverage90": 0.7,
+        "coverage95_wilson": [
+          0.5456998118185507,
+          0.8192515477025347
+        ],
+        "mean_width90": 2.4648257529665574,
+        "mean_interval_score90": 5.596965428457099,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.0611872031977309,
+        "rmse": 0.07616882826733806,
+        "coverage90": 0.825,
+        "coverage95_wilson": [
+          0.6805000966821229,
+          0.9125458625396408
+        ],
+        "mean_width90": 0.23041292008410214,
+        "mean_interval_score90": 0.3048834788779167,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "pdv_dropout": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 0,
+        "answer_rate": 0.0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 0,
+        "answer_rate": 0.0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.06312400581666021,
+        "rmse": 0.07435549390675082,
+        "coverage90": 0.875,
+        "coverage95_wilson": [
+          0.738878801611489,
+          0.945404997490546
+        ],
+        "mean_width90": 0.22213104095359118,
+        "mean_interval_score90": 0.24875037624610466,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    },
+    "timing_jitter": {
+      "n_cases": 40,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.3662135882606573,
+        "rmse": 0.422682709365702,
+        "coverage90": 0.875,
+        "coverage95_wilson": [
+          0.738878801611489,
+          0.945404997490546
+        ],
+        "mean_width90": 1.2338169841877593,
+        "mean_interval_score90": 1.644701292910509,
+        "conservative_bound_count": 0
+      },
+      "turnaround_ns": {
+        "unit": "ns",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 2.0674103973066567,
+        "rmse": 2.5789771284565433,
+        "coverage90": 0.925,
+        "coverage95_wilson": [
+          0.8013576647568946,
+          0.9741639742254119
+        ],
+        "mean_width90": 8.800702767260637,
+        "mean_interval_score90": 10.319505770594207,
+        "conservative_bound_count": 0
+      },
+      "mode_amplitude_um": {
+        "unit": "um",
+        "n_answered": 40,
+        "answer_rate": 1.0,
+        "mae": 0.051689142937415264,
+        "rmse": 0.0674864256090772,
+        "coverage90": 0.9,
+        "coverage95_wilson": [
+          0.7694822477247771,
+          0.9604204713173936
+        ],
+        "mean_width90": 0.23505010839546267,
+        "mean_interval_score90": 0.304572794749706,
+        "conservative_bound_count": 0
+      },
+      "detection": {
+        "n_null": 0,
+        "n_positive": 40,
+        "false_positives": 0,
+        "true_positives": 40,
+        "false_positive_rate": null,
+        "false_positive_rate95_wilson": null,
+        "sensitivity": 1.0
+      }
+    }
+  }
+}

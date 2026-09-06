@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_e2f403a497534f23a6d5037786711211",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_e2f403a497534f23a6d5037786711211",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_0e41442a3836eea53853aace"
+    ],
+    "explanation": "The observation shows an apparent displacement of -6.16e-09 m, while the reference displacement is -2.41e-08 m. The difference (residual) is approximately 1.79e-08 m in magnitude. This residual exceeds the stated resolution limit of 1e-08 m and the noise bound of 1e-09 m, indicating that the fixed-window measurement cannot resolve the displacement required to support compression beyond the stated resolution.",
+    "next_step": "Request a higher-resolution calibration or a different observation window to reduce the residual below the resolution threshold."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 4.1598501670005135
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_5bac5ea0115809d2e5b8bf2d": {
+      "id": "artifact_5bac5ea0115809d2e5b8bf2d",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_5bac5ea0115809d2e5b8bf2d.json",
+      "sha256": "8cde4382f9c798852640521255dca13d8ccc9c8e2fc9a8c296e5e26d3c1572c9"
+    },
+    "artifact_0e41442a3836eea53853aace": {
+      "id": "artifact_0e41442a3836eea53853aace",
+      "kind": "observation",
+      "path": "artifacts/artifact_0e41442a3836eea53853aace.json",
+      "sha256": "f81648d5168c03694739c654580a407892d0a3ec982865b9b0ff0c72ef1bda93"
+    },
+    "artifact_302c73219f574072c62e16f6": {
+      "id": "artifact_302c73219f574072c62e16f6",
+      "kind": "request",
+      "path": "artifacts/artifact_302c73219f574072c62e16f6.json",
+      "sha256": "71fa448420ea2b06670785b4c8260136d9b5a0f58315684922429c5baa50c67f"
+    }
+  }
+}

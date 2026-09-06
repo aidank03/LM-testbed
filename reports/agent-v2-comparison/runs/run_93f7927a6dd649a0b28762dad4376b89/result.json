@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_93f7927a6dd649a0b28762dad4376b89",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_93f7927a6dd649a0b28762dad4376b89",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_094ac6f0b6f438c65c6ba821"
+    ],
+    "explanation": "Using the reference, center = 3.604e-08 - 8.969e-08 = -5.365e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. The 95% interval half-width h = 1.96*1.414e-09 + 1e-09 = 3.77e-09 m. Interval: [-5.742e-08, -4.988e-08] m. Resolution T = -1e-08 m. Since upper (-4.988e-08) <= T, compression is supported. However, the question asks for signed radial displacement x where negative is inward (compression). The interval is entirely negative, meaning inward motion is supported. Wait, re-reading rule 5: 'Choose compression_supported only if upper <= T'. Here upper = -4.988e-08 and T = -1e-08. Since -4.988e-08 < -1e-08, the condition holds. Thus compression is supported.",
+    "next_step": "Report compression_supported with interval [-5.742e-08, -4.988e-08] m."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1703,
+    "output_tokens": 369,
+    "elapsed_seconds": 9.841492165999625
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_3675f9ef2752d17e853f81f8": {
+      "id": "artifact_3675f9ef2752d17e853f81f8",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_3675f9ef2752d17e853f81f8.json",
+      "sha256": "214fb087c348c101607609b9144ff2b697e83774cff0ff6423fe3f89778ff690"
+    },
+    "artifact_094ac6f0b6f438c65c6ba821": {
+      "id": "artifact_094ac6f0b6f438c65c6ba821",
+      "kind": "observation",
+      "path": "artifacts/artifact_094ac6f0b6f438c65c6ba821.json",
+      "sha256": "3af805838051feee4124eadd4fba45445e84f08bbfb5b96b597bb132e957d903"
+    },
+    "artifact_f242cc6deec8eb5377583c2c": {
+      "id": "artifact_f242cc6deec8eb5377583c2c",
+      "kind": "request",
+      "path": "artifacts/artifact_f242cc6deec8eb5377583c2c.json",
+      "sha256": "a1fba364217a93289302eb7332ee410445de239669a4eaac4c41e7c3f89b2793"
+    }
+  }
+}

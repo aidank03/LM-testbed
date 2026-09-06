@@ -1,0 +1,12 @@
+{"case_id": "demo_1701", "scenario": "nominal", "compression_nm": 34.835246063632866, "turnaround_ns": 43.05633110715126, "mode_amplitude_um": 4.550881378082078, "has_structure": true}
+{"case_id": "demo_1702", "scenario": "nominal", "compression_nm": 39.48243835220904, "turnaround_ns": 40.412931640612925, "mode_amplitude_um": 9.910272061732549, "has_structure": true}
+{"case_id": "demo_101701", "scenario": "blurred", "compression_nm": 40.56205869288041, "turnaround_ns": 44.10062676525092, "mode_amplitude_um": 11.907949912950588, "has_structure": true}
+{"case_id": "demo_101702", "scenario": "blurred", "compression_nm": 32.17510792614375, "turnaround_ns": 46.827858595943596, "mode_amplitude_um": 7.974099889213376, "has_structure": true}
+{"case_id": "demo_201701", "scenario": "pdv_dropout", "compression_nm": 40.28363020416234, "turnaround_ns": 46.745674835360276, "mode_amplitude_um": 10.17484830220053, "has_structure": true}
+{"case_id": "demo_201702", "scenario": "pdv_dropout", "compression_nm": 31.622083962772635, "turnaround_ns": 41.82004715036523, "mode_amplitude_um": 11.851018662923105, "has_structure": true}
+{"case_id": "demo_301701", "scenario": "timing_jitter", "compression_nm": 29.772271105345013, "turnaround_ns": 44.820273753039096, "mode_amplitude_um": 9.652599358075896, "has_structure": true}
+{"case_id": "demo_301702", "scenario": "timing_jitter", "compression_nm": 43.105823589173816, "turnaround_ns": 49.30327755273501, "mode_amplitude_um": 7.868525913778052, "has_structure": true}
+{"case_id": "demo_401701", "scenario": "omitted_optical_drift", "compression_nm": 44.69361762810056, "turnaround_ns": 41.74244052059664, "mode_amplitude_um": 11.7818885491588, "has_structure": true}
+{"case_id": "demo_401702", "scenario": "omitted_optical_drift", "compression_nm": 28.298058309662768, "turnaround_ns": 45.63486248209243, "mode_amplitude_um": 5.265326623884448, "has_structure": true}
+{"case_id": "demo_501701", "scenario": "no_structure", "compression_nm": 31.144984707105166, "turnaround_ns": 46.69313276003638, "mode_amplitude_um": 0.0, "has_structure": false}
+{"case_id": "demo_501702", "scenario": "no_structure", "compression_nm": 35.38207107553363, "turnaround_ns": 47.905852318360814, "mode_amplitude_um": 0.0, "has_structure": false}

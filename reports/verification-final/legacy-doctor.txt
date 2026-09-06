@@ -1,0 +1,12 @@
+{
+  "version": "0.3.0",
+  "python": "3.12.14",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.11.1"
+  },
+  "openai_api_key_configured": false,
+  "live_model_validation": "not established by doctor",
+  "core_workflow": "offline"
+}

@@ -1,0 +1,88 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_243fc220e17f4bfda009c84e77483c62",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_243fc220e17f4bfda009c84e77483c62",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_5d536dceb56edd63b22a244d",
+      "artifact_76fa535fea06f0e0dd6fa619"
+    ],
+    "explanation": "The conditional interval [2.4636e-8, 2.8556e-8] meters lies entirely above the resolution threshold of 1e-8 m, meaning no inward (compression) displacement is supported within the fixed window.",
+    "next_step": "Validate calibration and noise assumptions independently."
+  },
+  "numerical_result": {
+    "schema_version": "motion-result/1",
+    "task": "motion.fixed_window/1",
+    "method": "bounded",
+    "information_track": "signal_only",
+    "unit": "m",
+    "window_s": [
+      0.0,
+      1e-07
+    ],
+    "resolution_m": 1e-08,
+    "point_m": 2.659600038261068e-08,
+    "interval_m": [
+      2.4636036398070626e-08,
+      2.8555964367150735e-08
+    ],
+    "nominal_noise_coverage": 0.95,
+    "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+    "inference": "estimated_conditional",
+    "decision": "compression_not_supported",
+    "assumptions": [
+      "Known unit gain and fixed-window reconstruction.",
+      "Known zero-mean Gaussian measurement noise.",
+      "Supplied drift bound covers all equivalent non-motion displacement."
+    ],
+    "limitations": [
+      "Not validated on independent real data.",
+      "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+      "No phase, instability mechanism, or causal inference."
+    ],
+    "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+    "reason": "Decision uses the entire conditional interval against the stated resolution."
+  },
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 3787,
+    "output_tokens": 191,
+    "elapsed_seconds": 5.249006500000178
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_860978bcc811785f6f722ead": {
+      "id": "artifact_860978bcc811785f6f722ead",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_860978bcc811785f6f722ead.json",
+      "sha256": "4e8a29874fb161ec7474f4c254f15d2f7f47d7fb0f13deef1b868632ebe9401e"
+    },
+    "artifact_5d536dceb56edd63b22a244d": {
+      "id": "artifact_5d536dceb56edd63b22a244d",
+      "kind": "observation",
+      "path": "artifacts/artifact_5d536dceb56edd63b22a244d.json",
+      "sha256": "4cf461f01260b7ebc4642b58f6fd968b20dec06e5ac67ccbbe9c2927ad174c50"
+    },
+    "artifact_71ec6aac9537b8c909d4313f": {
+      "id": "artifact_71ec6aac9537b8c909d4313f",
+      "kind": "request",
+      "path": "artifacts/artifact_71ec6aac9537b8c909d4313f.json",
+      "sha256": "bfbeaeaceb8285e5fee0d39086e72d04856f19556eebcd123d0cd948cc921aca"
+    },
+    "artifact_76fa535fea06f0e0dd6fa619": {
+      "id": "artifact_76fa535fea06f0e0dd6fa619",
+      "kind": "infer_motion",
+      "path": "artifacts/artifact_76fa535fea06f0e0dd6fa619.json",
+      "sha256": "f1c10fc9904a85a0d057ebd1a43dcf5986ff91c2fcd86c6a82a1fb9347988f5b"
+    }
+  }
+}

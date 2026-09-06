@@ -1,0 +1,164 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:57:36.043851+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_b92ce52133aa3726e3096362"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "597ed818c7cfcd523aa11d9f4bfc608f53ad0b44afc23118ffaf71ffc25c291e"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:57:38.226861+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.1827416670003004,
+        "usage": {
+          "input_tokens": 1197,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 52.2522739787695,
+          "time_to_first_token_seconds": 1.94
+        },
+        "request_sha256": "bcee334ae153b1804165e825f7bc0be634fa2fdb92d7e7ac039e68c027c654f7",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "597ed818c7cfcd523aa11d9f4bfc608f53ad0b44afc23118ffaf71ffc25c291e",
+    "hash": "66f41be2d25e66d5aee90317f7abf971d5a3ec7bbd091d013fe07193f4e282af"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:57:38.227842+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_2c3565144f01d4274c66ce8d",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "fd22464cadbc43876cfe0ce6",
+        "apparent_displacement_m": -6.160838054352691e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.030383664919766e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "66f41be2d25e66d5aee90317f7abf971d5a3ec7bbd091d013fe07193f4e282af",
+    "hash": "930bf5471604887247d53926ac8eb3dcf12ad3bad18ae744714a5694c90d87ba"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:57:42.971905+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_b92ce52133aa3726e3096362"
+        ],
+        "explanation": "The observation shows an apparent displacement of -6.16e-09 m against a reference displacement of 3.03e-08 m within a window of 1e-07 s. The magnitude of the apparent displacement is approximately 20% of the reference, which is inconsistent with the expected behavior if compression beyond the stated resolution were supported (which would imply negligible or zero apparent displacement relative to the reference). Therefore, the data does not support compression beyond the stated resolution.",
+        "next_step": "No further measurements are required; the current evidence is sufficient to conclude that compression beyond the stated resolution is not supported."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 4.743670374999965,
+        "usage": {
+          "input_tokens": 1448,
+          "total_output_tokens": 184,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 52.42759834615279,
+          "time_to_first_token_seconds": 1.262
+        },
+        "request_sha256": "0d33102c2bbc897f515dcc08b5117eb7924ed81a7c920c35abce1f302e047a1f",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "930bf5471604887247d53926ac8eb3dcf12ad3bad18ae744714a5694c90d87ba",
+    "hash": "e7c98b8cbcdc1911b6c038f72a3a902d1131ba20b11dfabd33d29073471c10fb"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:57:42.972396+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_b92ce52133aa3726e3096362"
+      ],
+      "explanation": "The observation shows an apparent displacement of -6.16e-09 m against a reference displacement of 3.03e-08 m within a window of 1e-07 s. The magnitude of the apparent displacement is approximately 20% of the reference, which is inconsistent with the expected behavior if compression beyond the stated resolution were supported (which would imply negligible or zero apparent displacement relative to the reference). Therefore, the data does not support compression beyond the stated resolution.",
+      "next_step": "No further measurements are required; the current evidence is sufficient to conclude that compression beyond the stated resolution is not supported."
+    },
+    "previous_hash": "e7c98b8cbcdc1911b6c038f72a3a902d1131ba20b11dfabd33d29073471c10fb",
+    "hash": "515cdf41ef2a379a0bcdde81dd5e24157e0eac0613349dc9c30287f5d1a2a093"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:57:42.972678+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 6.930649625000115
+      },
+      "cleanup": []
+    },
+    "previous_hash": "515cdf41ef2a379a0bcdde81dd5e24157e0eac0613349dc9c30287f5d1a2a093",
+    "hash": "1cf823ba6337c63c1a17e2e81a6dab3c7db2b1fe443735d7bcca781e49f6cc72"
+  }
+]

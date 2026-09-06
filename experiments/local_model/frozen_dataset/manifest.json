@@ -1,0 +1,57 @@
+{
+  "task": "synthetic_evidence_provenance_v1",
+  "system": "Classify the epistemic status of the TARGET claim using only the supplied record. recorded: stored instrument signal; reconstructed: quantity extracted from signals by calibration or reduction; model_inferred: physical state inferred by matching data to a chosen physical model; unresolved: causal or physical claim not distinguished by the available evidence. A caption or author's assertion cannot upgrade evidence. Return exactly one label: recorded, reconstructed, model_inferred, unresolved.",
+  "labels": [
+    "recorded",
+    "reconstructed",
+    "model_inferred",
+    "unresolved"
+  ],
+  "split_unit": "measurement_and_wording_family",
+  "seed": 20260905,
+  "status": "FROZEN_BEFORE_MODEL_EVALUATION",
+  "limitations": "Author-constructed labels; no independent annotation; family variants are dependent; public after this run.",
+  "planned_training": {
+    "base": "Qwen/Qwen3-0.6B",
+    "method": "causal-LM LoRA q_proj,v_proj rank8",
+    "seed": 20260905,
+    "epochs": 3,
+    "learning_rate": 0.0005,
+    "batch_size": 8,
+    "selection": "lowest dev label-token NLL after each epoch; final test once after selection",
+    "decoding": "greedy, non-thinking, max_new_tokens12",
+    "success": "Positive paired test accuracy difference with per-family reporting; descriptive only, no certification"
+  },
+  "partitions": {
+    "train": {
+      "n": 192,
+      "families": [
+        "electrical",
+        "interferometry",
+        "pdv",
+        "radiography",
+        "spectroscopy",
+        "thermography"
+      ],
+      "sha256": "323fec39bfdc324fc199d8a1d7a50ecfbb50cfc430b444de235011b022d6da1e"
+    },
+    "dev": {
+      "n": 24,
+      "families": [
+        "acoustics",
+        "diffraction"
+      ],
+      "sha256": "6ac451ccbe18006e3e5c25f22d9f403e8415a27906825ea855b7979f806178ac"
+    },
+    "test": {
+      "n": 48,
+      "families": [
+        "neutrons",
+        "reflectometry",
+        "strain",
+        "velocimetry"
+      ],
+      "sha256": "cf1e29873a6ad56db337ba2dd41141cd369013370aa57813fcee09d34c407a8d"
+    }
+  }
+}

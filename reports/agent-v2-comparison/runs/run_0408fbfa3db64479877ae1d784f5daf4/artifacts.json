@@ -1,0 +1,26 @@
+{
+  "artifact_23dfe0d2a665e64f163e4050": {
+    "id": "artifact_23dfe0d2a665e64f163e4050",
+    "kind": "run_manifest",
+    "path": "artifacts/artifact_23dfe0d2a665e64f163e4050.json",
+    "sha256": "939e59be262144809c7028b9c06d96902ea98310103efa733e8c4440d71a054f"
+  },
+  "artifact_34497760ac1d86e7864520bb": {
+    "id": "artifact_34497760ac1d86e7864520bb",
+    "kind": "observation",
+    "path": "artifacts/artifact_34497760ac1d86e7864520bb.json",
+    "sha256": "46f26fb9ac8093161c15d887ab7c5d20a55580efff8064c28bfe566434525632"
+  },
+  "artifact_3a9f1c72799beb6da144585b": {
+    "id": "artifact_3a9f1c72799beb6da144585b",
+    "kind": "request",
+    "path": "artifacts/artifact_3a9f1c72799beb6da144585b.json",
+    "sha256": "1bfe48110eea41d3c0aa69a1fecdef7c37ed65140d4edfa874043ac2e0940717"
+  },
+  "artifact_04c93a0848138abf62f9bf00": {
+    "id": "artifact_04c93a0848138abf62f9bf00",
+    "kind": "infer_motion",
+    "path": "artifacts/artifact_04c93a0848138abf62f9bf00.json",
+    "sha256": "73bef4d739a17c24098b0b85ed1ce4e19922938dde59dbb4d7400e20a5de233a"
+  }
+}

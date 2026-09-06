@@ -1,0 +1,440 @@
+{
+  "checks_passed": true,
+  "commands": [
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/bin/python",
+        "-W",
+        "error::ResourceWarning",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "cwd": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor",
+      "exit_code": 0,
+      "label": "unittest"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/bin/python",
+        "-m",
+        "pip",
+        "freeze",
+        "--all"
+      ],
+      "cwd": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor",
+      "exit_code": 0,
+      "label": "requirements-freeze"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-index",
+        "--no-deps",
+        "--no-build-isolation",
+        "--wheel-dir",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/wheels",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/project"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "wheel-build"
+    },
+    {
+      "argv": [
+        "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+        "-m",
+        "venv",
+        "--system-site-packages",
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "venv-create"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-index",
+        "--no-deps",
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/dist/liner_stability-0.3.0-py3-none-any.whl"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "wheel-install"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/python",
+        "-m",
+        "pip",
+        "freeze",
+        "--all"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "core-requirements-freeze"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/python",
+        "-I",
+        "-c",
+        "import factor,liner_stability,importlib.metadata as m,json,sys,pathlib\nroot=pathlib.Path(sys.argv[1]).resolve()\nassert factor.__version__==liner_stability.__version__==m.version(\"liner-stability\")==\"0.3.0\"\nassert pathlib.Path(factor.__file__).is_relative_to(root)\nassert pathlib.Path(liner_stability.__file__).is_relative_to(root)\nprint(json.dumps({\"factor\":factor.__file__,\"liner_stability\":liner_stability.__file__,\"version\":m.version(\"liner-stability\"),\"dependencies\":{n:m.version(n) for n in (\"numpy\",\"scipy\",\"matplotlib\")},\"sys_path\":sys.path},indent=2))",
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "installed-package-origins"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/factor",
+        "doctor"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "factor-doctor"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/liner-stability",
+        "--version"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "legacy-version"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/liner-stability",
+        "doctor"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "legacy-doctor"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/factor",
+        "run",
+        "--request",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/project/configs/motion_request.json",
+        "--out",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/request-run"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "conventional-run"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/factor",
+        "suite",
+        "--out",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/suite",
+        "--n",
+        "2"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "v2-suite"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/factor",
+        "evaluate",
+        "--provider",
+        "conventional",
+        "--suite",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/suite",
+        "--out",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/evaluation"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "v2-evaluate-conventional"
+    },
+    {
+      "argv": [
+        "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/bin/python",
+        "-I",
+        "-c",
+        "from pathlib import Path\nfrom unittest.mock import patch\nimport json,sys\nfrom factor.cli import main\nsuite,out=map(Path,sys.argv[1:])\npath=suite/\"public_cases.json\"\npublic=json.loads(path.read_text())\nassert public[\"schema_version\"]==\"factor-cases/2\"\npublic[\"contract_hash\"]=\"0\"*64\npath.write_text(json.dumps(public))\nwith patch(\"factor.cli.provider\",side_effect=AssertionError(\"provider must not be invoked\")) as provider:\n    result=main([\"evaluate\",\"--provider\",\"local\",\"--model\",\"never-contacted\",\"--suite\",str(suite),\"--out\",str(out)])\n    assert result==2,result\n    provider.assert_not_called()\nassert not out.exists()\nprint(json.dumps({\"exit_code\":result,\"provider_factory_calls\":0,\"model_calls\":0,\"output_created\":False}))",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/suite",
+        "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t/must-not-exist"
+      ],
+      "cwd": "/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-final-wheel-gwg2zj3t",
+      "exit_code": 0,
+      "label": "corrupt-contract-preflight"
+    }
+  ],
+  "core_environment": {
+    "configuration": "home = /Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin\ninclude-system-site-packages = true\nversion = 3.12.14\nexecutable = /Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3.12\ncommand = /Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m venv --system-site-packages /Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv\n",
+    "copied_dependencies": [
+      {
+        "name": "numpy",
+        "source_site_packages": "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages",
+        "version": "2.3.5"
+      },
+      {
+        "name": "scipy",
+        "source_site_packages": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages",
+        "version": "1.17.0"
+      },
+      {
+        "name": "matplotlib",
+        "source_site_packages": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages",
+        "version": "3.11.1"
+      },
+      {
+        "name": "contourpy",
+        "source_site_packages": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages",
+        "version": "1.3.3"
+      },
+      {
+        "name": "cycler",
+        "source_site_packages": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages",
+        "version": "0.12.1"
+      },
+      {
+        "name": "fonttools",
+        "source_site_packages": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages",
+        "version": "4.64.0"
+      },
+      {
+        "name": "kiwisolver",
+        "source_site_packages": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages",
+        "version": "1.5.1"
+      },
+      {
+        "name": "packaging",
+        "source_site_packages": "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages",
+        "version": "26.3"
+      },
+      {
+        "name": "pillow",
+        "source_site_packages": "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages",
+        "version": "12.3.0"
+      },
+      {
+        "name": "pyparsing",
+        "source_site_packages": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages",
+        "version": "3.3.2"
+      },
+      {
+        "name": "python-dateutil",
+        "source_site_packages": "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages",
+        "version": "2.9.0.post0"
+      },
+      {
+        "name": "six",
+        "source_site_packages": "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages",
+        "version": "1.17.0"
+      }
+    ],
+    "note": "Uses bundled runtime system-site-packages plus local copies of the verified numerical dependency closure. Historical numerical environment is unchanged. Dependency command-line scripts outside site-packages were not copied.",
+    "numerical_dependency_source": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/bin/python",
+    "path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv"
+  },
+  "elapsed_seconds": 30.101021041000422,
+  "finished_at_utc": "2026-09-05T21:16:02.766447+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "python_executable": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/bin/python",
+  "scope": "Implementation and fixture tests, actual local subprocess tests, offline installed-wheel checks; no model or remote HPC calls.",
+  "sha256_after": {
+    "pyproject.toml": "2a5fe28ecbe75b2954cdac6e764e9441ea47fbd51dfb8cef712ed12a1ae07e56",
+    "src/factor/__init__.py": "acab8d3f72b448d1a9d93eea1edfd60645f0394229d8975356f9db831cf0ee32",
+    "src/factor/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/factor/artifacts.py": "842fc7ef1931c2f332c0e6186ff62a6c53aa26e8f64cbad7f2a721b721c18baf",
+    "src/factor/cli.py": "f5f977802ed1745829084e28e5c6b71b4b1ca436863eb9b78bf27d0e638eac47",
+    "src/factor/contracts.py": "b2f93c8f0954e5ea5c8cfff46f99b81403285e50203771d80ea2a1c3a026fcbc",
+    "src/factor/evaluation.py": "96d36d267c74b275853decc25f7cc693f8b1bb63e3e7017d63469a1ce500d586",
+    "src/factor/evaluation_v2.py": "8c6f35a634ae66b427c8b4267ee3c5fc8cfea565466b13a8d27980cb540a5e90",
+    "src/factor/factory.py": "d7b9d2ce5a20bb6f5d1bb9e4539e382fdb728c6f5cf07017359fe972b462d198",
+    "src/factor/hpc.py": "e89521d8dea06def50ddf616c61290793682fbf601f3f2c1d43019c18cf14e40",
+    "src/factor/hpc_worker.py": "d9d2c4e803b4b3adfb9179a1ee853df258588043976a9af1f2157e2d71b6b505",
+    "src/factor/local_models.py": "b96e67199e0f9a32e27ec3d11ef0ea375586f4bc1ef9e9252e959ab1bd7e215a",
+    "src/factor/motion.py": "beb070fb809ff5da3bc3b964ab00ef60fd4835d617ec6a18f20422353a78b5ad",
+    "src/factor/providers.py": "bd7c844c705ee1ad7543f439d907f72606881923fc2283ad4b7145e420e4c306",
+    "src/factor/runtime.py": "81e140a3ed6fb8a45e3479b64858cdb12e6a317baf9f34fe3fe03579c0756421",
+    "src/factor/training.py": "319d432d121587647846e655a1312c33840d0d7ba6da5f2e633607b046a5fd24",
+    "src/liner_stability/__init__.py": "25bd293ed33b05cb41fa3390fe68eb7d46b10c8996aa2b4b9500117077db7724",
+    "src/liner_stability/__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "src/liner_stability/benchmarks.py": "a126796485760c27da24f4011fa77d5159c68e4b1b9647788bc7c31f361aabe3",
+    "src/liner_stability/cli.py": "66af22cb8dbaf0593665af6bfe6d561bd1899262de90731d1cc5d170d608608c",
+    "src/liner_stability/constants.py": "c522ba415a61bdd1ea3a4a44e31daa160990f6f8248cd00326c3f6aaf9249c27",
+    "src/liner_stability/design.py": "72e48b3169421c1071928214ea6ca354e174ad95de614ee82719a9c3f69d5ca6",
+    "src/liner_stability/diagnostics.py": "56ab34896baa78c0035e826baf7f6c3f2334f619a5b25ae2211197b8d707eed8",
+    "src/liner_stability/evaluation.py": "9b76ab30fa2ac661a7e0f06f3beddcd2647621596b2c416ef274ca84da8a9681",
+    "src/liner_stability/evidence.py": "55f6aa1709b15c16141c809a61e0a2c3ab525061bc9347e7b4d00e02698d7c04",
+    "src/liner_stability/io.py": "1c0f09d919b79963f8b82e3ea9fca2c405ffd1f30ba35c885ac85f5d736d1df8",
+    "src/liner_stability/llm.py": "55249d9d246f080698bf5603657c7966c9e3280c8bd9e01fae950ab1ba9a991a",
+    "src/liner_stability/physics.py": "cf73eedb984080fbe70b3c6ef1a6fd40ca3c2823228086aae9b1d5c5c9859dc1",
+    "src/liner_stability/reporting.py": "bf1045bf246fac6a3b21662dd81b10056b4c9394bf80582458b1d3b1f901668e",
+    "src/liner_stability/simulation.py": "8771a5da6e37ec094c08f66275813700037812034fbc988de233d76c59ded0f9",
+    "src/liner_stability/workflow.py": "9d53073fadee41c370d758dde61b73e45cb06807d4b3338ebbea7f5bf9ac8335",
+    "tests/test_diagnostics_and_grading.py": "03a25fd86ff9f5893bcf2b0fa62b60f122dd8385d004877507a8fe9e9e66c6ee",
+    "tests/test_factor_evaluation.py": "208e59befc0ba8c1dc30339fee6797fd874f3ca7689153752bec08c40980aa18",
+    "tests/test_factor_evaluation_v2.py": "21a5286337fccc069b7e2da8cfa35461698c707ae20a67b66b4f19ffe8c2d6c4",
+    "tests/test_factor_factory.py": "afcfd36301c9b7d246aaf8d71ab4236ede3c3ba4e34a8342a6efa551a1d082a7",
+    "tests/test_factor_runtime.py": "76f6857e045934db714e1bee1cbc3f6704e0b26ee9855d3ea01382565961bb85",
+    "tests/test_fetch_base_model.py": "66ef005bc2ea89e7011752d06d43b1d7e24440852948456c689a857d12ee4aa4",
+    "tests/test_hpc.py": "9d6604a2ad36803cbd4ca86b7962a17f608dadf3d6177db3b11bde1ba1980687",
+    "tests/test_local_models.py": "dd76923a74c0d78fcc1778d7cde36fa6f9bca870f19b3679d6da27602d7896ac",
+    "tests/test_pdv_window.py": "912157a8ba4233f6b7d7ba1f3581046aff0572548e1d009ee5cdb9f0709d93ab",
+    "tests/test_runtime_hpc_boundaries.py": "0019ce72e63ec30c4977c8a1eaebe1633f4dac740d20f0c828b1d581999d744a",
+    "tests/test_workflow_and_assistant.py": "72658e3c479e0661654559c5bcd88f60fa0aad8896f9759c38fce914388bc71a"
+  },
+  "sha256_before": {
+    "pyproject.toml": "2a5fe28ecbe75b2954cdac6e764e9441ea47fbd51dfb8cef712ed12a1ae07e56",
+    "src/factor/__init__.py": "acab8d3f72b448d1a9d93eea1edfd60645f0394229d8975356f9db831cf0ee32",
+    "src/factor/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "src/factor/artifacts.py": "842fc7ef1931c2f332c0e6186ff62a6c53aa26e8f64cbad7f2a721b721c18baf",
+    "src/factor/cli.py": "f5f977802ed1745829084e28e5c6b71b4b1ca436863eb9b78bf27d0e638eac47",
+    "src/factor/contracts.py": "b2f93c8f0954e5ea5c8cfff46f99b81403285e50203771d80ea2a1c3a026fcbc",
+    "src/factor/evaluation.py": "96d36d267c74b275853decc25f7cc693f8b1bb63e3e7017d63469a1ce500d586",
+    "src/factor/evaluation_v2.py": "8c6f35a634ae66b427c8b4267ee3c5fc8cfea565466b13a8d27980cb540a5e90",
+    "src/factor/factory.py": "d7b9d2ce5a20bb6f5d1bb9e4539e382fdb728c6f5cf07017359fe972b462d198",
+    "src/factor/hpc.py": "e89521d8dea06def50ddf616c61290793682fbf601f3f2c1d43019c18cf14e40",
+    "src/factor/hpc_worker.py": "d9d2c4e803b4b3adfb9179a1ee853df258588043976a9af1f2157e2d71b6b505",
+    "src/factor/local_models.py": "b96e67199e0f9a32e27ec3d11ef0ea375586f4bc1ef9e9252e959ab1bd7e215a",
+    "src/factor/motion.py": "beb070fb809ff5da3bc3b964ab00ef60fd4835d617ec6a18f20422353a78b5ad",
+    "src/factor/providers.py": "bd7c844c705ee1ad7543f439d907f72606881923fc2283ad4b7145e420e4c306",
+    "src/factor/runtime.py": "81e140a3ed6fb8a45e3479b64858cdb12e6a317baf9f34fe3fe03579c0756421",
+    "src/factor/training.py": "319d432d121587647846e655a1312c33840d0d7ba6da5f2e633607b046a5fd24",
+    "src/liner_stability/__init__.py": "25bd293ed33b05cb41fa3390fe68eb7d46b10c8996aa2b4b9500117077db7724",
+    "src/liner_stability/__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "src/liner_stability/benchmarks.py": "a126796485760c27da24f4011fa77d5159c68e4b1b9647788bc7c31f361aabe3",
+    "src/liner_stability/cli.py": "66af22cb8dbaf0593665af6bfe6d561bd1899262de90731d1cc5d170d608608c",
+    "src/liner_stability/constants.py": "c522ba415a61bdd1ea3a4a44e31daa160990f6f8248cd00326c3f6aaf9249c27",
+    "src/liner_stability/design.py": "72e48b3169421c1071928214ea6ca354e174ad95de614ee82719a9c3f69d5ca6",
+    "src/liner_stability/diagnostics.py": "56ab34896baa78c0035e826baf7f6c3f2334f619a5b25ae2211197b8d707eed8",
+    "src/liner_stability/evaluation.py": "9b76ab30fa2ac661a7e0f06f3beddcd2647621596b2c416ef274ca84da8a9681",
+    "src/liner_stability/evidence.py": "55f6aa1709b15c16141c809a61e0a2c3ab525061bc9347e7b4d00e02698d7c04",
+    "src/liner_stability/io.py": "1c0f09d919b79963f8b82e3ea9fca2c405ffd1f30ba35c885ac85f5d736d1df8",
+    "src/liner_stability/llm.py": "55249d9d246f080698bf5603657c7966c9e3280c8bd9e01fae950ab1ba9a991a",
+    "src/liner_stability/physics.py": "cf73eedb984080fbe70b3c6ef1a6fd40ca3c2823228086aae9b1d5c5c9859dc1",
+    "src/liner_stability/reporting.py": "bf1045bf246fac6a3b21662dd81b10056b4c9394bf80582458b1d3b1f901668e",
+    "src/liner_stability/simulation.py": "8771a5da6e37ec094c08f66275813700037812034fbc988de233d76c59ded0f9",
+    "src/liner_stability/workflow.py": "9d53073fadee41c370d758dde61b73e45cb06807d4b3338ebbea7f5bf9ac8335",
+    "tests/test_diagnostics_and_grading.py": "03a25fd86ff9f5893bcf2b0fa62b60f122dd8385d004877507a8fe9e9e66c6ee",
+    "tests/test_factor_evaluation.py": "208e59befc0ba8c1dc30339fee6797fd874f3ca7689153752bec08c40980aa18",
+    "tests/test_factor_evaluation_v2.py": "21a5286337fccc069b7e2da8cfa35461698c707ae20a67b66b4f19ffe8c2d6c4",
+    "tests/test_factor_factory.py": "afcfd36301c9b7d246aaf8d71ab4236ede3c3ba4e34a8342a6efa551a1d082a7",
+    "tests/test_factor_runtime.py": "76f6857e045934db714e1bee1cbc3f6704e0b26ee9855d3ea01382565961bb85",
+    "tests/test_fetch_base_model.py": "66ef005bc2ea89e7011752d06d43b1d7e24440852948456c689a857d12ee4aa4",
+    "tests/test_hpc.py": "9d6604a2ad36803cbd4ca86b7962a17f608dadf3d6177db3b11bde1ba1980687",
+    "tests/test_local_models.py": "dd76923a74c0d78fcc1778d7cde36fa6f9bca870f19b3679d6da27602d7896ac",
+    "tests/test_pdv_window.py": "912157a8ba4233f6b7d7ba1f3581046aff0572548e1d009ee5cdb9f0709d93ab",
+    "tests/test_runtime_hpc_boundaries.py": "0019ce72e63ec30c4977c8a1eaebe1633f4dac740d20f0c828b1d581999d744a",
+    "tests/test_workflow_and_assistant.py": "72658e3c479e0661654559c5bcd88f60fa0aad8896f9759c38fce914388bc71a"
+  },
+  "source_changed_during_checks": false,
+  "started_at_utc": "2026-09-05T21:15:32.665245+00:00",
+  "tests_changed_during_checks": false,
+  "verification_distributions": {
+    "annotated-types": "0.8.0",
+    "artifact_tool_v2": "2.8.59",
+    "cffi": "2.1.1",
+    "charset-normalizer": "3.5.1",
+    "contourpy": "1.3.3",
+    "cryptography": "50.0.1",
+    "cycler": "0.12.1",
+    "et_xmlfile": "2.0.0",
+    "fonttools": "4.64.0",
+    "kiwisolver": "1.5.1",
+    "liner-stability": "0.2.0",
+    "lxml": "6.1.1",
+    "matplotlib": "3.11.1",
+    "numpy": "2.3.5",
+    "openpyxl": "3.1.5",
+    "packaging": "26.3",
+    "pandas": "2.2.3",
+    "pdf2image": "1.17.0",
+    "pdfminer.six": "20251230",
+    "pdfplumber": "0.11.9",
+    "pillow": "12.3.0",
+    "pip": "26.2.1",
+    "pycparser": "3.0",
+    "pydantic": "2.13.5",
+    "pydantic_core": "2.46.5",
+    "pyhumps": "3.8.0",
+    "pyparsing": "3.3.2",
+    "pypdf": "6.10.0",
+    "pypdfium2": "5.13.0",
+    "python-dateutil": "2.9.0.post0",
+    "python-docx": "1.2.0",
+    "python-pptx": "1.0.2",
+    "pytz": "2026.3.post1",
+    "reportlab": "4.4.9",
+    "scipy": "1.17.0",
+    "setuptools": "84.0.0",
+    "six": "1.17.0",
+    "typing-inspection": "0.4.4",
+    "typing_extensions": "4.16.0",
+    "tzdata": "2026.3",
+    "wheel": "0.48.0",
+    "xlsxwriter": "3.2.9"
+  },
+  "versions": {
+    "distribution_declared": "0.3.0",
+    "factor": "0.3.0",
+    "liner_stability": "0.3.0"
+  },
+  "wheel": {
+    "bytes": 75429,
+    "contents": [
+      "factor/__init__.py",
+      "factor/__main__.py",
+      "factor/artifacts.py",
+      "factor/cli.py",
+      "factor/contracts.py",
+      "factor/evaluation.py",
+      "factor/evaluation_v2.py",
+      "factor/factory.py",
+      "factor/hpc.py",
+      "factor/hpc_worker.py",
+      "factor/local_models.py",
+      "factor/motion.py",
+      "factor/providers.py",
+      "factor/runtime.py",
+      "factor/training.py",
+      "liner_stability/__init__.py",
+      "liner_stability/__main__.py",
+      "liner_stability/benchmarks.py",
+      "liner_stability/cli.py",
+      "liner_stability/constants.py",
+      "liner_stability/design.py",
+      "liner_stability/diagnostics.py",
+      "liner_stability/evaluation.py",
+      "liner_stability/evidence.py",
+      "liner_stability/io.py",
+      "liner_stability/llm.py",
+      "liner_stability/physics.py",
+      "liner_stability/py.typed",
+      "liner_stability/reporting.py",
+      "liner_stability/simulation.py",
+      "liner_stability/workflow.py",
+      "liner_stability-0.3.0.dist-info/METADATA",
+      "liner_stability-0.3.0.dist-info/WHEEL",
+      "liner_stability-0.3.0.dist-info/entry_points.txt",
+      "liner_stability-0.3.0.dist-info/top_level.txt",
+      "liner_stability-0.3.0.dist-info/RECORD"
+    ],
+    "entry_points": "[console_scripts]\nfactor = factor.cli:main\nliner-stability = liner_stability.cli:main\n",
+    "path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/dist/liner_stability-0.3.0-py3-none-any.whl",
+    "sha256": "63afb852fa825639bde4c90eef1ab818bd78eccdb9cf15005bf3cb55518a226f",
+    "version": "0.3.0"
+  }
+}

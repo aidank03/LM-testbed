@@ -1,0 +1,2 @@
+Factor: Expected the explicit v2 public contract
+{"exit_code": 2, "provider_factory_calls": 0, "model_calls": 0, "output_created": false}

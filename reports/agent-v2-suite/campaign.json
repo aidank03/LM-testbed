@@ -1,0 +1,72 @@
+{
+  "campaign": {
+    "schema_version": "factor-campaign/1",
+    "status": "frozen_before_candidate_runs",
+    "frozen_utc": "2026-09-05T21:06:52.760430+00:00",
+    "split": "development",
+    "seed": 20260906,
+    "n_per_condition": 2,
+    "observations": 18,
+    "independent_experiment_groups": 12,
+    "contract_hash": "a730f9bb30a28ae4c8b314b9e402fb0618bc396f9aa9794e4ce2d24b19b26090",
+    "files": {
+      "reports/agent-v2-suite/contract.json": "f748d1ed156508e4529e179a5214bb0efcfd84703c32236b8c338ff42b3c3013",
+      "reports/agent-v2-suite/public_cases.json": "4daccd36efeccaf1e866eb850adcabfc07747448fea402ab80725620f6e2cc56",
+      "reports/agent-v2-suite/evaluator_truth.json": "a290344dd8631bdae6edac1090c4dce422c61523a929359ccba662ceefd5953e",
+      "docs/AGENT_EVALUATION_V2_CARD.md": "b48ee39f6dfe6cb919d5c3304d67c60e477559730a95bae78ac7e8d360c85146",
+      "src/factor/evaluation.py": "96d36d267c74b275853decc25f7cc693f8b1bb63e3e7017d63469a1ce500d586",
+      "src/factor/evaluation_v2.py": "8c6f35a634ae66b427c8b4267ee3c5fc8cfea565466b13a8d27980cb540a5e90",
+      "src/factor/motion.py": "beb070fb809ff5da3bc3b964ab00ef60fd4835d617ec6a18f20422353a78b5ad",
+      "configs/local_policy.json": "3c2dcd8419ae51fc2f7da93b776c74b56d8b1d6eaa1ee218965598dc2bbb7c79",
+      "configs/direct_v2_policy.json": "17309f0ca49ae9ff01834f9515cfa00d63233dbb4557c561d6c402c12f7feaf8"
+    },
+    "baselines": [
+      "naive",
+      "bounded"
+    ],
+    "local_methods": [
+      {
+        "model": "factor-qwen35-9b",
+        "mode": "tools",
+        "policy": "configs/local_policy.json",
+        "repeats": 2
+      },
+      {
+        "model": "factor-qwen35-9b",
+        "mode": "direct",
+        "policy": "configs/direct_v2_policy.json",
+        "repeats": 2
+      },
+      {
+        "model": "factor-nemotron4b",
+        "mode": "tools",
+        "policy": "configs/local_policy.json",
+        "repeats": 2
+      },
+      {
+        "model": "factor-nemotron4b",
+        "mode": "direct",
+        "policy": "configs/direct_v2_policy.json",
+        "repeats": 2
+      }
+    ],
+    "common_settings": {
+      "temperature": 0,
+      "reasoning": "off",
+      "transport": "lmstudio-native",
+      "max_steps": 6,
+      "max_tool_calls": 6,
+      "max_seconds": 120,
+      "max_output_tokens_per_reply": 700,
+      "no_cloud_calls": true,
+      "no_hpc": true,
+      "data_egress": false
+    },
+    "retry_policy": "Score every assigned attempt. No best-of-repeat selection or silent failure replacement. Provider/runtime failures remain outcomes.",
+    "versions": "Persist actual model, source, system prompt, tool schema, endpoint metadata and policy in each run manifest. Aliases are not immutable weight identities.",
+    "reporting": "Separate all regimes, intervals and emission rates, execution failures, evidence presence versus support, physical wrong confidence versus contract correctness. No weighted score or automatic promotion.",
+    "independence": "Two analyses of a case do not create new scientific cases; exact counterfactual/reference variants share experiment groups.",
+    "interpretation": "Small exposed development comparison only. No human/frontier results, held-out reliability, physical mechanism, raw-PDV, or real-data validation claims."
+  },
+  "campaign_hash": "0d8e97d719c0e4bd4bb1726eb407e19dfff4b54af92a76defbe5a31c3fb92478"
+}

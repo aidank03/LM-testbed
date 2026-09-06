@@ -1,0 +1,138 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_044066356fcb4a4099520a71b2aebec0",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/closed-loop/run_044066356fcb4a4099520a71b2aebec0",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_4d151cc809d79abcb48c0d37",
+      "artifact_91a4201106329c66c0f2d27e",
+      "artifact_fa94c6b5b139e74755b74f5f",
+      "artifact_9443d7b3b4cd1e18613a674d"
+    ],
+    "explanation": "The synthetic development job (artifact_91a4201106329c66c0f2d27e) and its diagnostics (artifact_fa94c6b5b139e74755b74f5f) cannot determine the true material motion of the supplied observation (artifact_4d151cc809d79abcb48c0d37) or identify melting/ETI/MRTI mechanisms. The inference (artifact_9443d7b3b4cd1e18613a674d) is ambiguous due to unbounded nuisance parameters and lack of causal inference.",
+    "next_step": "A calibrated drift witness with a defensible residual mismatch bound."
+  },
+  "numerical_result": {
+    "schema_version": "motion-result/1",
+    "task": "motion.fixed_window/1",
+    "method": "bounded",
+    "information_track": "signal_only",
+    "unit": "m",
+    "window_s": [
+      3e-08,
+      6e-08
+    ],
+    "resolution_m": 5e-09,
+    "point_m": null,
+    "interval_m": null,
+    "nominal_noise_coverage": 0.95,
+    "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+    "inference": "ambiguous",
+    "decision": "ambiguous",
+    "assumptions": [
+      "Known unit gain and fixed-window reconstruction.",
+      "Known zero-mean Gaussian measurement noise.",
+      "Supplied drift bound covers all equivalent non-motion displacement."
+    ],
+    "limitations": [
+      "Not validated on independent real data.",
+      "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+      "No phase, instability mechanism, or causal inference."
+    ],
+    "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+    "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+  },
+  "usage": {
+    "model_calls": 7,
+    "tool_calls": 7,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 23199,
+    "output_tokens": 878,
+    "elapsed_seconds": 56.336772000000565
+  },
+  "jobs": [
+    "job_97afbc96ecf0432786265a2363518874"
+  ],
+  "hypotheses": [
+    {
+      "hypothesis_id": "optical-drift",
+      "statement": "The synthetic development job (artifact_91a4201106329c66c0f2d27e) and its diagnostics (artifact_fa94c6b5b139e74755b74f5f) cannot determine the true material motion of the supplied observation (artifact_4d151cc809d79abcb48c0d37) or identify melting/ETI/MRTI mechanisms. The inference (artifact_9443d7b3b4cd1e18613a674d) is ambiguous due to unbounded nuisance parameters and lack of causal inference.",
+      "state": "unresolved",
+      "evidence_ids": [
+        "artifact_4d151cc809d79abcb48c0d37",
+        "artifact_91a4201106329c66c0f2d27e",
+        "artifact_fa94c6b5b139e74755b74f5f",
+        "artifact_9443d7b3b4cd1e18613a674d"
+      ],
+      "scope": "conditional_synthetic_development",
+      "version": 1
+    }
+  ],
+  "cleanup": [
+    {
+      "job_id": "job_97afbc96ecf0432786265a2363518874",
+      "status": "completed"
+    }
+  ],
+  "artifacts": {
+    "artifact_7ef84ec6d48cb449344b4519": {
+      "id": "artifact_7ef84ec6d48cb449344b4519",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_7ef84ec6d48cb449344b4519.json",
+      "sha256": "474c94076a592850ec01f876a581ce22dbab97f960a1cf0e3678e3ddcb88d6fe"
+    },
+    "artifact_4d151cc809d79abcb48c0d37": {
+      "id": "artifact_4d151cc809d79abcb48c0d37",
+      "kind": "observation",
+      "path": "artifacts/artifact_4d151cc809d79abcb48c0d37.json",
+      "sha256": "c4f4c10988cae527b345d9d8d9cf59bacd1a29f999b7db41bf2ff67120a4cf7e"
+    },
+    "artifact_13ed13745a6c068bc50c1fa5": {
+      "id": "artifact_13ed13745a6c068bc50c1fa5",
+      "kind": "request",
+      "path": "artifacts/artifact_13ed13745a6c068bc50c1fa5.json",
+      "sha256": "bd3689f82994d22e3e1e01bc3031e6f2e20d4b6c63bb1a6cbd12733b0bbd9f12"
+    },
+    "artifact_91a4201106329c66c0f2d27e": {
+      "id": "artifact_91a4201106329c66c0f2d27e",
+      "kind": "submit_simulation",
+      "path": "artifacts/artifact_91a4201106329c66c0f2d27e.json",
+      "sha256": "3eab06f0f1576689d4882251d36faeadf9edd293643ee32352fa17c57b54ab4f"
+    },
+    "artifact_cf09ce64da8f82ef790a076e": {
+      "id": "artifact_cf09ce64da8f82ef790a076e",
+      "kind": "job_status",
+      "path": "artifacts/artifact_cf09ce64da8f82ef790a076e.json",
+      "sha256": "75f735bf7f2fdcbdd02a51bf43d4394b93bd38948f16c297d5f43ff0f9e8ec4a"
+    },
+    "artifact_c4055dc747fbe56f2bbb5e8c": {
+      "id": "artifact_c4055dc747fbe56f2bbb5e8c",
+      "kind": "job_status",
+      "path": "artifacts/artifact_c4055dc747fbe56f2bbb5e8c.json",
+      "sha256": "c72e263a130fe95cc2a3585dc5fcfb1d577e4ea814f7d6bec57a5ed02c2d6bc6"
+    },
+    "artifact_fa94c6b5b139e74755b74f5f": {
+      "id": "artifact_fa94c6b5b139e74755b74f5f",
+      "kind": "job_collect",
+      "path": "artifacts/artifact_fa94c6b5b139e74755b74f5f.json",
+      "sha256": "8c6a938b12fc7b9928394e63a3574f2ce0f755a378e9b0d1e38cea4f9b4779da"
+    },
+    "artifact_9443d7b3b4cd1e18613a674d": {
+      "id": "artifact_9443d7b3b4cd1e18613a674d",
+      "kind": "infer_motion",
+      "path": "artifacts/artifact_9443d7b3b4cd1e18613a674d.json",
+      "sha256": "ee447534f04762610c643c1d0458dc3613b0d3246f546f84c057042a470cff3d"
+    },
+    "artifact_2d12f1736652d0768f6b997c": {
+      "id": "artifact_2d12f1736652d0768f6b997c",
+      "kind": "update_hypothesis",
+      "path": "artifacts/artifact_2d12f1736652d0768f6b997c.json",
+      "sha256": "e818cc72cc29d093672fb6fababf93af739f58759698deaea3c35238301c46db"
+    }
+  }
+}

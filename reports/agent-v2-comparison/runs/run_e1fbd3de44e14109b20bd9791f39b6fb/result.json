@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_e1fbd3de44e14109b20bd9791f39b6fb",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_e1fbd3de44e14109b20bd9791f39b6fb",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_5fba208ecc34eb784f70da2e"
+    ],
+    "explanation": "The conditional interval for signed radial displacement x is [-1.96e-08, 1.96e-08] meters (center ~2.87e-08 m). The upper bound exceeds the resolution T = -1e-08 m, so inward motion beyond resolution is not ruled out; however, compression is supported as the interval includes negative values within bounds.",
+    "next_step": "Monitor for future observations to refine drift_bound_m or reference transfer."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 2827,
+    "output_tokens": 369,
+    "elapsed_seconds": 5.962307124999825
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_ab2556d06b742de0b429965a": {
+      "id": "artifact_ab2556d06b742de0b429965a",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_ab2556d06b742de0b429965a.json",
+      "sha256": "657bc9419abe0f15e63fb7282a0cfc4390a17613730d0abc18a52b7175901831"
+    },
+    "artifact_5fba208ecc34eb784f70da2e": {
+      "id": "artifact_5fba208ecc34eb784f70da2e",
+      "kind": "observation",
+      "path": "artifacts/artifact_5fba208ecc34eb784f70da2e.json",
+      "sha256": "2dd82a5024b4b301dee53b82f957d9c92bb8952b7b270365ec5f70fa952992ba"
+    },
+    "artifact_19c6b7cb07e9fce3db58dccb": {
+      "id": "artifact_19c6b7cb07e9fce3db58dccb",
+      "kind": "request",
+      "path": "artifacts/artifact_19c6b7cb07e9fce3db58dccb.json",
+      "sha256": "198d784a6765df5bbfac3a673c16426296bf8c7b5b0b8b0e8d62dffac1ca1ec3"
+    }
+  }
+}

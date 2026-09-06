@@ -1,0 +1,62 @@
+[
+  {
+    "case_id": "A01",
+    "answer": 251327412.28718346,
+    "unit": "Pa"
+  },
+  {
+    "case_id": "A02",
+    "answer": 3.989422804014327e-05,
+    "unit": "m"
+  },
+  {
+    "case_id": "A03",
+    "answer": 1.397e-05,
+    "unit": "s"
+  },
+  {
+    "case_id": "A04",
+    "answer": 0.7143,
+    "unit": "kg/m^2"
+  },
+  {
+    "case_id": "A05",
+    "answer": 1.633,
+    "unit": "ns"
+  },
+  {
+    "case_id": "A06",
+    "answer": "model_assisted_inference",
+    "unit": null
+  },
+  {
+    "case_id": "A07",
+    "answer": "not_identified",
+    "unit": null
+  },
+  {
+    "case_id": "A08",
+    "answer": "not_identified",
+    "unit": null
+  },
+  {
+    "case_id": "A09",
+    "answer": "classical_ETI",
+    "unit": null
+  },
+  {
+    "case_id": "A10",
+    "answer": "campaign_and_lineage",
+    "unit": null
+  },
+  {
+    "case_id": "A11",
+    "answer": "not_established",
+    "unit": null
+  },
+  {
+    "case_id": "A12",
+    "answer": "A",
+    "unit": null
+  }
+]

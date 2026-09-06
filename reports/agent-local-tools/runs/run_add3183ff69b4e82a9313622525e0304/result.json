@@ -1,0 +1,55 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_add3183ff69b4e82a9313622525e0304",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-tools/runs/run_add3183ff69b4e82a9313622525e0304",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_5f2a5e5568e73876d9f25ad8"
+    ],
+    "explanation": "The apparent displacement (-4.55 nm) is approximately 4.5 times the resolution limit (10 nm). However, the noise sigma is 1 nm, meaning the signal is only ~4.5 sigma above zero. More critically, the observation source is 'synthetic_reconstructed' with no drift bound and no reference mismatch correction available. Without a bounded drift model or reference to distinguish true compression from reconstruction artifacts or uncorrected drift, the displacement cannot be attributed to physical compression beyond the stated resolution.",
+    "next_step": "Acquire a measurement with a known reference or apply a bounded drift calibration to isolate true radial displacement."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 6.837877083999956
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_4ad352b26e393f66ce9cc462": {
+      "id": "artifact_4ad352b26e393f66ce9cc462",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_4ad352b26e393f66ce9cc462.json",
+      "sha256": "60e6b889290c1f96a743021d30427d8332f00357ae8522a5bb22f12b878fd41c"
+    },
+    "artifact_5f2a5e5568e73876d9f25ad8": {
+      "id": "artifact_5f2a5e5568e73876d9f25ad8",
+      "kind": "observation",
+      "path": "artifacts/artifact_5f2a5e5568e73876d9f25ad8.json",
+      "sha256": "64924767da67d7984b217bd30f2e86f64e834526614993682cdb0770e411ed4b"
+    },
+    "artifact_85bf6d6dd7f6b4aaa41d7ea4": {
+      "id": "artifact_85bf6d6dd7f6b4aaa41d7ea4",
+      "kind": "request",
+      "path": "artifacts/artifact_85bf6d6dd7f6b4aaa41d7ea4.json",
+      "sha256": "b8cd7b90452f141ef56e02356d81dba3c391afcbcc99f1fda5a7a20640c6aaaa"
+    },
+    "artifact_c8e0a5341eba77f188e833f2": {
+      "id": "artifact_c8e0a5341eba77f188e833f2",
+      "kind": "inspect_observation",
+      "path": "artifacts/artifact_c8e0a5341eba77f188e833f2.json",
+      "sha256": "64924767da67d7984b217bd30f2e86f64e834526614993682cdb0770e411ed4b"
+    }
+  }
+}

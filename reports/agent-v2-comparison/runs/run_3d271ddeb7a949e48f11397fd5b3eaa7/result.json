@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_3d271ddeb7a949e48f11397fd5b3eaa7",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_3d271ddeb7a949e48f11397fd5b3eaa7",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_a5663a4bd018f887f77099ea"
+    ],
+    "explanation": "The observation provides apparent_displacement_m = -4.18e-09 m, noise_sigma_m = 1e-09 m, and resolution_m = 1e-08 m (T). The drift_bound_m is null and there is no reference. Per the contract, a null B implies ambiguity because different material motions can explain the measurement. Even if we computed an interval using only noise (h = 1.96*sigma), the resulting upper bound would be positive (center + h > T), failing the compression_supported condition (upper <= T). Thus, the decision is ambiguous.",
+    "next_step": "Await further observations or a reference with a finite residual bound to resolve the ambiguity."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1639,
+    "output_tokens": 199,
+    "elapsed_seconds": 6.523197249999612
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_dfee56b67e4376b628a8a171": {
+      "id": "artifact_dfee56b67e4376b628a8a171",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_dfee56b67e4376b628a8a171.json",
+      "sha256": "928e5e93156e6160f50c58811834edc3f40b9aa4e2cf8d1e1990b4119483676a"
+    },
+    "artifact_a5663a4bd018f887f77099ea": {
+      "id": "artifact_a5663a4bd018f887f77099ea",
+      "kind": "observation",
+      "path": "artifacts/artifact_a5663a4bd018f887f77099ea.json",
+      "sha256": "9fe7b5764cb79fea54cbc77d5ceef1d99e806b9eb154a67c68f0074a48ff14cf"
+    },
+    "artifact_6f68557214b35027c3866e64": {
+      "id": "artifact_6f68557214b35027c3866e64",
+      "kind": "request",
+      "path": "artifacts/artifact_6f68557214b35027c3866e64.json",
+      "sha256": "2c3a583ae4021ef5da4571a22af181b11b076cf9690c828b59472b86beeb404a"
+    }
+  }
+}

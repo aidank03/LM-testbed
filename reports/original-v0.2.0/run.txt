@@ -1,0 +1,8 @@
+Completed nominal: 40 synthetic cases
+Completed blurred: 40 synthetic cases
+Completed pdv_dropout: 40 synthetic cases
+Completed timing_jitter: 40 synthetic cases
+Completed omitted_optical_drift: 40 synthetic cases
+Completed no_structure: 40 synthetic cases
+Wrote 240 case evaluations to /Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/project-factor/reports/original-v0.2.0/reproduced-run
+Output: /Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/project-factor/reports/original-v0.2.0/reproduced-run

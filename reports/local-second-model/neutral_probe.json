@@ -1,0 +1,53 @@
+{
+  "status": "NEUTRAL_SERVING_PROBE_ONLY_NO_EVALUATION_CASES",
+  "request_messages": [
+    {
+      "role": "system",
+      "content": "Return only the requested final JSON object."
+    },
+    {
+      "role": "user",
+      "content": "Return exactly JSON {\"ok\":true}."
+    }
+  ],
+  "result": {
+    "text": "{\"ok\": true}",
+    "raw_response": {
+      "model_instance_id": "factor-nemotron4b",
+      "output": [
+        {
+          "type": "message",
+          "content": "{\"ok\": true}"
+        }
+      ],
+      "stats": {
+        "input_tokens": 33,
+        "total_output_tokens": 6,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 68.42004433618872,
+        "time_to_first_token_seconds": 0.361
+      }
+    },
+    "elapsed_seconds": 0.45551412500026345,
+    "model": "factor-nemotron4b",
+    "usage": {
+      "input_tokens": 33,
+      "total_output_tokens": 6,
+      "reasoning_output_tokens": 0,
+      "tokens_per_second": 68.42004433618872,
+      "time_to_first_token_seconds": 0.361
+    },
+    "finish_reason": "stop",
+    "finish_reason_source": "inferred_from_native_token_count",
+    "request_settings": {
+      "model": "factor-nemotron4b",
+      "reasoning": "off",
+      "temperature": 0,
+      "max_output_tokens": 64,
+      "stream": false,
+      "store": false
+    },
+    "schema_enforcement": "prompt_only_requires_local_validation",
+    "transport": "lmstudio-native"
+  }
+}

@@ -1,0 +1,246 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:58:08.622837+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_d3dfa2f4d0bcb8b96156c196"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "7693b357fcdc7e851cdc2c3a12fe5cbcded98d00017e0f7ada48bc845c0de2e0"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:58:10.717395+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.0941861249993963,
+        "usage": {
+          "input_tokens": 1145,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.00779634548758,
+          "time_to_first_token_seconds": 1.847
+        },
+        "request_sha256": "f2f12c500ab9f90c143aca3d2fb0b1f41f8a0354a0d2530b48fb2a4a9fa3e729",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "7693b357fcdc7e851cdc2c3a12fe5cbcded98d00017e0f7ada48bc845c0de2e0",
+    "hash": "375f1b00474cb67b16d89e93b991d7c9fe86811db3e43dc12441c887e41b603d"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:58:10.719952+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_6cc56ad1880ae8a7f0e44a23",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "e16353c6393d599954792a41",
+        "apparent_displacement_m": -3.456631681631348e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "375f1b00474cb67b16d89e93b991d7c9fe86811db3e43dc12441c887e41b603d",
+    "hash": "9fe576880b88d85a56268cc9831517080bceb87a48cc711d1d0b5512ca0aee17"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:58:12.235826+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "infer_motion",
+      "arguments": {
+        "method": "bounded"
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 1.5147887920002177,
+        "usage": {
+          "input_tokens": 1343,
+          "total_output_tokens": 17,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.00381891094096,
+          "time_to_first_token_seconds": 1.214
+        },
+        "request_sha256": "1a2bcd81785321284ea0ded7711f3e8a865ed32bf03c175c839364e310733bac",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "9fe576880b88d85a56268cc9831517080bceb87a48cc711d1d0b5512ca0aee17",
+    "hash": "bac5389bf074e299828349a97ac8a7a7d9a91911907eb18fb1bebabe576e91c4"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:58:12.237639+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "infer_motion",
+      "ok": true,
+      "artifact_id": "artifact_0ff2dc646274ff889277d9c5",
+      "result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -3.456631681631348e-08,
+        "interval_m": [
+          -4.452628080085353e-08,
+          -2.4606352831773426e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      }
+    },
+    "previous_hash": "bac5389bf074e299828349a97ac8a7a7d9a91911907eb18fb1bebabe576e91c4",
+    "hash": "87a075fae36d18951de287d55952bb374a1d9db967cbf9340f1be474e7fcfdbb"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:58:17.304933+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_d3dfa2f4d0bcb8b96156c196",
+          "artifact_0ff2dc646274ff889277d9c5"
+        ],
+        "explanation": "The bounded motion inference (artifact_0ff2dc646274ff889277d9c5) determined that the conditional interval [-4.45e-08, -2.46e-08] lies entirely below the stated resolution of 1e-08 m. This supports the hypothesis of compression beyond the resolution limit within the fixed window [0.0, 1e-07] s.",
+        "next_step": "Independently validate the stated calibration and nuisance assumptions."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.066603291999854,
+        "usage": {
+          "input_tokens": 1684,
+          "total_output_tokens": 189,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.30469476162692,
+          "time_to_first_token_seconds": 1.411
+        },
+        "request_sha256": "af433273b70f7b564f2abd223e8b115ed1ef5e68de523a486072b18288ddf71d",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "87a075fae36d18951de287d55952bb374a1d9db967cbf9340f1be474e7fcfdbb",
+    "hash": "0b4000a671d0320db79ceb1efeb93e0f33ee874ad4e8139caa0d15b5258d449e"
+  },
+  {
+    "sequence": 6,
+    "timestamp": "2026-09-05T20:58:17.306061+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_supported",
+      "evidence_ids": [
+        "artifact_d3dfa2f4d0bcb8b96156c196",
+        "artifact_0ff2dc646274ff889277d9c5"
+      ],
+      "explanation": "The bounded motion inference (artifact_0ff2dc646274ff889277d9c5) determined that the conditional interval [-4.45e-08, -2.46e-08] lies entirely below the stated resolution of 1e-08 m. This supports the hypothesis of compression beyond the resolution limit within the fixed window [0.0, 1e-07] s.",
+      "next_step": "Independently validate the stated calibration and nuisance assumptions."
+    },
+    "previous_hash": "0b4000a671d0320db79ceb1efeb93e0f33ee874ad4e8139caa0d15b5258d449e",
+    "hash": "bb5fdc8ace0b3ee10d8e9f90856a90435fdcbc5651335c7258601dfa8a2892e7"
+  },
+  {
+    "sequence": 7,
+    "timestamp": "2026-09-05T20:58:17.307057+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 3,
+        "tool_calls": 3,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 8.688428583000132
+      },
+      "cleanup": []
+    },
+    "previous_hash": "bb5fdc8ace0b3ee10d8e9f90856a90435fdcbc5651335c7258601dfa8a2892e7",
+    "hash": "005152e4a78155578f3a82317fa545171650ec1bb8af95431f8aaa70463af76d"
+  }
+]

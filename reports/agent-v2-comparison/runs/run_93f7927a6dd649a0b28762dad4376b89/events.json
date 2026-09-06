@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:11:21.842371+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_094ac6f0b6f438c65c6ba821"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "eccda68af9c290a76cfa984b176bef95d9d26971edbd82e12ef4b038644ab7b2"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:11:31.680187+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_094ac6f0b6f438c65c6ba821"
+        ],
+        "explanation": "Using the reference, center = 3.604e-08 - 8.969e-08 = -5.365e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. The 95% interval half-width h = 1.96*1.414e-09 + 1e-09 = 3.77e-09 m. Interval: [-5.742e-08, -4.988e-08] m. Resolution T = -1e-08 m. Since upper (-4.988e-08) <= T, compression is supported. However, the question asks for signed radial displacement x where negative is inward (compression). The interval is entirely negative, meaning inward motion is supported. Wait, re-reading rule 5: 'Choose compression_supported only if upper <= T'. Here upper = -4.988e-08 and T = -1e-08. Since -4.988e-08 < -1e-08, the condition holds. Thus compression is supported.",
+        "next_step": "Report compression_supported with interval [-5.742e-08, -4.988e-08] m."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 9.83711674999995,
+        "usage": {
+          "input_tokens": 1703,
+          "total_output_tokens": 369,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.54956161160178,
+          "time_to_first_token_seconds": 2.702
+        },
+        "request_sha256": "e373aae0f3be8255074e924beaab08247c08488a9a6716fcf2e6d9b8dc58981d",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1703,
+        "output_tokens": 369
+      }
+    },
+    "previous_hash": "eccda68af9c290a76cfa984b176bef95d9d26971edbd82e12ef4b038644ab7b2",
+    "hash": "f7beca0a625244668162b55a137ac2ea1b632b626f1fbdc4ad07286eb78faf7a"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:11:31.681216+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_094ac6f0b6f438c65c6ba821"
+      ],
+      "explanation": "Using the reference, center = 3.604e-08 - 8.969e-08 = -5.365e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. The 95% interval half-width h = 1.96*1.414e-09 + 1e-09 = 3.77e-09 m. Interval: [-5.742e-08, -4.988e-08] m. Resolution T = -1e-08 m. Since upper (-4.988e-08) <= T, compression is supported. However, the question asks for signed radial displacement x where negative is inward (compression). The interval is entirely negative, meaning inward motion is supported. Wait, re-reading rule 5: 'Choose compression_supported only if upper <= T'. Here upper = -4.988e-08 and T = -1e-08. Since -4.988e-08 < -1e-08, the condition holds. Thus compression is supported.",
+      "next_step": "Report compression_supported with interval [-5.742e-08, -4.988e-08] m."
+    },
+    "previous_hash": "f7beca0a625244668162b55a137ac2ea1b632b626f1fbdc4ad07286eb78faf7a",
+    "hash": "fcd62a0d6b297b8746fc3cdcc3c1153c9e555758ab8fc3de2bf434cd7416f04a"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:11:31.682037+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1703,
+        "output_tokens": 369,
+        "elapsed_seconds": 9.841492165999625
+      },
+      "cleanup": []
+    },
+    "previous_hash": "fcd62a0d6b297b8746fc3cdcc3c1153c9e555758ab8fc3de2bf434cd7416f04a",
+    "hash": "a871c330abca569d54ce05b2b77a99b8d97d3737b3f0a59f6c3b08451ced526c"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:11:31.683601+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "aa273198ab83686d2ae84570b9f8c2502b65d165d4978bb49e3ae679a24ae7c3"
+    },
+    "previous_hash": "a871c330abca569d54ce05b2b77a99b8d97d3737b3f0a59f6c3b08451ced526c",
+    "hash": "b35421f704ac232cdd9f476ecec9c894f77d0371962babf5b632a151063f4a7b"
+  }
+]

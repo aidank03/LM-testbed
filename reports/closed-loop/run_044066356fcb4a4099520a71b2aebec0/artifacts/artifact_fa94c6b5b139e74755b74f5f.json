@@ -1,0 +1,108 @@
+{
+  "job_id": "job_97afbc96ecf0432786265a2363518874",
+  "status": "completed",
+  "diagnostics_available": true,
+  "scope": "Independent synthetic development job, not evidence of motion in the supplied observation. Latent truth used by this job's evaluator is only truth within its simulator.",
+  "summary": {
+    "blurred": {
+      "n_cases": 2,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 2,
+        "answer_rate": 1.0,
+        "mae": 0.16703706275960428,
+        "rmse": 0.22628862388427082,
+        "coverage90": 1.0,
+        "coverage95_wilson": [
+          0.34238022750665303,
+          1.0
+        ],
+        "mean_width90": 1.2896818738786635,
+        "mean_interval_score90": 1.2896818738786635,
+        "conservative_bound_count": 0
+      }
+    },
+    "no_structure": {
+      "n_cases": 2,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 2,
+        "answer_rate": 1.0,
+        "mae": 0.22507333365356708,
+        "rmse": 0.2431316379351083,
+        "coverage90": 1.0,
+        "coverage95_wilson": [
+          0.34238022750665303,
+          1.0
+        ],
+        "mean_width90": 1.1438870903529335,
+        "mean_interval_score90": 1.1438870903529335,
+        "conservative_bound_count": 0
+      }
+    },
+    "nominal": {
+      "n_cases": 2,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 2,
+        "answer_rate": 1.0,
+        "mae": 0.3747691677737457,
+        "rmse": 0.5071979935200834,
+        "coverage90": 0.5,
+        "coverage95_wilson": [
+          0.09453120573423074,
+          0.9054687942657693
+        ],
+        "mean_width90": 1.1206976386827137,
+        "mean_interval_score90": 2.61224777295881,
+        "conservative_bound_count": 0
+      }
+    },
+    "omitted_optical_drift": {
+      "n_cases": 2,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 2,
+        "answer_rate": 1.0,
+        "mae": 3.429569407562786,
+        "rmse": 3.43700715684447,
+        "coverage90": 0.0,
+        "coverage95_wilson": [
+          0.0,
+          0.6576197724933469
+        ],
+        "mean_width90": 1.183316720488346,
+        "mean_interval_score90": 57.94153766686061,
+        "conservative_bound_count": 0
+      }
+    },
+    "pdv_dropout": {
+      "n_cases": 2,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 0,
+        "answer_rate": 0.0
+      }
+    },
+    "timing_jitter": {
+      "n_cases": 2,
+      "compression_nm": {
+        "unit": "nm",
+        "n_answered": 2,
+        "answer_rate": 1.0,
+        "mae": 0.554613621723286,
+        "rmse": 0.5625197906410473,
+        "coverage90": 1.0,
+        "coverage95_wilson": [
+          0.34238022750665303,
+          1.0
+        ],
+        "mean_width90": 1.4581410805597095,
+        "mean_interval_score90": 1.4581410805597095,
+        "conservative_bound_count": 0
+      }
+    }
+  },
+  "metrics_sha256": "7060fa8b7198a247db843d0957208b39f62bbddd740fec59d8ed11f2ddb62354",
+  "artifact_count": 27
+}

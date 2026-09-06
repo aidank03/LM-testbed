@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:08:26.648627+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_41354d07de515b5f2c0fd7b9"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "5ec4f2a6b0b84450745d762df6b21f77e46a1ae1a8ef8ca667530989cf03a839"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:08:33.851390+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_41354d07de515b5f2c0fd7b9"
+        ],
+        "explanation": "Using the reference, center = 6.56e-08 - 1.13e-08 = 5.43e-08 m. Sigma = sqrt(1e-18 + 6.25e-18) = 2.74e-09 m. B = 1e-09 m. h = 1.96*2.74e-09 + 1e-09 = 6.37e-09 m. Interval: [4.79e-08, 6.07e-08] m. Resolution T = -1e-08 m. Since lower > T, compression is ruled out.",
+        "next_step": "No further measurements required; decision finalized."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 7.201887375000297,
+        "usage": {
+          "input_tokens": 1720,
+          "total_output_tokens": 227,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.48454313277066,
+          "time_to_first_token_seconds": 2.805
+        },
+        "request_sha256": "584c0eb662d11fa548389b19dc0adc75cb1e27bf4eeb5459451fee078c7619e0",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1720,
+        "output_tokens": 227
+      }
+    },
+    "previous_hash": "5ec4f2a6b0b84450745d762df6b21f77e46a1ae1a8ef8ca667530989cf03a839",
+    "hash": "45110294b27b5aa5e5fa42f93ea690b5c59618a1cde1d48ca3f94593ea62ee46"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:08:33.853008+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_41354d07de515b5f2c0fd7b9"
+      ],
+      "explanation": "Using the reference, center = 6.56e-08 - 1.13e-08 = 5.43e-08 m. Sigma = sqrt(1e-18 + 6.25e-18) = 2.74e-09 m. B = 1e-09 m. h = 1.96*2.74e-09 + 1e-09 = 6.37e-09 m. Interval: [4.79e-08, 6.07e-08] m. Resolution T = -1e-08 m. Since lower > T, compression is ruled out.",
+      "next_step": "No further measurements required; decision finalized."
+    },
+    "previous_hash": "45110294b27b5aa5e5fa42f93ea690b5c59618a1cde1d48ca3f94593ea62ee46",
+    "hash": "433c6ef18c2e54c08961d1eb19368428646e1cf1e73d4f3c554467b63af7c11c"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:08:33.854259+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1720,
+        "output_tokens": 227,
+        "elapsed_seconds": 7.2143871670004955
+      },
+      "cleanup": []
+    },
+    "previous_hash": "433c6ef18c2e54c08961d1eb19368428646e1cf1e73d4f3c554467b63af7c11c",
+    "hash": "dbc36d6497b0187763945da4cca00baca9b6d96f92b75d80b89c0adb0a3138bc"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:08:33.856526+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "06f50dee519c8516990f19eeee2a2a89c570306440562a394be92402e976f46b"
+    },
+    "previous_hash": "dbc36d6497b0187763945da4cca00baca9b6d96f92b75d80b89c0adb0a3138bc",
+    "hash": "3e9137c81bfcd4670603e896fff5836753dcac94476179f6c2bc2c52b7a815d4"
+  }
+]

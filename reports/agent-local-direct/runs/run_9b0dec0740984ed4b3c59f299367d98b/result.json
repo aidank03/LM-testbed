@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_9b0dec0740984ed4b3c59f299367d98b",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_9b0dec0740984ed4b3c59f299367d98b",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_d3dfa2f4d0bcb8b96156c196"
+    ],
+    "explanation": "The observation artifact d3dfa2f4d0bcb8b96156c196 reports an apparent displacement of -3.46e-08 m, which exceeds the stated resolution limit of 1e-08 m in magnitude. The noise floor (1e-09 m) and drift bound (8e-09 m) are significantly smaller than the observed signal, indicating the displacement is a robust measurement rather than an artifact. Since the displacement is negative (indicating contraction) and exceeds the resolution threshold, it supports the hypothesis of compression beyond the stated resolution.",
+    "next_step": "Proceed with further measurements to characterize the magnitude and temporal evolution of the compressive strain."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 4.502586792000329
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_e0b7d03a6372600aeeeb9f8b": {
+      "id": "artifact_e0b7d03a6372600aeeeb9f8b",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_e0b7d03a6372600aeeeb9f8b.json",
+      "sha256": "fb87f5010fdbbb15644f4897e80b3e973e41e4a489a7326929aeee6393494192"
+    },
+    "artifact_d3dfa2f4d0bcb8b96156c196": {
+      "id": "artifact_d3dfa2f4d0bcb8b96156c196",
+      "kind": "observation",
+      "path": "artifacts/artifact_d3dfa2f4d0bcb8b96156c196.json",
+      "sha256": "d74409bff0ce222dae8f4fb867d5fccdc54ec7e3515aa2a6416480fd06610cc7"
+    },
+    "artifact_06f5984d82a658b24268e222": {
+      "id": "artifact_06f5984d82a658b24268e222",
+      "kind": "request",
+      "path": "artifacts/artifact_06f5984d82a658b24268e222.json",
+      "sha256": "c1948fda01f698216bc87ca8f7178115106799119a61bce789d0b8840f967e55"
+    }
+  }
+}

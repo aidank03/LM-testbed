@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_42f3cd58a0d74a73b04750260c24e257",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_42f3cd58a0d74a73b04750260c24e257",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_5fba208ecc34eb784f70da2e"
+    ],
+    "explanation": "Without a reference, center = 2.871362885378302e-08 m and sigma = 1e-09 m. With drift_bound_m=0.0, B=0.0. The 95% interval is h = 1.959963984540054*1e-09 + 0.0 = 1.96e-09 m. lower = 2.871362885378302e-08 - 1.96e-09 = 2.675e-08 m; upper = 2.871362885378302e-08 + 1.96e-09 = 3.067e-08 m. T = -resolution_m = -1e-08 m. Since upper (3.067e-08) <= T (-1e-08) is false, but lower (2.675e-08) > T (-1e-08) is true, the entire interval rules out inward motion beyond resolution, so compression_not_supported would be chosen if we were testing for outward motion. However, the question asks about signed radial material displacement x, and negative displacement is inward (compression). Since the entire interval is positive (outward), it rules out inward motion, so compression is not supported. Wait, let me re-read the decision contract: 'Choose compression_supported only if upper <= T'. Here upper = 3.067e-08, T = -1e-08. upper <= T is false. 'Choose compression_not_supported only if lower > T'. Here lower = 2.675e-08, T = -1e-08. lower > T is true. So the decision should be compression_not_supported.",
+    "next_step": "No further steps needed; the observation conclusively rules out inward motion beyond the resolution limit."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1342,
+    "output_tokens": 492,
+    "elapsed_seconds": 10.391201083999476
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_419596c63b8c41d5b09dc0ab": {
+      "id": "artifact_419596c63b8c41d5b09dc0ab",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_419596c63b8c41d5b09dc0ab.json",
+      "sha256": "9b7027c797a4d17be30abfb3e99370cb94dceb64848cf9a876ae2ac9dd294e55"
+    },
+    "artifact_5fba208ecc34eb784f70da2e": {
+      "id": "artifact_5fba208ecc34eb784f70da2e",
+      "kind": "observation",
+      "path": "artifacts/artifact_5fba208ecc34eb784f70da2e.json",
+      "sha256": "2dd82a5024b4b301dee53b82f957d9c92bb8952b7b270365ec5f70fa952992ba"
+    },
+    "artifact_19c6b7cb07e9fce3db58dccb": {
+      "id": "artifact_19c6b7cb07e9fce3db58dccb",
+      "kind": "request",
+      "path": "artifacts/artifact_19c6b7cb07e9fce3db58dccb.json",
+      "sha256": "198d784a6765df5bbfac3a673c16426296bf8c7b5b0b8b0e8d62dffac1ca1ec3"
+    }
+  }
+}

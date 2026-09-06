@@ -1,0 +1,88 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_0408fbfa3db64479877ae1d784f5daf4",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_0408fbfa3db64479877ae1d784f5daf4",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_34497760ac1d86e7864520bb",
+      "artifact_04c93a0848138abf62f9bf00"
+    ],
+    "explanation": "The conditional interval [-1.0169446882287529e-07, -1.6179023708522764e-09] crosses the resolution threshold T = -1e-08, making it ambiguous whether inward motion is supported or not.",
+    "next_step": "Obtain a calibrated drift witness with a defensible residual mismatch bound to resolve ambiguity."
+  },
+  "numerical_result": {
+    "schema_version": "motion-result/1",
+    "task": "motion.fixed_window/1",
+    "method": "bounded",
+    "information_track": "reference_available",
+    "unit": "m",
+    "window_s": [
+      0.0,
+      1e-07
+    ],
+    "resolution_m": 1e-08,
+    "point_m": -5.1656185596863783e-08,
+    "interval_m": [
+      -1.0169446882287529e-07,
+      -1.6179023708522764e-09
+    ],
+    "nominal_noise_coverage": 0.95,
+    "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+    "inference": "estimated_conditional",
+    "decision": "ambiguous",
+    "assumptions": [
+      "Known unit gain and fixed-window reconstruction.",
+      "Known zero-mean Gaussian measurement noise.",
+      "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+    ],
+    "limitations": [
+      "Not validated on independent real data.",
+      "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+      "No phase, instability mechanism, or causal inference."
+    ],
+    "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+    "reason": "Decision uses the entire conditional interval against the stated resolution."
+  },
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 3945,
+    "output_tokens": 221,
+    "elapsed_seconds": 5.686170707999736
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_23dfe0d2a665e64f163e4050": {
+      "id": "artifact_23dfe0d2a665e64f163e4050",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_23dfe0d2a665e64f163e4050.json",
+      "sha256": "939e59be262144809c7028b9c06d96902ea98310103efa733e8c4440d71a054f"
+    },
+    "artifact_34497760ac1d86e7864520bb": {
+      "id": "artifact_34497760ac1d86e7864520bb",
+      "kind": "observation",
+      "path": "artifacts/artifact_34497760ac1d86e7864520bb.json",
+      "sha256": "46f26fb9ac8093161c15d887ab7c5d20a55580efff8064c28bfe566434525632"
+    },
+    "artifact_3a9f1c72799beb6da144585b": {
+      "id": "artifact_3a9f1c72799beb6da144585b",
+      "kind": "request",
+      "path": "artifacts/artifact_3a9f1c72799beb6da144585b.json",
+      "sha256": "1bfe48110eea41d3c0aa69a1fecdef7c37ed65140d4edfa874043ac2e0940717"
+    },
+    "artifact_04c93a0848138abf62f9bf00": {
+      "id": "artifact_04c93a0848138abf62f9bf00",
+      "kind": "infer_motion",
+      "path": "artifacts/artifact_04c93a0848138abf62f9bf00.json",
+      "sha256": "73bef4d739a17c24098b0b85ed1ce4e19922938dde59dbb4d7400e20a5de233a"
+    }
+  }
+}

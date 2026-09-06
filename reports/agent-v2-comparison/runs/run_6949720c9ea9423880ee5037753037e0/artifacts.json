@@ -1,0 +1,26 @@
+{
+  "artifact_fcf9b6bd23f75a9113206d06": {
+    "id": "artifact_fcf9b6bd23f75a9113206d06",
+    "kind": "run_manifest",
+    "path": "artifacts/artifact_fcf9b6bd23f75a9113206d06.json",
+    "sha256": "136eb7902bdb760e0b2b7441029389f9ab2618e9956fe2b3a7f2bba5298a0708"
+  },
+  "artifact_c782f49bf6902f8157338ff7": {
+    "id": "artifact_c782f49bf6902f8157338ff7",
+    "kind": "observation",
+    "path": "artifacts/artifact_c782f49bf6902f8157338ff7.json",
+    "sha256": "d9d17a4d8e76cc59ad1b4bf2ef75c70a82afa3eb4f8a68707360e905cf0ece1e"
+  },
+  "artifact_49615a9c7441241a5e4b3a84": {
+    "id": "artifact_49615a9c7441241a5e4b3a84",
+    "kind": "request",
+    "path": "artifacts/artifact_49615a9c7441241a5e4b3a84.json",
+    "sha256": "404369d133e653735ad4fcfb4f06a1df6d497581eb7d693237ce1a07e72bd925"
+  },
+  "artifact_c2b3e2e8fcbc6da62650b134": {
+    "id": "artifact_c2b3e2e8fcbc6da62650b134",
+    "kind": "infer_motion",
+    "path": "artifacts/artifact_c2b3e2e8fcbc6da62650b134.json",
+    "sha256": "0f9e9c1c46c5343f1bf087a765dfa715f64797195f416d1300ddc35a7ba7c16b"
+  }
+}

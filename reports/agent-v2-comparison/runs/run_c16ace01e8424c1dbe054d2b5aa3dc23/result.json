@@ -1,0 +1,42 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_c16ace01e8424c1dbe054d2b5aa3dc23",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_c16ace01e8424c1dbe054d2b5aa3dc23",
+  "execution": "budget_exceeded",
+  "failure": null,
+  "final": null,
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 6,
+    "tool_calls": 6,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 9221,
+    "output_tokens": 1370,
+    "elapsed_seconds": 22.005898291999983
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_5c8a550a3e72cfe2c99c888a": {
+      "id": "artifact_5c8a550a3e72cfe2c99c888a",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_5c8a550a3e72cfe2c99c888a.json",
+      "sha256": "4b35f69b43f0b4db4bcd47c7d9e1e7b8da5120b94ad9b2d995d277d4bda7997c"
+    },
+    "artifact_c819c70bc38ccbcedc1a17e4": {
+      "id": "artifact_c819c70bc38ccbcedc1a17e4",
+      "kind": "observation",
+      "path": "artifacts/artifact_c819c70bc38ccbcedc1a17e4.json",
+      "sha256": "50f657ac71763149f81ca583ee0eec40a73ceb88eedc5c3dd29e649cfb049ff5"
+    },
+    "artifact_9be726ac735f1e56c6566f5d": {
+      "id": "artifact_9be726ac735f1e56c6566f5d",
+      "kind": "request",
+      "path": "artifacts/artifact_9be726ac735f1e56c6566f5d.json",
+      "sha256": "35d15459d6e81b07c14b0d78a813d5a6f832bd101f8634a329ed31910355e115"
+    }
+  }
+}

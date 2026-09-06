@@ -1,0 +1,55 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_579213d93cdd42f9b52e2f3614b17e7b",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-tools/runs/run_579213d93cdd42f9b52e2f3614b17e7b",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_e5d4a8dfeeaf69e4bb573e7c"
+    ],
+    "explanation": "The apparent displacement (5.44e-08 m) exceeds the stated resolution limit (1e-08 m). With zero drift bound and synthetic reconstruction, this supports compression beyond the nominal resolution.",
+    "next_step": "Proceed to next measurement or finalize analysis."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 5.32293587499953
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_16318c94c0c7768f45adaa91": {
+      "id": "artifact_16318c94c0c7768f45adaa91",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_16318c94c0c7768f45adaa91.json",
+      "sha256": "b665ba84ad02e3f9b6ff1b141ed256cd53c04210029ba2a3f766e529b651d369"
+    },
+    "artifact_e5d4a8dfeeaf69e4bb573e7c": {
+      "id": "artifact_e5d4a8dfeeaf69e4bb573e7c",
+      "kind": "observation",
+      "path": "artifacts/artifact_e5d4a8dfeeaf69e4bb573e7c.json",
+      "sha256": "67c037a1503a68d0179b4ae54739621006914e486887cd60fda5229dc308926c"
+    },
+    "artifact_b7d6ecfec735cddb9d4e83bc": {
+      "id": "artifact_b7d6ecfec735cddb9d4e83bc",
+      "kind": "request",
+      "path": "artifacts/artifact_b7d6ecfec735cddb9d4e83bc.json",
+      "sha256": "f9effe8040f60c323393f6147c6759322e382093f0044b24de938d5372615ea8"
+    },
+    "artifact_f8aa35b54c762073ac728a16": {
+      "id": "artifact_f8aa35b54c762073ac728a16",
+      "kind": "inspect_observation",
+      "path": "artifacts/artifact_f8aa35b54c762073ac728a16.json",
+      "sha256": "67c037a1503a68d0179b4ae54739621006914e486887cd60fda5229dc308926c"
+    }
+  }
+}

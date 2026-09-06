@@ -1,0 +1,136 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:55:24.751284+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_e2f966c05a1bec70e4d9a872"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a808bb382ca64aaa659388a63757086d22c04ae0c05431b11595fe87477a2c1a"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:55:24.751518+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "infer_motion",
+      "arguments": {
+        "method": "bounded"
+      },
+      "metadata": {
+        "provider": "conventional",
+        "model": "conventional-tool-policy/1",
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    "previous_hash": "a808bb382ca64aaa659388a63757086d22c04ae0c05431b11595fe87477a2c1a",
+    "hash": "312aa46c41289acce448e069c87a934046bd88356eb2589d6d8282e97feed35f"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:55:24.752238+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "infer_motion",
+      "ok": true,
+      "artifact_id": "artifact_9443d7b3b4cd1e18613a674d",
+      "result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          3e-08,
+          6e-08
+        ],
+        "resolution_m": 5e-09,
+        "point_m": null,
+        "interval_m": null,
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "ambiguous",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+      }
+    },
+    "previous_hash": "312aa46c41289acce448e069c87a934046bd88356eb2589d6d8282e97feed35f",
+    "hash": "9cf73297c3f7b3f41460a59d6458df19c61cf9c85b93e5e5df6131ae26e6a6f1"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:55:24.752494+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_9443d7b3b4cd1e18613a674d"
+        ],
+        "explanation": "Unbounded nuisance: different material motions yield identical allowed observations.",
+        "next_step": "A calibrated drift witness with a defensible residual mismatch bound."
+      },
+      "metadata": {
+        "provider": "conventional",
+        "model": "conventional-tool-policy/1",
+        "cost_usd": 0.0,
+        "input_tokens": 0,
+        "output_tokens": 0
+      }
+    },
+    "previous_hash": "9cf73297c3f7b3f41460a59d6458df19c61cf9c85b93e5e5df6131ae26e6a6f1",
+    "hash": "ec7a455f4ebfad211dc20f9fc2f2d435ce0954723400452efcf0e36575effb83"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:55:24.752719+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_9443d7b3b4cd1e18613a674d"
+      ],
+      "explanation": "Unbounded nuisance: different material motions yield identical allowed observations.",
+      "next_step": "A calibrated drift witness with a defensible residual mismatch bound."
+    },
+    "previous_hash": "ec7a455f4ebfad211dc20f9fc2f2d435ce0954723400452efcf0e36575effb83",
+    "hash": "b36938dffb7ed7f23b378d81ef412d1c79cadd971014420d8e45bf7cd8439bcf"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:55:24.752928+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 0.01188941700002033
+      },
+      "cleanup": []
+    },
+    "previous_hash": "b36938dffb7ed7f23b378d81ef412d1c79cadd971014420d8e45bf7cd8439bcf",
+    "hash": "e6c2dd99e0151982f954cd5f09e7337f64bee80f5586578d7beba8621bba4aa0"
+  }
+]

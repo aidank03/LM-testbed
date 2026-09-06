@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_02d4aa301c9b43f6912c254bc70a6c5e",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_02d4aa301c9b43f6912c254bc70a6c5e",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_34497760ac1d86e7864520bb"
+    ],
+    "explanation": "Using the reference, center = -7.53e-08 - (-2.36e-08) = -5.17e-08 m. Sigma = sqrt(1e-18 + 6.25e-16) \u2248 2.51e-08 m. B = 1e-09 m. h = 1.96*2.51e-08 + 1e-09 \u2248 5.93e-08 m. Interval: [-5.77e-08, -4.24e-08] m. Resolution T = -1e-08 m. Since upper (-4.24e-08) <= T, compression is supported.",
+    "next_step": "Report compression_supported with interval [-5.77e-08, -4.24e-08] m."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1718,
+    "output_tokens": 255,
+    "elapsed_seconds": 7.6651107920006325
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_8573950f9b9a8d5c2375ffc5": {
+      "id": "artifact_8573950f9b9a8d5c2375ffc5",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_8573950f9b9a8d5c2375ffc5.json",
+      "sha256": "de9d39a4d7942d64af78e2d4af11f967484f353830b17cac7e2a8b08745b4158"
+    },
+    "artifact_34497760ac1d86e7864520bb": {
+      "id": "artifact_34497760ac1d86e7864520bb",
+      "kind": "observation",
+      "path": "artifacts/artifact_34497760ac1d86e7864520bb.json",
+      "sha256": "46f26fb9ac8093161c15d887ab7c5d20a55580efff8064c28bfe566434525632"
+    },
+    "artifact_3a9f1c72799beb6da144585b": {
+      "id": "artifact_3a9f1c72799beb6da144585b",
+      "kind": "request",
+      "path": "artifacts/artifact_3a9f1c72799beb6da144585b.json",
+      "sha256": "1bfe48110eea41d3c0aa69a1fecdef7c37ed65140d4edfa874043ac2e0940717"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.venv-*/
+experiments/local_model/cache/
+experiments/local_model/models/
+experiments/local_model/base_model/
+experiments/local_model/checkpoints/
+*.safetensors
+*.gguf
+runs/
+build/
+dist/
+outputs/
+.env
+.env.*
+!.env.example
+data/raw/
+data/private/
+*.log
+!reports/closed-loop-job-evidence/**/*.log
+# Curated release evidence; ordinary runtime output and large base weights stay ignored.
+!reports/**/runs/
+!reports/**/runs/**
+!experiments/local_model/posttrain_run/selected_adapter/adapter_model.safetensors
+!experiments/local_model/posttrain.log
+
+# Local-only liner-stability research plans and theory notes.
+# Keep these files in the working directory, but never publish them.
+docs/Liner_Stability_Evaluation_Plan.pdf
+docs/PROJECT_SECTION.md
+docs/SCIENCE_BOUNDARIES.md
+docs/MODEL_CARD.md
+docs/LEGACY_V02_README.md

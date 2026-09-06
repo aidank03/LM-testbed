@@ -1,0 +1,12 @@
+{
+  "max_steps": 18,
+  "max_tool_calls": 18,
+  "max_seconds": 180,
+  "max_cloud_cost_usd": 0,
+  "allowed_providers": ["local"],
+  "allowed_tools": ["inspect_observation", "infer_motion", "submit_simulation", "job_status", "job_collect", "job_cancel", "update_hypothesis", "finish"],
+  "data_egress": false,
+  "max_payload_bytes": 40000,
+  "max_output_tokens": 700,
+  "allow_hpc": true
+}

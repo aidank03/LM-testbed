@@ -1,0 +1,4591 @@
+{
+  "schema_version": "factor-cases/1",
+  "split": "development",
+  "contract_hash": "702662170407f6fa0f3e8c57f84709afc19af48b56a1b3f2b30e9ef3e920bb29",
+  "cases": [
+    {
+      "case_id": "593f320ebd72ad8b354036cf",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "593f320ebd72ad8b354036cf",
+        "apparent_displacement_m": -6.373095316282339e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.9332059369703534e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a6188c1cbde882412de69181",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a6188c1cbde882412de69181",
+        "apparent_displacement_m": 3.0614714056016825e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a02d022286c4322695391009",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a02d022286c4322695391009",
+        "apparent_displacement_m": -7.015882919288216e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.561474660606297e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "01237783287e08fd8bd9b4fa",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "01237783287e08fd8bd9b4fa",
+        "apparent_displacement_m": -5.368236581213038e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8ae0fcc06953a5598e2ef51a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8ae0fcc06953a5598e2ef51a",
+        "apparent_displacement_m": 4.501668847828941e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "721ed26d67b821dcadc7e777",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "721ed26d67b821dcadc7e777",
+        "apparent_displacement_m": 2.8561278877795135e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "2711e43686697770b21d9cfe",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "2711e43686697770b21d9cfe",
+        "apparent_displacement_m": -5.463178034136245e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "f13f115b4603f3dcac161dfc",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "f13f115b4603f3dcac161dfc",
+        "apparent_displacement_m": -5.7620351037887455e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "fd1f9815d81458927a1c7f85",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "fd1f9815d81458927a1c7f85",
+        "apparent_displacement_m": 4.4928414998278115e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "871aa0479350984c17962faf",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "871aa0479350984c17962faf",
+        "apparent_displacement_m": -4.911423329016221e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c93760d0b659aaaa675df825",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c93760d0b659aaaa675df825",
+        "apparent_displacement_m": -3.2977886215862033e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9395175002937357e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "308c6bedcf52350291a62ee2",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "308c6bedcf52350291a62ee2",
+        "apparent_displacement_m": -5.7620351037887455e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.6438656365973812e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "99f5f9f82eb46418ff8c9a48",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "99f5f9f82eb46418ff8c9a48",
+        "apparent_displacement_m": -3.2027675909871006e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "71b9105b0ac06dfe91b92472",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "71b9105b0ac06dfe91b92472",
+        "apparent_displacement_m": -3.3195735053485545e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "55ae69182876a7552437a2cb",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "55ae69182876a7552437a2cb",
+        "apparent_displacement_m": -5.542177729998748e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.5396416193441306e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "75195382f318644b1ee5de56",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "75195382f318644b1ee5de56",
+        "apparent_displacement_m": -5.2684814192536106e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a47882137a272006da434c86",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a47882137a272006da434c86",
+        "apparent_displacement_m": -2.670219058203023e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "2ddbc3957caaf0e8491d24a7",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "2ddbc3957caaf0e8491d24a7",
+        "apparent_displacement_m": 4.494354830265976e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ab947fe398c85eb09ed78b2c",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ab947fe398c85eb09ed78b2c",
+        "apparent_displacement_m": -6.203705500575615e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "1b9731a66ea899ff5478897d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "1b9731a66ea899ff5478897d",
+        "apparent_displacement_m": -4.553090750511521e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "50a49b77774df040fc437955",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "50a49b77774df040fc437955",
+        "apparent_displacement_m": -3.043459611737947e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "80aed0317b7c8c0698b42400",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "80aed0317b7c8c0698b42400",
+        "apparent_displacement_m": -4.553090750511521e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ddac74b15705e24defda6314",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ddac74b15705e24defda6314",
+        "apparent_displacement_m": -4.335289249846861e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "4fc2e07f4dec488e5bdd82b9",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "4fc2e07f4dec488e5bdd82b9",
+        "apparent_displacement_m": -2.9397333279848035e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "abab6e4712dbd0c5156c6b6a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "abab6e4712dbd0c5156c6b6a",
+        "apparent_displacement_m": -4.4346250636945025e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -8.324555272261452e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ec0ace949323cc0e7e6d3eaf",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ec0ace949323cc0e7e6d3eaf",
+        "apparent_displacement_m": -5.6276541317216305e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "0282f858191ecfe86fdacd87",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "0282f858191ecfe86fdacd87",
+        "apparent_displacement_m": -7.307750987205533e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -1.5227079856941817e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8fcd32f86c46c985034dce7a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8fcd32f86c46c985034dce7a",
+        "apparent_displacement_m": 4.212739862566156e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c3de4e4b36395ba03b665b9f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c3de4e4b36395ba03b665b9f",
+        "apparent_displacement_m": -3.2027675909871006e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.5680090999231743e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a0ac35ad940fe38410429f1d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a0ac35ad940fe38410429f1d",
+        "apparent_displacement_m": -6.67459389714849e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8c65df61e4c073d3045f96da",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8c65df61e4c073d3045f96da",
+        "apparent_displacement_m": -5.0491108763759484e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "6a84de209b87bdccce4f9e51",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "6a84de209b87bdccce4f9e51",
+        "apparent_displacement_m": -4.336843445811715e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.5530242438733955e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "33491b3112360d1d629ad782",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "33491b3112360d1d629ad782",
+        "apparent_displacement_m": 1.5322121846851347e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 4.3653211698396716e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "fc510af8e6f2c027f915abd7",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "fc510af8e6f2c027f915abd7",
+        "apparent_displacement_m": 1.069473553750624e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 4.1883336856917405e-09,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "86defbf6f4546711fce51e9b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "86defbf6f4546711fce51e9b",
+        "apparent_displacement_m": -5.4751449649344135e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.123843629485524e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ccc930c49f0e35629ebafc9f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ccc930c49f0e35629ebafc9f",
+        "apparent_displacement_m": -4.827805855119023e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.3699449792206917e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8f4c915eb53b06c26fabff94",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8f4c915eb53b06c26fabff94",
+        "apparent_displacement_m": 3.8704509638888074e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.272017775853697e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "e5a90d5d7f920b99c62f8e70",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "e5a90d5d7f920b99c62f8e70",
+        "apparent_displacement_m": -4.100322651714912e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.0215075498387744e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a44fd877adc066ec9a7ee5a5",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a44fd877adc066ec9a7ee5a5",
+        "apparent_displacement_m": -5.194205997442879e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.6270601760734394e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "37cbcf13fca754387d27e205",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "37cbcf13fca754387d27e205",
+        "apparent_displacement_m": -2.9725488109836962e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "10f138e0110661598103af7a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "10f138e0110661598103af7a",
+        "apparent_displacement_m": 6.436850977973703e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.371406657537428e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "cf7eef6445043d134f628f1d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "cf7eef6445043d134f628f1d",
+        "apparent_displacement_m": 2.5908752067077205e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -1.3107986317779517e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b1fd61f55cefdf9061eafffa",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b1fd61f55cefdf9061eafffa",
+        "apparent_displacement_m": -5.194205997442879e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9695393510890855e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "4940281f3b3e9ae926eba516",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "4940281f3b3e9ae926eba516",
+        "apparent_displacement_m": 5.208184329906724e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "812245c84a0b3d784fbf901c",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "812245c84a0b3d784fbf901c",
+        "apparent_displacement_m": -4.963174307411317e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9524510070449782e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ba0b4d367274e0d684ed8bf3",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ba0b4d367274e0d684ed8bf3",
+        "apparent_displacement_m": 2.898782737111143e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.3107980377961005e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "fd760c6c7ff93314f007c390",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "fd760c6c7ff93314f007c390",
+        "apparent_displacement_m": -3.4839966868317015e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "644f04b3bbdfe1f0b1b23610",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "644f04b3bbdfe1f0b1b23610",
+        "apparent_displacement_m": -4.02651914064904e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.933280487646532e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b934860a303dcf8f11f6390a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b934860a303dcf8f11f6390a",
+        "apparent_displacement_m": 3.76610554362888e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.2227339783796604e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "1d4837775dd96625cd471adb",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "1d4837775dd96625cd471adb",
+        "apparent_displacement_m": -2.5437117912679406e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "262ef982632a54b651dc15cd",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "262ef982632a54b651dc15cd",
+        "apparent_displacement_m": -4.335289249846861e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.474658228038341e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "7241d70eb4a5b9bb3dcffe69",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "7241d70eb4a5b9bb3dcffe69",
+        "apparent_displacement_m": -4.0780264732722704e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "02e0afbdf83dae5bbd46167d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "02e0afbdf83dae5bbd46167d",
+        "apparent_displacement_m": 5.4439488161807445e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "02e2a6c72593c7fa296ea75f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "02e2a6c72593c7fa296ea75f",
+        "apparent_displacement_m": -4.399699943838562e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "0e5291cdde0f80314e861e11",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "0e5291cdde0f80314e861e11",
+        "apparent_displacement_m": 3.925512969473075e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "01fb1a6e225766a11bec49e8",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "01fb1a6e225766a11bec49e8",
+        "apparent_displacement_m": -5.1459590596164784e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "07bdfc917a1509db388e7a52",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "07bdfc917a1509db388e7a52",
+        "apparent_displacement_m": -4.100322651714912e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "61f424a23b7e29c177e82724",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "61f424a23b7e29c177e82724",
+        "apparent_displacement_m": 7.592413983698751e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 1.2847182116468724e-07,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "9ac708b20b851048f75640e3",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "9ac708b20b851048f75640e3",
+        "apparent_displacement_m": -4.9922600815780483e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "15ec80380bbbbe3a31a079c9",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "15ec80380bbbbe3a31a079c9",
+        "apparent_displacement_m": -4.833034602299253e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "49c10e4bfffc7a8d1f1c45dd",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "49c10e4bfffc7a8d1f1c45dd",
+        "apparent_displacement_m": -6.67459389714849e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.4162544673213633e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "d7674f240f9ff5a76e5fcb40",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "d7674f240f9ff5a76e5fcb40",
+        "apparent_displacement_m": -4.275625913138984e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ff63c3ca854390d18f2e8d38",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ff63c3ca854390d18f2e8d38",
+        "apparent_displacement_m": 8.815168468505133e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 5.03768258724224e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "42d8f2f255e74ec7bddab061",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "42d8f2f255e74ec7bddab061",
+        "apparent_displacement_m": -4.673094017400398e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.8636667754076362e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b6dbe9ec0d6c572e7213cc48",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b6dbe9ec0d6c572e7213cc48",
+        "apparent_displacement_m": -3.2459038416334804e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "e16353c6393d599954792a41",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "e16353c6393d599954792a41",
+        "apparent_displacement_m": -3.456631681631348e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "dfe65a3b6b4a7878e1b497f4",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "dfe65a3b6b4a7878e1b497f4",
+        "apparent_displacement_m": -4.573175747392901e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.6002888512043155e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8949dfb334e74d33c6015f29",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8949dfb334e74d33c6015f29",
+        "apparent_displacement_m": -1.5764533160725613e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 1.6094130493505724e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "e04f148096611f9c3d353eac",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "e04f148096611f9c3d353eac",
+        "apparent_displacement_m": 4.658913673276897e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "5097550d699e691f107228fc",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "5097550d699e691f107228fc",
+        "apparent_displacement_m": -3.2027675909871006e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "69192b8ccb03b48b62f8c596",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "69192b8ccb03b48b62f8c596",
+        "apparent_displacement_m": -2.9767096746086233e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "9c58054411bdb9c25fd3d06d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "9c58054411bdb9c25fd3d06d",
+        "apparent_displacement_m": 3.5497748370710445e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "5226f7b8343b9e7d07867fbe",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "5226f7b8343b9e7d07867fbe",
+        "apparent_displacement_m": -5.4751449649344135e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.4548626182215587e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "af234220692eb28269fa2298",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "af234220692eb28269fa2298",
+        "apparent_displacement_m": 5.3048862262628915e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "5b08e83e08e8d48ae45f66d1",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "5b08e83e08e8d48ae45f66d1",
+        "apparent_displacement_m": -3.2027675909871006e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.033594596428974e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "e0d7b2eb8b90bfe1cacb9f6b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "e0d7b2eb8b90bfe1cacb9f6b",
+        "apparent_displacement_m": -4.02651914064904e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.3949831049670858e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "7134d3448466c3754cf29244",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "7134d3448466c3754cf29244",
+        "apparent_displacement_m": 5.704764777815226e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 8.900235775029246e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3efff12bbfa4cd113e895506",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3efff12bbfa4cd113e895506",
+        "apparent_displacement_m": 8.002452571776561e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 1.2196956342859214e-07,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "49f735a671d15e133e5e3574",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "49f735a671d15e133e5e3574",
+        "apparent_displacement_m": -6.623549907723484e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 7.682203256120703e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "90f8d690d163dcbc7b7c3f74",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "90f8d690d163dcbc7b7c3f74",
+        "apparent_displacement_m": -7.371991829239663e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -1.0421584444816333e-07,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "07b730492da3939abd4522f5",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "07b730492da3939abd4522f5",
+        "apparent_displacement_m": -4.336843445811715e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "bd85eb0f001a6496ea02820e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "bd85eb0f001a6496ea02820e",
+        "apparent_displacement_m": 3.297626849020089e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "85559c6724d752626553ebc6",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "85559c6724d752626553ebc6",
+        "apparent_displacement_m": -5.542177729998748e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.120024874305836e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8c31a615b98e2e5dc0168aae",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8c31a615b98e2e5dc0168aae",
+        "apparent_displacement_m": 4.0856299502453305e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3d747a06807fa0066b95ce8d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3d747a06807fa0066b95ce8d",
+        "apparent_displacement_m": -4.573175747392901e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ab75e99c8eb8797d5cc91d81",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ab75e99c8eb8797d5cc91d81",
+        "apparent_displacement_m": -6.67459389714849e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "954b394473b8f8622a09bc4d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "954b394473b8f8622a09bc4d",
+        "apparent_displacement_m": -4.335289249846861e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "1bd84cce3b6afa4c21077fe3",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "1bd84cce3b6afa4c21077fe3",
+        "apparent_displacement_m": 2.807869810422496e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "92e0d7d8af83e267e1fb0ee3",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "92e0d7d8af83e267e1fb0ee3",
+        "apparent_displacement_m": -1.2570699387570305e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.5048091116010436e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "0b5474abd7bc21e2b8f6ffda",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "0b5474abd7bc21e2b8f6ffda",
+        "apparent_displacement_m": -5.280101324785037e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.627939707350352e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "edc5b3ff64015d523d54bb1d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "edc5b3ff64015d523d54bb1d",
+        "apparent_displacement_m": -4.673094017400398e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "940f5486ad63256d5bf7d161",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "940f5486ad63256d5bf7d161",
+        "apparent_displacement_m": 3.6670709820483885e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3231378dc0471cf8294f86a6",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3231378dc0471cf8294f86a6",
+        "apparent_displacement_m": -6.67459389714849e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.067243553822773e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a768cf09af1b437f9066f05a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a768cf09af1b437f9066f05a",
+        "apparent_displacement_m": -6.160838054352691e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.4127848458545724e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "890398ae6d4972193b5ad12d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "890398ae6d4972193b5ad12d",
+        "apparent_displacement_m": -3.122881767334348e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "bc14b0a9127674b2d8762cf4",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "bc14b0a9127674b2d8762cf4",
+        "apparent_displacement_m": -4.482456790455368e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "9f0490564eb002db872e360d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "9f0490564eb002db872e360d",
+        "apparent_displacement_m": -4.963174307411317e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "965757061b90a46b1b86ec43",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "965757061b90a46b1b86ec43",
+        "apparent_displacement_m": -4.4988268163465955e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -8.809197416639449e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "f487d46b9f80cb2397d52c00",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "f487d46b9f80cb2397d52c00",
+        "apparent_displacement_m": -5.4751449649344135e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "395e10d9c37c17000f0f3e84",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "395e10d9c37c17000f0f3e84",
+        "apparent_displacement_m": -5.463178034136245e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c75edd205d37a5b8b5041bbf",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c75edd205d37a5b8b5041bbf",
+        "apparent_displacement_m": -4.336843445811715e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "caa6efd6346766337661f217",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "caa6efd6346766337661f217",
+        "apparent_displacement_m": -5.7620351037887455e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "56779a76939d59aad105d39e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "56779a76939d59aad105d39e",
+        "apparent_displacement_m": 1.8050151746648182e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 6.765932475473404e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c5dc6364cc9b80673d7e72e1",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c5dc6364cc9b80673d7e72e1",
+        "apparent_displacement_m": -5.194205997442879e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "159d4a228a120c2e044f336b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "159d4a228a120c2e044f336b",
+        "apparent_displacement_m": 4.3163691755015946e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "bbac7ef2ceb61f2fd57be669",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "bbac7ef2ceb61f2fd57be669",
+        "apparent_displacement_m": -2.8044259955245224e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "92ab7bd43246bd9b6ad8a241",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "92ab7bd43246bd9b6ad8a241",
+        "apparent_displacement_m": -3.2977886215862033e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.513646285692858e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8a9f452c576137d99a4aceb3",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8a9f452c576137d99a4aceb3",
+        "apparent_displacement_m": -6.160838054352691e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "9e767061dbb760ca47a4bc1a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "9e767061dbb760ca47a4bc1a",
+        "apparent_displacement_m": -8.966577582470371e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.9451557060213255e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "404559b19600d918a153ffed",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "404559b19600d918a153ffed",
+        "apparent_displacement_m": 7.076463159517499e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 6.5126541311986e-09,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "970f9950f161bc04c9013f49",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "970f9950f161bc04c9013f49",
+        "apparent_displacement_m": -4.827805855119023e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9024356850195742e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "62b17603db20f4530c420343",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "62b17603db20f4530c420343",
+        "apparent_displacement_m": -4.02651914064904e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "bb516e01bc740a3d7484770d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "bb516e01bc740a3d7484770d",
+        "apparent_displacement_m": -4.409477864218291e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "7493e4be80df1cda17b3bb63",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "7493e4be80df1cda17b3bb63",
+        "apparent_displacement_m": 5.987666375060781e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.1042726520031174e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "4dab135178ed7fbba1274c88",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "4dab135178ed7fbba1274c88",
+        "apparent_displacement_m": 4.381221998789536e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "394c5991d40152d2631ec3ee",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "394c5991d40152d2631ec3ee",
+        "apparent_displacement_m": 3.375886145381111e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -1.0314478803725717e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "5c80150d1cf449e3fd4171c5",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "5c80150d1cf449e3fd4171c5",
+        "apparent_displacement_m": -5.463178034136245e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9491136881054882e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "0331684c2eaedc10f663fe8e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "0331684c2eaedc10f663fe8e",
+        "apparent_displacement_m": -4.827805855119023e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "299e78c607a3ccc69cc077cc",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "299e78c607a3ccc69cc077cc",
+        "apparent_displacement_m": -4.100322651714912e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.3070693131060706e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3deb370c0400d64c15aa9966",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3deb370c0400d64c15aa9966",
+        "apparent_displacement_m": -3.0615369571437684e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "4403d3df16ad26e3180b875f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "4403d3df16ad26e3180b875f",
+        "apparent_displacement_m": -3.2689125635683284e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "586cda22fa1040e98f45b20c",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "586cda22fa1040e98f45b20c",
+        "apparent_displacement_m": 2.8377427839551605e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "885a6a248e5f7822cfc300e5",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "885a6a248e5f7822cfc300e5",
+        "apparent_displacement_m": 2.961853961491134e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c7dd491febde91d135e28800",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c7dd491febde91d135e28800",
+        "apparent_displacement_m": -3.336577164104258e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "7f73b929210d4aa6e574cb8f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "7f73b929210d4aa6e574cb8f",
+        "apparent_displacement_m": 6.801257668820169e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 4.413426232008751e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "56f6cf791370b9e8334d76aa",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "56f6cf791370b9e8334d76aa",
+        "apparent_displacement_m": -3.226530714650114e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "69ecca8b0f1822b330bb8f6e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "69ecca8b0f1822b330bb8f6e",
+        "apparent_displacement_m": -6.203705500575615e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.204465464729827e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b9def8302224c187ebb282d9",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b9def8302224c187ebb282d9",
+        "apparent_displacement_m": -4.0606911292856006e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "eed76487164b86fdc5f9c0e7",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "eed76487164b86fdc5f9c0e7",
+        "apparent_displacement_m": -4.573175747392901e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "9dd470ae5e58e7b7613ceb8e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "9dd470ae5e58e7b7613ceb8e",
+        "apparent_displacement_m": -5.542177729998748e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "af25114733a6a67ada04da09",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "af25114733a6a67ada04da09",
+        "apparent_displacement_m": -7.015882919288216e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8ee872806baf1b6eb217bb3e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8ee872806baf1b6eb217bb3e",
+        "apparent_displacement_m": -6.160838054352691e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c08fdea57b43eadccc735b3f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c08fdea57b43eadccc735b3f",
+        "apparent_displacement_m": 5.0429799611649335e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "2322e86cccdfc19e2e7370bd",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "2322e86cccdfc19e2e7370bd",
+        "apparent_displacement_m": -5.911175002831507e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -1.107789236396624e-07,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "40cd856fc38a2489d07f8c9d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "40cd856fc38a2489d07f8c9d",
+        "apparent_displacement_m": -5.194205997442879e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a13d1a1eab1eb015c8189414",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a13d1a1eab1eb015c8189414",
+        "apparent_displacement_m": 7.96881602102143e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 6.83590689935498e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3bf9ac8a5668863aa6f0e352",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3bf9ac8a5668863aa6f0e352",
+        "apparent_displacement_m": -5.280101324785037e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "d1330b6ee5fa08d0968afaf2",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "d1330b6ee5fa08d0968afaf2",
+        "apparent_displacement_m": 2.7085280172390558e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "4d58176e8d11b0907e2d2860",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "4d58176e8d11b0907e2d2860",
+        "apparent_displacement_m": 1.1377946933721148e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 1.3884142605324849e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "39ad6097452177ddea365a0f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "39ad6097452177ddea365a0f",
+        "apparent_displacement_m": -4.7791822798710914e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "59be167c9e2f4f8a24e2af0a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "59be167c9e2f4f8a24e2af0a",
+        "apparent_displacement_m": 4.333283249341148e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "43107d80fba56c6534ce80e1",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "43107d80fba56c6534ce80e1",
+        "apparent_displacement_m": 1.981064037531763e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.335339425496047e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ade4886e9acad869949e9646",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ade4886e9acad869949e9646",
+        "apparent_displacement_m": 4.6701503852683306e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ce515cb9a264a7d4f7eb02ff",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ce515cb9a264a7d4f7eb02ff",
+        "apparent_displacement_m": -4.827805855119023e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ae56c1285efb45ae8813d5e6",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ae56c1285efb45ae8813d5e6",
+        "apparent_displacement_m": -6.203705500575615e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.5878961385065953e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "78b8c61768b0bf60331f797f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "78b8c61768b0bf60331f797f",
+        "apparent_displacement_m": -2.786190317235142e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "f0e9e7ded6dab9ec45836fcc",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "f0e9e7ded6dab9ec45836fcc",
+        "apparent_displacement_m": -6.982518128219377e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.433563131310914e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "fd22464cadbc43876cfe0ce6",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "fd22464cadbc43876cfe0ce6",
+        "apparent_displacement_m": -6.160838054352691e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.030383664919766e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "368ee36a9a6c18913608050a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "368ee36a9a6c18913608050a",
+        "apparent_displacement_m": -3.1872868758272992e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.5616431532555724e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "106051697848fdcdc32d84b1",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "106051697848fdcdc32d84b1",
+        "apparent_displacement_m": -3.480921891298803e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "7ade4cb64de2d5aafe1bd94e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "7ade4cb64de2d5aafe1bd94e",
+        "apparent_displacement_m": -4.335289249846861e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.8571230260881733e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ba563d6140f998e11b0b3467",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ba563d6140f998e11b0b3467",
+        "apparent_displacement_m": -5.542177729998748e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8cc397a1d02966e43fc04641",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8cc397a1d02966e43fc04641",
+        "apparent_displacement_m": -1.0504136859033804e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -5.8499565384413666e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "115da8f90e2efb42c30efc96",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "115da8f90e2efb42c30efc96",
+        "apparent_displacement_m": 2.0454168685931747e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 6.101581567059084e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "51d0b112354a9576fd313bf5",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "51d0b112354a9576fd313bf5",
+        "apparent_displacement_m": -4.573175747392901e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9302593456350373e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "e8db3370b219c6480427a8e7",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "e8db3370b219c6480427a8e7",
+        "apparent_displacement_m": -5.951926104130931e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.7787483670645007e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "0f0fb446a7fc5cf739e4625b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "0f0fb446a7fc5cf739e4625b",
+        "apparent_displacement_m": -4.560594654745207e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b96803aec660c1a833ee4530",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b96803aec660c1a833ee4530",
+        "apparent_displacement_m": -4.963174307411317e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "89fac8a2d9e239696cf8d419",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "89fac8a2d9e239696cf8d419",
+        "apparent_displacement_m": -6.982518128219377e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c817a1766437cda3290c797a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c817a1766437cda3290c797a",
+        "apparent_displacement_m": -5.224418215626651e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "e2761e83eff58d7a4b75dbed",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "e2761e83eff58d7a4b75dbed",
+        "apparent_displacement_m": -5.145135330752861e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -8.024325851316175e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3462b122ce615935a650f300",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3462b122ce615935a650f300",
+        "apparent_displacement_m": -4.399699943838562e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.104237016879819e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a51036df758ee7cab8dfdeb2",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a51036df758ee7cab8dfdeb2",
+        "apparent_displacement_m": 2.9568600849309967e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8202a55f615ed94bc7f25b9e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8202a55f615ed94bc7f25b9e",
+        "apparent_displacement_m": 2.827088580243417e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 7.035525876049569e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3d9556fd1e8588592be08d44",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3d9556fd1e8588592be08d44",
+        "apparent_displacement_m": -4.718572046062557e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3e2e09d879b63dbdb1d6c62a",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3e2e09d879b63dbdb1d6c62a",
+        "apparent_displacement_m": -7.60380117883074e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -3.187073227643555e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "d7839b199862f9066edc0fb1",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "d7839b199862f9066edc0fb1",
+        "apparent_displacement_m": -3.2977886215862033e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "aef8c78005b2489363061d89",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "aef8c78005b2489363061d89",
+        "apparent_displacement_m": -4.540873060672082e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ea0d553e9d3436c375cee7fc",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ea0d553e9d3436c375cee7fc",
+        "apparent_displacement_m": -4.9161151966824904e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "3d712ef118e6f6df939176db",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "3d712ef118e6f6df939176db",
+        "apparent_displacement_m": -4.02651914064904e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "5315889946341034b1e34244",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "5315889946341034b1e34244",
+        "apparent_displacement_m": -5.463178034136245e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.604071497472049e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "c2bb298a839cf8a73b791d40",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "c2bb298a839cf8a73b791d40",
+        "apparent_displacement_m": -5.294568467979297e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.202733441268155e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "02eb2f18df9a8355eadd737b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "02eb2f18df9a8355eadd737b",
+        "apparent_displacement_m": -3.1528772274838306e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9738525270103742e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "1fba87370a3f34d992d57188",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "1fba87370a3f34d992d57188",
+        "apparent_displacement_m": -8.846955484085902e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -1.373515168167392e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "284e7228d98c679b17e5700c",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "284e7228d98c679b17e5700c",
+        "apparent_displacement_m": -5.280101324785037e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9231694602156723e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "66ada1dc884a547c215d5e62",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "66ada1dc884a547c215d5e62",
+        "apparent_displacement_m": -5.280101324785037e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "6f19580db9a0c4da7f4b35c4",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "6f19580db9a0c4da7f4b35c4",
+        "apparent_displacement_m": -3.6997835093462815e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "1cd188c8c72a1466a15c1a3f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "1cd188c8c72a1466a15c1a3f",
+        "apparent_displacement_m": 1.6829520930196525e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -4.002660629157444e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "2967c05de3d32b58b3850f73",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "2967c05de3d32b58b3850f73",
+        "apparent_displacement_m": 5.0622255802690204e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a4cfbf9e5af865e7bf6dffa2",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a4cfbf9e5af865e7bf6dffa2",
+        "apparent_displacement_m": -4.673094017400398e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.528425373468428e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "a4677e8bc7c8d75b467616cc",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a4677e8bc7c8d75b467616cc",
+        "apparent_displacement_m": -6.203705500575615e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b6d8ee2a21605b9ae0e0f4d8",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b6d8ee2a21605b9ae0e0f4d8",
+        "apparent_displacement_m": -4.673094017400398e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "5592897a83ddd455bc4ada28",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "5592897a83ddd455bc4ada28",
+        "apparent_displacement_m": -3.1872868758272992e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "387384ce9cba8e6f14b72617",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "387384ce9cba8e6f14b72617",
+        "apparent_displacement_m": -3.2977886215862033e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "82c2ad9964883308fb013f2f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "82c2ad9964883308fb013f2f",
+        "apparent_displacement_m": 7.458764003712427e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.662318941614712e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "7886eb93d5da603c51636966",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "7886eb93d5da603c51636966",
+        "apparent_displacement_m": -4.963174307411317e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.315190024176732e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "f43953e8fb58fea4691e3070",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "f43953e8fb58fea4691e3070",
+        "apparent_displacement_m": 4.358808936201742e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 7.864805422784953e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "d4142ced05d7fccc4fc195d8",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "d4142ced05d7fccc4fc195d8",
+        "apparent_displacement_m": -4.041138180859364e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "4050753d5acbb5ff9f95643b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "4050753d5acbb5ff9f95643b",
+        "apparent_displacement_m": -7.015882919288216e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "2eead441e4ee004419eb910b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "2eead441e4ee004419eb910b",
+        "apparent_displacement_m": -4.100322651714912e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "1d75ce018d9ee908a9fd73a9",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "1d75ce018d9ee908a9fd73a9",
+        "apparent_displacement_m": -4.553090750511521e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.338998288291074e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "1a92bc0118541d9ba56ad88f",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "1a92bc0118541d9ba56ad88f",
+        "apparent_displacement_m": 8.785142275277286e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 6.011234469322641e-08,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8c1fc726ee48e880dda72b75",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8c1fc726ee48e880dda72b75",
+        "apparent_displacement_m": -6.982518128219377e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "582290c199e7372fddd32f6d",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "582290c199e7372fddd32f6d",
+        "apparent_displacement_m": -5.4751449649344135e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "49effb66f13b5f6ea0937579",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "49effb66f13b5f6ea0937579",
+        "apparent_displacement_m": 3.780991268680101e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ee4cbce215c159164e195ed0",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ee4cbce215c159164e195ed0",
+        "apparent_displacement_m": 9.729351912479238e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 7.037893896965138e-09,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "dc9711bbdaa213c5e0817f23",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "dc9711bbdaa213c5e0817f23",
+        "apparent_displacement_m": -6.982518128219377e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.947041787466433e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b83937243ed32ffe3f5acf5c",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b83937243ed32ffe3f5acf5c",
+        "apparent_displacement_m": 2.518507274978743e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -4.3382678996823566e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "63071ca456f3aca96775bac4",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "63071ca456f3aca96775bac4",
+        "apparent_displacement_m": -4.744040021577427e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "6c9cdd753ad203c5e18dca96",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "6c9cdd753ad203c5e18dca96",
+        "apparent_displacement_m": -3.1872868758272992e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.7652659311746688e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "25ee1387151be1953fa8f776",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "25ee1387151be1953fa8f776",
+        "apparent_displacement_m": -4.553090750511521e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9624334192355966e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "08c0f4df640495007c6fd7b7",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "08c0f4df640495007c6fd7b7",
+        "apparent_displacement_m": 2.9304529021813704e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "b0e59af42530ddb8cfac7a28",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "b0e59af42530ddb8cfac7a28",
+        "apparent_displacement_m": 3.359562629466369e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "16203192cac5842e4ff4c3db",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "16203192cac5842e4ff4c3db",
+        "apparent_displacement_m": -5.626396240859306e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "97995bf77180a40a8b7fd6ee",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "97995bf77180a40a8b7fd6ee",
+        "apparent_displacement_m": 9.715561400784815e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 1.5330201852416015e-07,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "8a0dd4673d63ec378d5d08e1",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8a0dd4673d63ec378d5d08e1",
+        "apparent_displacement_m": -4.336843445811715e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 3.0693660416470557e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "08417c6f0e0b76819158275b",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "08417c6f0e0b76819158275b",
+        "apparent_displacement_m": -3.1872868758272992e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "821083ae486c3e7c46ea17e6",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "821083ae486c3e7c46ea17e6",
+        "apparent_displacement_m": 1.6490654378531544e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.8280543739776305e-09,
+          "sigma_m": 2.5000000000000002e-08,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "eb6f0a15426d3943374d4166",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "eb6f0a15426d3943374d4166",
+        "apparent_displacement_m": 1.3897427168675961e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 6.370814834623673e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ef8ab240c1d79134e0a7b659",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ef8ab240c1d79134e0a7b659",
+        "apparent_displacement_m": -4.399699943838562e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.404535832807783e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "291adabd2fb668c26a1d631e",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "291adabd2fb668c26a1d631e",
+        "apparent_displacement_m": -7.015882919288216e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.9206138689394353e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "ff7152362e9ac9f9085b7588",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "ff7152362e9ac9f9085b7588",
+        "apparent_displacement_m": 2.6282812451947648e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 0.0,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "cfd52aac5db360e6674b2428",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "cfd52aac5db360e6674b2428",
+        "apparent_displacement_m": -5.7620351037887455e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": 2.993721911044512e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "dff15b8faa2c400a1e947167",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "dff15b8faa2c400a1e947167",
+        "apparent_displacement_m": -3.1832928733853505e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": 8e-09,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "cf33c5c2ebd62e6424f5aa44",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "cf33c5c2ebd62e6424f5aa44",
+        "apparent_displacement_m": -9.056052595057444e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -1.3238760597245116e-07,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    },
+    {
+      "case_id": "71c0d38e3ed9d6b3b72179eb",
+      "observation": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "71c0d38e3ed9d6b3b72179eb",
+        "apparent_displacement_m": -4.399699943838562e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      },
+      "question": "Assess whether fixed-window radial displacement supports compression beyond the stated resolution."
+    }
+  ]
+}

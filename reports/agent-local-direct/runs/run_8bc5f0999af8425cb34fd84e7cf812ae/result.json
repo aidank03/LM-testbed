@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_8bc5f0999af8425cb34fd84e7cf812ae",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_8bc5f0999af8425cb34fd84e7cf812ae",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_b92ce52133aa3726e3096362"
+    ],
+    "explanation": "The observation shows an apparent displacement of -6.16e-09 m, which is within the noise bound (sigma=1e-09 m) and does not exceed the resolution limit (1e-08 m). The reference displacement is 3.03e-08 m. Since the observed signal is consistent with noise and does not resolve a contraction beyond the stated resolution, compression beyond the resolution is not supported.",
+    "next_step": "No further measurements are available; terminate assessment."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 3.755563374999838
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_7af1301da383c27bdfc0ba63": {
+      "id": "artifact_7af1301da383c27bdfc0ba63",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_7af1301da383c27bdfc0ba63.json",
+      "sha256": "9f0306622a8efa0ba6eea62505c011c2dfda310c756f5bd1d7e0185f1cc97e4e"
+    },
+    "artifact_b92ce52133aa3726e3096362": {
+      "id": "artifact_b92ce52133aa3726e3096362",
+      "kind": "observation",
+      "path": "artifacts/artifact_b92ce52133aa3726e3096362.json",
+      "sha256": "197030d1b1e7a906d8086f83ed8077a426f54fea61142ae0813c447db4e83a57"
+    },
+    "artifact_f02e06dcb9c8471a747174da": {
+      "id": "artifact_f02e06dcb9c8471a747174da",
+      "kind": "request",
+      "path": "artifacts/artifact_f02e06dcb9c8471a747174da.json",
+      "sha256": "05252773120d81682ffb6eab29ddc74678662b0234e3dc5f56782fa481ce346e"
+    }
+  }
+}

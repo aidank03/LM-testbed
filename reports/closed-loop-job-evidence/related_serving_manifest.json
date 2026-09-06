@@ -1,0 +1,23 @@
+{
+  "serving_model": "Qwen3.5-9B",
+  "local_file": "/Users/operator/.lmstudio/models/lmstudio-community/Qwen3.5-9B-GGUF/Qwen3.5-9B-Q4_K_M.gguf",
+  "quantization": "Q4_K_M",
+  "file_bytes": 5627044256,
+  "local_sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+  "quantized_repository": "lmstudio-community/Qwen3.5-9B-GGUF",
+  "repository_revision": "1379f25c6b505a3fc737bd7818cb09389cf807c1",
+  "repository_file_sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+  "local_matches_repository_file": true,
+  "base_model": "Qwen/Qwen3.5-9B",
+  "license": "apache-2.0",
+  "model_identifier": "factor-qwen35-9b",
+  "endpoint": "http://127.0.0.1:1234/api/v1/chat",
+  "context_tokens": 4096,
+  "reasoning": "off",
+  "lms_version": "CLI commit: 6041ae0",
+  "hardware": {
+    "cpu": "Apple M4 Max",
+    "physical_cpu_cores": 14,
+    "unified_memory_bytes": 38654705664
+  }
+}

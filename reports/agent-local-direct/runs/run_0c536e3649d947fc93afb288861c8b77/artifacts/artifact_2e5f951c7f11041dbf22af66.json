@@ -1,0 +1,42 @@
+{
+  "schema_version": "factor-run/1",
+  "created_at": "2026-09-05T21:04:05.002201+00:00",
+  "provider": "local",
+  "model": "factor-qwen35-9b",
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "policy": {
+    "max_steps": 2,
+    "max_tool_calls": 2,
+    "max_seconds": 120,
+    "max_cloud_cost_usd": 0,
+    "allowed_providers": [
+      "local"
+    ],
+    "allowed_tools": [
+      "finish"
+    ],
+    "data_egress": false,
+    "max_payload_bytes": 40000,
+    "max_output_tokens": 700,
+    "allow_hpc": false
+  },
+  "source_sha256": {
+    "__init__.py": "acab8d3f72b448d1a9d93eea1edfd60645f0394229d8975356f9db831cf0ee32",
+    "__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "artifacts.py": "1aaf2ffb0a33cdb466933058de44bd35582b1bcfd75aabdf1df8d5ef1f9ba5a0",
+    "cli.py": "7f4091354ff556e999e813219547d4ba00ec386f5344f4e8d0cd31a612ecdd24",
+    "contracts.py": "3f2e4565f561a74cfd47d7585bc9a792105a59229190d1d159ad4a31bf2153fb",
+    "evaluation.py": "96d36d267c74b275853decc25f7cc693f8b1bb63e3e7017d63469a1ce500d586",
+    "evaluation_v2.py": "8c6f35a634ae66b427c8b4267ee3c5fc8cfea565466b13a8d27980cb540a5e90",
+    "factory.py": "d7b9d2ce5a20bb6f5d1bb9e4539e382fdb728c6f5cf07017359fe972b462d198",
+    "hpc.py": "e89521d8dea06def50ddf616c61290793682fbf601f3f2c1d43019c18cf14e40",
+    "hpc_worker.py": "d9d2c4e803b4b3adfb9179a1ee853df258588043976a9af1f2157e2d71b6b505",
+    "local_models.py": "b96e67199e0f9a32e27ec3d11ef0ea375586f4bc1ef9e9252e959ab1bd7e215a",
+    "motion.py": "beb070fb809ff5da3bc3b964ab00ef60fd4835d617ec6a18f20422353a78b5ad",
+    "providers.py": "c78e0e61d2283f403179dba436df5f665e9dbb04b31e4bd5724cde1e4d50e462",
+    "runtime.py": "b29ba5159f942923145cd5c5b163461f1bf0e9477f3f45a68751755e9808c30b",
+    "training.py": "319d432d121587647846e655a1312c33840d0d7ba6da5f2e633607b046a5fd24"
+  },
+  "science_status": "synthetic_development_unless_independently_validated"
+}

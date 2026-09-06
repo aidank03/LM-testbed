@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.1-proposal",
+  "status": "template_not_real_data",
+  "shot_id": null,
+  "campaign_id": null,
+  "related_shot_family_ids": [],
+  "target": {
+    "material": null,
+    "lot_id": null,
+    "radius_m": null,
+    "length_m": null,
+    "wall_thickness_m_if_liner": null,
+    "coating_material": null,
+    "coating_thickness_m": null,
+    "initial_temperature_K": null,
+    "surface_metrology_file": null,
+    "surface_metrology_sha256": null,
+    "metrology_uncertainty_and_registration": null
+  },
+  "drive": {
+    "current_trace_file": null,
+    "current_unit": "A",
+    "time_unit": "s",
+    "measurement_location": null,
+    "calibration_record": null,
+    "voltage_trace_file_if_available": null,
+    "geometry_inductance_model_if_used": null,
+    "axial_field_T_if_known": null
+  },
+  "timing": {
+    "reference_event": null,
+    "relative_delays_s": {},
+    "delay_covariance_s2": null,
+    "timing_calibration_file": null
+  },
+  "diagnostics": [
+    {
+      "kind": "PDV",
+      "raw_file": null,
+      "sha256": null,
+      "wavelength_m": null,
+      "frequency_offset_Hz": null,
+      "sample_rate_Hz": null,
+      "line_of_sight_and_surface_patch": null,
+      "instrument_transfer_function": null,
+      "valid_return_intervals_s": [],
+      "calibration_and_uncertainty_file": null
+    },
+    {
+      "kind": "radiography",
+      "raw_file": null,
+      "sha256": null,
+      "source_object_detector_geometry": null,
+      "spectrum_and_response_file": null,
+      "psf_mtf_calibration_file": null,
+      "flat_dark_files": [],
+      "exposure_start_end_s": null,
+      "fiducial_registration_file": null
+    }
+  ],
+  "analysis": {
+    "code_version": null,
+    "configuration_file": null,
+    "model_and_material_table_versions": [],
+    "data_partition": null,
+    "raw_observations": [],
+    "derived_observables": [],
+    "model_assisted_phase_inferences": [],
+    "exclusions_and_reasons": [],
+    "unresolved_questions": [],
+    "reviewers_and_disagreements": [],
+    "preregistered_prediction_record": null
+  }
+}

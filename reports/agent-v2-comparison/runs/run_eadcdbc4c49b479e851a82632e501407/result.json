@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_eadcdbc4c49b479e851a82632e501407",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_eadcdbc4c49b479e851a82632e501407",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_41354d07de515b5f2c0fd7b9"
+    ],
+    "explanation": "Applying the conditional reconstruction contract: With a reference, center = apparent_displacement_m - reference.displacement_m = 6.56e-08 - 1.13e-08 = 5.43e-08 m. Sigma = sqrt(1e-09^2 + 2.5e-08^2 - 0) \u2248 2.5e-08 m. The applicable bound B is reference.residual_bound_m = 1e-09 m (non-null). The 95% Gaussian interval enlarged by B has half-width h = 1.96*2.5e-08 + 1e-09 \u2248 5.0e-08 m. Thus lower = 5.43e-08 - 5.0e-08 = 4.3e-09 m and upper = 5.43e-08 + 5.0e-08 = 1.04e-07 m. The threshold T = -resolution_m = -1e-08 m. Since upper (1.04e-07) > T, we do not choose compression_not_supported. However, lower (4.3e-09) > T (-1e-08), so the entire interval lies above T. By rule 5, compression_not_supported requires lower > T, which is true. Wait: re-evaluate rule 5: 'Choose compression_not_supported only if lower > T'. Here lower = 4.3e-09 m, T = -1e-08 m. Since 4.3e-09 > -1e-08, the condition lower > T is satisfied. Therefore, we choose compression_not_supported? But wait: The question asks for signed radial material displacement x. NEGATIVE is inward (compression). Positive is outward. The interval [4.3e-09, 1.04e-07] is entirely positive (outward). Thus, there is no evidence of inward motion beyond the resolution. So compression_not_supported is correct. However, let's re-read rule 5: 'Choose compression_supported only if upper <= T'. Here upper = 1.04e-07 > -1e-08, so not supported. 'Choose compression_not_supported only if lower > T'. Here lower = 4.3e-09 > -1e-08, so yes, compression_not_supported. But wait: The interval is entirely positive, meaning outward motion. Compression would be negative displacement. Since the entire interval is above T (which is negative), it rules out inward motion beyond resolution. Thus, compression_not_supported is the correct decision.",
+    "next_step": "Report compression_not_supported with evidence artifact_41354d07de515b5f2c0fd7b9 and proceed to next measurement if further data is required."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1427,
+    "output_tokens": 676,
+    "elapsed_seconds": 13.95829033300015
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_92a53109ec0d66acdd63c3da": {
+      "id": "artifact_92a53109ec0d66acdd63c3da",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_92a53109ec0d66acdd63c3da.json",
+      "sha256": "3c43b838007755c2a02f24b639cc932f8459c603e1743d1021c187e455938607"
+    },
+    "artifact_41354d07de515b5f2c0fd7b9": {
+      "id": "artifact_41354d07de515b5f2c0fd7b9",
+      "kind": "observation",
+      "path": "artifacts/artifact_41354d07de515b5f2c0fd7b9.json",
+      "sha256": "8dd335d39b0249e8a97abff5e710e47402092356a4678ed09812a23e82de164c"
+    },
+    "artifact_c3a118f4e73564998cf27f1f": {
+      "id": "artifact_c3a118f4e73564998cf27f1f",
+      "kind": "request",
+      "path": "artifacts/artifact_c3a118f4e73564998cf27f1f.json",
+      "sha256": "623d4fe94cae3ee6f5f79827c42983f90f6a8c11295da2f4802fb2d486b09f08"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "liner-stability"
+version = "0.3.0"
+description = "Factor: bounded scientific agents, synthetic diagnostic evaluation, and compute execution"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "scipy>=1.10", "matplotlib>=3.7"]
+
+[project.scripts]
+liner-stability = "liner_stability.cli:main"
+factor = "factor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+liner_stability = ["py.typed"]
+factor = ["learn/static/*.html", "learn/static/*.css", "learn/static/*.js"]

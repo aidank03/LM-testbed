@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:14:31.825667+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_7383614cd691cbf99155d6f0"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "0550e313a6032c033d84c969e9357dd61cdcf7930cc56fcf3f032d089c771921"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:14:35.222679+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_7383614cd691cbf99155d6f0"
+        ],
+        "explanation": "The observation has no reference (reference=null) and a null drift bound (drift_bound_m=null). Per the decision contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The 95% Gaussian confidence set cannot be enlarged by a finite nuisance bound to rule out inward motion.",
+        "next_step": "Acquire a reference measurement or obtain a finite drift bound to resolve the ambiguity."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 3.396392542000285,
+        "usage": {
+          "input_tokens": 1348,
+          "total_output_tokens": 133,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.81324285496515,
+          "time_to_first_token_seconds": 0.803
+        },
+        "request_sha256": "42553358ed82f394c517d5749ad52b1504a2f65a906a386ef98d2468cb504897",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1348,
+        "output_tokens": 133
+      }
+    },
+    "previous_hash": "0550e313a6032c033d84c969e9357dd61cdcf7930cc56fcf3f032d089c771921",
+    "hash": "88045f6f5ae071dd87f70baf91b17df952abdb4d87ad05cefbb8da7ff7743a7a"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:14:35.224816+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_7383614cd691cbf99155d6f0"
+      ],
+      "explanation": "The observation has no reference (reference=null) and a null drift bound (drift_bound_m=null). Per the decision contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The 95% Gaussian confidence set cannot be enlarged by a finite nuisance bound to rule out inward motion.",
+      "next_step": "Acquire a reference measurement or obtain a finite drift bound to resolve the ambiguity."
+    },
+    "previous_hash": "88045f6f5ae071dd87f70baf91b17df952abdb4d87ad05cefbb8da7ff7743a7a",
+    "hash": "b8521886a59a52a5a2cb1d9093ab53792c95d085e281db1f6ee8059c643de17c"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:14:35.225721+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1348,
+        "output_tokens": 133,
+        "elapsed_seconds": 3.4047304169998824
+      },
+      "cleanup": []
+    },
+    "previous_hash": "b8521886a59a52a5a2cb1d9093ab53792c95d085e281db1f6ee8059c643de17c",
+    "hash": "9e596869cf60bf845d3424c472da42c62427822087181bcbe3a1eb456670a172"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:14:35.227062+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "edf87287eb9c82618eac44695705b6fc9e6c3f4f0f9f1514c2802c6642005971"
+    },
+    "previous_hash": "9e596869cf60bf845d3424c472da42c62427822087181bcbe3a1eb456670a172",
+    "hash": "e651e103f051123dd0f0849e4322d8cd5687d7a9abcb87377547f52d2bc65d44"
+  }
+]

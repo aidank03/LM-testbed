@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_e9cad9496f65486893bdd03cc6e25e5e",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_e9cad9496f65486893bdd03cc6e25e5e",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_6c97c2e203237fac8b37f84f"
+    ],
+    "explanation": "The observation artifact 6c97c2e203237fac8b37f84f reports an apparent displacement of -4.55e-09 m within a window of 1e-07 s. The stated resolution is 1e-08 m. Since the magnitude of the displacement (4.55e-09 m) exceeds the resolution limit (1e-08 m) in absolute terms? No, wait. 4.55e-09 < 1e-08. The displacement is smaller than the resolution. Therefore, it cannot be distinguished from noise or drift within the stated resolution. Thus, compression beyond the stated resolution is NOT supported.",
+    "next_step": "No further steps available; steps_remaining=0."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 4.428177458000391
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_0589463e805e69544e245579": {
+      "id": "artifact_0589463e805e69544e245579",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_0589463e805e69544e245579.json",
+      "sha256": "a0f5a3379070e82d60b6a38c28ae315dc8e11553b37d99695632e6132c3e7baa"
+    },
+    "artifact_6c97c2e203237fac8b37f84f": {
+      "id": "artifact_6c97c2e203237fac8b37f84f",
+      "kind": "observation",
+      "path": "artifacts/artifact_6c97c2e203237fac8b37f84f.json",
+      "sha256": "6a5cd6cd8890434512f5f034146de10f8dd03b035009f1f925f6e1fc5d9cfd0f"
+    },
+    "artifact_2ded296cecba474f4e4a2eaf": {
+      "id": "artifact_2ded296cecba474f4e4a2eaf",
+      "kind": "request",
+      "path": "artifacts/artifact_2ded296cecba474f4e4a2eaf.json",
+      "sha256": "3d3ac6a90b762bad951521a9857d9e9b3f8260ca28b851827034a91249ae4bf7"
+    }
+  }
+}

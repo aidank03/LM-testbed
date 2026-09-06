@@ -1,0 +1,19 @@
+{
+  "case_id": "demo_101701",
+  "calibration": {
+    "wavelength_nm": 1550.0,
+    "iq_noise_std": 0.01,
+    "trigger_sigma_ns": 0.15,
+    "scale_relative_sigma": 0.003,
+    "photons_per_pixel": 5000,
+    "absorption_per_um": 0.0018899999999999998,
+    "sigma_z_pixels": 5.5,
+    "sigma_z_uncertainty_pixels": 0.15,
+    "mode": 3,
+    "z_period_um": 1200.0,
+    "pdv_search_window_ns": [
+      30.0,
+      60.0
+    ]
+  }
+}

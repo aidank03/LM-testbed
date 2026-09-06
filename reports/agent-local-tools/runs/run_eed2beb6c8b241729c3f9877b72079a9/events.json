@@ -1,0 +1,159 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:57:30.246202+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_12ca493a3dec975c7fc8358c"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a14d9d0f9fe090146c9efb170fcd78f92410f5ff16b785e69a622b55a8e8dcda"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:57:32.342224+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.0956309590001183,
+        "usage": {
+          "input_tokens": 1136,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 49.555147255026036,
+          "time_to_first_token_seconds": 1.841
+        },
+        "request_sha256": "c8b3f421c04a99ac198f37baccf713df294f848a334542111a5b5e03f7d0576f",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "a14d9d0f9fe090146c9efb170fcd78f92410f5ff16b785e69a622b55a8e8dcda",
+    "hash": "53064645834c164fcf51064d52b4cd2e35499524afce3005e90d8390ef5bead9"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:57:32.344873+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_e49fe5a91aba7dc7191afb29",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8ee872806baf1b6eb217bb3e",
+        "apparent_displacement_m": -6.160838054352691e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "53064645834c164fcf51064d52b4cd2e35499524afce3005e90d8390ef5bead9",
+    "hash": "bd6e6085aeef49d6c12fa3806afe71c3366a46302bb75b86b3eac0e50c5dde3b"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:57:36.039262+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_12ca493a3dec975c7fc8358c"
+        ],
+        "explanation": "The apparent displacement (-6.16e-09 m) is smaller in magnitude than the stated resolution (1e-08 m). Since the observation is synthetic_reconstructed and lacks a drift bound or external reference, we cannot infer motion beyond the resolution limit. The data does not support compression beyond the stated resolution.",
+        "next_step": "No further measurements required; decision finalized."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 3.693274499999461,
+        "usage": {
+          "input_tokens": 1321,
+          "total_output_tokens": 132,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.643647791898964,
+          "time_to_first_token_seconds": 1.167
+        },
+        "request_sha256": "c467b0fe77474da507be81475569d0357bc386ad800881d11ec676f7f65e30a8",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "bd6e6085aeef49d6c12fa3806afe71c3366a46302bb75b86b3eac0e50c5dde3b",
+    "hash": "5ff9f4138a25b4448481527dd309a72f122be0f300804a3d79f6928c4773c31f"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:57:36.039776+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_12ca493a3dec975c7fc8358c"
+      ],
+      "explanation": "The apparent displacement (-6.16e-09 m) is smaller in magnitude than the stated resolution (1e-08 m). Since the observation is synthetic_reconstructed and lacks a drift bound or external reference, we cannot infer motion beyond the resolution limit. The data does not support compression beyond the stated resolution.",
+      "next_step": "No further measurements required; decision finalized."
+    },
+    "previous_hash": "5ff9f4138a25b4448481527dd309a72f122be0f300804a3d79f6928c4773c31f",
+    "hash": "f8bc922f9c6d9108049da5ca99fdae1b9d5601b38130b7b52289d54cfeb63403"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:57:36.040717+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 5.798756333000711
+      },
+      "cleanup": []
+    },
+    "previous_hash": "f8bc922f9c6d9108049da5ca99fdae1b9d5601b38130b7b52289d54cfeb63403",
+    "hash": "f92ff9698bef69621b857d3ecb1b5c5f1675f32bf461e6aa89d203cb87878344"
+  }
+]

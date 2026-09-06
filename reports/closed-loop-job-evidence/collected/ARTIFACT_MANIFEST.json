@@ -1,0 +1,144 @@
+{
+  "collected_at": 1788642342.452632,
+  "directory": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/runs/hpc-local/job_97afbc96ecf0432786265a2363518874/collected_935a40ecfbb84974a51915faa3112380",
+  "execution_status": "completed",
+  "files": [
+    {
+      "path": "experiment.json",
+      "sha256": "cceb986210e13f3ea1498f70ba79302b47621be808737d71e6f0850012edaff8",
+      "size_bytes": 277
+    },
+    {
+      "path": "result/EVALUATION_CARD.md",
+      "sha256": "5829d3418951dd7281e78f8f212e5145a3d6c4073e0b046bd3eb9e6901762f90",
+      "size_bytes": 1570
+    },
+    {
+      "path": "result/RESULTS.md",
+      "sha256": "839d34c39412beffd587a666423fa6004c126cd3a9d39a251e86ab22aa5e716d",
+      "size_bytes": 1514
+    },
+    {
+      "path": "result/diagnostic_examples.png",
+      "sha256": "e232c662f746b33c5b360c5fefd1e060e414e78cc2e47b9b20dfb4a759b5b80a",
+      "size_bytes": 302810
+    },
+    {
+      "path": "result/example_blurred.npz",
+      "sha256": "dece9e58a5141e108d15156d94452ce43c98b89aa4ecd2de3f966806f75b8f62",
+      "size_bytes": 66498
+    },
+    {
+      "path": "result/example_blurred_metadata.json",
+      "sha256": "46c69e2f7dd11dddd8f36c7192967a24a1ce39ebc9d4acd7c70049acaa57f195",
+      "size_bytes": 422
+    },
+    {
+      "path": "result/example_no_structure.npz",
+      "sha256": "159c0a6b42795a904a6079cc7f057710c2f6ff23e4ca28528c05fcd64da40a79",
+      "size_bytes": 66213
+    },
+    {
+      "path": "result/example_no_structure_metadata.json",
+      "sha256": "98edd69124cb6d7deadda0db4413e77d664e684bc42c380bf35c4dd8ca826f48",
+      "size_bytes": 422
+    },
+    {
+      "path": "result/example_nominal.npz",
+      "sha256": "c6dd81d2522b3670a98ff2d19fdcea4392c4e19913a910dbec7f3c719586d8ef",
+      "size_bytes": 66281
+    },
+    {
+      "path": "result/example_nominal_metadata.json",
+      "sha256": "cdac157d1cff2b6a97cc5f7b5ee0751c626c265c6b0fdce4f45776f79dca7d32",
+      "size_bytes": 420
+    },
+    {
+      "path": "result/example_omitted_optical_drift.npz",
+      "sha256": "b549c8850036a517bb1b3e758ae97b7ef3d1a0aa88e4dc4c34c767233dbc0512",
+      "size_bytes": 66442
+    },
+    {
+      "path": "result/example_omitted_optical_drift_metadata.json",
+      "sha256": "db9558f1707b3e082a33dfd606cceee8edf37cc139c2a290556dec066719aace",
+      "size_bytes": 422
+    },
+    {
+      "path": "result/example_pdv_dropout.npz",
+      "sha256": "96f1bedafa15ccf63554db8c7ebd3a5c4830b9d147c1188211e880644d407a3d",
+      "size_bytes": 66303
+    },
+    {
+      "path": "result/example_pdv_dropout_metadata.json",
+      "sha256": "70d2ab00bd50700ae88502f8d33afb357d0729861408f69b7af45dc5c6913bb3",
+      "size_bytes": 422
+    },
+    {
+      "path": "result/example_timing_jitter.npz",
+      "sha256": "e59473a9c69cf007bbdb1d1e2fe88b695981432e46e84403fccc4886392ccca9",
+      "size_bytes": 66226
+    },
+    {
+      "path": "result/example_timing_jitter_metadata.json",
+      "sha256": "28fac8a7bad295cd8facbd1876109ca2b2a4abf2b7f6a81307a7bba8ef7c91ca",
+      "size_bytes": 421
+    },
+    {
+      "path": "result/experiment_config.json",
+      "sha256": "2efe95c381625266c936159d861684c00a8b0a6cc7d381553b38ceed76f96157",
+      "size_bytes": 278
+    },
+    {
+      "path": "result/metrics.json",
+      "sha256": "7060fa8b7198a247db843d0957208b39f62bbddd740fec59d8ed11f2ddb62354",
+      "size_bytes": 22081
+    },
+    {
+      "path": "result/predictions_calibrated.jsonl",
+      "sha256": "a5b758094d8f7cd29e42f8d66fbe51ff509124d0f3d8d5ff9ca52e886fea40d9",
+      "size_bytes": 5456
+    },
+    {
+      "path": "result/predictions_simple.jsonl",
+      "sha256": "6110c91b893eb8fb77adcc4612bfdb96aa921aa8e374d2fd53885ba503ac25d1",
+      "size_bytes": 5556
+    },
+    {
+      "path": "result/run_manifest.json",
+      "sha256": "edd83ce677a825ab4f1e08b16ddd1bc1cd784c069c04004b91efb1bb7d331f26",
+      "size_bytes": 2309
+    },
+    {
+      "path": "result/status.json",
+      "sha256": "322dea36f1ede22541e9efaa136438dc892a1f32a65c8ddca3d81f7e8694232a",
+      "size_bytes": 137
+    },
+    {
+      "path": "result/truth.jsonl",
+      "sha256": "87b6779652214d8784206c30290e6eb0795d137e4620820682df3d3f1caf1241",
+      "size_bytes": 2272
+    },
+    {
+      "path": "source_manifest.json",
+      "sha256": "702a14fc59488ddcc0a6fe7d67e12e9eff00e8e75de0e4ac542f36951b9cec6d",
+      "size_bytes": 2855
+    },
+    {
+      "path": "stderr.log",
+      "sha256": "cace1071573ef725e762e8856427937617c8c67e5d0784c45c0e854e56a803a8",
+      "size_bytes": 63
+    },
+    {
+      "path": "stdout.log",
+      "sha256": "e2c5b71966f8f4f545597333c9006e40c8626efa59346de3f13320a84ada07c8",
+      "size_bytes": 576
+    },
+    {
+      "path": "worker_state.json",
+      "sha256": "3a0996e88c84b1622c0894f6a766e78940dbbc6185a5867a4f1f9ad911267b33",
+      "size_bytes": 546
+    }
+  ],
+  "job_id": "job_97afbc96ecf0432786265a2363518874",
+  "total_bytes": 748792
+}

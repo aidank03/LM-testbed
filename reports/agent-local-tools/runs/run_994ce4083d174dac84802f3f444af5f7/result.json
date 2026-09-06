@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_994ce4083d174dac84802f3f444af5f7",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-tools/runs/run_994ce4083d174dac84802f3f444af5f7",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_76046dbc89dc3cf262dfe6b7"
+    ],
+    "explanation": "The apparent displacement (1.98e-08 m) is smaller than the stated resolution (1e-08 m) but larger than the noise floor (1e-09 m). However, the reference displacement (3.34e-08 m) exceeds the resolution limit. Since the observation does not resolve the full reference displacement within the fixed window and remains bounded by the resolution constraint, it does not support compression beyond the stated resolution.",
+    "next_step": "Request a higher-resolution calibration or reduce the window size to improve sensitivity."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 5.149436083000182
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_93565b83613f97054d38a01d": {
+      "id": "artifact_93565b83613f97054d38a01d",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_93565b83613f97054d38a01d.json",
+      "sha256": "2273eb324a6ef98197b18d61a655c0ab5d5532ed86040dbd383a979a75382675"
+    },
+    "artifact_76046dbc89dc3cf262dfe6b7": {
+      "id": "artifact_76046dbc89dc3cf262dfe6b7",
+      "kind": "observation",
+      "path": "artifacts/artifact_76046dbc89dc3cf262dfe6b7.json",
+      "sha256": "aca08b8f80e933dcbea4a8e5e64725b35ee41f9fc01ad6a7e5c8eff30db38c1f"
+    },
+    "artifact_b0347c3b8afe17647d008e3c": {
+      "id": "artifact_b0347c3b8afe17647d008e3c",
+      "kind": "request",
+      "path": "artifacts/artifact_b0347c3b8afe17647d008e3c.json",
+      "sha256": "03b290c23ff1e8f00855269183b1d1ce045737e869466aebe95f23dc04441f8f"
+    }
+  }
+}

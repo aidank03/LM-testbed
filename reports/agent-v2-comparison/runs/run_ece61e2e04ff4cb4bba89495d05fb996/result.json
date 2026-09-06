@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_ece61e2e04ff4cb4bba89495d05fb996",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_ece61e2e04ff4cb4bba89495d05fb996",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_dd011175431ebb83b1a017c7"
+    ],
+    "explanation": "The conditional interval for signed radial displacement x is [-2.96e-07, 2.96e-07] meters. The upper bound (2.96e-07 m) exceeds the resolution T = -1e-08 m, so compression is supported within measurement limits.",
+    "next_step": "No further action required; decision finalized based on provided synthetic observation."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1404,
+    "output_tokens": 155,
+    "elapsed_seconds": 2.5781718340003863
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_293cf100c788039fa1d2d94c": {
+      "id": "artifact_293cf100c788039fa1d2d94c",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_293cf100c788039fa1d2d94c.json",
+      "sha256": "0f1a59a593490e257b0a03590cf4256f21971f017989fea441002fa35848a899"
+    },
+    "artifact_dd011175431ebb83b1a017c7": {
+      "id": "artifact_dd011175431ebb83b1a017c7",
+      "kind": "observation",
+      "path": "artifacts/artifact_dd011175431ebb83b1a017c7.json",
+      "sha256": "0867d56421017cebf281eb6d920520d28b2a7ea8d08ee294f61f8e058687126e"
+    },
+    "artifact_e02258296990d37a4ff0a31e": {
+      "id": "artifact_e02258296990d37a4ff0a31e",
+      "kind": "request",
+      "path": "artifacts/artifact_e02258296990d37a4ff0a31e.json",
+      "sha256": "b7f5cedf46114b10909b69dfa9049924f09b5eadaa17e6214bfe03cf381c267d"
+    }
+  }
+}

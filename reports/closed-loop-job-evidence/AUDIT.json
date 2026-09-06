@@ -1,0 +1,259 @@
+{
+  "audited_at_utc": "2026-09-05T21:10:03.074650+00:00",
+  "collected_bytes_verified": 748792,
+  "collected_files_verified": 27,
+  "compression_metrics": {
+    "blurred": {
+      "answer_rate": 1.0,
+      "conservative_bound_count": 0,
+      "coverage90": 1.0,
+      "coverage95_wilson": [
+        0.34238022750665303,
+        1.0
+      ],
+      "mae": 0.16703706275960428,
+      "mean_interval_score90": 1.2896818738786635,
+      "mean_width90": 1.2896818738786635,
+      "n_answered": 2,
+      "rmse": 0.22628862388427082,
+      "unit": "nm"
+    },
+    "no_structure": {
+      "answer_rate": 1.0,
+      "conservative_bound_count": 0,
+      "coverage90": 1.0,
+      "coverage95_wilson": [
+        0.34238022750665303,
+        1.0
+      ],
+      "mae": 0.22507333365356708,
+      "mean_interval_score90": 1.1438870903529335,
+      "mean_width90": 1.1438870903529335,
+      "n_answered": 2,
+      "rmse": 0.2431316379351083,
+      "unit": "nm"
+    },
+    "nominal": {
+      "answer_rate": 1.0,
+      "conservative_bound_count": 0,
+      "coverage90": 0.5,
+      "coverage95_wilson": [
+        0.09453120573423074,
+        0.9054687942657693
+      ],
+      "mae": 0.3747691677737457,
+      "mean_interval_score90": 2.61224777295881,
+      "mean_width90": 1.1206976386827137,
+      "n_answered": 2,
+      "rmse": 0.5071979935200834,
+      "unit": "nm"
+    },
+    "omitted_optical_drift": {
+      "answer_rate": 1.0,
+      "conservative_bound_count": 0,
+      "coverage90": 0.0,
+      "coverage95_wilson": [
+        0.0,
+        0.6576197724933469
+      ],
+      "mae": 3.429569407562786,
+      "mean_interval_score90": 57.94153766686061,
+      "mean_width90": 1.183316720488346,
+      "n_answered": 2,
+      "rmse": 3.43700715684447,
+      "unit": "nm"
+    },
+    "pdv_dropout": {
+      "answer_rate": 0.0,
+      "n_answered": 0,
+      "unit": "nm"
+    },
+    "timing_jitter": {
+      "answer_rate": 1.0,
+      "conservative_bound_count": 0,
+      "coverage90": 1.0,
+      "coverage95_wilson": [
+        0.34238022750665303,
+        1.0
+      ],
+      "mae": 0.554613621723286,
+      "mean_interval_score90": 1.4581410805597095,
+      "mean_width90": 1.4581410805597095,
+      "n_answered": 2,
+      "rmse": 0.5625197906410473,
+      "unit": "nm"
+    }
+  },
+  "config_hash_verified": true,
+  "controller_cli_recovery": "Known subsequent edits were reversed by the root agent; snapshot bytes match the exact recorded CLI SHA-256.",
+  "controller_snapshot_complete": true,
+  "controller_source_checks": [
+    {
+      "expected_sha256": "acab8d3f72b448d1a9d93eea1edfd60645f0394229d8975356f9db831cf0ee32",
+      "file": "__init__.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+      "file": "__main__.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "842fc7ef1931c2f332c0e6186ff62a6c53aa26e8f64cbad7f2a721b721c18baf",
+      "file": "artifacts.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "e22c14d61c95ec05a5c24166971b7d2c7e628608d8cda554f0db55e63d79937d",
+      "file": "cli.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "b2f93c8f0954e5ea5c8cfff46f99b81403285e50203771d80ea2a1c3a026fcbc",
+      "file": "contracts.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "96d36d267c74b275853decc25f7cc693f8b1bb63e3e7017d63469a1ce500d586",
+      "file": "evaluation.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "8c6f35a634ae66b427c8b4267ee3c5fc8cfea565466b13a8d27980cb540a5e90",
+      "file": "evaluation_v2.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "d7b9d2ce5a20bb6f5d1bb9e4539e382fdb728c6f5cf07017359fe972b462d198",
+      "file": "factory.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "e89521d8dea06def50ddf616c61290793682fbf601f3f2c1d43019c18cf14e40",
+      "file": "hpc.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "d9d2c4e803b4b3adfb9179a1ee853df258588043976a9af1f2157e2d71b6b505",
+      "file": "hpc_worker.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "b96e67199e0f9a32e27ec3d11ef0ea375586f4bc1ef9e9252e959ab1bd7e215a",
+      "file": "local_models.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "beb070fb809ff5da3bc3b964ab00ef60fd4835d617ec6a18f20422353a78b5ad",
+      "file": "motion.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "bd7c844c705ee1ad7543f439d907f72606881923fc2283ad4b7145e420e4c306",
+      "file": "providers.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "4479bde78ad502c8e783ceae16f7f4744777fa353ec2f3d7d9909ca63257538c",
+      "file": "runtime.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    },
+    {
+      "expected_sha256": "319d432d121587647846e655a1312c33840d0d7ba6da5f2e633607b046a5fd24",
+      "file": "training.py",
+      "snapshot_matches": true,
+      "snapshot_present": true
+    }
+  ],
+  "execution": "local_process_not_remote_hpc",
+  "final_decision": "ambiguous",
+  "helper_cross_check": {
+    "artifacts": 9,
+    "events": 17,
+    "integrity": "verified",
+    "result_integrity": "verified"
+  },
+  "hypothesis_updates": 1,
+  "job_count": 1,
+  "job_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/runs/hpc-local/job_97afbc96ecf0432786265a2363518874",
+  "limitations": [
+    "Single explicitly guided workflow; no comparative AI benefit established.",
+    "Synthetic truth is simulator-specific; no independent real measurements.",
+    "Hashes verify record consistency, not external authenticity or physical validity."
+  ],
+  "model_instance_from_post_run_inventory": {
+    "architecture": "qwen35",
+    "contextLength": 16384,
+    "deviceIdentifier": null,
+    "displayName": "Qwen3.5 9B",
+    "format": "gguf",
+    "identifier": "factor-qwen35-loop",
+    "indexedModelIdentifier": "qwen/qwen3.5-9b",
+    "lastUsedTime": 1788642375282,
+    "maxContextLength": 262144,
+    "modelKey": "qwen/qwen3.5-9b",
+    "parallel": 4,
+    "paramsString": "9B",
+    "path": "qwen/qwen3.5-9b",
+    "publisher": "qwen",
+    "quantization": {
+      "bits": 4,
+      "name": "Q4_K_M"
+    },
+    "queued": 0,
+    "selectedVariant": "qwen/qwen3.5-9b@q4_k_m",
+    "sizeBytes": 6548927017,
+    "status": "idle",
+    "trainedForToolUse": true,
+    "ttlMs": 3600000,
+    "type": "llm",
+    "variants": [
+      "qwen/qwen3.5-9b@q4_k_m"
+    ],
+    "vision": true
+  },
+  "model_response_seconds_sum": 54.09239349999916,
+  "record_integrity": "verified",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/closed-loop/run_044066356fcb4a4099520a71b2aebec0",
+  "score_check": {
+    "scores_reproduced": true,
+    "truth_cases": 12,
+    "unique_case_ids": 12
+  },
+  "sequence": [
+    "submit_simulation",
+    "job_status",
+    "job_status",
+    "job_collect",
+    "infer_motion",
+    "update_hypothesis",
+    "finish"
+  ],
+  "source_files_verified": 16,
+  "usage": {
+    "accounting_complete": true,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "elapsed_seconds": 56.336772000000565,
+    "input_tokens": 23199,
+    "model_calls": 7,
+    "output_tokens": 878,
+    "tool_calls": 7
+  },
+  "worker_elapsed_seconds": 10.05188512802124,
+  "worker_exit_code": 0
+}

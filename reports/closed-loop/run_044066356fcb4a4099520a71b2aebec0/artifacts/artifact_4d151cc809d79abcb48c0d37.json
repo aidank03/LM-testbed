@@ -1,0 +1,15 @@
+{
+  "schema_version": "motion-observation/1",
+  "observation_id": "loop-demo-motion-001",
+  "apparent_displacement_m": -3e-08,
+  "noise_sigma_m": 1e-09,
+  "drift_bound_m": null,
+  "reference": null,
+  "window_s": [
+    3e-08,
+    6e-08
+  ],
+  "resolution_m": 5e-09,
+  "source_kind": "synthetic_reconstructed",
+  "calibration_id": "loop-demo-unknown-drift"
+}

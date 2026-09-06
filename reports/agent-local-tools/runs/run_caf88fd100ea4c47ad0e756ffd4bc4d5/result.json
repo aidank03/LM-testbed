@@ -1,0 +1,55 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_caf88fd100ea4c47ad0e756ffd4bc4d5",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-tools/runs/run_caf88fd100ea4c47ad0e756ffd4bc4d5",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_a2e24372fb3ad458174d0972"
+    ],
+    "explanation": "The apparent displacement (5.06e-08 m) exceeds the stated resolution limit (1e-08 m) by a factor of approximately 5. Given the noise sigma (1e-09 m), this signal is statistically significant (SNR ~50). The drift bound is zero, and the observation is synthetic-reconstructed with valid calibration, supporting the conclusion that fixed-window radial displacement supports compression beyond the stated resolution.",
+    "next_step": "Proceed to validate with additional independent measurements or higher-resolution calibration if required by protocol."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 6.494136459000401
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_c56034625f4d3e8b01c46a39": {
+      "id": "artifact_c56034625f4d3e8b01c46a39",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_c56034625f4d3e8b01c46a39.json",
+      "sha256": "490afa49f58ca09539f7ee7ae431c38e75ab53128b8b2261816b30b8bef3e4c0"
+    },
+    "artifact_a2e24372fb3ad458174d0972": {
+      "id": "artifact_a2e24372fb3ad458174d0972",
+      "kind": "observation",
+      "path": "artifacts/artifact_a2e24372fb3ad458174d0972.json",
+      "sha256": "c0acd4e1b06f19d393a36136b7481315f6e93ff57348d059b633c4f31ed51fbf"
+    },
+    "artifact_32374b9fe15ffcc72aa3c3e7": {
+      "id": "artifact_32374b9fe15ffcc72aa3c3e7",
+      "kind": "request",
+      "path": "artifacts/artifact_32374b9fe15ffcc72aa3c3e7.json",
+      "sha256": "ec1674b796d40586c55db753adc844728172da49e71fa202cd93c280cbbc031e"
+    },
+    "artifact_09ebf20447dfb9a6a41f17f1": {
+      "id": "artifact_09ebf20447dfb9a6a41f17f1",
+      "kind": "inspect_observation",
+      "path": "artifacts/artifact_09ebf20447dfb9a6a41f17f1.json",
+      "sha256": "c0acd4e1b06f19d393a36136b7481315f6e93ff57348d059b633c4f31ed51fbf"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "schema_version": "1",
+  "experiment_id": "factor-local-worker-smoke",
+  "experiment_kind": "prescribed_motion_and_corrugated_cylinder",
+  "cases_per_scenario": 2,
+  "seed": 1701,
+  "notes": "Twelve public synthetic development cases. A local execution test, not real HPC or physical validation."
+}

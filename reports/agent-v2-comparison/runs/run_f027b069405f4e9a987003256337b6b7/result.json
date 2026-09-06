@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_f027b069405f4e9a987003256337b6b7",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_f027b069405f4e9a987003256337b6b7",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_dd011175431ebb83b1a017c7"
+    ],
+    "explanation": "The observation provides apparent_displacement_m = -4.23e-08 m, noise_sigma_m = 1e-09 m, and drift_bound_m = 8e-09 m with no reference (null). Using the public contract for a null reference: center = -4.23e-08 m, sigma = 1e-09 m, B = 8e-09 m. The 95% Gaussian confidence set enlarged by the absolute nuisance bound is h = 1.96*sigma + B = 1.96e-09 + 8e-09 = 9.96e-09 m. Thus, lower = center - h = -4.23e-08 - 9.96e-09 = -5.23e-08 m and upper = center + h = -4.23e-08 + 9.96e-09 = -3.23e-08 m. The resolution threshold is T = -resolution_m = -1e-08 m. Since the entire interval [lower, upper] lies below T (upper < T), the conditional interval rules out inward motion beyond the resolution, satisfying the condition for compression_supported.",
+    "next_step": "Report compression_supported with the computed interval [-5.23e-08, -3.23e-08] m and proceed to the next measurement or analysis step."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1639,
+    "output_tokens": 370,
+    "elapsed_seconds": 9.836196250000285
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_95a2590f16ef79e2e5c9c766": {
+      "id": "artifact_95a2590f16ef79e2e5c9c766",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_95a2590f16ef79e2e5c9c766.json",
+      "sha256": "f90dc9ac25f44e5d060a73dca1957970ca21387c97fe4a6ceaead98e39a07c92"
+    },
+    "artifact_dd011175431ebb83b1a017c7": {
+      "id": "artifact_dd011175431ebb83b1a017c7",
+      "kind": "observation",
+      "path": "artifacts/artifact_dd011175431ebb83b1a017c7.json",
+      "sha256": "0867d56421017cebf281eb6d920520d28b2a7ea8d08ee294f61f8e058687126e"
+    },
+    "artifact_e02258296990d37a4ff0a31e": {
+      "id": "artifact_e02258296990d37a4ff0a31e",
+      "kind": "request",
+      "path": "artifacts/artifact_e02258296990d37a4ff0a31e.json",
+      "sha256": "b7f5cedf46114b10909b69dfa9049924f09b5eadaa17e6214bfe03cf381c267d"
+    }
+  }
+}

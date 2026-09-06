@@ -1,0 +1,17 @@
+{
+  "factor": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/lib/python3.12/site-packages/factor/__init__.py",
+  "liner_stability": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/lib/python3.12/site-packages/liner_stability/__init__.py",
+  "version": "0.3.0",
+  "dependencies": {
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.11.1"
+  },
+  "sys_path": [
+    "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python312.zip",
+    "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12",
+    "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/lib-dynload",
+    "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/.venv/lib/python3.12/site-packages",
+    "/Users/operator/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/site-packages"
+  ]
+}

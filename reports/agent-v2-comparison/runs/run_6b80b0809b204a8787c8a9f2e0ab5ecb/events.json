@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:23:43.345532+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_dd011175431ebb83b1a017c7"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "1355083be0ca889befb5bcc18d9b76c443acfe3d3241ec7136cabe65bb6f75d4"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:23:45.918249+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_dd011175431ebb83b1a017c7"
+        ],
+        "explanation": "The conditional interval for signed radial displacement x is [-2.96e-07, 2.96e-07] meters. The upper bound (2.96e-07 m) exceeds the resolution T = -1e-08 m, so compression is supported within measurement limits.",
+        "next_step": "No further action required; decision finalized based on provided synthetic observation."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.5723724169993147,
+        "usage": {
+          "input_tokens": 1404,
+          "total_output_tokens": 155,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 74.02308751259355,
+          "time_to_first_token_seconds": 0.497
+        },
+        "request_sha256": "f935c5d5ff370279ec15f73864a2c6c51e4425312c58631558359ab63754eb9c",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1404,
+        "output_tokens": 155
+      }
+    },
+    "previous_hash": "1355083be0ca889befb5bcc18d9b76c443acfe3d3241ec7136cabe65bb6f75d4",
+    "hash": "56814c5e8bc5c40aea85361eed3ef1d9295ee5e74561858b1acc0e3f70a1d8c3"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:23:45.919291+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_supported",
+      "evidence_ids": [
+        "artifact_dd011175431ebb83b1a017c7"
+      ],
+      "explanation": "The conditional interval for signed radial displacement x is [-2.96e-07, 2.96e-07] meters. The upper bound (2.96e-07 m) exceeds the resolution T = -1e-08 m, so compression is supported within measurement limits.",
+      "next_step": "No further action required; decision finalized based on provided synthetic observation."
+    },
+    "previous_hash": "56814c5e8bc5c40aea85361eed3ef1d9295ee5e74561858b1acc0e3f70a1d8c3",
+    "hash": "1d0f190feb15972471531974dbc63e222b61ade4584c8d0cad7344be09afbfc3"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:23:45.919962+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1404,
+        "output_tokens": 155,
+        "elapsed_seconds": 2.578350208000302
+      },
+      "cleanup": []
+    },
+    "previous_hash": "1d0f190feb15972471531974dbc63e222b61ade4584c8d0cad7344be09afbfc3",
+    "hash": "6b275fe877ce4253a9801a4f1cddf36c814a67aaed77414a88f5828b8f7f54ee"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:23:45.921205+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "d485ea14ab30fd82c2180276e4440f49642707fc6b9e43951eca0c72ef88f7d9"
+    },
+    "previous_hash": "6b275fe877ce4253a9801a4f1cddf36c814a67aaed77414a88f5828b8f7f54ee",
+    "hash": "050cd372257e41593bfd7947beb9bb57be3f02283736411e4f92cded59608ee6"
+  }
+]

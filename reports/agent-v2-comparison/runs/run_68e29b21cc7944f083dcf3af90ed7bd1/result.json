@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_68e29b21cc7944f083dcf3af90ed7bd1",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_68e29b21cc7944f083dcf3af90ed7bd1",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_9aaae14d45acc524240e7969"
+    ],
+    "explanation": "Using the reference, center = -5.938e-09 - 3.268e-08 = -3.862e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.95996*1.414e-09 + 1e-09 = 3.772e-09 m. Interval: [-4.239e-08, -3.485e-08] m. T = -1e-08 m. Since upper (-3.485e-08) <= T, compression is supported.",
+    "next_step": "Report compression_supported with interval [-4.24e-08, -3.49e-08] m."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1700,
+    "output_tokens": 260,
+    "elapsed_seconds": 7.707819125000242
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_4c5f4c364b34529ed2d5fe6d": {
+      "id": "artifact_4c5f4c364b34529ed2d5fe6d",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_4c5f4c364b34529ed2d5fe6d.json",
+      "sha256": "0d0f2aba6d250bd618dbc26414025fe4b244d02bec6c9819043eea6805113786"
+    },
+    "artifact_9aaae14d45acc524240e7969": {
+      "id": "artifact_9aaae14d45acc524240e7969",
+      "kind": "observation",
+      "path": "artifacts/artifact_9aaae14d45acc524240e7969.json",
+      "sha256": "d14f1990c46c0188f0f425a9aca97346152141799151d0dc6a05e4fb8a4520b0"
+    },
+    "artifact_cf30e39a92f81cbe45638bf3": {
+      "id": "artifact_cf30e39a92f81cbe45638bf3",
+      "kind": "request",
+      "path": "artifacts/artifact_cf30e39a92f81cbe45638bf3.json",
+      "sha256": "85e16f546892ca35914bde136d762fe18db38b300c4cf8d0e6cffd937cb0dd6a"
+    }
+  }
+}

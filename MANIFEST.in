@@ -1,0 +1,23 @@
+include README.md CHANGELOG.md Makefile requirements-core.lock PyTorch.command Learn.command
+recursive-include src/factor/learn/static *.html *.css *.js
+recursive-include configs *.json
+recursive-include docs *.md *.pdf *.txt
+recursive-include templates *.md *.json
+recursive-include tests *.py
+
+# Small experiment inputs and historical-source fixtures required by the tests.
+include experiments/local_model/*.py
+include experiments/local_model/*.json
+include experiments/local_model/requirements.lock
+recursive-include experiments/local_model/frozen_dataset *.json *.jsonl
+include experiments/local_model/posttrain_run/manifest.json
+recursive-include experiments/local_model/posttrain_run/source_snapshot *.py *.md
+
+# Weights, environments, caches and runtime outputs are separate artifacts.
+prune .venv
+prune .venv-local
+prune experiments/local_model/base_model
+prune experiments/local_model/cache
+prune experiments/local_model/models
+prune experiments/local_model/checkpoints
+global-exclude *.safetensors *.gguf *.py[cod] .DS_Store

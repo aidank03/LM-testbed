@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_8ae2989a2c7b468ca87f8d98be155d05",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_8ae2989a2c7b468ca87f8d98be155d05",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_45981ea6ca69c2c43b3ec40d"
+    ],
+    "explanation": "The observation shows an apparent displacement of -4.55e-09 m, while the reference displacement is -2.34e-08 m. The difference (residual) is approximately 1.89e-08 m in magnitude. This residual exceeds the stated resolution limit of 1e-08 m and the noise bound of 1e-09 m. Since the observed motion does not match the reference within the system's resolution, it cannot support compression beyond the stated resolution.",
+    "next_step": "Request a higher-resolution calibration or a different measurement window to resolve the discrepancy between apparent and reference displacements."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 3.5151829999995243
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_6d541b5d5d0e0e71bec5073b": {
+      "id": "artifact_6d541b5d5d0e0e71bec5073b",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_6d541b5d5d0e0e71bec5073b.json",
+      "sha256": "1da3c09b5dba6f976558976ff14f6ff790636d606c153d8a53af38773fbdf561"
+    },
+    "artifact_45981ea6ca69c2c43b3ec40d": {
+      "id": "artifact_45981ea6ca69c2c43b3ec40d",
+      "kind": "observation",
+      "path": "artifacts/artifact_45981ea6ca69c2c43b3ec40d.json",
+      "sha256": "5c3fb8bb95075bb4d9a216755012ad7168b5da29bc287d09b75f72e8a6bf2cb9"
+    },
+    "artifact_c567e397cbdc8041f8ac52dd": {
+      "id": "artifact_c567e397cbdc8041f8ac52dd",
+      "kind": "request",
+      "path": "artifacts/artifact_c567e397cbdc8041f8ac52dd.json",
+      "sha256": "c2cbd4cc78decdfd7751f295bbb3b736e05f974bf52d832775f24ccfec0574de"
+    }
+  }
+}

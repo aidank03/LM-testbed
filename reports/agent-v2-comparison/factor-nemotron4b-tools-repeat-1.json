@@ -1,0 +1,1635 @@
+[
+  {
+    "case_id": "458062dab8797b5df819c91f",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_d183041da3f143788bc0836b40429959",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_d183041da3f143788bc0836b40429959",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_41354d07de515b5f2c0fd7b9",
+          "artifact_2c37f1f28fe5dbd4b7bd7893"
+        ],
+        "explanation": "The conditional interval [4.235e-09, 1.043e-07] m lies entirely above the resolution T = -1e-08 m, meaning no inward motion (compression) is supported within the fixed window.",
+        "next_step": "Independently validate calibration and nuisance assumptions."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 5.427365553372452e-08,
+        "interval_m": [
+          4.235372307713012e-09,
+          1.0431193875973603e-07
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3948,
+        "output_tokens": 196,
+        "elapsed_seconds": 5.550638832999539
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_100813c6e69a1cb480c305e8": {
+          "id": "artifact_100813c6e69a1cb480c305e8",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_100813c6e69a1cb480c305e8.json",
+          "sha256": "331794af2859254a6acb2e8d06515d600c78b98e93443443230b9cb3e36b0dde"
+        },
+        "artifact_41354d07de515b5f2c0fd7b9": {
+          "id": "artifact_41354d07de515b5f2c0fd7b9",
+          "kind": "observation",
+          "path": "artifacts/artifact_41354d07de515b5f2c0fd7b9.json",
+          "sha256": "8dd335d39b0249e8a97abff5e710e47402092356a4678ed09812a23e82de164c"
+        },
+        "artifact_c3a118f4e73564998cf27f1f": {
+          "id": "artifact_c3a118f4e73564998cf27f1f",
+          "kind": "request",
+          "path": "artifacts/artifact_c3a118f4e73564998cf27f1f.json",
+          "sha256": "623d4fe94cae3ee6f5f79827c42983f90f6a8c11295da2f4802fb2d486b09f08"
+        },
+        "artifact_2c37f1f28fe5dbd4b7bd7893": {
+          "id": "artifact_2c37f1f28fe5dbd4b7bd7893",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_2c37f1f28fe5dbd4b7bd7893.json",
+          "sha256": "f6efaddb697ec202054c5975f24a3a78a3feb9788462d1594b24f63889b9731c"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "3d3d48f9784dcb09a1d9b811",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_f8adbfabe8ed4e069674ce2d50b71c93",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_f8adbfabe8ed4e069674ce2d50b71c93",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_317f1917292b82e213c5857a",
+          "artifact_c11fdbf79a695dc38636f3c1"
+        ],
+        "explanation": "The conditional interval [-3.75289017708359e-08, -2.998528647343719e-08] lies entirely below the resolution threshold T = -1e-08 m, indicating that inward motion (compression) is supported within the fixed window.",
+        "next_step": "Independently validate the stated calibration and nuisance assumptions."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -3.3757094122136545e-08,
+        "interval_m": [
+          -3.75289017708359e-08,
+          -2.998528647343719e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 3,
+        "tool_calls": 3,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 6320,
+        "output_tokens": 240,
+        "elapsed_seconds": 6.7257844160003515
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_13ebda1181729e6517756286": {
+          "id": "artifact_13ebda1181729e6517756286",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_13ebda1181729e6517756286.json",
+          "sha256": "6ab244a207e382f0dbccca09cf5b611ba60587f2635546cbf78dcde477deb58f"
+        },
+        "artifact_8782acceb77e79f37ea5cdcf": {
+          "id": "artifact_8782acceb77e79f37ea5cdcf",
+          "kind": "observation",
+          "path": "artifacts/artifact_8782acceb77e79f37ea5cdcf.json",
+          "sha256": "392f6085d9f5bae3cebf26b7967a9cb0a848ae32a02e1cb0e471c74c02d0c180"
+        },
+        "artifact_50c7c9af5bc53de057ae92d8": {
+          "id": "artifact_50c7c9af5bc53de057ae92d8",
+          "kind": "request",
+          "path": "artifacts/artifact_50c7c9af5bc53de057ae92d8.json",
+          "sha256": "4ee62d07aa7e88091dfabc0f5d1f8af27b344784416c8888ffad61b0ba71ede1"
+        },
+        "artifact_317f1917292b82e213c5857a": {
+          "id": "artifact_317f1917292b82e213c5857a",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_317f1917292b82e213c5857a.json",
+          "sha256": "ecea639fd2536c1f82c0797d654f78f98dd94fcb96016dea9ca9585c4ac2fcce"
+        },
+        "artifact_c11fdbf79a695dc38636f3c1": {
+          "id": "artifact_c11fdbf79a695dc38636f3c1",
+          "kind": "inspect_observation",
+          "path": "artifacts/artifact_c11fdbf79a695dc38636f3c1.json",
+          "sha256": "392f6085d9f5bae3cebf26b7967a9cb0a848ae32a02e1cb0e471c74c02d0c180"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "4c5e7c0a476a769f0be8d7d2",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_89b005e468314abf87e46863429aab36",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_89b005e468314abf87e46863429aab36",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_40ecda42268e11a0944ed9b2",
+          "artifact_86bb919f468719fc7142394a"
+        ],
+        "explanation": "The conditional interval [1.362e-08, 2.117e-08] m is entirely positive and exceeds the resolution of 1e-08 m, so inward motion (compression) is not supported within this window.",
+        "next_step": "Validate calibration and nuisance assumptions independently."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 1.7395660294480166e-08,
+        "interval_m": [
+          1.362385264578081e-08,
+          2.116746794317952e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3917,
+        "output_tokens": 195,
+        "elapsed_seconds": 5.2837347920003594
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_6dce64fdf6331404e70b5e5d": {
+          "id": "artifact_6dce64fdf6331404e70b5e5d",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_6dce64fdf6331404e70b5e5d.json",
+          "sha256": "fed814dbf0bcf2d5a33a82740f083a0c5c050737748e4e5793ec5d6c5d62b408"
+        },
+        "artifact_40ecda42268e11a0944ed9b2": {
+          "id": "artifact_40ecda42268e11a0944ed9b2",
+          "kind": "observation",
+          "path": "artifacts/artifact_40ecda42268e11a0944ed9b2.json",
+          "sha256": "73b1464e1dbb81556b78c9cec967012a30a537e602c2ae364de328d29f346ba9"
+        },
+        "artifact_22197653e6cb0d434d545872": {
+          "id": "artifact_22197653e6cb0d434d545872",
+          "kind": "request",
+          "path": "artifacts/artifact_22197653e6cb0d434d545872.json",
+          "sha256": "10c5b191f5eaeb618620ce7f44a538040ba5527c9c32172c79ae65f7ed12265a"
+        },
+        "artifact_86bb919f468719fc7142394a": {
+          "id": "artifact_86bb919f468719fc7142394a",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_86bb919f468719fc7142394a.json",
+          "sha256": "502840315252ad228d83c1c1f928a43340db1ac758b8534b031810d480c9aca7"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a4fe2d682f01fe0de8ba6421",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_92f870baec4a420cbee0a5cd5dff9883",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_92f870baec4a420cbee0a5cd5dff9883",
+      "execution": "budget_exceeded",
+      "failure": null,
+      "final": null,
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": null,
+        "interval_m": null,
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "ambiguous",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+      },
+      "usage": {
+        "model_calls": 6,
+        "tool_calls": 6,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 13032,
+        "output_tokens": 274,
+        "elapsed_seconds": 9.105185915999755
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_b7a332cee924569db0f878cd": {
+          "id": "artifact_b7a332cee924569db0f878cd",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_b7a332cee924569db0f878cd.json",
+          "sha256": "51667babe5bfcac8b30e7ffb105bfc456b8aac604861bd7cb674241093eb2de6"
+        },
+        "artifact_d7f69cd74a2aea1b7f855213": {
+          "id": "artifact_d7f69cd74a2aea1b7f855213",
+          "kind": "observation",
+          "path": "artifacts/artifact_d7f69cd74a2aea1b7f855213.json",
+          "sha256": "b905f67238c9a204bf3e208a2006e77760e71e8433e5b9761091b9a8cc52dae9"
+        },
+        "artifact_5e2bc34234731d7b93638ec7": {
+          "id": "artifact_5e2bc34234731d7b93638ec7",
+          "kind": "request",
+          "path": "artifacts/artifact_5e2bc34234731d7b93638ec7.json",
+          "sha256": "0857c01ce5e2ecc716cb9044d903b4a1dee5b684a6a85ee7324fb898d1226042"
+        },
+        "artifact_fdf5af6546c7355f1a1edac6": {
+          "id": "artifact_fdf5af6546c7355f1a1edac6",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_fdf5af6546c7355f1a1edac6.json",
+          "sha256": "a4854db990f6c8c7243bc8411ece527dc838f5e3435dcd3ec85016036cc8c8a0"
+        },
+        "artifact_feea415188a3524cb9e54706": {
+          "id": "artifact_feea415188a3524cb9e54706",
+          "kind": "inspect_observation",
+          "path": "artifacts/artifact_feea415188a3524cb9e54706.json",
+          "sha256": "b905f67238c9a204bf3e208a2006e77760e71e8433e5b9761091b9a8cc52dae9"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "2b74389d6958e64f8c5aa5b6",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_ecd31a8163e448a0a18ba28ee40c2980",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_ecd31a8163e448a0a18ba28ee40c2980",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_4423e114a0b4afef6e12e06c",
+          "artifact_cfad3ac0a2d50be05811b996"
+        ],
+        "explanation": "The conditional interval [-5.742143228366828e-08, -4.987781698626957e-08] lies entirely below the resolution threshold T = -1e-08 m, indicating that inward (compression) motion is supported within the fixed window.",
+        "next_step": "Independently validate the stated calibration and nuisance assumptions."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -5.3649624634968925e-08,
+        "interval_m": [
+          -5.742143228366828e-08,
+          -4.987781698626957e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 3,
+        "tool_calls": 3,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 6319,
+        "output_tokens": 239,
+        "elapsed_seconds": 6.695720375000747
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_53324eeece7e1ffd743bdf06": {
+          "id": "artifact_53324eeece7e1ffd743bdf06",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_53324eeece7e1ffd743bdf06.json",
+          "sha256": "a1021681f170dfb59c7301e2646338313370618424273221c194fd26f38db92e"
+        },
+        "artifact_094ac6f0b6f438c65c6ba821": {
+          "id": "artifact_094ac6f0b6f438c65c6ba821",
+          "kind": "observation",
+          "path": "artifacts/artifact_094ac6f0b6f438c65c6ba821.json",
+          "sha256": "3af805838051feee4124eadd4fba45445e84f08bbfb5b96b597bb132e957d903"
+        },
+        "artifact_f242cc6deec8eb5377583c2c": {
+          "id": "artifact_f242cc6deec8eb5377583c2c",
+          "kind": "request",
+          "path": "artifacts/artifact_f242cc6deec8eb5377583c2c.json",
+          "sha256": "a1fba364217a93289302eb7332ee410445de239669a4eaac4c41e7c3f89b2793"
+        },
+        "artifact_4423e114a0b4afef6e12e06c": {
+          "id": "artifact_4423e114a0b4afef6e12e06c",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_4423e114a0b4afef6e12e06c.json",
+          "sha256": "6cc62d341b439adbb1b37ceeb82c121852295993b7b55e6e7b9c152c9451708f"
+        },
+        "artifact_cfad3ac0a2d50be05811b996": {
+          "id": "artifact_cfad3ac0a2d50be05811b996",
+          "kind": "inspect_observation",
+          "path": "artifacts/artifact_cfad3ac0a2d50be05811b996.json",
+          "sha256": "3af805838051feee4124eadd4fba45445e84f08bbfb5b96b597bb132e957d903"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "650908343b1684ca1410b847",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_edd66f4677b140988d37b175dec0b739",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_edd66f4677b140988d37b175dec0b739",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_87a48ca7cde816bca02abdd4"
+        ],
+        "explanation": "The conditional interval [-3.466e-08, -3.074e-08] m lies entirely below the resolution threshold of 1e-08 m, indicating compression is supported within the fixed window.",
+        "next_step": "Validate calibration and noise assumptions independently."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -3.270014452507154e-08,
+        "interval_m": [
+          -3.46601085096116e-08,
+          -3.074018054053149e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3781,
+        "output_tokens": 158,
+        "elapsed_seconds": 4.731236916999478
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_f0d65567e47e6ee0c2b60fec": {
+          "id": "artifact_f0d65567e47e6ee0c2b60fec",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_f0d65567e47e6ee0c2b60fec.json",
+          "sha256": "15bb897301277e3fc184b5d3c7aae68ad1a85e100d4cd2a1eb73cb74313d5ae0"
+        },
+        "artifact_87a48ca7cde816bca02abdd4": {
+          "id": "artifact_87a48ca7cde816bca02abdd4",
+          "kind": "observation",
+          "path": "artifacts/artifact_87a48ca7cde816bca02abdd4.json",
+          "sha256": "276be9607e5fdf9cd73f03b2e5065e06320e4b2bf2cc156c29f59528af261ecf"
+        },
+        "artifact_091befc96f41897142b2478c": {
+          "id": "artifact_091befc96f41897142b2478c",
+          "kind": "request",
+          "path": "artifacts/artifact_091befc96f41897142b2478c.json",
+          "sha256": "95e0efcd4a403f709145d58bba718b4329e3d0abc8396d5d2d1e034d34bd0436"
+        },
+        "artifact_a98f082207b0799b4461dfa9": {
+          "id": "artifact_a98f082207b0799b4461dfa9",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_a98f082207b0799b4461dfa9.json",
+          "sha256": "cf2dd4d90e928ae2bbba8fe29fba29fe9923acb6e58638d947759d7add170ea6"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "e59d9af341fc83fa1243058f",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_09be3e126c0d490c948ac038d956ccb7",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_09be3e126c0d490c948ac038d956ccb7",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_a5663a4bd018f887f77099ea",
+          "artifact_fdf5af6546c7355f1a1edac6"
+        ],
+        "explanation": "The apparent displacement is -4.1758847507673805e-09 m, within noise (sigma=1e-09) and resolution (1e-08). No reference or drift bound provided; unbounded nuisance means multiple material motions could produce identical observations.",
+        "next_step": "Obtain a calibrated drift witness with a defensible residual mismatch bound to resolve the null drift bound."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": null,
+        "interval_m": null,
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "ambiguous",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+      },
+      "usage": {
+        "model_calls": 6,
+        "tool_calls": 6,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 13147,
+        "output_tokens": 494,
+        "elapsed_seconds": 12.124521583999922
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_adcb4158675c7f507707c410": {
+          "id": "artifact_adcb4158675c7f507707c410",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_adcb4158675c7f507707c410.json",
+          "sha256": "d7b93284609d5fdf102f83544c9733cc0ea64bec7e98e2bc244c03d0dd472067"
+        },
+        "artifact_a5663a4bd018f887f77099ea": {
+          "id": "artifact_a5663a4bd018f887f77099ea",
+          "kind": "observation",
+          "path": "artifacts/artifact_a5663a4bd018f887f77099ea.json",
+          "sha256": "9fe7b5764cb79fea54cbc77d5ceef1d99e806b9eb154a67c68f0074a48ff14cf"
+        },
+        "artifact_6f68557214b35027c3866e64": {
+          "id": "artifact_6f68557214b35027c3866e64",
+          "kind": "request",
+          "path": "artifacts/artifact_6f68557214b35027c3866e64.json",
+          "sha256": "2c3a583ae4021ef5da4571a22af181b11b076cf9690c828b59472b86beeb404a"
+        },
+        "artifact_fdf5af6546c7355f1a1edac6": {
+          "id": "artifact_fdf5af6546c7355f1a1edac6",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_fdf5af6546c7355f1a1edac6.json",
+          "sha256": "a4854db990f6c8c7243bc8411ece527dc838f5e3435dcd3ec85016036cc8c8a0"
+        },
+        "artifact_39b5994b145096fd8510c299": {
+          "id": "artifact_39b5994b145096fd8510c299",
+          "kind": "inspect_observation",
+          "path": "artifacts/artifact_39b5994b145096fd8510c299.json",
+          "sha256": "9fe7b5764cb79fea54cbc77d5ceef1d99e806b9eb154a67c68f0074a48ff14cf"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "d62e0f6001bb5794348f0b35",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_63785b2e122342b190bb1f0eb0668ef6",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_63785b2e122342b190bb1f0eb0668ef6",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_24988c482dd400f0f0da1a51"
+        ],
+        "explanation": "The conditional interval [2.6e-08, 4.6e-08] m lies entirely above the resolution threshold (T = -1e-08), meaning no inward motion is supported within measurement limits.",
+        "next_step": "Validate calibration and noise assumptions independently."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 3.598997984157082e-08,
+        "interval_m": [
+          2.6030015857030765e-08,
+          4.594994382611087e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3794,
+        "output_tokens": 160,
+        "elapsed_seconds": 4.825132874999326
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_46469afdd67960555007991d": {
+          "id": "artifact_46469afdd67960555007991d",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_46469afdd67960555007991d.json",
+          "sha256": "42a3da6a13ad1231dc1a630fd01778d42bdba07674ffcf2141220c00fbaf226a"
+        },
+        "artifact_05792fc4a90c2582e7bb7b53": {
+          "id": "artifact_05792fc4a90c2582e7bb7b53",
+          "kind": "observation",
+          "path": "artifacts/artifact_05792fc4a90c2582e7bb7b53.json",
+          "sha256": "5b23fcccf410b8338609e0ef05d58a744dec07a6d96ce39e20757f8f541de094"
+        },
+        "artifact_9212c0158db9ba680eeeb6bf": {
+          "id": "artifact_9212c0158db9ba680eeeb6bf",
+          "kind": "request",
+          "path": "artifacts/artifact_9212c0158db9ba680eeeb6bf.json",
+          "sha256": "7776569217c2806b5d2790f782df23308fa26eececf127f61036791464a49226"
+        },
+        "artifact_24988c482dd400f0f0da1a51": {
+          "id": "artifact_24988c482dd400f0f0da1a51",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_24988c482dd400f0f0da1a51.json",
+          "sha256": "79f289370494c40b0975cd309ef63d359ce2a64b03a7644274788fd4b1781be2"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "cf0f33e74df7be19b5d3e647",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_348c8b4c34874486a86e911cf631d6d7",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_348c8b4c34874486a86e911cf631d6d7",
+      "execution": "budget_exceeded",
+      "failure": null,
+      "final": null,
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -3.861697389394204e-08,
+        "interval_m": [
+          -4.238878154264139e-08,
+          -3.4845166245242685e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 6,
+        "tool_calls": 6,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 14163,
+        "output_tokens": 284,
+        "elapsed_seconds": 9.535991333000311
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_55ab31ca9954327ab3bdd9cb": {
+          "id": "artifact_55ab31ca9954327ab3bdd9cb",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_55ab31ca9954327ab3bdd9cb.json",
+          "sha256": "e042af29ed73645ae650662f02be2fc5cc14f21980d6832fc8974213c495f8c0"
+        },
+        "artifact_9aaae14d45acc524240e7969": {
+          "id": "artifact_9aaae14d45acc524240e7969",
+          "kind": "observation",
+          "path": "artifacts/artifact_9aaae14d45acc524240e7969.json",
+          "sha256": "d14f1990c46c0188f0f425a9aca97346152141799151d0dc6a05e4fb8a4520b0"
+        },
+        "artifact_cf30e39a92f81cbe45638bf3": {
+          "id": "artifact_cf30e39a92f81cbe45638bf3",
+          "kind": "request",
+          "path": "artifacts/artifact_cf30e39a92f81cbe45638bf3.json",
+          "sha256": "85e16f546892ca35914bde136d762fe18db38b300c4cf8d0e6cffd937cb0dd6a"
+        },
+        "artifact_d0878c21d8bcc372a69680a5": {
+          "id": "artifact_d0878c21d8bcc372a69680a5",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_d0878c21d8bcc372a69680a5.json",
+          "sha256": "88a68ce8724b507b01fb5dd4cc5dbe0591cc29ca7147f0c22b943385421308b9"
+        },
+        "artifact_acfce870133e5a063111a675": {
+          "id": "artifact_acfce870133e5a063111a675",
+          "kind": "inspect_observation",
+          "path": "artifacts/artifact_acfce870133e5a063111a675.json",
+          "sha256": "d14f1990c46c0188f0f425a9aca97346152141799151d0dc6a05e4fb8a4520b0"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "2e3e50e224ce4319b74ff3ef",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_0408fbfa3db64479877ae1d784f5daf4",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_0408fbfa3db64479877ae1d784f5daf4",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_34497760ac1d86e7864520bb",
+          "artifact_04c93a0848138abf62f9bf00"
+        ],
+        "explanation": "The conditional interval [-1.0169446882287529e-07, -1.6179023708522764e-09] crosses the resolution threshold T = -1e-08, making it ambiguous whether inward motion is supported or not.",
+        "next_step": "Obtain a calibrated drift witness with a defensible residual mismatch bound to resolve ambiguity."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -5.1656185596863783e-08,
+        "interval_m": [
+          -1.0169446882287529e-07,
+          -1.6179023708522764e-09
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3945,
+        "output_tokens": 221,
+        "elapsed_seconds": 5.686170707999736
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_23dfe0d2a665e64f163e4050": {
+          "id": "artifact_23dfe0d2a665e64f163e4050",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_23dfe0d2a665e64f163e4050.json",
+          "sha256": "939e59be262144809c7028b9c06d96902ea98310103efa733e8c4440d71a054f"
+        },
+        "artifact_34497760ac1d86e7864520bb": {
+          "id": "artifact_34497760ac1d86e7864520bb",
+          "kind": "observation",
+          "path": "artifacts/artifact_34497760ac1d86e7864520bb.json",
+          "sha256": "46f26fb9ac8093161c15d887ab7c5d20a55580efff8064c28bfe566434525632"
+        },
+        "artifact_3a9f1c72799beb6da144585b": {
+          "id": "artifact_3a9f1c72799beb6da144585b",
+          "kind": "request",
+          "path": "artifacts/artifact_3a9f1c72799beb6da144585b.json",
+          "sha256": "1bfe48110eea41d3c0aa69a1fecdef7c37ed65140d4edfa874043ac2e0940717"
+        },
+        "artifact_04c93a0848138abf62f9bf00": {
+          "id": "artifact_04c93a0848138abf62f9bf00",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_04c93a0848138abf62f9bf00.json",
+          "sha256": "73bef4d739a17c24098b0b85ed1ce4e19922938dde59dbb4d7400e20a5de233a"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a255d5ca61b55c139fb03a34",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_f67021b90666425782310dbcd25ff15a",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_f67021b90666425782310dbcd25ff15a",
+      "execution": "budget_exceeded",
+      "failure": null,
+      "final": null,
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": null,
+        "interval_m": null,
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "ambiguous",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+      },
+      "usage": {
+        "model_calls": 6,
+        "tool_calls": 6,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 13056,
+        "output_tokens": 276,
+        "elapsed_seconds": 9.12316358299995
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_b92ea688a4a66a04f14edf27": {
+          "id": "artifact_b92ea688a4a66a04f14edf27",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_b92ea688a4a66a04f14edf27.json",
+          "sha256": "e2ac82ec708193f70474701d0997b5dde2410c65d1328c5d0dbe862bbfa808d8"
+        },
+        "artifact_7383614cd691cbf99155d6f0": {
+          "id": "artifact_7383614cd691cbf99155d6f0",
+          "kind": "observation",
+          "path": "artifacts/artifact_7383614cd691cbf99155d6f0.json",
+          "sha256": "8cd9c490ea089a457d8f31ead8455a12c7f80819eaf1fb38fe93b22c9c50caca"
+        },
+        "artifact_bf15824aff2cb2eb1e288aec": {
+          "id": "artifact_bf15824aff2cb2eb1e288aec",
+          "kind": "request",
+          "path": "artifacts/artifact_bf15824aff2cb2eb1e288aec.json",
+          "sha256": "b4f8633a7fe38727a14cece28c7bd3f58ca0fbc4482a4d9d9856ad61086602f2"
+        },
+        "artifact_fdf5af6546c7355f1a1edac6": {
+          "id": "artifact_fdf5af6546c7355f1a1edac6",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_fdf5af6546c7355f1a1edac6.json",
+          "sha256": "a4854db990f6c8c7243bc8411ece527dc838f5e3435dcd3ec85016036cc8c8a0"
+        },
+        "artifact_e9ed48618cee032509e722dd": {
+          "id": "artifact_e9ed48618cee032509e722dd",
+          "kind": "inspect_observation",
+          "path": "artifacts/artifact_e9ed48618cee032509e722dd.json",
+          "sha256": "8cd9c490ea089a457d8f31ead8455a12c7f80819eaf1fb38fe93b22c9c50caca"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "0af9e82913712b34f6582cbb",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_a0f359bdd5d34a59bdeaad2e23a1f845",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_a0f359bdd5d34a59bdeaad2e23a1f845",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_d5b1cc556fb429bd98998435",
+          "artifact_fdf5af6546c7355f1a1edac6"
+        ],
+        "explanation": "The apparent displacement is -4.1758847507673805e-09 m, within the 95% Gaussian confidence set centered at this value with sigma = 1e-09 m and no finite drift bound (B = null). Since B is null, different material motions could produce identical observations. The interval crosses T = -resolution_m = -1e-08 m, requiring ambiguity per decision rule 5.",
+        "next_step": "A calibrated drift witness with a defensible residual mismatch bound to resolve the nuisance displacement."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": null,
+        "interval_m": null,
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "ambiguous",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3711,
+        "output_tokens": 243,
+        "elapsed_seconds": 5.875552083000002
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_7a2218cc3900e8eca5a97077": {
+          "id": "artifact_7a2218cc3900e8eca5a97077",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_7a2218cc3900e8eca5a97077.json",
+          "sha256": "7018cce640d4682c225469a05b061d923d9279a78bb0c9e676d57135a8ea8b86"
+        },
+        "artifact_d5b1cc556fb429bd98998435": {
+          "id": "artifact_d5b1cc556fb429bd98998435",
+          "kind": "observation",
+          "path": "artifacts/artifact_d5b1cc556fb429bd98998435.json",
+          "sha256": "f177f2cfc501aefaae1601967fe449be3d64a670ed12cf0ed43135b2a1aa4473"
+        },
+        "artifact_47999fdfa5089c10f9ec6249": {
+          "id": "artifact_47999fdfa5089c10f9ec6249",
+          "kind": "request",
+          "path": "artifacts/artifact_47999fdfa5089c10f9ec6249.json",
+          "sha256": "284a782a304f7c2458f4deb7fb0b29f6d5aad5d7482e91208a0f91b8e4655160"
+        },
+        "artifact_fdf5af6546c7355f1a1edac6": {
+          "id": "artifact_fdf5af6546c7355f1a1edac6",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_fdf5af6546c7355f1a1edac6.json",
+          "sha256": "a4854db990f6c8c7243bc8411ece527dc838f5e3435dcd3ec85016036cc8c8a0"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "0658fad7fdc5dd4d474bae06",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_2f0f4086dc294dea8bc39a246f7d2abf",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_2f0f4086dc294dea8bc39a246f7d2abf",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_dd011175431ebb83b1a017c7",
+          "artifact_bb0d0c9f4b2786ed1e127bdd"
+        ],
+        "explanation": "The conditional interval [-5.2279412621580365e-08, -3.235948465250026e-08] lies entirely below the resolution threshold of 1e-08 m, indicating compression is supported within the fixed window.",
+        "next_step": "Validate calibration and nuisance assumptions independently."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -4.231944863704031e-08,
+        "interval_m": [
+          -5.2279412621580365e-08,
+          -3.235948465250026e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3784,
+        "output_tokens": 211,
+        "elapsed_seconds": 5.539187834000586
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_cc64c75797835ada20b73385": {
+          "id": "artifact_cc64c75797835ada20b73385",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_cc64c75797835ada20b73385.json",
+          "sha256": "53f2999351aed45a94ae9d515a645b1968d38d7a18d3f1a4a52830bc38b3273a"
+        },
+        "artifact_dd011175431ebb83b1a017c7": {
+          "id": "artifact_dd011175431ebb83b1a017c7",
+          "kind": "observation",
+          "path": "artifacts/artifact_dd011175431ebb83b1a017c7.json",
+          "sha256": "0867d56421017cebf281eb6d920520d28b2a7ea8d08ee294f61f8e058687126e"
+        },
+        "artifact_e02258296990d37a4ff0a31e": {
+          "id": "artifact_e02258296990d37a4ff0a31e",
+          "kind": "request",
+          "path": "artifacts/artifact_e02258296990d37a4ff0a31e.json",
+          "sha256": "b7f5cedf46114b10909b69dfa9049924f09b5eadaa17e6214bfe03cf381c267d"
+        },
+        "artifact_bb0d0c9f4b2786ed1e127bdd": {
+          "id": "artifact_bb0d0c9f4b2786ed1e127bdd",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_bb0d0c9f4b2786ed1e127bdd.json",
+          "sha256": "636090037ba2811b09a3bf112bc22b418bf21400a7a457714d4e5a680cb9117c"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "0a833e5562f087d6c11579ee",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_e44cd90ba9124369b500b0df98d316a1",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_e44cd90ba9124369b500b0df98d316a1",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_c782f49bf6902f8157338ff7",
+          "artifact_c2b3e2e8fcbc6da62650b134"
+        ],
+        "explanation": "The conditional interval [1.65e-08, 2.41e-08] m lies entirely above the resolution threshold T = -1e-08 m, meaning no inward motion (compression) is supported within the fixed window.",
+        "next_step": "Validate calibration and nuisance assumptions independently."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 2.0289977214943724e-08,
+        "interval_m": [
+          1.6518169566244368e-08,
+          2.406178486364308e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3916,
+        "output_tokens": 192,
+        "elapsed_seconds": 5.338975374999791
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_d83a23d97a3d1f61af40057a": {
+          "id": "artifact_d83a23d97a3d1f61af40057a",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_d83a23d97a3d1f61af40057a.json",
+          "sha256": "50b294f724f049f6e0e187835be00b5333a1980821e22384eebe8ddbc91f7a30"
+        },
+        "artifact_c782f49bf6902f8157338ff7": {
+          "id": "artifact_c782f49bf6902f8157338ff7",
+          "kind": "observation",
+          "path": "artifacts/artifact_c782f49bf6902f8157338ff7.json",
+          "sha256": "d9d17a4d8e76cc59ad1b4bf2ef75c70a82afa3eb4f8a68707360e905cf0ece1e"
+        },
+        "artifact_49615a9c7441241a5e4b3a84": {
+          "id": "artifact_49615a9c7441241a5e4b3a84",
+          "kind": "request",
+          "path": "artifacts/artifact_49615a9c7441241a5e4b3a84.json",
+          "sha256": "404369d133e653735ad4fcfb4f06a1df6d497581eb7d693237ce1a07e72bd925"
+        },
+        "artifact_c2b3e2e8fcbc6da62650b134": {
+          "id": "artifact_c2b3e2e8fcbc6da62650b134",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_c2b3e2e8fcbc6da62650b134.json",
+          "sha256": "0f9e9c1c46c5343f1bf087a765dfa715f64797195f416d1300ddc35a7ba7c16b"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a4e44368c5fc796a9a2c5ac0",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_1811ee5a406a4a63aede90a572612ad6",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_1811ee5a406a4a63aede90a572612ad6",
+      "execution": "budget_exceeded",
+      "failure": null,
+      "final": null,
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "reference_available",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": -2.848868099249005e-08,
+        "interval_m": [
+          -3.2260488641189405e-08,
+          -2.4716873343790693e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 6,
+        "tool_calls": 6,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 14175,
+        "output_tokens": 270,
+        "elapsed_seconds": 9.545528208999713
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_8014288cc8aee5bd12299d2f": {
+          "id": "artifact_8014288cc8aee5bd12299d2f",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_8014288cc8aee5bd12299d2f.json",
+          "sha256": "bedf9ca217035a47f19b9996ecd2adefab1a2426560f2ac77a9b6338d783009b"
+        },
+        "artifact_c819c70bc38ccbcedc1a17e4": {
+          "id": "artifact_c819c70bc38ccbcedc1a17e4",
+          "kind": "observation",
+          "path": "artifacts/artifact_c819c70bc38ccbcedc1a17e4.json",
+          "sha256": "50f657ac71763149f81ca583ee0eec40a73ceb88eedc5c3dd29e649cfb049ff5"
+        },
+        "artifact_9be726ac735f1e56c6566f5d": {
+          "id": "artifact_9be726ac735f1e56c6566f5d",
+          "kind": "request",
+          "path": "artifacts/artifact_9be726ac735f1e56c6566f5d.json",
+          "sha256": "35d15459d6e81b07c14b0d78a813d5a6f832bd101f8634a329ed31910355e115"
+        },
+        "artifact_17fa944ae44484d17e5fb61e": {
+          "id": "artifact_17fa944ae44484d17e5fb61e",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_17fa944ae44484d17e5fb61e.json",
+          "sha256": "e611474f273261c037a6d3278c200157d6b0dc841304161c8c4115bbf00f69aa"
+        },
+        "artifact_de5d8323bef9e618f1f5c51a": {
+          "id": "artifact_de5d8323bef9e618f1f5c51a",
+          "kind": "inspect_observation",
+          "path": "artifacts/artifact_de5d8323bef9e618f1f5c51a.json",
+          "sha256": "50f657ac71763149f81ca583ee0eec40a73ceb88eedc5c3dd29e649cfb049ff5"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a323736a1fa813984917566f",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_8e59308b31f249528f90e18ccb0daee9",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_8e59308b31f249528f90e18ccb0daee9",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_5d536dceb56edd63b22a244d",
+          "artifact_76fa535fea06f0e0dd6fa619"
+        ],
+        "explanation": "The conditional interval [2.4636e-8, 2.8556e-8] meters lies entirely above the resolution threshold of 1e-8 m, meaning no inward (compression) displacement is supported within the fixed window.",
+        "next_step": "Validate calibration and noise assumptions independently."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 2.659600038261068e-08,
+        "interval_m": [
+          2.4636036398070626e-08,
+          2.8555964367150735e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3787,
+        "output_tokens": 191,
+        "elapsed_seconds": 5.427699875000144
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_f9591a6a3dd08ab5ab03c7f1": {
+          "id": "artifact_f9591a6a3dd08ab5ab03c7f1",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_f9591a6a3dd08ab5ab03c7f1.json",
+          "sha256": "8afe9e9cb91568d8f93a574fb1bf1f91fb37757104feb954c2bc5bf297a41cba"
+        },
+        "artifact_5d536dceb56edd63b22a244d": {
+          "id": "artifact_5d536dceb56edd63b22a244d",
+          "kind": "observation",
+          "path": "artifacts/artifact_5d536dceb56edd63b22a244d.json",
+          "sha256": "4cf461f01260b7ebc4642b58f6fd968b20dec06e5ac67ccbbe9c2927ad174c50"
+        },
+        "artifact_71ec6aac9537b8c909d4313f": {
+          "id": "artifact_71ec6aac9537b8c909d4313f",
+          "kind": "request",
+          "path": "artifacts/artifact_71ec6aac9537b8c909d4313f.json",
+          "sha256": "bfbeaeaceb8285e5fee0d39086e72d04856f19556eebcd123d0cd948cc921aca"
+        },
+        "artifact_76fa535fea06f0e0dd6fa619": {
+          "id": "artifact_76fa535fea06f0e0dd6fa619",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_76fa535fea06f0e0dd6fa619.json",
+          "sha256": "f1c10fc9904a85a0d057ebd1a43dcf5986ff91c2fcd86c6a82a1fb9347988f5b"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "1ceb20590dd249fc2fe9ebb6",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_8b130eb2752e467dbee6929e2fe78867",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_8b130eb2752e467dbee6929e2fe78867",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_5fba208ecc34eb784f70da2e",
+          "artifact_9051940f303035709e6e4e0f"
+        ],
+        "explanation": "The conditional interval [2.675e-08, 3.067e-08] m lies entirely above the resolution threshold (T = -1e-08), meaning no inward motion is supported within measurement limits.",
+        "next_step": "Validate calibration and noise assumptions independently."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 2.871362885378302e-08,
+        "interval_m": [
+          2.6753664869242966e-08,
+          3.0673592838323076e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3779,
+        "output_tokens": 191,
+        "elapsed_seconds": 5.258216750000429
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_be49f7b99e88e8985ef539cc": {
+          "id": "artifact_be49f7b99e88e8985ef539cc",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_be49f7b99e88e8985ef539cc.json",
+          "sha256": "61134d6199efe7ab23eff48a46c6c272274e1b71a59369416dbe3c439ff93d67"
+        },
+        "artifact_5fba208ecc34eb784f70da2e": {
+          "id": "artifact_5fba208ecc34eb784f70da2e",
+          "kind": "observation",
+          "path": "artifacts/artifact_5fba208ecc34eb784f70da2e.json",
+          "sha256": "2dd82a5024b4b301dee53b82f957d9c92bb8952b7b270365ec5f70fa952992ba"
+        },
+        "artifact_19c6b7cb07e9fce3db58dccb": {
+          "id": "artifact_19c6b7cb07e9fce3db58dccb",
+          "kind": "request",
+          "path": "artifacts/artifact_19c6b7cb07e9fce3db58dccb.json",
+          "sha256": "198d784a6765df5bbfac3a673c16426296bf8c7b5b0b8b0e8d62dffac1ca1ec3"
+        },
+        "artifact_9051940f303035709e6e4e0f": {
+          "id": "artifact_9051940f303035709e6e4e0f",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_9051940f303035709e6e4e0f.json",
+          "sha256": "4517c9fd133cbf77bd2d459882e0bf6b80fe1271e3888e8b731aaef0af923c5c"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "8d94b9bd6245477b5b51efaa",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_16d1fba260974bc090991e0bb9586ce7",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_16d1fba260974bc090991e0bb9586ce7",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_a33360884b8c4d1b28eff4f9"
+        ],
+        "explanation": "The conditional interval [5.218984770990684e-08, 5.6109775678986946e-08] m lies entirely above the resolution threshold T = -1e-08 m, meaning no inward motion (compression) is supported within the fixed window.",
+        "next_step": "Independently validate the stated calibration and nuisance assumptions."
+      },
+      "numerical_result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": 5.414981169444689e-08,
+        "interval_m": [
+          5.218984770990684e-08,
+          5.6109775678986946e-08
+        ],
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "estimated_conditional",
+        "decision": "compression_not_supported",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+        "reason": "Decision uses the entire conditional interval against the stated resolution."
+      },
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 3787,
+        "output_tokens": 197,
+        "elapsed_seconds": 5.324978999999985
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_64d2dfcf0db2dfcebdd58db1": {
+          "id": "artifact_64d2dfcf0db2dfcebdd58db1",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_64d2dfcf0db2dfcebdd58db1.json",
+          "sha256": "806865503d5a29618d5078db6fa34ac9787aa99125aace2d2509e4b507e4ab73"
+        },
+        "artifact_b77a88941760d0301461455a": {
+          "id": "artifact_b77a88941760d0301461455a",
+          "kind": "observation",
+          "path": "artifacts/artifact_b77a88941760d0301461455a.json",
+          "sha256": "1108d663e1ef3ac085afbec94ee3388fbf24c04aa1b110584704bd8578b5aa5c"
+        },
+        "artifact_e9b2ef58723aef9e33dbb34a": {
+          "id": "artifact_e9b2ef58723aef9e33dbb34a",
+          "kind": "request",
+          "path": "artifacts/artifact_e9b2ef58723aef9e33dbb34a.json",
+          "sha256": "20636926f3bb9c1c2c00bbb188a56dd7a1e371ba9ef85e6217edea3e2c18156a"
+        },
+        "artifact_a33360884b8c4d1b28eff4f9": {
+          "id": "artifact_a33360884b8c4d1b28eff4f9",
+          "kind": "infer_motion",
+          "path": "artifacts/artifact_a33360884b8c4d1b28eff4f9.json",
+          "sha256": "a40eef104b5f62fa98859c62f68e5ca795bc29bdab154c74a4a8f81f954638b4"
+        }
+      }
+    }
+  }
+]

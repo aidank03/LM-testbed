@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:11:15.310044+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_d7f69cd74a2aea1b7f855213"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "c62b328427f03c68623601a204968f36e842b95cd2741b9ea22ec2f9852cfd90"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:11:21.838480+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_d7f69cd74a2aea1b7f855213"
+        ],
+        "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+        "next_step": "Acquire a reference measurement to estimate optical drift and obtain a finite residual bound B for a definitive compression assessment."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 6.528049999999894,
+        "usage": {
+          "input_tokens": 1637,
+          "total_output_tokens": 203,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.570223965397915,
+          "time_to_first_token_seconds": 2.602
+        },
+        "request_sha256": "28ca385cb9543528e1c6924e9d2c2364aa4bedeab1934d76d3148c29382e5bd5",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1637,
+        "output_tokens": 203
+      }
+    },
+    "previous_hash": "c62b328427f03c68623601a204968f36e842b95cd2741b9ea22ec2f9852cfd90",
+    "hash": "4d211e82e6d74f4576587ed7d8d6b02ae0afceaa4de9e0633e25af127f40f26b"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:11:21.838959+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_d7f69cd74a2aea1b7f855213"
+      ],
+      "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+      "next_step": "Acquire a reference measurement to estimate optical drift and obtain a finite residual bound B for a definitive compression assessment."
+    },
+    "previous_hash": "4d211e82e6d74f4576587ed7d8d6b02ae0afceaa4de9e0633e25af127f40f26b",
+    "hash": "e49a4444abbd70efc2e027a0b85966f7a53381324c7e89fe844c08c874bf8d61"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:11:21.839258+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1637,
+        "output_tokens": 203,
+        "elapsed_seconds": 6.532371792000049
+      },
+      "cleanup": []
+    },
+    "previous_hash": "e49a4444abbd70efc2e027a0b85966f7a53381324c7e89fe844c08c874bf8d61",
+    "hash": "953a32e42047a401a748c8a295b7a73b6d31cc35f37e88ad2d7c4cbe5ca5cc3e"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:11:21.839712+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "7f7c516a50408a815d10e34c7e8e3fc8fa1bbd1913ff24188c9d761999f94960"
+    },
+    "previous_hash": "953a32e42047a401a748c8a295b7a73b6d31cc35f37e88ad2d7c4cbe5ca5cc3e",
+    "hash": "bedfdd49baecf6f84a7e587317c6d0ef2fb1dd4d404f5456c74148f43babf104"
+  }
+]

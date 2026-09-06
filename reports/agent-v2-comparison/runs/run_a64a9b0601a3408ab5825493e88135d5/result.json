@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_a64a9b0601a3408ab5825493e88135d5",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_a64a9b0601a3408ab5825493e88135d5",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_094ac6f0b6f438c65c6ba821"
+    ],
+    "explanation": "The conditional displacement interval is [-1.9599e-07, 1.9599e-07] m, which includes negative values below the resolution threshold of -1e-08 m, supporting inward compression.",
+    "next_step": "No further action required; decision finalized."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 3,
+    "tool_calls": 3,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 4490,
+    "output_tokens": 489,
+    "elapsed_seconds": 8.33517191700048
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_25b5d3efe9cab90cc133959b": {
+      "id": "artifact_25b5d3efe9cab90cc133959b",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_25b5d3efe9cab90cc133959b.json",
+      "sha256": "54300e0ffe63269137f932621d95c0ab2ba7483d03986496b0aa2e662518a759"
+    },
+    "artifact_094ac6f0b6f438c65c6ba821": {
+      "id": "artifact_094ac6f0b6f438c65c6ba821",
+      "kind": "observation",
+      "path": "artifacts/artifact_094ac6f0b6f438c65c6ba821.json",
+      "sha256": "3af805838051feee4124eadd4fba45445e84f08bbfb5b96b597bb132e957d903"
+    },
+    "artifact_f242cc6deec8eb5377583c2c": {
+      "id": "artifact_f242cc6deec8eb5377583c2c",
+      "kind": "request",
+      "path": "artifacts/artifact_f242cc6deec8eb5377583c2c.json",
+      "sha256": "a1fba364217a93289302eb7332ee410445de239669a4eaac4c41e7c3f89b2793"
+    }
+  }
+}

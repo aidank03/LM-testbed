@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_e8d30de941a8430a9a78fb8d97fd4796",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_e8d30de941a8430a9a78fb8d97fd4796",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_d5b1cc556fb429bd98998435"
+    ],
+    "explanation": "The conditional interval for signed radial displacement x is [-1.0e-07, 0], which lies entirely below the resolution threshold T = -1e-08 m. This supports inward (compression) motion within measurement limits.",
+    "next_step": "No further action required; decision finalized."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 2831,
+    "output_tokens": 298,
+    "elapsed_seconds": 4.9688576670005205
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_01a1633566297d4e883111d9": {
+      "id": "artifact_01a1633566297d4e883111d9",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_01a1633566297d4e883111d9.json",
+      "sha256": "dd98347853c7800fd6853965a187dbebdb73217ad07819ce81c77a05ede8605f"
+    },
+    "artifact_d5b1cc556fb429bd98998435": {
+      "id": "artifact_d5b1cc556fb429bd98998435",
+      "kind": "observation",
+      "path": "artifacts/artifact_d5b1cc556fb429bd98998435.json",
+      "sha256": "f177f2cfc501aefaae1601967fe449be3d64a670ed12cf0ed43135b2a1aa4473"
+    },
+    "artifact_47999fdfa5089c10f9ec6249": {
+      "id": "artifact_47999fdfa5089c10f9ec6249",
+      "kind": "request",
+      "path": "artifacts/artifact_47999fdfa5089c10f9ec6249.json",
+      "sha256": "284a782a304f7c2458f4deb7fb0b29f6d5aad5d7482e91208a0f91b8e4655160"
+    }
+  }
+}

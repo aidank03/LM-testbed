@@ -1,0 +1,6 @@
+{
+  "max_total_cost_usd": 0,
+  "input_usd_per_million": 0,
+  "output_usd_per_million": 0,
+  "api_key_env": "OPENAI_API_KEY"
+}

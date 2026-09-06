@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_f4582712a3db49eda01fdf9daf146068",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_f4582712a3db49eda01fdf9daf146068",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_34497760ac1d86e7864520bb"
+    ],
+    "explanation": "The conditional interval for signed radial displacement x is [-1.959963984540054e-07, 1.959963984540054e-07] meters. The upper bound (positive) exceeds the resolution T = -1e-08 m, but the lower bound is negative and within the resolution limit. Since the interval includes values that could represent inward motion beyond the resolution, compression is supported.",
+    "next_step": "No further action required; decision finalized based on provided synthetic data."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1483,
+    "output_tokens": 196,
+    "elapsed_seconds": 3.1913201659999686
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_4cb66160fe1cd8c61925c2fd": {
+      "id": "artifact_4cb66160fe1cd8c61925c2fd",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_4cb66160fe1cd8c61925c2fd.json",
+      "sha256": "1c658b2d9b9c04094fae8cb33ea27382e18cdc2ac6d6869f608d696eacaa6ef3"
+    },
+    "artifact_34497760ac1d86e7864520bb": {
+      "id": "artifact_34497760ac1d86e7864520bb",
+      "kind": "observation",
+      "path": "artifacts/artifact_34497760ac1d86e7864520bb.json",
+      "sha256": "46f26fb9ac8093161c15d887ab7c5d20a55580efff8064c28bfe566434525632"
+    },
+    "artifact_3a9f1c72799beb6da144585b": {
+      "id": "artifact_3a9f1c72799beb6da144585b",
+      "kind": "request",
+      "path": "artifacts/artifact_3a9f1c72799beb6da144585b.json",
+      "sha256": "1bfe48110eea41d3c0aa69a1fecdef7c37ed65140d4edfa874043ac2e0940717"
+    }
+  }
+}

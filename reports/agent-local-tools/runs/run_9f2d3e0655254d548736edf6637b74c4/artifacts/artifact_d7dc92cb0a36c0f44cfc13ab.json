@@ -1,0 +1,20 @@
+{
+  "schema_version": "motion-observation/1",
+  "observation_id": "25ee1387151be1953fa8f776",
+  "apparent_displacement_m": -4.553090750511521e-09,
+  "noise_sigma_m": 1e-09,
+  "drift_bound_m": null,
+  "reference": {
+    "displacement_m": 2.9624334192355966e-08,
+    "sigma_m": 1e-09,
+    "residual_bound_m": 1e-09,
+    "noise_covariance_m2": 0.0
+  },
+  "window_s": [
+    0.0,
+    1e-07
+  ],
+  "resolution_m": 1e-08,
+  "source_kind": "synthetic_reconstructed",
+  "calibration_id": "synthetic-contract-calibration/1"
+}

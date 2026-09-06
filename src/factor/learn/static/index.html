@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Factor Learning Lab</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="mark">ƒ</span><span>Factor</span><small>Local Learning Environment</small></div>
+    <div class="runtime"><span id="runtime-dot" class="dot"></span><span id="runtime-text">Checking local PyTorch…</span></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">PYTORCH, FROM THE INSIDE</p>
+      <h1>Watch a model learn.</h1>
+      <p>Change an experiment, see every training step, and keep the final test separate. Factor physics is the application; this lab teaches the machinery underneath it.</p>
+    </section>
+
+    <nav class="path" aria-label="Learning path">
+      <button class="path-item active" data-target="start"><b>00</b><span>Start here<small>What training means</small></span></button>
+      <button class="path-item" data-target="line"><b>01</b><span>Gradients<small>Fit a line</small></span></button>
+      <button class="path-item" data-target="motion"><b>02</b><span>Learning loop<small>Find and fix failure</small></span></button>
+      <button class="path-item" data-target="jax"><b>03</b><span>JAX bridge<small>Same idea, new tool</small></span></button>
+    </nav>
+
+    <section id="start" class="lesson visible">
+      <div class="lesson-title"><span>LESSON 00</span><h2>The four boxes</h2></div>
+      <p class="lead">Imagine teaching with flash cards. The model practices, takes a practice exam, then gets one final exam it has never seen.</p>
+      <div class="four-boxes">
+        <article><strong>1</strong><h3>Data</h3><p>Examples we can turn into tensors: little boxes of numbers.</p></article>
+        <article><strong>2</strong><h3>Model</h3><p>A mathematical machine with adjustable knobs called weights.</p></article>
+        <article><strong>3</strong><h3>Loss</h3><p>A score telling us how wrong the current answer is. Lower is better.</p></article>
+        <article><strong>4</strong><h3>Optimizer</h3><p>The rule that nudges the weights using gradients.</p></article>
+      </div>
+      <div class="exam-strip">
+        <div><span>TRAIN</span><b>Practice cards</b><small>Changes the weights</small></div>
+        <i>→</i>
+        <div><span>DEVELOPMENT</span><b>Practice exam</b><small>Checks choices</small></div>
+        <i>→</i>
+        <div><span>TEST</span><b>Final exam</b><small>Opened once at the end</small></div>
+      </div>
+      <button class="primary go" data-target="line">Run your first model →</button>
+    </section>
+
+    <section id="line" class="lesson">
+      <div class="lesson-title"><span>LESSON 01</span><h2>Teach one neuron a straight line</h2></div>
+      <p class="lead">The hidden rule is <b>y = 2.5x − 0.4 + noise</b>. PyTorch starts with random guesses and learns a slope and intercept.</p>
+      <div class="workbench">
+        <aside class="controls">
+          <label>Training steps <output id="line-epochs-out">80</output><input id="line-epochs" type="range" min="20" max="200" step="10" value="80"></label>
+          <label>Learning rate <output id="line-lr-out">0.08</output><input id="line-lr" type="range" min="0.01" max="0.20" step="0.01" value="0.08"></label>
+          <label>Noise <output id="line-noise-out">0.15</output><input id="line-noise" type="range" min="0" max="0.6" step="0.05" value="0.15"></label>
+          <button id="run-line" class="primary">▶ Train the model</button>
+          <p class="micro">This runs locally. No API key or cloud account is used.</p>
+        </aside>
+        <div class="visuals">
+          <div class="live-grid">
+            <div class="metric"><span>STEP</span><b id="line-step">—</b></div>
+            <div class="metric"><span>SLOPE</span><b id="line-weight">—</b><small>target 2.50</small></div>
+            <div class="metric"><span>INTERCEPT</span><b id="line-bias">—</b><small>target −0.40</small></div>
+            <div class="metric"><span>GRADIENT</span><b id="line-grad">—</b><small>size of next nudge</small></div>
+          </div>
+          <div class="chart-grid">
+            <figure><figcaption>Practice and development loss</figcaption><canvas id="loss-chart" width="620" height="260"></canvas></figure>
+            <figure><figcaption>Final unseen test points</figcaption><canvas id="fit-chart" width="620" height="260"></canvas></figure>
+          </div>
+        </div>
+      </div>
+      <div id="line-result" class="result empty">Run the lesson to reveal the final exam.</div>
+    </section>
+
+    <section id="motion" class="lesson">
+      <div class="lesson-title"><span>LESSON 02 · FACTOR PHYSICS</span><h2>Find a failure, then test a fix</h2></div>
+      <p class="lead">The diagnostic sees <b>material motion + optical drift</b>. We ask whether training alone can untangle them, then add a separate drift reference.</p>
+      <div class="equation">apparent displacement = real motion + hidden drift + noise</div>
+      <div class="loop">
+        <div><b>1</b><span>Train</span></div><i>→</i><div><b>2</b><span>Test</span></div><i>→</i><div><b>3</b><span>Diagnose</span></div><i>→</i><div><b>4</b><span>Change</span></div><i>↺</i>
+      </div>
+      <button id="run-motion" class="primary">▶ Run the bounded learning loop</button>
+      <div id="motion-live" class="status-line">Ready. The same locked test cases will be used for all three stages.</div>
+      <div class="stage-cards">
+        <article id="stage-baseline"><span>STAGE 1</span><h3>Clean baseline</h3><p>Train on clean signals. Input: apparent displacement only.</p><b class="stage-score">—</b><small>held-out MAE</small></article>
+        <article id="stage-more_data"><span>STAGE 2</span><h3>More varied data</h3><p>Train with drift examples. Input is still apparent displacement only.</p><b class="stage-score">—</b><small>held-out MAE</small></article>
+        <article id="stage-reference"><span>STAGE 3</span><h3>Add a reference</h3><p>Input: apparent displacement plus a noisy drift witness.</p><b class="stage-score">—</b><small>held-out MAE</small></article>
+      </div>
+      <figure class="wide-chart"><figcaption>Error on the same hidden motion cases</figcaption><canvas id="motion-chart" width="900" height="300"></canvas></figure>
+      <div id="motion-result" class="result empty">The acceptance gate is frozen before the run: reference MAE ≤ 5 nm and at least 10 nm better than baseline.</div>
+    </section>
+
+    <section id="jax" class="lesson">
+      <div class="lesson-title"><span>LESSON 03</span><h2>PyTorch and JAX share the same idea</h2></div>
+      <p class="lead">Both tools turn arrays into gradients. Their style differs, but the learning loop stays the same.</p>
+      <div class="code-pair">
+        <article><h3>PyTorch</h3><pre><code>weight = torch.tensor(0., requires_grad=True)
+loss = (weight * x - y).square().mean()
+loss.backward()
+weight.data -= 0.1 * weight.grad</code></pre></article>
+        <article><h3>JAX</h3><pre><code>def loss(weight, x, y):
+    return jnp.mean((weight * x - y) ** 2)
+
+gradient = jax.grad(loss)(weight, x, y)
+weight -= 0.1 * gradient</code></pre></article>
+      </div>
+      <div id="jax-status" class="result">Checking whether JAX is installed…</div>
+      <p>This page does not claim a JAX result until a parity lesson has actually executed. PyTorch comes first so there is one clear stack to learn.</p>
+    </section>
+
+    <section class="history">
+      <div><p class="eyebrow">EVIDENCE, NOT JUST A SCREEN</p><h2>Experiment history</h2></div>
+      <p>Each run saves its settings, every progress event, its result, and a result fingerprint under <code>runs/learning-lab/</code>.</p>
+      <div id="history-list"><span class="muted">No experiments in this session yet.</span></div>
+    </section>
+  </main>
+
+  <footer><span>Factor Learning Lab</span><span>Localhost only · Synthetic teaching data · No physics validation claim</span></footer>
+  <script src="/app.js"></script>
+</body>
+</html>

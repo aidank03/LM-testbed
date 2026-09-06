@@ -1,0 +1,56 @@
+{
+  "artifact_7ef84ec6d48cb449344b4519": {
+    "id": "artifact_7ef84ec6d48cb449344b4519",
+    "kind": "run_manifest",
+    "path": "artifacts/artifact_7ef84ec6d48cb449344b4519.json",
+    "sha256": "474c94076a592850ec01f876a581ce22dbab97f960a1cf0e3678e3ddcb88d6fe"
+  },
+  "artifact_4d151cc809d79abcb48c0d37": {
+    "id": "artifact_4d151cc809d79abcb48c0d37",
+    "kind": "observation",
+    "path": "artifacts/artifact_4d151cc809d79abcb48c0d37.json",
+    "sha256": "c4f4c10988cae527b345d9d8d9cf59bacd1a29f999b7db41bf2ff67120a4cf7e"
+  },
+  "artifact_13ed13745a6c068bc50c1fa5": {
+    "id": "artifact_13ed13745a6c068bc50c1fa5",
+    "kind": "request",
+    "path": "artifacts/artifact_13ed13745a6c068bc50c1fa5.json",
+    "sha256": "bd3689f82994d22e3e1e01bc3031e6f2e20d4b6c63bb1a6cbd12733b0bbd9f12"
+  },
+  "artifact_91a4201106329c66c0f2d27e": {
+    "id": "artifact_91a4201106329c66c0f2d27e",
+    "kind": "submit_simulation",
+    "path": "artifacts/artifact_91a4201106329c66c0f2d27e.json",
+    "sha256": "3eab06f0f1576689d4882251d36faeadf9edd293643ee32352fa17c57b54ab4f"
+  },
+  "artifact_cf09ce64da8f82ef790a076e": {
+    "id": "artifact_cf09ce64da8f82ef790a076e",
+    "kind": "job_status",
+    "path": "artifacts/artifact_cf09ce64da8f82ef790a076e.json",
+    "sha256": "75f735bf7f2fdcbdd02a51bf43d4394b93bd38948f16c297d5f43ff0f9e8ec4a"
+  },
+  "artifact_c4055dc747fbe56f2bbb5e8c": {
+    "id": "artifact_c4055dc747fbe56f2bbb5e8c",
+    "kind": "job_status",
+    "path": "artifacts/artifact_c4055dc747fbe56f2bbb5e8c.json",
+    "sha256": "c72e263a130fe95cc2a3585dc5fcfb1d577e4ea814f7d6bec57a5ed02c2d6bc6"
+  },
+  "artifact_fa94c6b5b139e74755b74f5f": {
+    "id": "artifact_fa94c6b5b139e74755b74f5f",
+    "kind": "job_collect",
+    "path": "artifacts/artifact_fa94c6b5b139e74755b74f5f.json",
+    "sha256": "8c6a938b12fc7b9928394e63a3574f2ce0f755a378e9b0d1e38cea4f9b4779da"
+  },
+  "artifact_9443d7b3b4cd1e18613a674d": {
+    "id": "artifact_9443d7b3b4cd1e18613a674d",
+    "kind": "infer_motion",
+    "path": "artifacts/artifact_9443d7b3b4cd1e18613a674d.json",
+    "sha256": "ee447534f04762610c643c1d0458dc3613b0d3246f546f84c057042a470cff3d"
+  },
+  "artifact_2d12f1736652d0768f6b997c": {
+    "id": "artifact_2d12f1736652d0768f6b997c",
+    "kind": "update_hypothesis",
+    "path": "artifacts/artifact_2d12f1736652d0768f6b997c.json",
+    "sha256": "e818cc72cc29d093672fb6fababf93af739f58759698deaea3c35238301c46db"
+  }
+}

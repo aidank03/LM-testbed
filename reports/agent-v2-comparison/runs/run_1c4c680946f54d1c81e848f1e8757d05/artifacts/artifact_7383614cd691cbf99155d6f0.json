@@ -1,0 +1,15 @@
+{
+  "schema_version": "motion-observation/1",
+  "observation_id": "a255d5ca61b55c139fb03a34",
+  "apparent_displacement_m": -5.9382529921532675e-09,
+  "noise_sigma_m": 1e-09,
+  "drift_bound_m": null,
+  "reference": null,
+  "window_s": [
+    0.0,
+    1e-07
+  ],
+  "resolution_m": 1e-08,
+  "source_kind": "synthetic_reconstructed",
+  "calibration_id": "synthetic-contract-calibration/1"
+}

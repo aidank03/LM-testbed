@@ -1,0 +1,444 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:20:45.400923+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_7383614cd691cbf99155d6f0"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a379cc26ecc94d8c24189ef035130148567fd20902854109d261b6dffa7c09ae"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:20:46.368181+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "infer_motion",
+      "arguments": {
+        "method": "bounded"
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 0.9668219590002991,
+        "usage": {
+          "input_tokens": 1710,
+          "total_output_tokens": 28,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 74.1285773902348,
+          "time_to_first_token_seconds": 0.603
+        },
+        "request_sha256": "3a95f0ce56d2c7eb0b59c29d8adf854feb96488b63e9a95c35e85842f52b67d8",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1710,
+        "output_tokens": 28
+      }
+    },
+    "previous_hash": "a379cc26ecc94d8c24189ef035130148567fd20902854109d261b6dffa7c09ae",
+    "hash": "ee02b4361629329efcc79fb15942f6eefdc7d5da2a50acacb17358d624711a66"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:20:46.370338+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "infer_motion",
+      "ok": true,
+      "artifact_id": "artifact_fdf5af6546c7355f1a1edac6",
+      "result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "point_m": null,
+        "interval_m": null,
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "ambiguous",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+      }
+    },
+    "previous_hash": "ee02b4361629329efcc79fb15942f6eefdc7d5da2a50acacb17358d624711a66",
+    "hash": "a08b82145c4f934280372d35d18ecc446d19d4e304d1afe364767ba4823eeecb"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:20:49.561332+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "a255d5ca61b55c139fb03a34",
+          "artifact_7383614cd691cbf99155d6f0"
+        ],
+        "explanation": "The apparent displacement is -5.94e-09 m (inward), but the 95% confidence interval, widened by the null drift bound, spans both inward and outward motion due to unbounded nuisance. The interval crosses zero, making compression unsupported within resolution.",
+        "next_step": "Obtain a calibrated reference with a residual bound to resolve the ambiguity."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 3.189998583000488,
+        "usage": {
+          "input_tokens": 2005,
+          "total_output_tokens": 172,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 73.98027279252167,
+          "time_to_first_token_seconds": 0.876
+        },
+        "request_sha256": "9f2fc6d44e6122c6a4dba5cbdd8f819c7113eb730b0f7927333c358efbd85f46",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2005,
+        "output_tokens": 172
+      }
+    },
+    "previous_hash": "a08b82145c4f934280372d35d18ecc446d19d4e304d1afe364767ba4823eeecb",
+    "hash": "1c0ee2bd46b647b49515f9700cf1b26dfa095cde9c42844fcca7f933e45d82c2"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:20:49.562633+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "finish",
+      "ok": false,
+      "error": "Cite at least one artifact that actually exists in this run"
+    },
+    "previous_hash": "1c0ee2bd46b647b49515f9700cf1b26dfa095cde9c42844fcca7f933e45d82c2",
+    "hash": "b43e74648cab9d46f2737535166665a0e872cbe6341a830f9543b55e98357fd0"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T21:20:50.422554+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 0.8583940420003273,
+        "usage": {
+          "input_tokens": 2033,
+          "total_output_tokens": 19,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 73.87252065352556,
+          "time_to_first_token_seconds": 0.614
+        },
+        "request_sha256": "dec8b637c80187b3b024ee2878b503200dea46c9f198a0561156bcb938de2139",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2033,
+        "output_tokens": 19
+      }
+    },
+    "previous_hash": "b43e74648cab9d46f2737535166665a0e872cbe6341a830f9543b55e98357fd0",
+    "hash": "389185d6c282684619bd96571520546f84ed0c7cb31e77e8f4416b2d867b4bc7"
+  },
+  {
+    "sequence": 6,
+    "timestamp": "2026-09-05T21:20:50.425757+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_e9ed48618cee032509e722dd",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a255d5ca61b55c139fb03a34",
+        "apparent_displacement_m": -5.9382529921532675e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "389185d6c282684619bd96571520546f84ed0c7cb31e77e8f4416b2d867b4bc7",
+    "hash": "3031698cd9683a97f96f0cfd2b8a15acb1320e6c41796a4df87934456bb9b768"
+  },
+  {
+    "sequence": 7,
+    "timestamp": "2026-09-05T21:20:51.461177+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 1.0344193330001872,
+        "usage": {
+          "input_tokens": 2234,
+          "total_output_tokens": 19,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 73.82343894186404,
+          "time_to_first_token_seconds": 0.792
+        },
+        "request_sha256": "e57bcb3e9ed182d3575997272c75161e3920bfcbd6a665abf2e74416b4d47a60",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2234,
+        "output_tokens": 19
+      }
+    },
+    "previous_hash": "3031698cd9683a97f96f0cfd2b8a15acb1320e6c41796a4df87934456bb9b768",
+    "hash": "ad70eab97de34638651b5e76c71e98e41d1f90510c88b31d716a46de02192fec"
+  },
+  {
+    "sequence": 8,
+    "timestamp": "2026-09-05T21:20:51.461829+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_e9ed48618cee032509e722dd",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a255d5ca61b55c139fb03a34",
+        "apparent_displacement_m": -5.9382529921532675e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "ad70eab97de34638651b5e76c71e98e41d1f90510c88b31d716a46de02192fec",
+    "hash": "a236bc3fcc41317cc434fec3491bf4fbf7bbe1aba6e38c196c383d6d9d161b8b"
+  },
+  {
+    "sequence": 9,
+    "timestamp": "2026-09-05T21:20:52.501063+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 1.0385973330003253,
+        "usage": {
+          "input_tokens": 2436,
+          "total_output_tokens": 19,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 72.95394579521827,
+          "time_to_first_token_seconds": 0.786
+        },
+        "request_sha256": "f2623d5f1759baf24fc45224b209b600c9104200ff6e4c3df3580f5faa992436",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2436,
+        "output_tokens": 19
+      }
+    },
+    "previous_hash": "a236bc3fcc41317cc434fec3491bf4fbf7bbe1aba6e38c196c383d6d9d161b8b",
+    "hash": "c86cb0b401844ef653cd7db5b6a35d09e1c1684d03c9bf37b700f918244accda"
+  },
+  {
+    "sequence": 10,
+    "timestamp": "2026-09-05T21:20:52.503597+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_e9ed48618cee032509e722dd",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a255d5ca61b55c139fb03a34",
+        "apparent_displacement_m": -5.9382529921532675e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "c86cb0b401844ef653cd7db5b6a35d09e1c1684d03c9bf37b700f918244accda",
+    "hash": "bb9848ada302e38090fc27265fd4af19cb7bf93eec8beed74562737bb6ef0306"
+  },
+  {
+    "sequence": 11,
+    "timestamp": "2026-09-05T21:20:53.546742+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-nemotron4b",
+        "returned_model": "factor-nemotron4b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 1.04150325000046,
+        "usage": {
+          "input_tokens": 2638,
+          "total_output_tokens": 19,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 73.65397363187745,
+          "time_to_first_token_seconds": 0.79
+        },
+        "request_sha256": "21df2882ba298b86db9d54812b5cfbbcc31c09447b89f2b0174d3b231350e140",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-nemotron4b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2638,
+        "output_tokens": 19
+      }
+    },
+    "previous_hash": "bb9848ada302e38090fc27265fd4af19cb7bf93eec8beed74562737bb6ef0306",
+    "hash": "48891e36d7afa5afa21edf3995c05f0e48f22d0c6dad242131cd4db96de0b854"
+  },
+  {
+    "sequence": 12,
+    "timestamp": "2026-09-05T21:20:53.548244+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_e9ed48618cee032509e722dd",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a255d5ca61b55c139fb03a34",
+        "apparent_displacement_m": -5.9382529921532675e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "48891e36d7afa5afa21edf3995c05f0e48f22d0c6dad242131cd4db96de0b854",
+    "hash": "c72a77c3896d18cd10d47041cf5a36d4656263a48217837874ee2487ea798c40"
+  },
+  {
+    "sequence": 13,
+    "timestamp": "2026-09-05T21:20:53.549418+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "budget_exceeded",
+      "failure": null,
+      "usage": {
+        "model_calls": 6,
+        "tool_calls": 6,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 13056,
+        "output_tokens": 276,
+        "elapsed_seconds": 8.152033917000153
+      },
+      "cleanup": []
+    },
+    "previous_hash": "c72a77c3896d18cd10d47041cf5a36d4656263a48217837874ee2487ea798c40",
+    "hash": "8f3785d67aff301e16a552bbc93b70a1c484f2e276387087966bf947429c3e20"
+  },
+  {
+    "sequence": 14,
+    "timestamp": "2026-09-05T21:20:53.551262+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "12e71a4898400c1298b92c1e23d0413c474bb96b93be37dafa922b914fff0d9a"
+    },
+    "previous_hash": "8f3785d67aff301e16a552bbc93b70a1c484f2e276387087966bf947429c3e20",
+    "hash": "a3f1af884b8379720f633432e390c54dd0ce0fbfca800a8d35fa2555c92b12e8"
+  }
+]

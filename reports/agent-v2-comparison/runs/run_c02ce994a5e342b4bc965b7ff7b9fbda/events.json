@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:12:26.646792+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_dd011175431ebb83b1a017c7"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "b4c50f87f2d2b358d5f628e4e85cf56e228177e5e899fac362a708709a18a79a"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:12:36.481826+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_dd011175431ebb83b1a017c7"
+        ],
+        "explanation": "The observation provides apparent_displacement_m = -4.23e-08 m, noise_sigma_m = 1e-09 m, and drift_bound_m = 8e-09 m with no reference (null). Using the public contract for a null reference: center = -4.23e-08 m, sigma = 1e-09 m, B = 8e-09 m. The 95% Gaussian confidence set enlarged by the absolute nuisance bound is h = 1.96*sigma + B = 1.96e-09 + 8e-09 = 9.96e-09 m. Thus, lower = center - h = -4.23e-08 - 9.96e-09 = -5.23e-08 m and upper = center + h = -4.23e-08 + 9.96e-09 = -3.23e-08 m. The resolution threshold is T = -resolution_m = -1e-08 m. Since the entire interval [lower, upper] lies below T (upper < T), the conditional interval rules out inward motion beyond the resolution, satisfying the condition for compression_supported.",
+        "next_step": "Report compression_supported with the computed interval [-5.23e-08, -3.23e-08] m and proceed to the next measurement or analysis step."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 9.834150542000316,
+        "usage": {
+          "input_tokens": 1639,
+          "total_output_tokens": 370,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.07886452099444,
+          "time_to_first_token_seconds": 2.61
+        },
+        "request_sha256": "da6733d6018f85111c8ebf4937eeb58658bcbe2ddba8547dc041d5669eb274c0",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1639,
+        "output_tokens": 370
+      }
+    },
+    "previous_hash": "b4c50f87f2d2b358d5f628e4e85cf56e228177e5e899fac362a708709a18a79a",
+    "hash": "ff32692f7b63c66cf9b483b48c5443989dfa82ac868001c32f5d36ef70dba0ac"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:12:36.482907+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_supported",
+      "evidence_ids": [
+        "artifact_dd011175431ebb83b1a017c7"
+      ],
+      "explanation": "The observation provides apparent_displacement_m = -4.23e-08 m, noise_sigma_m = 1e-09 m, and drift_bound_m = 8e-09 m with no reference (null). Using the public contract for a null reference: center = -4.23e-08 m, sigma = 1e-09 m, B = 8e-09 m. The 95% Gaussian confidence set enlarged by the absolute nuisance bound is h = 1.96*sigma + B = 1.96e-09 + 8e-09 = 9.96e-09 m. Thus, lower = center - h = -4.23e-08 - 9.96e-09 = -5.23e-08 m and upper = center + h = -4.23e-08 + 9.96e-09 = -3.23e-08 m. The resolution threshold is T = -resolution_m = -1e-08 m. Since the entire interval [lower, upper] lies below T (upper < T), the conditional interval rules out inward motion beyond the resolution, satisfying the condition for compression_supported.",
+      "next_step": "Report compression_supported with the computed interval [-5.23e-08, -3.23e-08] m and proceed to the next measurement or analysis step."
+    },
+    "previous_hash": "ff32692f7b63c66cf9b483b48c5443989dfa82ac868001c32f5d36ef70dba0ac",
+    "hash": "8b8918e8276c11fea07b28f08cdb58b471e7d75145d5c59da2036c3576b4636b"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:12:36.484186+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1639,
+        "output_tokens": 370,
+        "elapsed_seconds": 9.840628707999713
+      },
+      "cleanup": []
+    },
+    "previous_hash": "8b8918e8276c11fea07b28f08cdb58b471e7d75145d5c59da2036c3576b4636b",
+    "hash": "807972dc4683f3fc560e1e17d689fa9a315e670d63c2c2b24d088d3941afb96d"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:12:36.487321+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "897e30cd5ed7c91f477cbd5903afed16953075292ec1fbd8261dd48cd3888329"
+    },
+    "previous_hash": "807972dc4683f3fc560e1e17d689fa9a315e670d63c2c2b24d088d3941afb96d",
+    "hash": "dd7d58b82ee1f610ef916e96331d702852903b63c6d4607da62e6c81b0c8ef67"
+  }
+]

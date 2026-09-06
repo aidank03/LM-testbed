@@ -1,0 +1,81 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:11:31.690004+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_87a48ca7cde816bca02abdd4"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "449f587ae83a410ab77c2583f20649402fd79a9f6f99145776bb09544b795072"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:11:44.429426+00:00",
+    "kind": "provider_error",
+    "data": {
+      "error": "Local model call failed (ContractError)",
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 12.738828666999325,
+        "usage": {
+          "input_tokens": 1641,
+          "total_output_tokens": 517,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.895524507970485,
+          "time_to_first_token_seconds": 2.612
+        },
+        "request_sha256": "0d844b7516e5292c7dc46b434a024bf6044a5928212bdf8817762835f2d8df2b",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1641,
+        "output_tokens": 517
+      }
+    },
+    "previous_hash": "449f587ae83a410ab77c2583f20649402fd79a9f6f99145776bb09544b795072",
+    "hash": "b0e598b67bedb3dd68d4cbea88a2f7229b6b0de8246676b9c20b4a56f0b26d27"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:11:44.431159+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "provider_failed",
+      "failure": "Local model call failed (ContractError)",
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 0,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1641,
+        "output_tokens": 517,
+        "elapsed_seconds": 12.745056374999876
+      },
+      "cleanup": []
+    },
+    "previous_hash": "b0e598b67bedb3dd68d4cbea88a2f7229b6b0de8246676b9c20b4a56f0b26d27",
+    "hash": "5b01293c10237c1c90727aaac43e1e0efc034769e1a739dffe941c00f5232e3f"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:11:44.433084+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "316adbe596fd896f9a24717f444caae092e6cc2f07007eb5167a71832e127e70"
+    },
+    "previous_hash": "5b01293c10237c1c90727aaac43e1e0efc034769e1a739dffe941c00f5232e3f",
+    "hash": "a41ccc6e869e609a7bae076ff61cebd0dac2d683d8b1527868cb178fdc369c22"
+  }
+]

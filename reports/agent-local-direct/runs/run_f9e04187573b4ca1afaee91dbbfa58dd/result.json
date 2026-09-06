@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_f9e04187573b4ca1afaee91dbbfa58dd",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-direct/runs/run_f9e04187573b4ca1afaee91dbbfa58dd",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_e5d4a8dfeeaf69e4bb573e7c"
+    ],
+    "explanation": "The observation artifact e5d4a8dfeeaf69e4bb573e7c reports an apparent displacement of 5.44e-08 m within a window of 1e-07 s. The stated resolution is 1e-08 m. Since the measured displacement (5.44e-08 m) exceeds the resolution limit (1e-08 m), the fixed-window radial displacement supports compression beyond the stated resolution.",
+    "next_step": "Proceed with further measurements or analysis as required by the experimental protocol."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 3.195008124999731
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_453c431d7fdc95bb69524899": {
+      "id": "artifact_453c431d7fdc95bb69524899",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_453c431d7fdc95bb69524899.json",
+      "sha256": "ddcf807e10ae8311a98f34570aa8ffc6a306d26548491d71130cde73c3fb9886"
+    },
+    "artifact_e5d4a8dfeeaf69e4bb573e7c": {
+      "id": "artifact_e5d4a8dfeeaf69e4bb573e7c",
+      "kind": "observation",
+      "path": "artifacts/artifact_e5d4a8dfeeaf69e4bb573e7c.json",
+      "sha256": "67c037a1503a68d0179b4ae54739621006914e486887cd60fda5229dc308926c"
+    },
+    "artifact_b7d6ecfec735cddb9d4e83bc": {
+      "id": "artifact_b7d6ecfec735cddb9d4e83bc",
+      "kind": "request",
+      "path": "artifacts/artifact_b7d6ecfec735cddb9d4e83bc.json",
+      "sha256": "f9effe8040f60c323393f6147c6759322e382093f0044b24de938d5372615ea8"
+    }
+  }
+}

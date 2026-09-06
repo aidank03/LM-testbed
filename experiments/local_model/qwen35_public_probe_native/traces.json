@@ -1,0 +1,518 @@
+[
+  {
+    "case_id": "A01",
+    "completion": {
+      "text": "{\"answer\": 251327412.28718345, \"unit\": \"Pa\"}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": 251327412.28718345, \"unit\": \"Pa\"}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 191,
+          "total_output_tokens": 30,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 23.027240431387558,
+          "time_to_first_token_seconds": 0.711
+        }
+      },
+      "elapsed_seconds": 1.957693625000502,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 191,
+        "total_output_tokens": 30,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 23.027240431387558,
+        "time_to_first_token_seconds": 0.711
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A02",
+    "completion": {
+      "text": "{\"answer\": 3.989422804014327e-05, \"unit\": \"m\"}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": 3.989422804014327e-05, \"unit\": \"m\"}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 176,
+          "total_output_tokens": 33,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 24.126743816956427,
+          "time_to_first_token_seconds": 0.509
+        }
+      },
+      "elapsed_seconds": 1.8056710829996518,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 176,
+        "total_output_tokens": 33,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 24.126743816956427,
+        "time_to_first_token_seconds": 0.509
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A03",
+    "completion": {
+      "text": "{\"answer\": 1.397e-05, \"unit\": \"s\"}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": 1.397e-05, \"unit\": \"s\"}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 218,
+          "total_output_tokens": 21,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 23.444405109942537,
+          "time_to_first_token_seconds": 0.564
+        }
+      },
+      "elapsed_seconds": 1.3904500830003599,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 218,
+        "total_output_tokens": 21,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 23.444405109942537,
+        "time_to_first_token_seconds": 0.564
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A04",
+    "completion": {
+      "text": "{\"answer\": 0.7143, \"unit\": \"kg/m^2\"}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": 0.7143, \"unit\": \"kg/m^2\"}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 182,
+          "total_output_tokens": 21,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 24.020676998760532,
+          "time_to_first_token_seconds": 0.545
+        }
+      },
+      "elapsed_seconds": 1.3155646669993075,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 182,
+        "total_output_tokens": 21,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 24.020676998760532,
+        "time_to_first_token_seconds": 0.545
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A05",
+    "completion": {
+      "text": "{\"answer\": 1.633, \"unit\": \"ns\"}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": 1.633, \"unit\": \"ns\"}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 150,
+          "total_output_tokens": 17,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 22.415462185815777,
+          "time_to_first_token_seconds": 0.507
+        }
+      },
+      "elapsed_seconds": 1.19263945900002,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 150,
+        "total_output_tokens": 17,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 22.415462185815777,
+        "time_to_first_token_seconds": 0.507
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A06",
+    "completion": {
+      "text": "{\"answer\": \"model_assisted_inference\", \"unit\": null}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": \"model_assisted_inference\", \"unit\": null}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 177,
+          "total_output_tokens": 16,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 44.72885368893766,
+          "time_to_first_token_seconds": 0.396
+        }
+      },
+      "elapsed_seconds": 0.7252707500001634,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 177,
+        "total_output_tokens": 16,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 44.72885368893766,
+        "time_to_first_token_seconds": 0.396
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A07",
+    "completion": {
+      "text": "{\"answer\": \"not_identified\", \"unit\": null}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": \"not_identified\", \"unit\": null}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 171,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 43.92158982640836,
+          "time_to_first_token_seconds": 0.429
+        }
+      },
+      "elapsed_seconds": 0.7031749590005347,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 171,
+        "total_output_tokens": 14,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 43.92158982640836,
+        "time_to_first_token_seconds": 0.429
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A08",
+    "completion": {
+      "text": "{\"answer\": \"not_identified\", \"unit\": null}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": \"not_identified\", \"unit\": null}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 164,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 44.37435571848909,
+          "time_to_first_token_seconds": 0.446
+        }
+      },
+      "elapsed_seconds": 0.7349386670002787,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 164,
+        "total_output_tokens": 14,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 44.37435571848909,
+        "time_to_first_token_seconds": 0.446
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A09",
+    "completion": {
+      "text": "{\"answer\": \"classical_ETI\", \"unit\": null}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": \"classical_ETI\", \"unit\": null}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 163,
+          "total_output_tokens": 15,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 43.07559767391773,
+          "time_to_first_token_seconds": 0.369
+        }
+      },
+      "elapsed_seconds": 0.6882674589996896,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 163,
+        "total_output_tokens": 15,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 43.07559767391773,
+        "time_to_first_token_seconds": 0.369
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A10",
+    "completion": {
+      "text": "{\"answer\": \"campaign_and_lineage\", \"unit\": null}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": \"campaign_and_lineage\", \"unit\": null}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 162,
+          "total_output_tokens": 15,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 44.10963133800265,
+          "time_to_first_token_seconds": 0.38
+        }
+      },
+      "elapsed_seconds": 0.6819722090003779,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 162,
+        "total_output_tokens": 15,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 44.10963133800265,
+        "time_to_first_token_seconds": 0.38
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A11",
+    "completion": {
+      "text": "{\"answer\": \"not_established\", \"unit\": null}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": \"not_established\", \"unit\": null}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 170,
+          "total_output_tokens": 15,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 42.955326460481096,
+          "time_to_first_token_seconds": 0.396
+        }
+      },
+      "elapsed_seconds": 0.7107176670006083,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 170,
+        "total_output_tokens": 15,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 42.955326460481096,
+        "time_to_first_token_seconds": 0.396
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  },
+  {
+    "case_id": "A12",
+    "completion": {
+      "text": "{\"answer\": \"A\", \"unit\": null}",
+      "raw_response": {
+        "model_instance_id": "factor-qwen35-9b",
+        "output": [
+          {
+            "type": "message",
+            "content": "{\"answer\": \"A\", \"unit\": null}"
+          }
+        ],
+        "stats": {
+          "input_tokens": 209,
+          "total_output_tokens": 12,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 47.299011450660686,
+          "time_to_first_token_seconds": 0.458
+        }
+      },
+      "elapsed_seconds": 0.6779846250001356,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "input_tokens": 209,
+        "total_output_tokens": 12,
+        "reasoning_output_tokens": 0,
+        "tokens_per_second": 47.299011450660686,
+        "time_to_first_token_seconds": 0.458
+      },
+      "finish_reason": "stop",
+      "finish_reason_source": "inferred_from_native_token_count",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "reasoning": "off",
+        "temperature": 0.0,
+        "max_output_tokens": 256,
+        "stream": false,
+        "store": false
+      },
+      "schema_enforcement": "prompt_only_requires_local_validation",
+      "transport": "lmstudio-native"
+    }
+  }
+]

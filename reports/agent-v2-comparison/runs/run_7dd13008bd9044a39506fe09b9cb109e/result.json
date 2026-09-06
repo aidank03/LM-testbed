@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_7dd13008bd9044a39506fe09b9cb109e",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_7dd13008bd9044a39506fe09b9cb109e",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_a5663a4bd018f887f77099ea"
+    ],
+    "explanation": "Without a reference, the conditional center is apparent_displacement_m (-4.18e-09 m) and sigma is noise_sigma_m (1e-09 m). The drift_bound_m is null, so B = null per rule 3. Per rule 5, if B is null, different material motions can explain the same measurement; choose ambiguous.",
+    "next_step": "Acquire a reference measurement to estimate optical drift and establish a finite residual bound B for a definitive compression assessment."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1346,
+    "output_tokens": 144,
+    "elapsed_seconds": 3.5882092500005456
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_d538ae5575f3d70f8687a6af": {
+      "id": "artifact_d538ae5575f3d70f8687a6af",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_d538ae5575f3d70f8687a6af.json",
+      "sha256": "149ec340799f4ce0c36f80d6e0d1e70be1f29b4c1a07253f5ab10b513ad6035f"
+    },
+    "artifact_a5663a4bd018f887f77099ea": {
+      "id": "artifact_a5663a4bd018f887f77099ea",
+      "kind": "observation",
+      "path": "artifacts/artifact_a5663a4bd018f887f77099ea.json",
+      "sha256": "9fe7b5764cb79fea54cbc77d5ceef1d99e806b9eb154a67c68f0074a48ff14cf"
+    },
+    "artifact_6f68557214b35027c3866e64": {
+      "id": "artifact_6f68557214b35027c3866e64",
+      "kind": "request",
+      "path": "artifacts/artifact_6f68557214b35027c3866e64.json",
+      "sha256": "2c3a583ae4021ef5da4571a22af181b11b076cf9690c828b59472b86beeb404a"
+    }
+  }
+}

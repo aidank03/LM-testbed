@@ -1,0 +1,71 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:01:30.382277+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_5f2a5e5568e73876d9f25ad8"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "75b10773e28dc368677f53c57914bee46d74ad0326bf2003c6754b83b5e9613b"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:01:44.795976+00:00",
+    "kind": "provider_error",
+    "data": {
+      "error": "Local model output incomplete",
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 14.41303629200047,
+        "usage": {
+          "input_tokens": 848,
+          "total_output_tokens": 700,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.48791985857395,
+          "time_to_first_token_seconds": 0.822
+        },
+        "request_sha256": "d67bfc9e5ea7f1fc80f3cef4eaf9788bcf71bc26ce1eda3449f8b6c3274a7c91",
+        "finish_reason": "length_or_unknown",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "75b10773e28dc368677f53c57914bee46d74ad0326bf2003c6754b83b5e9613b",
+    "hash": "aa185c3714824df69fa6478c32e8ec29a2cdbba1cd9c773d8f26a1f8d9e35393"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:01:44.796968+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "provider_failed",
+      "failure": "Local model output incomplete",
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 0,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 14.418104792000122
+      },
+      "cleanup": []
+    },
+    "previous_hash": "aa185c3714824df69fa6478c32e8ec29a2cdbba1cd9c773d8f26a1f8d9e35393",
+    "hash": "883e91859e038dd70fd8b78f2ed95e3ea0a83f3237a6704a254453d433af3dff"
+  }
+]

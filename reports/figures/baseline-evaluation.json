@@ -1,0 +1,13 @@
+{
+  "source": "reports/motion-development/comparison.json",
+  "source_sha256": "4d9a568a237c39393643c496e341d564a9e0c9817042d8841bbdad7e72d821e7",
+  "contract_hash": "702662170407f6fa0f3e8c57f84709afc19af48b56a1b3f2b30e9ef3e920bb29",
+  "methods": [
+    "naive",
+    "bounded"
+  ],
+  "observations": 216,
+  "independent_experiment_groups": 144,
+  "display": "Counts and descriptive rates; no marginal confidence intervals; missing coverage remains missing.",
+  "matplotlib_version": "3.11.1"
+}

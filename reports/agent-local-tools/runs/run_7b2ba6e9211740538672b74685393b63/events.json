@@ -1,0 +1,164 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:57:49.901036+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_0e41442a3836eea53853aace"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "1e5fb2eac9b89df0e432ce34be19f8490f19e31ead15f5a3bce83ebcb7c5e1f2"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:57:52.082169+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.1807798749996437,
+        "usage": {
+          "input_tokens": 1201,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.07051659791789,
+          "time_to_first_token_seconds": 1.93
+        },
+        "request_sha256": "a9739b544659d5a0da23657b9543e80d0f6a0186a5f36dc9c6b436fe2064663c",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "1e5fb2eac9b89df0e432ce34be19f8490f19e31ead15f5a3bce83ebcb7c5e1f2",
+    "hash": "4c9c1302e751899d13baa47cbc1f70f3b5013dd4a6e6ac8cf763b540e54f38f0"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:57:52.084259+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_26925c3734989f575c4f07bf",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "a768cf09af1b437f9066f05a",
+        "apparent_displacement_m": -6.160838054352691e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -2.4127848458545724e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "4c9c1302e751899d13baa47cbc1f70f3b5013dd4a6e6ac8cf763b540e54f38f0",
+    "hash": "ba395bb1cbbce6ee36566012918bece5f30b7a5736abadea02cf07fee0214586"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:57:56.144249+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_0e41442a3836eea53853aace"
+        ],
+        "explanation": "The apparent displacement (-6.16e-09 m) is within the noise floor (sigma=1e-09 m) and does not exceed the resolution limit (1e-08 m). The reference displacement (-2.41e-08 m) is significantly larger than the observed signal, indicating no measurable compression beyond the stated resolution.",
+        "next_step": "No further measurements required; conclude that compression is not supported."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 4.058905291999508,
+        "usage": {
+          "input_tokens": 1457,
+          "total_output_tokens": 145,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.41613974049845,
+          "time_to_first_token_seconds": 1.253
+        },
+        "request_sha256": "cbb504606fc13a710f9841a4f9fbda53a2c7a6f7797798554a4882ecca30b653",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "ba395bb1cbbce6ee36566012918bece5f30b7a5736abadea02cf07fee0214586",
+    "hash": "53f2b65b0c214d7113d5df1b79a77cff2d2239f87f5a82b1baae6fffd61fba5b"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:57:56.145706+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_0e41442a3836eea53853aace"
+      ],
+      "explanation": "The apparent displacement (-6.16e-09 m) is within the noise floor (sigma=1e-09 m) and does not exceed the resolution limit (1e-08 m). The reference displacement (-2.41e-08 m) is significantly larger than the observed signal, indicating no measurable compression beyond the stated resolution.",
+      "next_step": "No further measurements required; conclude that compression is not supported."
+    },
+    "previous_hash": "53f2b65b0c214d7113d5df1b79a77cff2d2239f87f5a82b1baae6fffd61fba5b",
+    "hash": "d4c4c236b88addc37e14727cf302ca9148244f20a7acdc42f25a5b4a5d3b5715"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:57:56.146606+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 6.249757916999442
+      },
+      "cleanup": []
+    },
+    "previous_hash": "d4c4c236b88addc37e14727cf302ca9148244f20a7acdc42f25a5b4a5d3b5715",
+    "hash": "e34666e9f58564733963bc1398cb60b3a814cbd9b086f1ba3ea61f5388bf7cf6"
+  }
+]

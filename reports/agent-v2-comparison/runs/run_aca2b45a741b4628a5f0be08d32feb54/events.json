@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:13:17.136500+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_41354d07de515b5f2c0fd7b9"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a5d2c80dd9989f36ca78850761eecdc6aaa23fe3f2034b7c3f64f255c29ead88"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:13:32.162501+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_41354d07de515b5f2c0fd7b9"
+        ],
+        "explanation": "Applying the conditional reconstruction contract: With a reference, center = apparent_displacement_m - reference.displacement_m = 6.56e-08 - 1.13e-08 = 5.43e-08 m. Sigma = sqrt(1e-09^2 + 2.5e-08^2 - 0) \u2248 2.5e-08 m. The applicable bound B is reference.residual_bound_m = 1e-09 m (non-null). The 95% Gaussian interval enlarged by B has half-width h = 1.96*2.5e-08 + 1e-09 \u2248 5.0e-08 m. Thus lower = 5.43e-08 - 5.0e-08 = 4.3e-09 m and upper = 5.43e-08 + 5.0e-08 = 1.04e-07 m. The threshold T = -resolution_m = -1e-08 m. Since upper (1.04e-07) > T, we do not choose compression_not_supported. However, lower (4.3e-09) > T (-1e-08), so the entire interval lies above T. By rule 5, compression_not_supported requires lower > T, which is true. Wait: re-evaluate rule 5: 'Choose compression_not_supported only if lower > T'. Here lower = 4.3e-09 m, T = -1e-08 m. Since 4.3e-09 > -1e-08, the condition lower > T is satisfied. Therefore, we choose compression_not_supported? But wait: The question asks for signed radial material displacement x. NEGATIVE is inward (compression). Positive is outward. The interval [4.3e-09, 1.04e-07] is entirely positive (outward). Thus, there is no evidence of inward motion beyond the resolution. So compression_not_supported is correct. However, let's re-read rule 5: 'Choose compression_supported only if upper <= T'. Here upper = 1.04e-07 > -1e-08, so not supported. 'Choose compression_not_supported only if lower > T'. Here lower = 4.3e-09 > -1e-08, so yes, compression_not_supported. But wait: The interval is entirely positive, meaning outward motion. Compression would be negative displacement. Since the entire interval is above T (which is negative), it rules out inward motion beyond resolution. Thus, compression_not_supported is the correct decision.",
+        "next_step": "Report compression_not_supported with evidence artifact_41354d07de515b5f2c0fd7b9 and proceed to next measurement if further data is required."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 15.025565291999555,
+        "usage": {
+          "input_tokens": 1427,
+          "total_output_tokens": 676,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.9805254392822,
+          "time_to_first_token_seconds": 1.776
+        },
+        "request_sha256": "df858628f29b5d348428a0d2a2dd3e42321128e1d3d07eecf940b5f60943df2a",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1427,
+        "output_tokens": 676
+      }
+    },
+    "previous_hash": "a5d2c80dd9989f36ca78850761eecdc6aaa23fe3f2034b7c3f64f255c29ead88",
+    "hash": "352184d4c207080b954808ae432a428720752f176e40ee297a7e0fd843574223"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:13:32.163250+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_supported",
+      "evidence_ids": [
+        "artifact_41354d07de515b5f2c0fd7b9"
+      ],
+      "explanation": "Applying the conditional reconstruction contract: With a reference, center = apparent_displacement_m - reference.displacement_m = 6.56e-08 - 1.13e-08 = 5.43e-08 m. Sigma = sqrt(1e-09^2 + 2.5e-08^2 - 0) \u2248 2.5e-08 m. The applicable bound B is reference.residual_bound_m = 1e-09 m (non-null). The 95% Gaussian interval enlarged by B has half-width h = 1.96*2.5e-08 + 1e-09 \u2248 5.0e-08 m. Thus lower = 5.43e-08 - 5.0e-08 = 4.3e-09 m and upper = 5.43e-08 + 5.0e-08 = 1.04e-07 m. The threshold T = -resolution_m = -1e-08 m. Since upper (1.04e-07) > T, we do not choose compression_not_supported. However, lower (4.3e-09) > T (-1e-08), so the entire interval lies above T. By rule 5, compression_not_supported requires lower > T, which is true. Wait: re-evaluate rule 5: 'Choose compression_not_supported only if lower > T'. Here lower = 4.3e-09 m, T = -1e-08 m. Since 4.3e-09 > -1e-08, the condition lower > T is satisfied. Therefore, we choose compression_not_supported? But wait: The question asks for signed radial material displacement x. NEGATIVE is inward (compression). Positive is outward. The interval [4.3e-09, 1.04e-07] is entirely positive (outward). Thus, there is no evidence of inward motion beyond the resolution. So compression_not_supported is correct. However, let's re-read rule 5: 'Choose compression_supported only if upper <= T'. Here upper = 1.04e-07 > -1e-08, so not supported. 'Choose compression_not_supported only if lower > T'. Here lower = 4.3e-09 > -1e-08, so yes, compression_not_supported. But wait: The interval is entirely positive, meaning outward motion. Compression would be negative displacement. Since the entire interval is above T (which is negative), it rules out inward motion beyond resolution. Thus, compression_not_supported is the correct decision.",
+      "next_step": "Report compression_not_supported with evidence artifact_41354d07de515b5f2c0fd7b9 and proceed to next measurement if further data is required."
+    },
+    "previous_hash": "352184d4c207080b954808ae432a428720752f176e40ee297a7e0fd843574223",
+    "hash": "1a4a95b55b1cfd878a6b2f0edaa1962e6ad77acf4f081e14c5721c15a50e468e"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:13:32.164171+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1427,
+        "output_tokens": 676,
+        "elapsed_seconds": 15.02952091700081
+      },
+      "cleanup": []
+    },
+    "previous_hash": "1a4a95b55b1cfd878a6b2f0edaa1962e6ad77acf4f081e14c5721c15a50e468e",
+    "hash": "22c640f3ad02e42ee11530dc88c7ae5780cde23a30a7c5cdafbae0829c8f4340"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:13:32.165471+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "ff8011a45d8c1645ab039867f397cb3b05f40c06a9efc41672eed1882fcd863e"
+    },
+    "previous_hash": "22c640f3ad02e42ee11530dc88c7ae5780cde23a30a7c5cdafbae0829c8f4340",
+    "hash": "84b11ca5b42838554ae741b1ccce584697d789debd532e9b1f93daf28f1dc030"
+  }
+]

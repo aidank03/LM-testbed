@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_d9c5a4da378045108930d0b02b4b8c71",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_d9c5a4da378045108930d0b02b4b8c71",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_5fba208ecc34eb784f70da2e"
+    ],
+    "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 2.871e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is 0.0, which is a finite bound B=0. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 0 = 1.96e-09 m. Thus lower = 2.871e-08 - 1.96e-09 = 2.675e-08 m and upper = 2.871e-08 + 1.96e-09 = 3.067e-08 m. The resolution threshold T = -resolution_m = -1e-08 m. Since lower > T (2.675e-08 > -1e-08), the entire conditional interval rules out inward motion beyond the resolution, so compression_not_supported.",
+    "next_step": "No further measurements are required; the decision is final under the given contract."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1635,
+    "output_tokens": 299,
+    "elapsed_seconds": 8.393047792000289
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_2d8429b59a54cce008fd8737": {
+      "id": "artifact_2d8429b59a54cce008fd8737",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_2d8429b59a54cce008fd8737.json",
+      "sha256": "e65356b20de0f634b9df9fcc12993b75beb717e236f1528763f1e1fbb83a4411"
+    },
+    "artifact_5fba208ecc34eb784f70da2e": {
+      "id": "artifact_5fba208ecc34eb784f70da2e",
+      "kind": "observation",
+      "path": "artifacts/artifact_5fba208ecc34eb784f70da2e.json",
+      "sha256": "2dd82a5024b4b301dee53b82f957d9c92bb8952b7b270365ec5f70fa952992ba"
+    },
+    "artifact_19c6b7cb07e9fce3db58dccb": {
+      "id": "artifact_19c6b7cb07e9fce3db58dccb",
+      "kind": "request",
+      "path": "artifacts/artifact_19c6b7cb07e9fce3db58dccb.json",
+      "sha256": "198d784a6765df5bbfac3a673c16426296bf8c7b5b0b8b0e8d62dffac1ca1ec3"
+    }
+  }
+}

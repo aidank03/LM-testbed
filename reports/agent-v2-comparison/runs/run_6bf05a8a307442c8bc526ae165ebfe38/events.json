@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:16:19.015002+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_9aaae14d45acc524240e7969"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "e6c22c8e9891d58f6d92602162af4997b2819b9f377bd24feb1078713bf844ad"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:16:25.096038+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_9aaae14d45acc524240e7969"
+        ],
+        "explanation": "With a reference, center = apparent_displacement_m - reference.displacement_m = -5.938e-09 - 3.268e-08 = -3.862e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = reference.residual_bound_m = 1e-09 m. The 95% interval half-width h = 1.96*sigma + B = 3.72e-09 m. Interval: [-4.234e-08, -3.490e-08] m. Resolution T = -1e-08 m. Since upper (-3.49e-08) <= T, compression is supported.",
+        "next_step": "Report compression_supported with interval [-4.23e-08, -3.49e-08] m and resolution limit -1e-08 m."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 6.0811448340000425,
+        "usage": {
+          "input_tokens": 1407,
+          "total_output_tokens": 267,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.033407312588444,
+          "time_to_first_token_seconds": 0.868
+        },
+        "request_sha256": "c132db6f447057134df133d7e1db3662ebd2227041da77095d7e59ceea857aba",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1407,
+        "output_tokens": 267
+      }
+    },
+    "previous_hash": "e6c22c8e9891d58f6d92602162af4997b2819b9f377bd24feb1078713bf844ad",
+    "hash": "82fc39ee3d95f8cab2d45d73caf7f3ea37149957486a1e0b9de17e32c7f50f3f"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:16:25.097236+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_supported",
+      "evidence_ids": [
+        "artifact_9aaae14d45acc524240e7969"
+      ],
+      "explanation": "With a reference, center = apparent_displacement_m - reference.displacement_m = -5.938e-09 - 3.268e-08 = -3.862e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = reference.residual_bound_m = 1e-09 m. The 95% interval half-width h = 1.96*sigma + B = 3.72e-09 m. Interval: [-4.234e-08, -3.490e-08] m. Resolution T = -1e-08 m. Since upper (-3.49e-08) <= T, compression is supported.",
+      "next_step": "Report compression_supported with interval [-4.23e-08, -3.49e-08] m and resolution limit -1e-08 m."
+    },
+    "previous_hash": "82fc39ee3d95f8cab2d45d73caf7f3ea37149957486a1e0b9de17e32c7f50f3f",
+    "hash": "a9c9b720c5dadfda85223b3faa3dcf7f6cca9476dfd9c6f81ac7e2649509de42"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:16:25.098278+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1407,
+        "output_tokens": 267,
+        "elapsed_seconds": 6.087857958000313
+      },
+      "cleanup": []
+    },
+    "previous_hash": "a9c9b720c5dadfda85223b3faa3dcf7f6cca9476dfd9c6f81ac7e2649509de42",
+    "hash": "67c36a2188d2c81cb48b9fe198abb781005917311e5fc9d6b81cacef10184920"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:16:25.099732+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "704fa83eee742b8e3313d8cf2181d96a9a251b42b0c4e37edc232823f1a46d83"
+    },
+    "previous_hash": "67c36a2188d2c81cb48b9fe198abb781005917311e5fc9d6b81cacef10184920",
+    "hash": "254784ffcb674bd4bd6715d92fda860c893ee30cea76d3b59415a822981299a6"
+  }
+]

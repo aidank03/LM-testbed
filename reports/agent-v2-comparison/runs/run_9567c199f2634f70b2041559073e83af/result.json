@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_9567c199f2634f70b2041559073e83af",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_9567c199f2634f70b2041559073e83af",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_b77a88941760d0301461455a"
+    ],
+    "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 5.41e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is null, meaning the nuisance bound B is null per contract rule 3. Per contract rule 4, when B is null, different material motions can explain the same measurement, requiring an ambiguous decision regardless of the interval crossing T.",
+    "next_step": "Acquire a reference observation to estimate optical drift and establish a finite residual bound for a definitive compression assessment."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1643,
+    "output_tokens": 172,
+    "elapsed_seconds": 5.981139334000545
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_50e3eb3208dd5e780bb5501d": {
+      "id": "artifact_50e3eb3208dd5e780bb5501d",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_50e3eb3208dd5e780bb5501d.json",
+      "sha256": "0a4c5a0d24fbf40e416337a87546a15a42eee71b63e2d348a9110997e7e0607d"
+    },
+    "artifact_b77a88941760d0301461455a": {
+      "id": "artifact_b77a88941760d0301461455a",
+      "kind": "observation",
+      "path": "artifacts/artifact_b77a88941760d0301461455a.json",
+      "sha256": "1108d663e1ef3ac085afbec94ee3388fbf24c04aa1b110584704bd8578b5aa5c"
+    },
+    "artifact_e9b2ef58723aef9e33dbb34a": {
+      "id": "artifact_e9b2ef58723aef9e33dbb34a",
+      "kind": "request",
+      "path": "artifacts/artifact_e9b2ef58723aef9e33dbb34a.json",
+      "sha256": "20636926f3bb9c1c2c00bbb188a56dd7a1e371ba9ef85e6217edea3e2c18156a"
+    }
+  }
+}

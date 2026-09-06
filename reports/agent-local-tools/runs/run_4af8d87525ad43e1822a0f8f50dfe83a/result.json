@@ -1,0 +1,55 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_4af8d87525ad43e1822a0f8f50dfe83a",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-local-tools/runs/run_4af8d87525ad43e1822a0f8f50dfe83a",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_5a3d740f0bc009a93ae71f29"
+    ],
+    "explanation": "The apparent displacement (-4.55e-09 m) is within the noise bound (1e-09 m) and does not exceed the resolution limit (1e-08 m). The reference displacement (2.96e-08 m) is significantly larger than the observed signal, indicating no measurable compression beyond the stated resolution.",
+    "next_step": "No further measurements required; conclude that compression is not supported."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 6.2551907919996665
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_a0d4ce27fe2b108c686938c2": {
+      "id": "artifact_a0d4ce27fe2b108c686938c2",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_a0d4ce27fe2b108c686938c2.json",
+      "sha256": "81bc34d6b57e3cd3a08b5a154383b8445b8703d5bcd81978ea21fba3243fba5d"
+    },
+    "artifact_5a3d740f0bc009a93ae71f29": {
+      "id": "artifact_5a3d740f0bc009a93ae71f29",
+      "kind": "observation",
+      "path": "artifacts/artifact_5a3d740f0bc009a93ae71f29.json",
+      "sha256": "eb4d3996e48245b3c65840f9b7bc2f0b9945a0c53b4626ef3eb8ed07825df203"
+    },
+    "artifact_061c01b370c696a469497910": {
+      "id": "artifact_061c01b370c696a469497910",
+      "kind": "request",
+      "path": "artifacts/artifact_061c01b370c696a469497910.json",
+      "sha256": "46858aa09435209a9a729f551f7cce2dbcd48150e5e8fbf8ff9e18607a6c915d"
+    },
+    "artifact_d7dc92cb0a36c0f44cfc13ab": {
+      "id": "artifact_d7dc92cb0a36c0f44cfc13ab",
+      "kind": "inspect_observation",
+      "path": "artifacts/artifact_d7dc92cb0a36c0f44cfc13ab.json",
+      "sha256": "eb4d3996e48245b3c65840f9b7bc2f0b9945a0c53b4626ef3eb8ed07825df203"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "executables": {
+    "ssh": true,
+    "sbatch": false,
+    "lms": true,
+    "ollama": true
+  },
+  "credential_present": {
+    "OPENAI_API_KEY": false,
+    "HF_TOKEN": false
+  },
+  "note": "Presence is not verified access. No server was contacted, model loaded, or job submitted."
+}

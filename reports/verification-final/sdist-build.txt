@@ -1,0 +1,148 @@
+running sdist
+running egg_info
+creating src/liner_stability.egg-info
+writing src/liner_stability.egg-info/PKG-INFO
+writing dependency_links to src/liner_stability.egg-info/dependency_links.txt
+writing entry points to src/liner_stability.egg-info/entry_points.txt
+writing requirements to src/liner_stability.egg-info/requires.txt
+writing top-level names to src/liner_stability.egg-info/top_level.txt
+writing manifest file 'src/liner_stability.egg-info/SOURCES.txt'
+reading manifest file 'src/liner_stability.egg-info/SOURCES.txt'
+reading manifest template 'MANIFEST.in'
+no previously-included directories found matching '.venv'
+no previously-included directories found matching '.venv-local'
+no previously-included directories found matching 'experiments/local_model/base_model'
+no previously-included directories found matching 'experiments/local_model/cache'
+no previously-included directories found matching 'experiments/local_model/models'
+no previously-included directories found matching 'experiments/local_model/checkpoints'
+warning: no previously-included files matching '*.safetensors' found anywhere in distribution
+warning: no previously-included files matching '*.gguf' found anywhere in distribution
+warning: no previously-included files matching '*.py[cod]' found anywhere in distribution
+warning: no previously-included files matching '.DS_Store' found anywhere in distribution
+writing manifest file 'src/liner_stability.egg-info/SOURCES.txt'
+running check
+creating liner_stability-0.3.0
+creating liner_stability-0.3.0/configs
+creating liner_stability-0.3.0/docs
+creating liner_stability-0.3.0/docs/third-party
+creating liner_stability-0.3.0/experiments/local_model
+creating liner_stability-0.3.0/experiments/local_model/frozen_dataset
+creating liner_stability-0.3.0/experiments/local_model/posttrain_run
+creating liner_stability-0.3.0/experiments/local_model/posttrain_run/source_snapshot
+creating liner_stability-0.3.0/src/factor
+creating liner_stability-0.3.0/src/liner_stability
+creating liner_stability-0.3.0/src/liner_stability.egg-info
+creating liner_stability-0.3.0/templates
+creating liner_stability-0.3.0/tests
+copying files to liner_stability-0.3.0...
+copying CHANGELOG.md -> liner_stability-0.3.0
+copying MANIFEST.in -> liner_stability-0.3.0
+copying Makefile -> liner_stability-0.3.0
+copying README.md -> liner_stability-0.3.0
+copying pyproject.toml -> liner_stability-0.3.0
+copying requirements-core.lock -> liner_stability-0.3.0
+copying configs/cloud_policy.example.json -> liner_stability-0.3.0/configs
+copying configs/cloud_profile.example.json -> liner_stability-0.3.0/configs
+copying configs/demo.json -> liner_stability-0.3.0/configs
+copying configs/design_example.json -> liner_stability-0.3.0/configs
+copying configs/direct_policy.json -> liner_stability-0.3.0/configs
+copying configs/direct_v2_policy.json -> liner_stability-0.3.0/configs
+copying configs/hpc_local.json -> liner_stability-0.3.0/configs
+copying configs/hpc_slurm.json -> liner_stability-0.3.0/configs
+copying configs/hpc_smoke.json -> liner_stability-0.3.0/configs
+copying configs/local_loop_policy.json -> liner_stability-0.3.0/configs
+copying configs/local_loop_request.json -> liner_stability-0.3.0/configs
+copying configs/local_policy.json -> liner_stability-0.3.0/configs
+copying configs/motion_request.json -> liner_stability-0.3.0/configs
+copying configs/physics_example.json -> liner_stability-0.3.0/configs
+copying docs/AGENT_EVALUATION_CARD.md -> liner_stability-0.3.0/docs
+copying docs/AGENT_EVALUATION_V2_CARD.md -> liner_stability-0.3.0/docs
+copying docs/AGENT_EVALUATION_V2_PROPOSAL.md -> liner_stability-0.3.0/docs
+copying docs/ARCHITECTURE.md -> liner_stability-0.3.0/docs
+copying docs/FACTORY.md -> liner_stability-0.3.0/docs
+copying docs/FRONTIER_APIS.md -> liner_stability-0.3.0/docs
+copying docs/HPC.md -> liner_stability-0.3.0/docs
+copying docs/LEGACY_V02_README.md -> liner_stability-0.3.0/docs
+copying docs/LOCAL_MODELS.md -> liner_stability-0.3.0/docs
+copying docs/Liner_Stability_Evaluation_Plan.pdf -> liner_stability-0.3.0/docs
+copying docs/MODEL_CARD.md -> liner_stability-0.3.0/docs
+copying docs/PROGRAM_DESIGN.md -> liner_stability-0.3.0/docs
+copying docs/PROJECT_SECTION.md -> liner_stability-0.3.0/docs
+copying docs/RECONCILIATION.md -> liner_stability-0.3.0/docs
+copying docs/RELEASE.md -> liner_stability-0.3.0/docs
+copying docs/ROADMAP.md -> liner_stability-0.3.0/docs
+copying docs/SCIENCE_BOUNDARIES.md -> liner_stability-0.3.0/docs
+copying docs/VALIDATION.md -> liner_stability-0.3.0/docs
+copying docs/VIDEO_WORKFLOW_NOTES.md -> liner_stability-0.3.0/docs
+copying docs/third-party/Qwen3-0.6B-LICENSE.txt -> liner_stability-0.3.0/docs/third-party
+copying experiments/local_model/audit_results.py -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/base_model_files.json -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/base_model_manifest.json -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/dataset.py -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/fetch_base_model.py -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/posttrain.py -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/requirements.lock -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/run_metadata.py -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/serve_probe.py -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/serving_manifest.json -> liner_stability-0.3.0/experiments/local_model
+copying experiments/local_model/frozen_dataset/dev.jsonl -> liner_stability-0.3.0/experiments/local_model/frozen_dataset
+copying experiments/local_model/frozen_dataset/manifest.json -> liner_stability-0.3.0/experiments/local_model/frozen_dataset
+copying experiments/local_model/frozen_dataset/test.jsonl -> liner_stability-0.3.0/experiments/local_model/frozen_dataset
+copying experiments/local_model/frozen_dataset/train.jsonl -> liner_stability-0.3.0/experiments/local_model/frozen_dataset
+copying experiments/local_model/posttrain_run/manifest.json -> liner_stability-0.3.0/experiments/local_model/posttrain_run
+copying experiments/local_model/posttrain_run/source_snapshot/README.md -> liner_stability-0.3.0/experiments/local_model/posttrain_run/source_snapshot
+copying experiments/local_model/posttrain_run/source_snapshot/posttrain.py -> liner_stability-0.3.0/experiments/local_model/posttrain_run/source_snapshot
+copying src/factor/__init__.py -> liner_stability-0.3.0/src/factor
+copying src/factor/__main__.py -> liner_stability-0.3.0/src/factor
+copying src/factor/artifacts.py -> liner_stability-0.3.0/src/factor
+copying src/factor/cli.py -> liner_stability-0.3.0/src/factor
+copying src/factor/contracts.py -> liner_stability-0.3.0/src/factor
+copying src/factor/evaluation.py -> liner_stability-0.3.0/src/factor
+copying src/factor/evaluation_v2.py -> liner_stability-0.3.0/src/factor
+copying src/factor/factory.py -> liner_stability-0.3.0/src/factor
+copying src/factor/hpc.py -> liner_stability-0.3.0/src/factor
+copying src/factor/hpc_worker.py -> liner_stability-0.3.0/src/factor
+copying src/factor/local_models.py -> liner_stability-0.3.0/src/factor
+copying src/factor/motion.py -> liner_stability-0.3.0/src/factor
+copying src/factor/providers.py -> liner_stability-0.3.0/src/factor
+copying src/factor/runtime.py -> liner_stability-0.3.0/src/factor
+copying src/factor/training.py -> liner_stability-0.3.0/src/factor
+copying src/liner_stability/__init__.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/__main__.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/benchmarks.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/cli.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/constants.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/design.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/diagnostics.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/evaluation.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/evidence.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/io.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/llm.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/physics.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/py.typed -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/reporting.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/simulation.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability/workflow.py -> liner_stability-0.3.0/src/liner_stability
+copying src/liner_stability.egg-info/PKG-INFO -> liner_stability-0.3.0/src/liner_stability.egg-info
+copying src/liner_stability.egg-info/SOURCES.txt -> liner_stability-0.3.0/src/liner_stability.egg-info
+copying src/liner_stability.egg-info/dependency_links.txt -> liner_stability-0.3.0/src/liner_stability.egg-info
+copying src/liner_stability.egg-info/entry_points.txt -> liner_stability-0.3.0/src/liner_stability.egg-info
+copying src/liner_stability.egg-info/requires.txt -> liner_stability-0.3.0/src/liner_stability.egg-info
+copying src/liner_stability.egg-info/top_level.txt -> liner_stability-0.3.0/src/liner_stability.egg-info
+copying templates/EVALUATION_CARD_TEMPLATE.md -> liner_stability-0.3.0/templates
+copying templates/shot_record_template.json -> liner_stability-0.3.0/templates
+copying tests/test_diagnostics_and_grading.py -> liner_stability-0.3.0/tests
+copying tests/test_factor_evaluation.py -> liner_stability-0.3.0/tests
+copying tests/test_factor_evaluation_v2.py -> liner_stability-0.3.0/tests
+copying tests/test_factor_factory.py -> liner_stability-0.3.0/tests
+copying tests/test_factor_runtime.py -> liner_stability-0.3.0/tests
+copying tests/test_fetch_base_model.py -> liner_stability-0.3.0/tests
+copying tests/test_hpc.py -> liner_stability-0.3.0/tests
+copying tests/test_local_models.py -> liner_stability-0.3.0/tests
+copying tests/test_pdv_window.py -> liner_stability-0.3.0/tests
+copying tests/test_posttrain_metadata.py -> liner_stability-0.3.0/tests
+copying tests/test_runtime_hpc_boundaries.py -> liner_stability-0.3.0/tests
+copying tests/test_workflow_and_assistant.py -> liner_stability-0.3.0/tests
+Writing liner_stability-0.3.0/setup.cfg
+Creating tar archive
+removing 'liner_stability-0.3.0' (and everything under it)

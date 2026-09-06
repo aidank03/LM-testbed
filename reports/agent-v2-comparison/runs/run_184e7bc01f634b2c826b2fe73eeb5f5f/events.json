@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:09:25.808707+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_05792fc4a90c2582e7bb7b53"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "2f021201ec8adff6401ce73e452d9364e9bf80098d0c001dfacb202258d15fb3"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:09:33.175243+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_05792fc4a90c2582e7bb7b53"
+        ],
+        "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 3.6e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift bound B = 8e-09 m is finite. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 8e-09 = 9.96e-09 m, giving [center-h, center+h] = [-6.4e-08, 1.36e-07] m. With T = -resolution_m = -1e-08 m, the interval crosses T (lower < T < upper), so we cannot rule out inward motion beyond resolution nor confirm compression; decision is ambiguous.",
+        "next_step": "Acquire a reference measurement to estimate optical drift and reduce the conditional interval width."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 7.366081041000143,
+        "usage": {
+          "input_tokens": 1646,
+          "total_output_tokens": 245,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.23668344948032,
+          "time_to_first_token_seconds": 2.604
+        },
+        "request_sha256": "5a79518561ef84c74514099184c42586240f431b1afd918999f305e9f1d7bdec",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1646,
+        "output_tokens": 245
+      }
+    },
+    "previous_hash": "2f021201ec8adff6401ce73e452d9364e9bf80098d0c001dfacb202258d15fb3",
+    "hash": "fcb07fc59c3e25f342009f3ab58674e969d5758d964241429499531aa027bfd8"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:09:33.176440+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_05792fc4a90c2582e7bb7b53"
+      ],
+      "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 3.6e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift bound B = 8e-09 m is finite. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 8e-09 = 9.96e-09 m, giving [center-h, center+h] = [-6.4e-08, 1.36e-07] m. With T = -resolution_m = -1e-08 m, the interval crosses T (lower < T < upper), so we cannot rule out inward motion beyond resolution nor confirm compression; decision is ambiguous.",
+      "next_step": "Acquire a reference measurement to estimate optical drift and reduce the conditional interval width."
+    },
+    "previous_hash": "fcb07fc59c3e25f342009f3ab58674e969d5758d964241429499531aa027bfd8",
+    "hash": "6265a8f8f52109a5f790801c14aab35b25dab84be90fd574a51d414bdfaea3df"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:09:33.178301+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1646,
+        "output_tokens": 245,
+        "elapsed_seconds": 7.372840291000102
+      },
+      "cleanup": []
+    },
+    "previous_hash": "6265a8f8f52109a5f790801c14aab35b25dab84be90fd574a51d414bdfaea3df",
+    "hash": "449d384c692408fa224c44d504693a242e78dfe3304f4588d721985b3038ea39"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:09:33.180076+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "e04c010253a123a79757a841f449b2745abecaf2d54bca6683182b0d510827f7"
+    },
+    "previous_hash": "449d384c692408fa224c44d504693a242e78dfe3304f4588d721985b3038ea39",
+    "hash": "1c40a44acb1bd33754a5a38c5e2d4cdc66c5a126df4845597cdb6aa6ea0687de"
+  }
+]

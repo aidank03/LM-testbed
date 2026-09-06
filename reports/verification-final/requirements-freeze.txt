@@ -1,0 +1,43 @@
+WARNING: The directory '/Users/operator/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+annotated-types==0.8.0
+artifact_tool_v2 @ file:///var/folders/bl/vzjcvbz95c3dk19cb0fw46180000gn/T/codex-primary-runtime-RxwxZg/generated-source--oai-artifact-tool/lib/agent/tools/artifact_tool_v2
+cffi==2.1.1
+charset-normalizer==3.5.1
+contourpy==1.3.3
+cryptography==50.0.1
+cycler==0.12.1
+et_xmlfile==2.0.0
+fonttools==4.64.0
+kiwisolver==1.5.1
+liner-stability @ file:///Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/recovered/Factor_v0-0.2.0/dist/liner_stability-0.2.0-py3-none-any.whl#sha256=2bccdfb529405b2ee5a93c0f1aa0b85cbc71d216b9feb067c9da22f15a60b88f
+lxml==6.1.1
+matplotlib==3.11.1
+numpy==2.3.5
+openpyxl==3.1.5
+packaging==26.3
+pandas==2.2.3
+pdf2image==1.17.0
+pdfminer.six==20251230
+pdfplumber==0.11.9
+pillow==12.3.0
+pip==25.0.1
+pycparser==3.0
+pydantic==2.13.5
+pydantic_core==2.46.5
+pyhumps==3.8.0
+pyparsing==3.3.2
+pypdf==6.10.0
+pypdfium2==5.13.0
+python-dateutil==2.9.0.post0
+python-docx==1.2.0
+python-pptx==1.0.2
+pytz==2026.3.post1
+reportlab==4.4.9
+scipy==1.17.0
+setuptools==84.0.0
+six==1.17.0
+typing-inspection==0.4.4
+typing_extensions==4.16.0
+tzdata==2026.3
+wheel==0.48.0
+xlsxwriter==3.2.9

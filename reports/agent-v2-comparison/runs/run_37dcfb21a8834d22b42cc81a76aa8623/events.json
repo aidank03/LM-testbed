@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:10:29.111806+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_5d536dceb56edd63b22a244d"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "9c44b2a279d14305b7122cffd833f0c17c99224e42675a4c9f60fe24c1dcaa0a"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:10:37.450188+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_5d536dceb56edd63b22a244d"
+        ],
+        "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 2.66e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is 0.0, which is a finite bound B=0. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 0 = 1.96e-09 m. Thus lower = 2.66e-08 - 1.96e-09 = 2.46e-08 m and upper = 2.66e-08 + 1.96e-09 = 2.86e-08 m. The resolution threshold T = -resolution_m = -1e-08 m. Since lower > T (2.46e-08 > -1e-08), the entire conditional interval rules out inward motion beyond the resolution, so compression is not supported.",
+        "next_step": "No further measurements are required; the decision is final for this observation."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 8.337793042000158,
+        "usage": {
+          "input_tokens": 1642,
+          "total_output_tokens": 294,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.15206496347166,
+          "time_to_first_token_seconds": 2.606
+        },
+        "request_sha256": "1dc1abfa7bf7a29b8986378b2cc7beab225d19b5be274e59abb2e97379afbb06",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1642,
+        "output_tokens": 294
+      }
+    },
+    "previous_hash": "9c44b2a279d14305b7122cffd833f0c17c99224e42675a4c9f60fe24c1dcaa0a",
+    "hash": "09e2a8bdacc8117d96630d2513a271a73138b23357e9162de9a75cf44ad599e5"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:10:37.452235+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_5d536dceb56edd63b22a244d"
+      ],
+      "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 2.66e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is 0.0, which is a finite bound B=0. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 0 = 1.96e-09 m. Thus lower = 2.66e-08 - 1.96e-09 = 2.46e-08 m and upper = 2.66e-08 + 1.96e-09 = 2.86e-08 m. The resolution threshold T = -resolution_m = -1e-08 m. Since lower > T (2.46e-08 > -1e-08), the entire conditional interval rules out inward motion beyond the resolution, so compression is not supported.",
+      "next_step": "No further measurements are required; the decision is final for this observation."
+    },
+    "previous_hash": "09e2a8bdacc8117d96630d2513a271a73138b23357e9162de9a75cf44ad599e5",
+    "hash": "caaf6eec8fc8d549c7ec42e66ba3d9094245d76a2e0cfdf0fe2fe4af885a2456"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:10:37.453504+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1642,
+        "output_tokens": 294,
+        "elapsed_seconds": 8.344877084000473
+      },
+      "cleanup": []
+    },
+    "previous_hash": "caaf6eec8fc8d549c7ec42e66ba3d9094245d76a2e0cfdf0fe2fe4af885a2456",
+    "hash": "2fa1cfdb5f9b380fddc8365b88b8d4596d27d04f433de3833074d1a920373ca4"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:10:37.455319+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "2f8f7895a7cce9b76b2bdc252173ac1eefa837e1b7ab0071fc50b8ebf5c8bb19"
+    },
+    "previous_hash": "2fa1cfdb5f9b380fddc8365b88b8d4596d27d04f433de3833074d1a920373ca4",
+    "hash": "999344a767cc5954f39eb871e31880f0414e775b7016be1c520a54219eaad407"
+  }
+]

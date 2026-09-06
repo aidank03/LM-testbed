@@ -1,0 +1,931 @@
+[
+  {
+    "case_id": "458062dab8797b5df819c91f",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_b29456c8c3bb44b7adbe8129cbbf49ea",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_b29456c8c3bb44b7adbe8129cbbf49ea",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_41354d07de515b5f2c0fd7b9"
+        ],
+        "explanation": "Using the reference, center = 6.56e-08 - 1.13e-08 = 5.43e-08 m. Sigma = sqrt(1e-18 + 6.25e-18) = 2.74e-09 m. B = 1e-09 m. h = 1.96*2.74e-09 + 1e-09 = 6.37e-09 m. Interval: [4.79e-08, 6.07e-08] m. Resolution T = -1e-08 m. Since lower > T, compression is ruled out.",
+        "next_step": "No further measurements required; decision finalized."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1720,
+        "output_tokens": 227,
+        "elapsed_seconds": 7.136608707999585
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_2ab04ff715e28c03c7312d15": {
+          "id": "artifact_2ab04ff715e28c03c7312d15",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_2ab04ff715e28c03c7312d15.json",
+          "sha256": "629cadfd62b9b612bf8a32ffd5c0732ab925d1d36baca9949fe6bfa899b4d820"
+        },
+        "artifact_41354d07de515b5f2c0fd7b9": {
+          "id": "artifact_41354d07de515b5f2c0fd7b9",
+          "kind": "observation",
+          "path": "artifacts/artifact_41354d07de515b5f2c0fd7b9.json",
+          "sha256": "8dd335d39b0249e8a97abff5e710e47402092356a4678ed09812a23e82de164c"
+        },
+        "artifact_c3a118f4e73564998cf27f1f": {
+          "id": "artifact_c3a118f4e73564998cf27f1f",
+          "kind": "request",
+          "path": "artifacts/artifact_c3a118f4e73564998cf27f1f.json",
+          "sha256": "623d4fe94cae3ee6f5f79827c42983f90f6a8c11295da2f4802fb2d486b09f08"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "3d3d48f9784dcb09a1d9b811",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_2c253d5ae04b4e5c8c429aa9cee381bd",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_2c253d5ae04b4e5c8c429aa9cee381bd",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_8782acceb77e79f37ea5cdcf"
+        ],
+        "explanation": "Using the reference, center = -4.176e-09 - 2.958e-08 = -3.376e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.95996*1.414e-09 + 1e-09 = 3.772e-09 m. Interval: [-3.753e-08, -2.999e-08] m. T = -1e-08 m. Since upper (-2.999e-08) <= T, compression is supported.",
+        "next_step": "Report compression_supported with interval [-3.75e-08, -3.00e-08] m."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1701,
+        "output_tokens": 258,
+        "elapsed_seconds": 7.750593540999944
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_bdb56bf7bb74516074582d79": {
+          "id": "artifact_bdb56bf7bb74516074582d79",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_bdb56bf7bb74516074582d79.json",
+          "sha256": "02b55e3a1b23d1f99e045903504d67e0c4aea3fb45b2cf843a3eb3ee7574a0db"
+        },
+        "artifact_8782acceb77e79f37ea5cdcf": {
+          "id": "artifact_8782acceb77e79f37ea5cdcf",
+          "kind": "observation",
+          "path": "artifacts/artifact_8782acceb77e79f37ea5cdcf.json",
+          "sha256": "392f6085d9f5bae3cebf26b7967a9cb0a848ae32a02e1cb0e471c74c02d0c180"
+        },
+        "artifact_50c7c9af5bc53de057ae92d8": {
+          "id": "artifact_50c7c9af5bc53de057ae92d8",
+          "kind": "request",
+          "path": "artifacts/artifact_50c7c9af5bc53de057ae92d8.json",
+          "sha256": "4ee62d07aa7e88091dfabc0f5d1f8af27b344784416c8888ffad61b0ba71ede1"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "4c5e7c0a476a769f0be8d7d2",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_2ed80c5f477d4edbaf49f240abb9de84",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_2ed80c5f477d4edbaf49f240abb9de84",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_40ecda42268e11a0944ed9b2"
+        ],
+        "explanation": "Using the reference, center = -5.938e-09 - (-2.333e-08) = 1.739e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.96*1.414e-09 + 1e-09 = 3.77e-09 m. Interval: [1.36e-08, 2.12e-08] m. T = -1e-08 m. Since upper (2.12e-08) <= T (-1e-08) is false and lower (1.36e-08) > T (-1e-08) is true, the entire interval lies above T, ruling out inward motion beyond resolution.",
+        "next_step": "Report compression_supported with 95% CI [1.36e-08, 2.12e-08] m."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1704,
+        "output_tokens": 301,
+        "elapsed_seconds": 8.566999124999711
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_bfd48dd767ba139c3ead630a": {
+          "id": "artifact_bfd48dd767ba139c3ead630a",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_bfd48dd767ba139c3ead630a.json",
+          "sha256": "d4af0a3a642b2e721dbb2c023d507aaf3e36df86f7166b2aff7e3b938d11143e"
+        },
+        "artifact_40ecda42268e11a0944ed9b2": {
+          "id": "artifact_40ecda42268e11a0944ed9b2",
+          "kind": "observation",
+          "path": "artifacts/artifact_40ecda42268e11a0944ed9b2.json",
+          "sha256": "73b1464e1dbb81556b78c9cec967012a30a537e602c2ae364de328d29f346ba9"
+        },
+        "artifact_22197653e6cb0d434d545872": {
+          "id": "artifact_22197653e6cb0d434d545872",
+          "kind": "request",
+          "path": "artifacts/artifact_22197653e6cb0d434d545872.json",
+          "sha256": "10c5b191f5eaeb618620ce7f44a538040ba5527c9c32172c79ae65f7ed12265a"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a4fe2d682f01fe0de8ba6421",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_b6a4e992a6634f8f966bb31ee20cf72d",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_b6a4e992a6634f8f966bb31ee20cf72d",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_d7f69cd74a2aea1b7f855213"
+        ],
+        "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+        "next_step": "Acquire a reference measurement to estimate optical drift and obtain a finite residual bound B for a definitive compression assessment."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1637,
+        "output_tokens": 203,
+        "elapsed_seconds": 6.532371792000049
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_1d1116107841c48bae24c350": {
+          "id": "artifact_1d1116107841c48bae24c350",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_1d1116107841c48bae24c350.json",
+          "sha256": "3a4de6f3b6ce6f9e4227189b668a948273261df714b8648a2f862946eb854aa7"
+        },
+        "artifact_d7f69cd74a2aea1b7f855213": {
+          "id": "artifact_d7f69cd74a2aea1b7f855213",
+          "kind": "observation",
+          "path": "artifacts/artifact_d7f69cd74a2aea1b7f855213.json",
+          "sha256": "b905f67238c9a204bf3e208a2006e77760e71e8433e5b9761091b9a8cc52dae9"
+        },
+        "artifact_5e2bc34234731d7b93638ec7": {
+          "id": "artifact_5e2bc34234731d7b93638ec7",
+          "kind": "request",
+          "path": "artifacts/artifact_5e2bc34234731d7b93638ec7.json",
+          "sha256": "0857c01ce5e2ecc716cb9044d903b4a1dee5b684a6a85ee7324fb898d1226042"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "2b74389d6958e64f8c5aa5b6",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_93f7927a6dd649a0b28762dad4376b89",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_93f7927a6dd649a0b28762dad4376b89",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_094ac6f0b6f438c65c6ba821"
+        ],
+        "explanation": "Using the reference, center = 3.604e-08 - 8.969e-08 = -5.365e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. The 95% interval half-width h = 1.96*1.414e-09 + 1e-09 = 3.77e-09 m. Interval: [-5.742e-08, -4.988e-08] m. Resolution T = -1e-08 m. Since upper (-4.988e-08) <= T, compression is supported. However, the question asks for signed radial displacement x where negative is inward (compression). The interval is entirely negative, meaning inward motion is supported. Wait, re-reading rule 5: 'Choose compression_supported only if upper <= T'. Here upper = -4.988e-08 and T = -1e-08. Since -4.988e-08 < -1e-08, the condition holds. Thus compression is supported.",
+        "next_step": "Report compression_supported with interval [-5.742e-08, -4.988e-08] m."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1703,
+        "output_tokens": 369,
+        "elapsed_seconds": 9.841492165999625
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_3675f9ef2752d17e853f81f8": {
+          "id": "artifact_3675f9ef2752d17e853f81f8",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_3675f9ef2752d17e853f81f8.json",
+          "sha256": "214fb087c348c101607609b9144ff2b697e83774cff0ff6423fe3f89778ff690"
+        },
+        "artifact_094ac6f0b6f438c65c6ba821": {
+          "id": "artifact_094ac6f0b6f438c65c6ba821",
+          "kind": "observation",
+          "path": "artifacts/artifact_094ac6f0b6f438c65c6ba821.json",
+          "sha256": "3af805838051feee4124eadd4fba45445e84f08bbfb5b96b597bb132e957d903"
+        },
+        "artifact_f242cc6deec8eb5377583c2c": {
+          "id": "artifact_f242cc6deec8eb5377583c2c",
+          "kind": "request",
+          "path": "artifacts/artifact_f242cc6deec8eb5377583c2c.json",
+          "sha256": "a1fba364217a93289302eb7332ee410445de239669a4eaac4c41e7c3f89b2793"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "650908343b1684ca1410b847",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_60dd07c375e541ba8daa293f597a8ca7",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_60dd07c375e541ba8daa293f597a8ca7",
+      "execution": "provider_failed",
+      "failure": "Local model call failed (ContractError)",
+      "final": null,
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 0,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1641,
+        "output_tokens": 517,
+        "elapsed_seconds": 12.745056374999876
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_35288e7176e6481cb0686f00": {
+          "id": "artifact_35288e7176e6481cb0686f00",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_35288e7176e6481cb0686f00.json",
+          "sha256": "a5939691f9912370d5340d11806d9a4690a2b7c97ea5ae23f0e86e729650b368"
+        },
+        "artifact_87a48ca7cde816bca02abdd4": {
+          "id": "artifact_87a48ca7cde816bca02abdd4",
+          "kind": "observation",
+          "path": "artifacts/artifact_87a48ca7cde816bca02abdd4.json",
+          "sha256": "276be9607e5fdf9cd73f03b2e5065e06320e4b2bf2cc156c29f59528af261ecf"
+        },
+        "artifact_091befc96f41897142b2478c": {
+          "id": "artifact_091befc96f41897142b2478c",
+          "kind": "request",
+          "path": "artifacts/artifact_091befc96f41897142b2478c.json",
+          "sha256": "95e0efcd4a403f709145d58bba718b4329e3d0abc8396d5d2d1e034d34bd0436"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "e59d9af341fc83fa1243058f",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_3d271ddeb7a949e48f11397fd5b3eaa7",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_3d271ddeb7a949e48f11397fd5b3eaa7",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_a5663a4bd018f887f77099ea"
+        ],
+        "explanation": "The observation provides apparent_displacement_m = -4.18e-09 m, noise_sigma_m = 1e-09 m, and resolution_m = 1e-08 m (T). The drift_bound_m is null and there is no reference. Per the contract, a null B implies ambiguity because different material motions can explain the measurement. Even if we computed an interval using only noise (h = 1.96*sigma), the resulting upper bound would be positive (center + h > T), failing the compression_supported condition (upper <= T). Thus, the decision is ambiguous.",
+        "next_step": "Await further observations or a reference with a finite residual bound to resolve the ambiguity."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1639,
+        "output_tokens": 199,
+        "elapsed_seconds": 6.523197249999612
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_dfee56b67e4376b628a8a171": {
+          "id": "artifact_dfee56b67e4376b628a8a171",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_dfee56b67e4376b628a8a171.json",
+          "sha256": "928e5e93156e6160f50c58811834edc3f40b9aa4e2cf8d1e1990b4119483676a"
+        },
+        "artifact_a5663a4bd018f887f77099ea": {
+          "id": "artifact_a5663a4bd018f887f77099ea",
+          "kind": "observation",
+          "path": "artifacts/artifact_a5663a4bd018f887f77099ea.json",
+          "sha256": "9fe7b5764cb79fea54cbc77d5ceef1d99e806b9eb154a67c68f0074a48ff14cf"
+        },
+        "artifact_6f68557214b35027c3866e64": {
+          "id": "artifact_6f68557214b35027c3866e64",
+          "kind": "request",
+          "path": "artifacts/artifact_6f68557214b35027c3866e64.json",
+          "sha256": "2c3a583ae4021ef5da4571a22af181b11b076cf9690c828b59472b86beeb404a"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "d62e0f6001bb5794348f0b35",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_b4658df9642e49ebbd7dca8553dbb475",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_b4658df9642e49ebbd7dca8553dbb475",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_05792fc4a90c2582e7bb7b53"
+        ],
+        "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 3.6e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift bound B = 8e-09 m is finite. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 8e-09 = 9.96e-09 m, giving [center-h, center+h] = [-6.4e-08, 1.36e-07] m. With T = -resolution_m = -1e-08 m, the interval crosses T (lower < T < upper), so we cannot rule out inward motion beyond resolution nor confirm compression; decision is ambiguous.",
+        "next_step": "Acquire a reference measurement to estimate optical drift and reduce the conditional interval width."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1646,
+        "output_tokens": 245,
+        "elapsed_seconds": 7.394825333999506
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_74af2d0e1e9b2d0d20096640": {
+          "id": "artifact_74af2d0e1e9b2d0d20096640",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_74af2d0e1e9b2d0d20096640.json",
+          "sha256": "989f915b14156ceb2c61d663468ba46a16a66a504bbffd71a34fec1254b35772"
+        },
+        "artifact_05792fc4a90c2582e7bb7b53": {
+          "id": "artifact_05792fc4a90c2582e7bb7b53",
+          "kind": "observation",
+          "path": "artifacts/artifact_05792fc4a90c2582e7bb7b53.json",
+          "sha256": "5b23fcccf410b8338609e0ef05d58a744dec07a6d96ce39e20757f8f541de094"
+        },
+        "artifact_9212c0158db9ba680eeeb6bf": {
+          "id": "artifact_9212c0158db9ba680eeeb6bf",
+          "kind": "request",
+          "path": "artifacts/artifact_9212c0158db9ba680eeeb6bf.json",
+          "sha256": "7776569217c2806b5d2790f782df23308fa26eececf127f61036791464a49226"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "cf0f33e74df7be19b5d3e647",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_9cc30f91721c41a3acbaff078d41d18a",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_9cc30f91721c41a3acbaff078d41d18a",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_9aaae14d45acc524240e7969"
+        ],
+        "explanation": "Using the reference, center = -5.938e-09 - 3.268e-08 = -3.862e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.95996*1.414e-09 + 1e-09 = 3.772e-09 m. Interval: [-4.239e-08, -3.485e-08] m. T = -1e-08 m. Since upper (-3.485e-08) <= T, compression is supported.",
+        "next_step": "Report compression_supported with interval [-4.24e-08, -3.49e-08] m."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1700,
+        "output_tokens": 260,
+        "elapsed_seconds": 7.715652457999568
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_6fab49e198168226a146c58a": {
+          "id": "artifact_6fab49e198168226a146c58a",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_6fab49e198168226a146c58a.json",
+          "sha256": "5b18f14c357ea55001ccf2b1fac96601637ea37ba81365f2abe3c665a41b6b16"
+        },
+        "artifact_9aaae14d45acc524240e7969": {
+          "id": "artifact_9aaae14d45acc524240e7969",
+          "kind": "observation",
+          "path": "artifacts/artifact_9aaae14d45acc524240e7969.json",
+          "sha256": "d14f1990c46c0188f0f425a9aca97346152141799151d0dc6a05e4fb8a4520b0"
+        },
+        "artifact_cf30e39a92f81cbe45638bf3": {
+          "id": "artifact_cf30e39a92f81cbe45638bf3",
+          "kind": "request",
+          "path": "artifacts/artifact_cf30e39a92f81cbe45638bf3.json",
+          "sha256": "85e16f546892ca35914bde136d762fe18db38b300c4cf8d0e6cffd937cb0dd6a"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "2e3e50e224ce4319b74ff3ef",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_df64ed81c52a4d53bc585e92a92b6bd3",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_df64ed81c52a4d53bc585e92a92b6bd3",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_34497760ac1d86e7864520bb"
+        ],
+        "explanation": "Using the reference, center = -7.53e-08 - (-2.36e-08) = -5.17e-08 m. Sigma = sqrt(1e-18 + 6.25e-16) \u2248 2.51e-08 m. B = 1e-09 m. h = 1.96*2.51e-08 + 1e-09 \u2248 5.93e-08 m. Interval: [-5.77e-08, -4.24e-08] m. Resolution T = -1e-08 m. Since upper (-4.24e-08) <= T, compression is supported.",
+        "next_step": "Report compression_supported with interval [-5.77e-08, -4.24e-08] m."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1718,
+        "output_tokens": 255,
+        "elapsed_seconds": 7.675688291999904
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_d7861c35fb70200a7ffa581b": {
+          "id": "artifact_d7861c35fb70200a7ffa581b",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_d7861c35fb70200a7ffa581b.json",
+          "sha256": "0142872a5a6a43d2aadf38e65f1f0845250ec4625f32eea194417d29bb7c3bbc"
+        },
+        "artifact_34497760ac1d86e7864520bb": {
+          "id": "artifact_34497760ac1d86e7864520bb",
+          "kind": "observation",
+          "path": "artifacts/artifact_34497760ac1d86e7864520bb.json",
+          "sha256": "46f26fb9ac8093161c15d887ab7c5d20a55580efff8064c28bfe566434525632"
+        },
+        "artifact_3a9f1c72799beb6da144585b": {
+          "id": "artifact_3a9f1c72799beb6da144585b",
+          "kind": "request",
+          "path": "artifacts/artifact_3a9f1c72799beb6da144585b.json",
+          "sha256": "1bfe48110eea41d3c0aa69a1fecdef7c37ed65140d4edfa874043ac2e0940717"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a255d5ca61b55c139fb03a34",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_5725ee4eae02465f8f031126b964581b",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_5725ee4eae02465f8f031126b964581b",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_7383614cd691cbf99155d6f0"
+        ],
+        "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the conditional interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+        "next_step": "Await further observations with a reference measurement or a finite drift bound to resolve the ambiguity."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1641,
+        "output_tokens": 201,
+        "elapsed_seconds": 6.532430375000331
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_f9e368a57141202c32e059b6": {
+          "id": "artifact_f9e368a57141202c32e059b6",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_f9e368a57141202c32e059b6.json",
+          "sha256": "3c6adbe5f22a31fcc3d2402b1db0b183bf6b804c58ba544289ee521c2cdc2b4b"
+        },
+        "artifact_7383614cd691cbf99155d6f0": {
+          "id": "artifact_7383614cd691cbf99155d6f0",
+          "kind": "observation",
+          "path": "artifacts/artifact_7383614cd691cbf99155d6f0.json",
+          "sha256": "8cd9c490ea089a457d8f31ead8455a12c7f80819eaf1fb38fe93b22c9c50caca"
+        },
+        "artifact_bf15824aff2cb2eb1e288aec": {
+          "id": "artifact_bf15824aff2cb2eb1e288aec",
+          "kind": "request",
+          "path": "artifacts/artifact_bf15824aff2cb2eb1e288aec.json",
+          "sha256": "b4f8633a7fe38727a14cece28c7bd3f58ca0fbc4482a4d9d9856ad61086602f2"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "0af9e82913712b34f6582cbb",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_844992ea5a544c829a8a91790a014a24",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_844992ea5a544c829a8a91790a014a24",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_d5b1cc556fb429bd98998435"
+        ],
+        "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -4.176e-09 m with noise sigma 1e-09 m. Without a finite bound B to construct a confidence set h = 1.96*sigma + B, we cannot form an interval to test against T = -resolution_m (-1e-08 m). Thus, ambiguity is the correct classification.",
+        "next_step": "Acquire a reference measurement or obtain a non-null drift_bound_m to enable bounded inference."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1639,
+        "output_tokens": 191,
+        "elapsed_seconds": 6.34128258400051
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_7b7b53b3270f7f5f8bcd1820": {
+          "id": "artifact_7b7b53b3270f7f5f8bcd1820",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_7b7b53b3270f7f5f8bcd1820.json",
+          "sha256": "433d51db86be83eab26b98d6b3a55549f59dd7826410bac67ebac2c347d51048"
+        },
+        "artifact_d5b1cc556fb429bd98998435": {
+          "id": "artifact_d5b1cc556fb429bd98998435",
+          "kind": "observation",
+          "path": "artifacts/artifact_d5b1cc556fb429bd98998435.json",
+          "sha256": "f177f2cfc501aefaae1601967fe449be3d64a670ed12cf0ed43135b2a1aa4473"
+        },
+        "artifact_47999fdfa5089c10f9ec6249": {
+          "id": "artifact_47999fdfa5089c10f9ec6249",
+          "kind": "request",
+          "path": "artifacts/artifact_47999fdfa5089c10f9ec6249.json",
+          "sha256": "284a782a304f7c2458f4deb7fb0b29f6d5aad5d7482e91208a0f91b8e4655160"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "0658fad7fdc5dd4d474bae06",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_c02ce994a5e342b4bc965b7ff7b9fbda",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_c02ce994a5e342b4bc965b7ff7b9fbda",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_dd011175431ebb83b1a017c7"
+        ],
+        "explanation": "The observation provides apparent_displacement_m = -4.23e-08 m, noise_sigma_m = 1e-09 m, and drift_bound_m = 8e-09 m with no reference (null). Using the public contract for a null reference: center = -4.23e-08 m, sigma = 1e-09 m, B = 8e-09 m. The 95% Gaussian confidence set enlarged by the absolute nuisance bound is h = 1.96*sigma + B = 1.96e-09 + 8e-09 = 9.96e-09 m. Thus, lower = center - h = -4.23e-08 - 9.96e-09 = -5.23e-08 m and upper = center + h = -4.23e-08 + 9.96e-09 = -3.23e-08 m. The resolution threshold is T = -resolution_m = -1e-08 m. Since the entire interval [lower, upper] lies below T (upper < T), the conditional interval rules out inward motion beyond the resolution, satisfying the condition for compression_supported.",
+        "next_step": "Report compression_supported with the computed interval [-5.23e-08, -3.23e-08] m and proceed to the next measurement or analysis step."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1639,
+        "output_tokens": 370,
+        "elapsed_seconds": 9.840628707999713
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_bd39a41e3030567e60d115aa": {
+          "id": "artifact_bd39a41e3030567e60d115aa",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_bd39a41e3030567e60d115aa.json",
+          "sha256": "49132b853eaa069be3ccf262142c9c4a2d82d469ff1c164c4f003a402e615a1a"
+        },
+        "artifact_dd011175431ebb83b1a017c7": {
+          "id": "artifact_dd011175431ebb83b1a017c7",
+          "kind": "observation",
+          "path": "artifacts/artifact_dd011175431ebb83b1a017c7.json",
+          "sha256": "0867d56421017cebf281eb6d920520d28b2a7ea8d08ee294f61f8e058687126e"
+        },
+        "artifact_e02258296990d37a4ff0a31e": {
+          "id": "artifact_e02258296990d37a4ff0a31e",
+          "kind": "request",
+          "path": "artifacts/artifact_e02258296990d37a4ff0a31e.json",
+          "sha256": "b7f5cedf46114b10909b69dfa9049924f09b5eadaa17e6214bfe03cf381c267d"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "0a833e5562f087d6c11579ee",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_2f1ecfe2c06242d4a01d2eae86230256",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_2f1ecfe2c06242d4a01d2eae86230256",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_c782f49bf6902f8157338ff7"
+        ],
+        "explanation": "Using the reference, center = -4.1758847507673805e-09 - (-2.4465861965711105e-08) = 2.029e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.414e-09 m. B = 1e-09 m. h = 1.959963984540054*1.414e-09 + 1e-09 = 3.77e-09 m. Upper bound = 2.029e-08 + 3.77e-09 = 2.406e-08 m. Resolution T = -1e-08 m. Since upper (2.406e-08) > T (-1e-08), the interval does not rule out compression beyond resolution. Lower bound = 2.029e-08 - 3.77e-09 = 1.652e-08 m. Since lower (1.652e-08) > T (-1e-08), the entire interval is above T, meaning compression beyond resolution is supported.",
+        "next_step": "Report compression_supported with interval [1.652e-08, 2.406e-08] m."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1704,
+        "output_tokens": 394,
+        "elapsed_seconds": 10.40458016699995
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_32791934d0f7d527436181bc": {
+          "id": "artifact_32791934d0f7d527436181bc",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_32791934d0f7d527436181bc.json",
+          "sha256": "ed042d4b52cfa5da3a8067ff5d5ae2eb0803d60bc9d3a779e345fafc6f183a76"
+        },
+        "artifact_c782f49bf6902f8157338ff7": {
+          "id": "artifact_c782f49bf6902f8157338ff7",
+          "kind": "observation",
+          "path": "artifacts/artifact_c782f49bf6902f8157338ff7.json",
+          "sha256": "d9d17a4d8e76cc59ad1b4bf2ef75c70a82afa3eb4f8a68707360e905cf0ece1e"
+        },
+        "artifact_49615a9c7441241a5e4b3a84": {
+          "id": "artifact_49615a9c7441241a5e4b3a84",
+          "kind": "request",
+          "path": "artifacts/artifact_49615a9c7441241a5e4b3a84.json",
+          "sha256": "404369d133e653735ad4fcfb4f06a1df6d497581eb7d693237ce1a07e72bd925"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a4e44368c5fc796a9a2c5ac0",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_47be7c91a64f4c599d290580e987a840",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_47be7c91a64f4c599d290580e987a840",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_c819c70bc38ccbcedc1a17e4"
+        ],
+        "explanation": "Using the reference, center = -1.23e-08 - 1.62e-08 = -2.85e-08 m. Sigma = sqrt(1e-18 + 1e-18) = 1.41e-09 m. B = 1e-09 m. h = 1.96*1.41e-09 + 1e-09 = 3.76e-09 m. Interval: [-3.23e-08, -2.48e-08] m. T = -1e-08 m. Since upper (-2.48e-08) <= T, compression is supported.",
+        "next_step": "Report compression_supported with interval [-3.23e-08, -2.48e-08] m."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1700,
+        "output_tokens": 246,
+        "elapsed_seconds": 7.459988958999929
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_928de0a5507e446ba8e1bf50": {
+          "id": "artifact_928de0a5507e446ba8e1bf50",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_928de0a5507e446ba8e1bf50.json",
+          "sha256": "a638fcad11984094b388de21b34f2c69e7a422c633f6db004c23b5c72016a541"
+        },
+        "artifact_c819c70bc38ccbcedc1a17e4": {
+          "id": "artifact_c819c70bc38ccbcedc1a17e4",
+          "kind": "observation",
+          "path": "artifacts/artifact_c819c70bc38ccbcedc1a17e4.json",
+          "sha256": "50f657ac71763149f81ca583ee0eec40a73ceb88eedc5c3dd29e649cfb049ff5"
+        },
+        "artifact_9be726ac735f1e56c6566f5d": {
+          "id": "artifact_9be726ac735f1e56c6566f5d",
+          "kind": "request",
+          "path": "artifacts/artifact_9be726ac735f1e56c6566f5d.json",
+          "sha256": "35d15459d6e81b07c14b0d78a813d5a6f832bd101f8634a329ed31910355e115"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "a323736a1fa813984917566f",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_d2edd0987be941ef9d568f7602c96afa",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_d2edd0987be941ef9d568f7602c96afa",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_5d536dceb56edd63b22a244d"
+        ],
+        "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 2.66e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is 0.0, which is a finite bound B=0. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 0 = 1.96e-09 m. Thus lower = 2.66e-08 - 1.96e-09 = 2.46e-08 m and upper = 2.66e-08 + 1.96e-09 = 2.86e-08 m. The resolution threshold T = -resolution_m = -1e-08 m. Since lower > T (2.46e-08 > -1e-08), the entire conditional interval rules out inward motion beyond the resolution, so compression is not supported.",
+        "next_step": "No further measurements are required; the decision is final for this observation."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1642,
+        "output_tokens": 294,
+        "elapsed_seconds": 8.382942332999846
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_2b43439008fa7460f830676b": {
+          "id": "artifact_2b43439008fa7460f830676b",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_2b43439008fa7460f830676b.json",
+          "sha256": "3fa70ad9a335f193abb0e7fb2585e1c642663169fdff1feb7d86403d89fb0f8c"
+        },
+        "artifact_5d536dceb56edd63b22a244d": {
+          "id": "artifact_5d536dceb56edd63b22a244d",
+          "kind": "observation",
+          "path": "artifacts/artifact_5d536dceb56edd63b22a244d.json",
+          "sha256": "4cf461f01260b7ebc4642b58f6fd968b20dec06e5ac67ccbbe9c2927ad174c50"
+        },
+        "artifact_71ec6aac9537b8c909d4313f": {
+          "id": "artifact_71ec6aac9537b8c909d4313f",
+          "kind": "request",
+          "path": "artifacts/artifact_71ec6aac9537b8c909d4313f.json",
+          "sha256": "bfbeaeaceb8285e5fee0d39086e72d04856f19556eebcd123d0cd948cc921aca"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "1ceb20590dd249fc2fe9ebb6",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_b07c3173f3654868a058db0e8153f2a4",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_b07c3173f3654868a058db0e8153f2a4",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_5fba208ecc34eb784f70da2e"
+        ],
+        "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 2.871e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is 0.0, which is a finite bound B=0. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 0 = 1.96e-09 m. Thus lower = 2.871e-08 - 1.96e-09 = 2.675e-08 m and upper = 2.871e-08 + 1.96e-09 = 3.067e-08 m. The resolution threshold T = -resolution_m = -1e-08 m. Since lower > T (2.675e-08 > -1e-08), the entire conditional interval rules out inward motion beyond the resolution, so compression_not_supported.",
+        "next_step": "No further measurements are required; the decision is final under the given contract."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1635,
+        "output_tokens": 299,
+        "elapsed_seconds": 8.399563666999711
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_c773f461be368425227f9715": {
+          "id": "artifact_c773f461be368425227f9715",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_c773f461be368425227f9715.json",
+          "sha256": "9467689ce0d87119b6a3932e70cfd51be1c1dab826a173a8b0de2b948426865d"
+        },
+        "artifact_5fba208ecc34eb784f70da2e": {
+          "id": "artifact_5fba208ecc34eb784f70da2e",
+          "kind": "observation",
+          "path": "artifacts/artifact_5fba208ecc34eb784f70da2e.json",
+          "sha256": "2dd82a5024b4b301dee53b82f957d9c92bb8952b7b270365ec5f70fa952992ba"
+        },
+        "artifact_19c6b7cb07e9fce3db58dccb": {
+          "id": "artifact_19c6b7cb07e9fce3db58dccb",
+          "kind": "request",
+          "path": "artifacts/artifact_19c6b7cb07e9fce3db58dccb.json",
+          "sha256": "198d784a6765df5bbfac3a673c16426296bf8c7b5b0b8b0e8d62dffac1ca1ec3"
+        }
+      }
+    }
+  },
+  {
+    "case_id": "8d94b9bd6245477b5b51efaa",
+    "result": {
+      "schema_version": "factor-result/1",
+      "run_id": "run_9448ba2d14bf4f25983976e2c7a1e39b",
+      "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_9448ba2d14bf4f25983976e2c7a1e39b",
+      "execution": "completed",
+      "failure": null,
+      "final": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_b77a88941760d0301461455a"
+        ],
+        "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 5.41e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is null, meaning the nuisance bound B is null per contract rule 3. Per contract rule 4, when B is null, different material motions can explain the same measurement, requiring an ambiguous decision regardless of the interval crossing T.",
+        "next_step": "Acquire a reference observation to estimate optical drift and establish a finite residual bound for a definitive compression assessment."
+      },
+      "numerical_result": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1643,
+        "output_tokens": 172,
+        "elapsed_seconds": 5.9769964580000305
+      },
+      "jobs": [],
+      "hypotheses": [],
+      "cleanup": [],
+      "artifacts": {
+        "artifact_dcb341c40b67e40b606aa943": {
+          "id": "artifact_dcb341c40b67e40b606aa943",
+          "kind": "run_manifest",
+          "path": "artifacts/artifact_dcb341c40b67e40b606aa943.json",
+          "sha256": "cf8b96e588674145dd90a43da14fd22cf0119a47142c5e93223c276b2db95bde"
+        },
+        "artifact_b77a88941760d0301461455a": {
+          "id": "artifact_b77a88941760d0301461455a",
+          "kind": "observation",
+          "path": "artifacts/artifact_b77a88941760d0301461455a.json",
+          "sha256": "1108d663e1ef3ac085afbec94ee3388fbf24c04aa1b110584704bd8578b5aa5c"
+        },
+        "artifact_e9b2ef58723aef9e33dbb34a": {
+          "id": "artifact_e9b2ef58723aef9e33dbb34a",
+          "kind": "request",
+          "path": "artifacts/artifact_e9b2ef58723aef9e33dbb34a.json",
+          "sha256": "20636926f3bb9c1c2c00bbb188a56dd7a1e371ba9ef85e6217edea3e2c18156a"
+        }
+      }
+    }
+  }
+]

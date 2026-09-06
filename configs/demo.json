@@ -1,0 +1,8 @@
+{
+  "schema_version": "1",
+  "experiment_id": "synthetic-development-001",
+  "experiment_kind": "prescribed_motion_and_corrugated_cylinder",
+  "cases_per_scenario": 40,
+  "seed": 1701,
+  "notes": "Public synthetic development data. No melt or MHD model and no experimental fit."
+}

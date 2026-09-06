@@ -1,0 +1,94 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:03:54.317075+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_0e41442a3836eea53853aace"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a778506f213df2cd0020228114507eab26733c5e94136ae3412c276618ddf614"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:03:57.679428+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_0e41442a3836eea53853aace"
+        ],
+        "explanation": "The observation shows an apparent displacement of -6.16e-09 m, while the reference displacement is -2.41e-08 m. The difference (residual) is approximately 1.79e-08 m in magnitude. This residual exceeds the stated resolution limit of 1e-08 m and the noise bound of 1e-09 m, indicating that the fixed-window measurement cannot resolve the displacement required to support compression beyond the stated resolution.",
+        "next_step": "Request a higher-resolution calibration or a different observation window to reduce the residual below the resolution threshold."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 3.361994875000164,
+        "usage": {
+          "input_tokens": 908,
+          "total_output_tokens": 169,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.279265046038404,
+          "time_to_first_token_seconds": 0.089
+        },
+        "request_sha256": "1f5ae414808b187712bc81213e252e9c5115d88c000665b43a19b76b543bfd1e",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "a778506f213df2cd0020228114507eab26733c5e94136ae3412c276618ddf614",
+    "hash": "c2cbb4919a28184204723cfd6e02533cd72802ebcc9b074c9c47206b9db9c7a1"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:03:57.680585+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_0e41442a3836eea53853aace"
+      ],
+      "explanation": "The observation shows an apparent displacement of -6.16e-09 m, while the reference displacement is -2.41e-08 m. The difference (residual) is approximately 1.79e-08 m in magnitude. This residual exceeds the stated resolution limit of 1e-08 m and the noise bound of 1e-09 m, indicating that the fixed-window measurement cannot resolve the displacement required to support compression beyond the stated resolution.",
+      "next_step": "Request a higher-resolution calibration or a different observation window to reduce the residual below the resolution threshold."
+    },
+    "previous_hash": "c2cbb4919a28184204723cfd6e02533cd72802ebcc9b074c9c47206b9db9c7a1",
+    "hash": "9b502bb9e76f4bf538f2a142077632513411193926e6b43b6474e95b5a2b3515"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:03:57.680994+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 3.3673367499995948
+      },
+      "cleanup": []
+    },
+    "previous_hash": "9b502bb9e76f4bf538f2a142077632513411193926e6b43b6474e95b5a2b3515",
+    "hash": "e36b364546c443f4de288f01488a8e7f0b5a39f8c416e1652a79fc89e6e7ba55"
+  }
+]

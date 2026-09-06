@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_75f4d6a27cf647619862c409db94dfa5",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_75f4d6a27cf647619862c409db94dfa5",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_5d536dceb56edd63b22a244d"
+    ],
+    "explanation": "The observation provides apparent_displacement_m = 2.66e-08 m, noise_sigma_m = 1e-09 m, and drift_bound_m = 0.0 (null). With no reference, the conditional center is 2.66e-08 m and sigma is 1e-09 m. The nuisance bound B is null, so the 95% interval is enlarged only by noise: h = 1.96 * 1e-09 = 1.96e-09 m. Thus lower = 2.46e-08 m and upper = 2.86e-08 m. The resolution threshold T = -resolution_m = -1e-08 m. Since upper (2.86e-08) <= T (-1e-08) is false, we check compression_not_supported: lower > T? 2.46e-08 > -1e-08 is true, so the entire interval rules out inward motion beyond the resolution. Therefore compression_not_supported would be chosen if the question were about inward motion; however, the task asks to assess signed radial displacement with negative = inward. Since the interval is entirely positive (outward), it does not support inward (compression) motion. But the decision contract says: choose compression_supported only if upper <= T; choose compression_not_supported only if lower > T. Here lower > T holds, so we choose compression_not_supported. Wait, re-evaluate: The question asks to assess signed radial material displacement x. Negative is inward (compression). We need to determine if compression is supported. Since the interval [2.46e-08, 2.86e-08] is entirely positive (outward), it rules out inward motion beyond resolution. Thus compression_not_supported is correct. But let's check the decision contract again: 'Choose compression_supported only if upper <= T. Choose compression_not_supported only if lower > T.' Here lower = 2.46e-08 > T = -1e-08, so compression_not_supported is chosen. However, the observation is synthetic_reconstructed with apparent_displacement_m positive, meaning outward motion. So compression (inward) is not supported. Thus decision is compression_not_supported.",
+    "next_step": "No further measurements are needed; the current data conclusively rules out inward displacement beyond the resolution threshold."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1349,
+    "output_tokens": 553,
+    "elapsed_seconds": 11.353410040999734
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_2b588f89359e28660e246a2c": {
+      "id": "artifact_2b588f89359e28660e246a2c",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_2b588f89359e28660e246a2c.json",
+      "sha256": "7a2a443ceefd13785201f38d3a9737f8cf65e66a6381e03be8e18bc39161b23d"
+    },
+    "artifact_5d536dceb56edd63b22a244d": {
+      "id": "artifact_5d536dceb56edd63b22a244d",
+      "kind": "observation",
+      "path": "artifacts/artifact_5d536dceb56edd63b22a244d.json",
+      "sha256": "4cf461f01260b7ebc4642b58f6fd968b20dec06e5ac67ccbbe9c2927ad174c50"
+    },
+    "artifact_71ec6aac9537b8c909d4313f": {
+      "id": "artifact_71ec6aac9537b8c909d4313f",
+      "kind": "request",
+      "path": "artifacts/artifact_71ec6aac9537b8c909d4313f.json",
+      "sha256": "bfbeaeaceb8285e5fee0d39086e72d04856f19556eebcd123d0cd948cc921aca"
+    }
+  }
+}

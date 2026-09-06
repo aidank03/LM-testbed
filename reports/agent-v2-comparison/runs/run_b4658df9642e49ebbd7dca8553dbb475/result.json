@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_b4658df9642e49ebbd7dca8553dbb475",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_b4658df9642e49ebbd7dca8553dbb475",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_05792fc4a90c2582e7bb7b53"
+    ],
+    "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 3.6e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift bound B = 8e-09 m is finite. The 95% Gaussian interval enlarged by B is h = 1.96*1e-09 + 8e-09 = 9.96e-09 m, giving [center-h, center+h] = [-6.4e-08, 1.36e-07] m. With T = -resolution_m = -1e-08 m, the interval crosses T (lower < T < upper), so we cannot rule out inward motion beyond resolution nor confirm compression; decision is ambiguous.",
+    "next_step": "Acquire a reference measurement to estimate optical drift and reduce the conditional interval width."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1646,
+    "output_tokens": 245,
+    "elapsed_seconds": 7.394825333999506
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_74af2d0e1e9b2d0d20096640": {
+      "id": "artifact_74af2d0e1e9b2d0d20096640",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_74af2d0e1e9b2d0d20096640.json",
+      "sha256": "989f915b14156ceb2c61d663468ba46a16a66a504bbffd71a34fec1254b35772"
+    },
+    "artifact_05792fc4a90c2582e7bb7b53": {
+      "id": "artifact_05792fc4a90c2582e7bb7b53",
+      "kind": "observation",
+      "path": "artifacts/artifact_05792fc4a90c2582e7bb7b53.json",
+      "sha256": "5b23fcccf410b8338609e0ef05d58a744dec07a6d96ce39e20757f8f541de094"
+    },
+    "artifact_9212c0158db9ba680eeeb6bf": {
+      "id": "artifact_9212c0158db9ba680eeeb6bf",
+      "kind": "request",
+      "path": "artifacts/artifact_9212c0158db9ba680eeeb6bf.json",
+      "sha256": "7776569217c2806b5d2790f782df23308fa26eececf127f61036791464a49226"
+    }
+  }
+}

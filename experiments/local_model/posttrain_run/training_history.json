@@ -1,0 +1,20 @@
+[
+  {
+    "epoch": 1,
+    "training_loss": 0.42971533631377196,
+    "development_label_token_nll": 0.0007688091912617286,
+    "elapsed_seconds": 22.281805292000172
+  },
+  {
+    "epoch": 2,
+    "training_loss": 0.0007675064262002707,
+    "development_label_token_nll": 0.00018711347123219943,
+    "elapsed_seconds": 18.295014958000138
+  },
+  {
+    "epoch": 3,
+    "training_loss": 0.0001279879643334425,
+    "development_label_token_nll": 0.00011508337289948638,
+    "elapsed_seconds": 20.666613415999564
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "question": "Assess signed radial material displacement x over the observation's fixed time window. Units are meters. NEGATIVE displacement is inward (compression); positive is outward. This is a conditional reconstructed-measurement task, not a melting or instability-mechanism inference.\n\nApply this public decision contract, equally available to all methods:\n1. The signal is y = x + optical drift + zero-mean Gaussian noise. noise_sigma_m is its standard deviation. drift_bound_m is an absolute non-motion displacement bound; null means no finite bound, not zero. Supplied calibration/noise bounds are assumptions to use for the conditional answer, not facts to infer from source_kind. Synthetic data may contain motion.\n2. Without a reference, center = apparent_displacement_m, sigma = noise_sigma_m, B = drift_bound_m.\n3. With a reference, center = apparent_displacement_m - reference.displacement_m; sigma = sqrt(noise_sigma_m^2 + reference.sigma_m^2 - 2*reference.noise_covariance_m2); B = reference.residual_bound_m. The reference measures optical drift, not material motion. Its supplied residual bound replaces the signal-only drift bound. Null residual bound means no finite reference-transfer bound.\n4. If the applicable B is null, different material motions can explain the same measurement: choose ambiguous. Otherwise form the 95% Gaussian confidence set enlarged by the absolute nuisance bound: h = 1.959963984540054*sigma + B; lower = center-h; upper = center+h.\n5. Let T = -resolution_m. Choose compression_supported only if upper <= T. Choose compression_not_supported only if lower > T: this means the whole conditional interval rules out inward motion beyond the resolution, not merely that evidence for compression is missing. Choose ambiguous otherwise. An interval that crosses T requires ambiguity even if its center is negative. These valid benchmark questions are in scope; out_of_scope is reserved for requests outside this task.\n6. Undeclared drift or reference mismatch may be undetectable from the allowed observation. Report the conditional result with its assumptions; do not guess hidden simulator truth or claim a declared zero bound proves no omitted physics.\n\nReturn the registered final decision, supporting available evidence IDs, brief explanation, and next step. You may compute directly or use any allowed tools; no particular tool sequence is required. If reporting a numerical result, state its interval and units. Execution failure is not scientific ambiguity.",
+  "observation": {
+    "schema_version": "motion-observation/1",
+    "observation_id": "0a833e5562f087d6c11579ee",
+    "apparent_displacement_m": -4.1758847507673805e-09,
+    "noise_sigma_m": 1e-09,
+    "drift_bound_m": null,
+    "reference": {
+      "displacement_m": -2.4465861965711105e-08,
+      "sigma_m": 1e-09,
+      "residual_bound_m": 1e-09,
+      "noise_covariance_m2": 0.0
+    },
+    "window_s": [
+      0.0,
+      1e-07
+    ],
+    "resolution_m": 1e-08,
+    "source_kind": "synthetic_reconstructed",
+    "calibration_id": "synthetic-contract-calibration/1"
+  },
+  "max_steps": null,
+  "schema_version": "factor-request/1"
+}

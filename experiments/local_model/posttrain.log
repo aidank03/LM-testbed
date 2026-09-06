@@ -1,0 +1,16 @@
+`torch_dtype` is deprecated! Use `dtype` instead!
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+BASELINE_DEV {"n": 24, "accuracy": 0.4166666666666667, "invalid_label_rate": 0.0, "per_class": {"recorded": {"n": 6, "accuracy": 0.8333333333333334}, "reconstructed": {"n": 6, "accuracy": 0.8333333333333334}, "model_inferred": {"n": 6, "accuracy": 0.0}, "unresolved": {"n": 6, "accuracy": 0.0}}, "per_family": {"acoustics": 0.3333333333333333, "diffraction": 0.5}}
+TRAIN 1 8 loss 0.3124994933605194
+TRAIN 1 16 loss 0.032772503793239594
+TRAIN 1 24 loss 0.0005129515193402767
+EPOCH {"epoch": 1, "training_loss": 0.42971533631377196, "development_label_token_nll": 0.0007688091912617286, "elapsed_seconds": 22.281805292000172}
+TRAIN 2 8 loss 0.00035476157790981233
+TRAIN 2 16 loss 0.00010438286699354649
+TRAIN 2 24 loss 0.0001719866704661399
+EPOCH {"epoch": 2, "training_loss": 0.0007675064262002707, "development_label_token_nll": 0.00018711347123219943, "elapsed_seconds": 18.295014958000138}
+TRAIN 3 8 loss 0.00013330025831237435
+TRAIN 3 16 loss 9.835285891313106e-05
+TRAIN 3 24 loss 0.0001379230961902067
+EPOCH {"epoch": 3, "training_loss": 0.0001279879643334425, "development_label_token_nll": 0.00011508337289948638, "elapsed_seconds": 20.666613415999564}
+FINAL {"before": {"n": 48, "accuracy": 0.3125, "invalid_label_rate": 0.0, "per_class": {"recorded": {"n": 12, "accuracy": 0.8333333333333334}, "reconstructed": {"n": 12, "accuracy": 0.4166666666666667}, "model_inferred": {"n": 12, "accuracy": 0.0}, "unresolved": {"n": 12, "accuracy": 0.0}}, "per_family": {"neutrons": 0.25, "reflectometry": 0.25, "strain": 0.25, "velocimetry": 0.5}}, "after": {"n": 48, "accuracy": 0.6875, "invalid_label_rate": 0.0, "per_class": {"recorded": {"n": 12, "accuracy": 1.0}, "reconstructed": {"n": 12, "accuracy": 0.5}, "model_inferred": {"n": 12, "accuracy": 0.25}, "unresolved": {"n": 12, "accuracy": 1.0}}, "per_family": {"neutrons": 0.75, "reflectometry": 0.5, "strain": 0.5, "velocimetry": 1.0}}, "accuracy_difference": 0.375, "paired_improved": 20, "paired_regressed": 2, "majority_baseline_accuracy": 0.25, "shuffled_truth_negative_control_accuracy": 0.2916666666666667, "elapsed_seconds": 81.90228512500016, "conclusion_scope": "One-seed generative LoRA result on four held-out synthetic families; no independent real data, no physics or agent-transfer claim", "split_dependence": "48 vignettes but only4 held-out families; variants are dependent", "post_training_completed": true}

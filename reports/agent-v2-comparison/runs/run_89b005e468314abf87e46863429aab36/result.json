@@ -1,0 +1,88 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_89b005e468314abf87e46863429aab36",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_89b005e468314abf87e46863429aab36",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_not_supported",
+    "evidence_ids": [
+      "artifact_40ecda42268e11a0944ed9b2",
+      "artifact_86bb919f468719fc7142394a"
+    ],
+    "explanation": "The conditional interval [1.362e-08, 2.117e-08] m is entirely positive and exceeds the resolution of 1e-08 m, so inward motion (compression) is not supported within this window.",
+    "next_step": "Validate calibration and nuisance assumptions independently."
+  },
+  "numerical_result": {
+    "schema_version": "motion-result/1",
+    "task": "motion.fixed_window/1",
+    "method": "bounded",
+    "information_track": "reference_available",
+    "unit": "m",
+    "window_s": [
+      0.0,
+      1e-07
+    ],
+    "resolution_m": 1e-08,
+    "point_m": 1.7395660294480166e-08,
+    "interval_m": [
+      1.362385264578081e-08,
+      2.116746794317952e-08
+    ],
+    "nominal_noise_coverage": 0.95,
+    "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+    "inference": "estimated_conditional",
+    "decision": "compression_not_supported",
+    "assumptions": [
+      "Known unit gain and fixed-window reconstruction.",
+      "Known zero-mean Gaussian measurement noise.",
+      "Reference transfer and joint Gaussian covariance valid within the supplied residual bound."
+    ],
+    "limitations": [
+      "Not validated on independent real data.",
+      "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+      "No phase, instability mechanism, or causal inference."
+    ],
+    "next_measurement": "Independently validate the stated calibration and nuisance assumptions.",
+    "reason": "Decision uses the entire conditional interval against the stated resolution."
+  },
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 3917,
+    "output_tokens": 195,
+    "elapsed_seconds": 5.2837347920003594
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_6dce64fdf6331404e70b5e5d": {
+      "id": "artifact_6dce64fdf6331404e70b5e5d",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_6dce64fdf6331404e70b5e5d.json",
+      "sha256": "fed814dbf0bcf2d5a33a82740f083a0c5c050737748e4e5793ec5d6c5d62b408"
+    },
+    "artifact_40ecda42268e11a0944ed9b2": {
+      "id": "artifact_40ecda42268e11a0944ed9b2",
+      "kind": "observation",
+      "path": "artifacts/artifact_40ecda42268e11a0944ed9b2.json",
+      "sha256": "73b1464e1dbb81556b78c9cec967012a30a537e602c2ae364de328d29f346ba9"
+    },
+    "artifact_22197653e6cb0d434d545872": {
+      "id": "artifact_22197653e6cb0d434d545872",
+      "kind": "request",
+      "path": "artifacts/artifact_22197653e6cb0d434d545872.json",
+      "sha256": "10c5b191f5eaeb618620ce7f44a538040ba5527c9c32172c79ae65f7ed12265a"
+    },
+    "artifact_86bb919f468719fc7142394a": {
+      "id": "artifact_86bb919f468719fc7142394a",
+      "kind": "infer_motion",
+      "path": "artifacts/artifact_86bb919f468719fc7142394a.json",
+      "sha256": "502840315252ad228d83c1c1f928a43340db1ac758b8534b031810d480c9aca7"
+    }
+  }
+}

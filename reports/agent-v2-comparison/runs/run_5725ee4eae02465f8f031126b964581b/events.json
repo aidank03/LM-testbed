@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:12:13.763400+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_7383614cd691cbf99155d6f0"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "f350a01c614667654e8cdfe2056cbb0bd5d4c9faea8958edb054d57924e01590"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:12:20.289735+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_7383614cd691cbf99155d6f0"
+        ],
+        "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the conditional interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+        "next_step": "Await further observations with a reference measurement or a finite drift bound to resolve the ambiguity."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 6.525835958000243,
+        "usage": {
+          "input_tokens": 1641,
+          "total_output_tokens": 201,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.971724964727564,
+          "time_to_first_token_seconds": 2.613
+        },
+        "request_sha256": "3a95f0ce56d2c7eb0b59c29d8adf854feb96488b63e9a95c35e85842f52b67d8",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1641,
+        "output_tokens": 201
+      }
+    },
+    "previous_hash": "f350a01c614667654e8cdfe2056cbb0bd5d4c9faea8958edb054d57924e01590",
+    "hash": "b225c2ca31dc64eccfc4c5f28d6ed1ac857b3ce448d504bfd09960ab7ddc5e92"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:12:20.291447+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_7383614cd691cbf99155d6f0"
+      ],
+      "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the conditional interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+      "next_step": "Await further observations with a reference measurement or a finite drift bound to resolve the ambiguity."
+    },
+    "previous_hash": "b225c2ca31dc64eccfc4c5f28d6ed1ac857b3ce448d504bfd09960ab7ddc5e92",
+    "hash": "c4b0163cd85f57bc12dd6cee283ca13c9212af9e39452c9aa96c7a3b2c58d110"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:12:20.292858+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1641,
+        "output_tokens": 201,
+        "elapsed_seconds": 6.532430375000331
+      },
+      "cleanup": []
+    },
+    "previous_hash": "c4b0163cd85f57bc12dd6cee283ca13c9212af9e39452c9aa96c7a3b2c58d110",
+    "hash": "2d444a7580a83e6f09e4d25012c9293fd76e86c9b4541207df502f7573807c4c"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:12:20.295062+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "df221de3c429d105e87b23dd7d15bcef110c06a8f2e7159e9b947031ea9b8fb4"
+    },
+    "previous_hash": "2d444a7580a83e6f09e4d25012c9293fd76e86c9b4541207df502f7573807c4c",
+    "hash": "af596a7d8e840b052a0abdd4b57bdb67ca8083be648dc78d0531daf7614f7943"
+  }
+]

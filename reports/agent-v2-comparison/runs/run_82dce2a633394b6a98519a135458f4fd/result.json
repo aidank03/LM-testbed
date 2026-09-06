@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_82dce2a633394b6a98519a135458f4fd",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_82dce2a633394b6a98519a135458f4fd",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_d7f69cd74a2aea1b7f855213"
+    ],
+    "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The apparent displacement is -5.94e-09 m with noise sigma 1e-09 m. Without a finite bound B to form a confidence set h = 1.96*sigma + B, we cannot determine if the upper bound of the interval is <= T (-1e-08 m) or if the lower bound is > T. Thus, ambiguity is the correct classification.",
+    "next_step": "Acquire a reference measurement to estimate optical drift and obtain a finite residual bound B for a definitive compression assessment."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1637,
+    "output_tokens": 203,
+    "elapsed_seconds": 6.557792249999693
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_340d2afcacd5275d8a7229a8": {
+      "id": "artifact_340d2afcacd5275d8a7229a8",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_340d2afcacd5275d8a7229a8.json",
+      "sha256": "ae4f98dbfb98b834513a6411d4f85027df6457e030a7c72c72d7b27e2e2ccaab"
+    },
+    "artifact_d7f69cd74a2aea1b7f855213": {
+      "id": "artifact_d7f69cd74a2aea1b7f855213",
+      "kind": "observation",
+      "path": "artifacts/artifact_d7f69cd74a2aea1b7f855213.json",
+      "sha256": "b905f67238c9a204bf3e208a2006e77760e71e8433e5b9761091b9a8cc52dae9"
+    },
+    "artifact_5e2bc34234731d7b93638ec7": {
+      "id": "artifact_5e2bc34234731d7b93638ec7",
+      "kind": "request",
+      "path": "artifacts/artifact_5e2bc34234731d7b93638ec7.json",
+      "sha256": "0857c01ce5e2ecc716cb9044d903b4a1dee5b684a6a85ee7324fb898d1226042"
+    }
+  }
+}

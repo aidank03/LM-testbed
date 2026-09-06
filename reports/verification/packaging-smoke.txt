@@ -1,0 +1,115 @@
+WARNING: The directory '/Users/operator/Library/Caches/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-package-review-vw0j072x/project
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: liner-stability
+  Building wheel for liner-stability (pyproject.toml): started
+  Building wheel for liner-stability (pyproject.toml): finished with status 'done'
+  Created wheel for liner-stability: filename=liner_stability-0.3.0-py3-none-any.whl size=72408 sha256=d4189fa69ae5a59f67608079d140668b6a0fa0707814d57d6f3b36b94e11afd0
+  Stored in directory: /private/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/pip-ephem-wheel-cache-6aviscu9/wheels/b0/30/1e/e7b98c30c1935dce109b6bd8a89f08e0363966d04e373a5a82
+Successfully built liner-stability
+
+SMOKE doctor
+{"factor_version": "0.3.0", "liner_stability_version": "0.2.0"}
+{
+  "python": "3.12.14",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "executables": {
+    "ssh": true,
+    "sbatch": false,
+    "lms": true,
+    "ollama": true
+  },
+  "credential_present": {
+    "OPENAI_API_KEY": false,
+    "HF_TOKEN": false
+  },
+  "note": "Presence is not verified access. No server was contacted, model loaded, or job submitted."
+}
+
+SMOKE conventional_run
+{"factor_version": "0.3.0", "liner_stability_version": "0.2.0"}
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_5b6f5fb788cd4921aeb658050148de43",
+  "run_path": "/private/var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/factor-package-review-vw0j072x/runs/run_5b6f5fb788cd4921aeb658050148de43",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_9443d7b3b4cd1e18613a674d"
+    ],
+    "explanation": "Unbounded nuisance: different material motions yield identical allowed observations.",
+    "next_step": "A calibrated drift witness with a defensible residual mismatch bound."
+  },
+  "numerical_result": {
+    "schema_version": "motion-result/1",
+    "task": "motion.fixed_window/1",
+    "method": "bounded",
+    "information_track": "signal_only",
+    "unit": "m",
+    "window_s": [
+      3e-08,
+      6e-08
+    ],
+    "resolution_m": 5e-09,
+    "point_m": null,
+    "interval_m": null,
+    "nominal_noise_coverage": 0.95,
+    "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+    "inference": "ambiguous",
+    "decision": "ambiguous",
+    "assumptions": [
+      "Known unit gain and fixed-window reconstruction.",
+      "Known zero-mean Gaussian measurement noise.",
+      "Supplied drift bound covers all equivalent non-motion displacement."
+    ],
+    "limitations": [
+      "Not validated on independent real data.",
+      "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+      "No phase, instability mechanism, or causal inference."
+    ],
+    "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+    "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+  },
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 0,
+    "output_tokens": 0,
+    "elapsed_seconds": 0.012821083999369876
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_2d724912c34b4c23a98a1422": {
+      "id": "artifact_2d724912c34b4c23a98a1422",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_2d724912c34b4c23a98a1422.json",
+      "sha256": "4207f31f0d64c1d7fccfb5253d3408008686a7b06efb1fe5a352010450ae4c50"
+    },
+    "artifact_e2f966c05a1bec70e4d9a872": {
+      "id": "artifact_e2f966c05a1bec70e4d9a872",
+      "kind": "observation",
+      "path": "artifacts/artifact_e2f966c05a1bec70e4d9a872.json",
+      "sha256": "7839df2379f8e9635dce5352d34fcc6344ee0d8f42ce4d5b6b683a1bf77916ec"
+    },
+    "artifact_2ed749fb5ea06175e472c1c0": {
+      "id": "artifact_2ed749fb5ea06175e472c1c0",
+      "kind": "request",
+      "path": "artifacts/artifact_2ed749fb5ea06175e472c1c0.json",
+      "sha256": "128211bab3e70aab88ddbe7fe33d7d7f07b4ca8342a837e2d59ecc839267c8a7"
+    },
+    "artifact_9443d7b3b4cd1e18613a674d": {
+      "id": "artifact_9443d7b3b4cd1e18613a674d",
+      "kind": "infer_motion",
+      "path": "artifacts/artifact_9443d7b3b4cd1e18613a674d.json",
+      "sha256": "ee447534f04762610c643c1d0458dc3613b0d3246f546f84c057042a470cff3d"
+    }
+  }
+}

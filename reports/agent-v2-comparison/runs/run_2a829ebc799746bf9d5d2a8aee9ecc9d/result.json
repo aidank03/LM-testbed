@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_2a829ebc799746bf9d5d2a8aee9ecc9d",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_2a829ebc799746bf9d5d2a8aee9ecc9d",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_b77a88941760d0301461455a"
+    ],
+    "explanation": "The observation provides an apparent displacement of 5.41e-08 m with a noise sigma of 1e-09 m and a drift bound of 0.0 (null). Since the reference is null, the applicable nuisance bound B is null per the contract rules. When B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision regardless of the interval crossing T.",
+    "next_step": "Await further observations or acquisition of a valid reference to resolve the ambiguity."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1350,
+    "output_tokens": 149,
+    "elapsed_seconds": 3.6704821250004898
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_de6cf57f967f4500e464f65e": {
+      "id": "artifact_de6cf57f967f4500e464f65e",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_de6cf57f967f4500e464f65e.json",
+      "sha256": "f1c85bdc2fb0a11c44dd5980bde3621624fc6980d34925537ea8a01822c96b97"
+    },
+    "artifact_b77a88941760d0301461455a": {
+      "id": "artifact_b77a88941760d0301461455a",
+      "kind": "observation",
+      "path": "artifacts/artifact_b77a88941760d0301461455a.json",
+      "sha256": "1108d663e1ef3ac085afbec94ee3388fbf24c04aa1b110584704bd8578b5aa5c"
+    },
+    "artifact_e9b2ef58723aef9e33dbb34a": {
+      "id": "artifact_e9b2ef58723aef9e33dbb34a",
+      "kind": "request",
+      "path": "artifacts/artifact_e9b2ef58723aef9e33dbb34a.json",
+      "sha256": "20636926f3bb9c1c2c00bbb188a56dd7a1e371ba9ef85e6217edea3e2c18156a"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+test_blur_correction_improves_known_amplitude (test_diagnostics_and_grading.DiagnosticChecks.test_blur_correction_improves_known_amplitude) ... ok
+test_clean_motion_recovery (test_diagnostics_and_grading.DiagnosticChecks.test_clean_motion_recovery) ... ok
+test_dropout_does_not_get_confident_turnaround (test_diagnostics_and_grading.DiagnosticChecks.test_dropout_does_not_get_confident_turnaround) ... ok
+test_equivalent_width_limits (test_diagnostics_and_grading.DiagnosticChecks.test_equivalent_width_limits) ... ok
+test_known_mode_null_false_alarms (test_diagnostics_and_grading.DiagnosticChecks.test_known_mode_null_false_alarms) ... ok
+test_low_mtf_abstention (test_diagnostics_and_grading.DiagnosticChecks.test_low_mtf_abstention) ... ok
+test_abstention_remains_in_denominator (test_diagnostics_and_grading.GraderChecks.test_abstention_remains_in_denominator) ... ok
+test_ai_export_separates_keys (test_diagnostics_and_grading.GraderChecks.test_ai_export_separates_keys) ... ok
+test_ai_grader_correct_and_wrong_units (test_diagnostics_and_grading.GraderChecks.test_ai_grader_correct_and_wrong_units) ... ok
+test_broader_interval_is_penalized (test_diagnostics_and_grading.GraderChecks.test_broader_interval_is_penalized) ... ok
+test_duplicate_and_missing_cases_rejected (test_diagnostics_and_grading.GraderChecks.test_duplicate_and_missing_cases_rejected) ... ok
+test_nan_rejected (test_diagnostics_and_grading.GraderChecks.test_nan_rejected) ... ok
+test_units_rejected (test_diagnostics_and_grading.GraderChecks.test_units_rejected) ... ok
+test_heading_is_not_returned_as_evidence (test_workflow_and_assistant.EvidenceChecks.test_heading_is_not_returned_as_evidence) ... ok
+test_retrieval_and_versioned_ids (test_workflow_and_assistant.EvidenceChecks.test_retrieval_and_versioned_ids) ... ok
+test_unknown_citation_rejected (test_workflow_and_assistant.EvidenceChecks.test_unknown_citation_rejected) ... ok
+test_design_rewards_usable_discrimination (test_workflow_and_assistant.PhysicsAndDesign.test_design_rewards_usable_discrimination) ... ok
+test_invalid_physical_inputs (test_workflow_and_assistant.PhysicsAndDesign.test_invalid_physical_inputs) ... ok
+test_latent_heat_reference (test_workflow_and_assistant.PhysicsAndDesign.test_latent_heat_reference) ... ok
+test_pressure_scale_and_units (test_workflow_and_assistant.PhysicsAndDesign.test_pressure_scale_and_units) ... ok
+test_shared_clock_covariance (test_workflow_and_assistant.PhysicsAndDesign.test_shared_clock_covariance) ... ok
+test_assistant_rejects_invented_evidence (test_workflow_and_assistant.ProviderChecks.test_assistant_rejects_invented_evidence) ... ok
+test_candidate_correct_fixture_and_separate_grading (test_workflow_and_assistant.ProviderChecks.test_candidate_correct_fixture_and_separate_grading) ... ok
+test_candidate_run_keeps_failed_cases_in_outputs (test_workflow_and_assistant.ProviderChecks.test_candidate_run_keeps_failed_cases_in_outputs) ... ok
+test_completed_response (test_workflow_and_assistant.ProviderChecks.test_completed_response) ... ok
+test_key_is_not_a_candidate_input (test_workflow_and_assistant.ProviderChecks.test_key_is_not_a_candidate_input) ... ok
+test_missing_key_prevents_network_request (test_workflow_and_assistant.ProviderChecks.test_missing_key_prevents_network_request) ... ok
+test_nonfinite_or_malformed_answer_rejected (test_workflow_and_assistant.ProviderChecks.test_nonfinite_or_malformed_answer_rejected) ... ok
+test_refusal_and_incomplete_do_not_become_answers (test_workflow_and_assistant.ProviderChecks.test_refusal_and_incomplete_do_not_become_answers) ... ok
+test_request_schema_and_no_server_storage (test_workflow_and_assistant.ProviderChecks.test_request_schema_and_no_server_storage) ... ok
+test_cli_works_outside_repository_directory (test_workflow_and_assistant.WorkflowIntegration.test_cli_works_outside_repository_directory) ... ok
+test_config_rejects_unknown_or_unsafe_counts (test_workflow_and_assistant.WorkflowIntegration.test_config_rejects_unknown_or_unsafe_counts) ... ok
+test_full_run_and_no_overwrite (test_workflow_and_assistant.WorkflowIntegration.test_full_run_and_no_overwrite) ... Exported 12 public example cases. Key must be kept outside candidate workspace.
+Completed nominal: 2 synthetic cases
+Completed blurred: 2 synthetic cases
+Completed pdv_dropout: 2 synthetic cases
+Completed timing_jitter: 2 synthetic cases
+Completed omitted_optical_drift: 2 synthetic cases
+Completed no_structure: 2 synthetic cases
+Matplotlib is building the font cache; this may take a moment.
+ok
+
+----------------------------------------------------------------------
+Ran 33 tests in 10.771s
+
+OK
+Wrote 12 case evaluations to /var/folders/gk/fkfyyx4136xfthfy75v2v39m0000gp/T/tmp_ivrhs_i/run

@@ -1,0 +1,94 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:04:17.658503+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_76046dbc89dc3cf262dfe6b7"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "21ca1bc528ce69b3ad7373a60ceef5c28631d916a8ab8afdcc76ed477271e88b"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:04:20.734680+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_76046dbc89dc3cf262dfe6b7"
+        ],
+        "explanation": "The observation shows an apparent displacement of 1.98e-08 m, which is smaller than the reference displacement of 3.34e-08 m. The difference (approx 1.36e-08 m) exceeds the noise floor (1e-09 m) and resolution limit (1e-08 m), indicating a measurable reduction in displacement rather than compression beyond the stated resolution.",
+        "next_step": "Report that fixed-window radial displacement does not support compression beyond the stated resolution."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 3.0758046250002735,
+        "usage": {
+          "input_tokens": 923,
+          "total_output_tokens": 151,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.480999793027905,
+          "time_to_first_token_seconds": 0.117
+        },
+        "request_sha256": "ae862af3f9e839e6dd812209e7131743ff8d6309b4ca96c1f017fa1ce1e42c82",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "21ca1bc528ce69b3ad7373a60ceef5c28631d916a8ab8afdcc76ed477271e88b",
+    "hash": "403abaeb80c441982517fd8f836972f6ceb25b2d67b9e89ad9cd2ed54589a959"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:04:20.735190+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_76046dbc89dc3cf262dfe6b7"
+      ],
+      "explanation": "The observation shows an apparent displacement of 1.98e-08 m, which is smaller than the reference displacement of 3.34e-08 m. The difference (approx 1.36e-08 m) exceeds the noise floor (1e-09 m) and resolution limit (1e-08 m), indicating a measurable reduction in displacement rather than compression beyond the stated resolution.",
+      "next_step": "Report that fixed-window radial displacement does not support compression beyond the stated resolution."
+    },
+    "previous_hash": "403abaeb80c441982517fd8f836972f6ceb25b2d67b9e89ad9cd2ed54589a959",
+    "hash": "4673d43ad2850bc0b0647c61e6fea8e34debcf1f0f82b057ef9bed09405297e9"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:04:20.735473+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 3.0803993750005247
+      },
+      "cleanup": []
+    },
+    "previous_hash": "4673d43ad2850bc0b0647c61e6fea8e34debcf1f0f82b057ef9bed09405297e9",
+    "hash": "40704668e1f799ac697feaa77e1795f3f886700b177e428c3c62b151b909b9df"
+  }
+]

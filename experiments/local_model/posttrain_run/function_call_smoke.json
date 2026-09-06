@@ -1,0 +1,12 @@
+{
+  "status": "POSTTRAINING_RELOAD_SMOKE_NOT_FINAL_TEST",
+  "input": "A camera archived pixel values. Software calibrated these into a displacement trace. A material simulation fitted that trace suggested partial melting. A caption claims MRT caused the fingers but no discriminating observation exists. TARGET: MRT caused the fingers.",
+  "output": {
+    "label": "unresolved",
+    "text": "unresolved",
+    "status": "experimental_label",
+    "elapsed_seconds": 0.3378261249999923,
+    "adapter_sha256": "728568751cba991b88660bfecdc1058949e3d0b3efa1c9203abef16fd3e66fbd",
+    "scope": "Authored evidence-provenance task; no physics-validation claim"
+  }
+}

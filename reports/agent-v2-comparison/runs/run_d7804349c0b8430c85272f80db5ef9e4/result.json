@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_d7804349c0b8430c85272f80db5ef9e4",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_d7804349c0b8430c85272f80db5ef9e4",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_05792fc4a90c2582e7bb7b53"
+    ],
+    "explanation": "Without a reference, the conditional center is apparent_displacement_m (3.6e-08 m) and sigma is noise_sigma_m (1e-09 m). The nuisance bound B is drift_bound_m (8e-09 m). The 95% Gaussian half-width h = 1.96*sigma + B = 1.96e-09 + 8e-09 = 9.96e-09 m. Thus the interval is [center-h, center+h] = [-6.34e-09, 1.59e-07] m. The resolution threshold T = -resolution_m = -1e-08 m. Since upper > T and lower < T, the interval crosses T; therefore compression is ambiguous.",
+    "next_step": "Acquire a reference measurement to remove optical drift uncertainty and tighten the conditional interval before re-evaluating compression support."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1353,
+    "output_tokens": 241,
+    "elapsed_seconds": 5.481512083999405
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_6be0147c223613042b1bd2ed": {
+      "id": "artifact_6be0147c223613042b1bd2ed",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_6be0147c223613042b1bd2ed.json",
+      "sha256": "3527e33872d601e1d6245e2e913256e42de3af641fe44ac09d5b60e6d23209ee"
+    },
+    "artifact_05792fc4a90c2582e7bb7b53": {
+      "id": "artifact_05792fc4a90c2582e7bb7b53",
+      "kind": "observation",
+      "path": "artifacts/artifact_05792fc4a90c2582e7bb7b53.json",
+      "sha256": "5b23fcccf410b8338609e0ef05d58a744dec07a6d96ce39e20757f8f541de094"
+    },
+    "artifact_9212c0158db9ba680eeeb6bf": {
+      "id": "artifact_9212c0158db9ba680eeeb6bf",
+      "kind": "request",
+      "path": "artifacts/artifact_9212c0158db9ba680eeeb6bf.json",
+      "sha256": "7776569217c2806b5d2790f782df23308fa26eececf127f61036791464a49226"
+    }
+  }
+}

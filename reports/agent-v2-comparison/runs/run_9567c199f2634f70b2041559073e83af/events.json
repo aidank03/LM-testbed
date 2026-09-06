@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:10:45.856501+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_b77a88941760d0301461455a"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "a9fec1094942a108c94c12ea40362368f793871c0dc069624d35a13d22a47f5e"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:10:51.833706+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_b77a88941760d0301461455a"
+        ],
+        "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 5.41e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is null, meaning the nuisance bound B is null per contract rule 3. Per contract rule 4, when B is null, different material motions can explain the same measurement, requiring an ambiguous decision regardless of the interval crossing T.",
+        "next_step": "Acquire a reference observation to estimate optical drift and establish a finite residual bound for a definitive compression assessment."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.97682766699927,
+        "usage": {
+          "input_tokens": 1643,
+          "total_output_tokens": 172,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.78964532788726,
+          "time_to_first_token_seconds": 2.615
+        },
+        "request_sha256": "a05527c820bca8288bb30c740d297d26b8dcee604644e8c11543679f684cdf25",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1643,
+        "output_tokens": 172
+      }
+    },
+    "previous_hash": "a9fec1094942a108c94c12ea40362368f793871c0dc069624d35a13d22a47f5e",
+    "hash": "31b85340f3a4a8865a709df162e0dfe57c785aa96b5f640bb567cfac0b2635af"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:10:51.834892+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_b77a88941760d0301461455a"
+      ],
+      "explanation": "The observation has no reference (null), so center = apparent_displacement_m = 5.41e-08 m and sigma = noise_sigma_m = 1e-09 m. The drift_bound_m is null, meaning the nuisance bound B is null per contract rule 3. Per contract rule 4, when B is null, different material motions can explain the same measurement, requiring an ambiguous decision regardless of the interval crossing T.",
+      "next_step": "Acquire a reference observation to estimate optical drift and establish a finite residual bound for a definitive compression assessment."
+    },
+    "previous_hash": "31b85340f3a4a8865a709df162e0dfe57c785aa96b5f640bb567cfac0b2635af",
+    "hash": "3954ba9a3cb2131c24171d765956e987183a271742bf347eb4b51bfdf1f887d5"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:10:51.835584+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1643,
+        "output_tokens": 172,
+        "elapsed_seconds": 5.981139334000545
+      },
+      "cleanup": []
+    },
+    "previous_hash": "3954ba9a3cb2131c24171d765956e987183a271742bf347eb4b51bfdf1f887d5",
+    "hash": "aceadf50f0773aa43b074768666ee30dea5d1152e89892fd00b3aecb1c0a641b"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:10:51.837542+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "f466494a3c5abb9f486967c031fdfae328b8087a7a185badff0b0a9d218e9052"
+    },
+    "previous_hash": "aceadf50f0773aa43b074768666ee30dea5d1152e89892fd00b3aecb1c0a641b",
+    "hash": "15e47d8e01d7b15f2bdf5b80aa77123963005cdc2a93b770f35fa505f5bef605"
+  }
+]

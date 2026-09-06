@@ -1,0 +1,48 @@
+{
+  "version": "0.2.0",
+  "base_seed": 1701,
+  "cases_per_scenario": 40,
+  "scenarios": [
+    "nominal",
+    "blurred",
+    "pdv_dropout",
+    "timing_jitter",
+    "omitted_optical_drift",
+    "no_structure"
+  ],
+  "split": "public_development_only",
+  "python": "3.12.13",
+  "numpy": "2.3.5",
+  "scipy": "1.17.0",
+  "command": "liner-stability run --config experiment_config.json --out NEW_OUTPUT_DIRECTORY",
+  "limitations": [
+    "prescribed motion, no MHD or melt",
+    "baseband IQ, not raw PDV digitizer",
+    "known seeded mode, not blind spatial discovery",
+    "single-energy uniform-cylinder opacity",
+    "noise propagation, not Bayesian posterior or SBC",
+    "public truth and seed, not a hidden evaluation",
+    "no real data or trained language model",
+    "omitted optical drift deliberately absent from reducer"
+  ],
+  "package_version": "0.2.0",
+  "created_at_utc": "2026-09-05T05:56:55.767616+00:00",
+  "experiment_id": "synthetic-development-001",
+  "package_source_sha256": {
+    "__init__.py": "6c485ce75c797f3a8acc745e82d6139456395a6854ede1156b671edd72e56576",
+    "__main__.py": "3129adff95e0f38b87ab34cddfc27082c7892bcaec267ff5d40f160fdf55b44a",
+    "benchmarks.py": "a126796485760c27da24f4011fa77d5159c68e4b1b9647788bc7c31f361aabe3",
+    "cli.py": "66af22cb8dbaf0593665af6bfe6d561bd1899262de90731d1cc5d170d608608c",
+    "constants.py": "c522ba415a61bdd1ea3a4a44e31daa160990f6f8248cd00326c3f6aaf9249c27",
+    "design.py": "72e48b3169421c1071928214ea6ca354e174ad95de614ee82719a9c3f69d5ca6",
+    "diagnostics.py": "c8313bf3686577f93348bf49ecf161e5b9ac8330c872d68449f7855bfc2d9f1a",
+    "evaluation.py": "9b76ab30fa2ac661a7e0f06f3beddcd2647621596b2c416ef274ca84da8a9681",
+    "evidence.py": "55f6aa1709b15c16141c809a61e0a2c3ab525061bc9347e7b4d00e02698d7c04",
+    "io.py": "1c0f09d919b79963f8b82e3ea9fca2c405ffd1f30ba35c885ac85f5d736d1df8",
+    "llm.py": "55249d9d246f080698bf5603657c7966c9e3280c8bd9e01fae950ab1ba9a991a",
+    "physics.py": "cf73eedb984080fbe70b3c6ef1a6fd40ca3c2823228086aae9b1d5c5c9859dc1",
+    "reporting.py": "bf1045bf246fac6a3b21662dd81b10056b4c9394bf80582458b1d3b1f901668e",
+    "simulation.py": "8771a5da6e37ec094c08f66275813700037812034fbc988de233d76c59ded0f9",
+    "workflow.py": "9d53073fadee41c370d758dde61b73e45cb06807d4b3338ebbea7f5bf9ac8335"
+  }
+}

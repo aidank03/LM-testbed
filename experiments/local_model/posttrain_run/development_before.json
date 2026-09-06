@@ -1,0 +1,199 @@
+{
+  "metrics": {
+    "n": 24,
+    "accuracy": 0.4166666666666667,
+    "invalid_label_rate": 0.0,
+    "per_class": {
+      "recorded": {
+        "n": 6,
+        "accuracy": 0.8333333333333334
+      },
+      "reconstructed": {
+        "n": 6,
+        "accuracy": 0.8333333333333334
+      },
+      "model_inferred": {
+        "n": 6,
+        "accuracy": 0.0
+      },
+      "unresolved": {
+        "n": 6,
+        "accuracy": 0.0
+      }
+    },
+    "per_family": {
+      "acoustics": 0.3333333333333333,
+      "diffraction": 0.5
+    }
+  },
+  "predictions": [
+    {
+      "id": "acoustics-2-reconstructed",
+      "family": "acoustics",
+      "label": "reconstructed",
+      "prediction": "reconstructed",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-0-reconstructed",
+      "family": "acoustics",
+      "label": "reconstructed",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-2-recorded",
+      "family": "diffraction",
+      "label": "recorded",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-2-model_inferred",
+      "family": "acoustics",
+      "label": "model_inferred",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-1-reconstructed",
+      "family": "acoustics",
+      "label": "reconstructed",
+      "prediction": "reconstructed",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-1-recorded",
+      "family": "acoustics",
+      "label": "recorded",
+      "prediction": "reconstructed",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-0-unresolved",
+      "family": "diffraction",
+      "label": "unresolved",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-2-recorded",
+      "family": "acoustics",
+      "label": "recorded",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-0-model_inferred",
+      "family": "diffraction",
+      "label": "model_inferred",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-1-model_inferred",
+      "family": "acoustics",
+      "label": "model_inferred",
+      "prediction": "reconstructed",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-0-unresolved",
+      "family": "acoustics",
+      "label": "unresolved",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-0-model_inferred",
+      "family": "acoustics",
+      "label": "model_inferred",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-2-unresolved",
+      "family": "acoustics",
+      "label": "unresolved",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-2-model_inferred",
+      "family": "diffraction",
+      "label": "model_inferred",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-1-reconstructed",
+      "family": "diffraction",
+      "label": "reconstructed",
+      "prediction": "reconstructed",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-1-unresolved",
+      "family": "acoustics",
+      "label": "unresolved",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-1-model_inferred",
+      "family": "diffraction",
+      "label": "model_inferred",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-0-recorded",
+      "family": "diffraction",
+      "label": "recorded",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-1-recorded",
+      "family": "diffraction",
+      "label": "recorded",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "acoustics-0-recorded",
+      "family": "acoustics",
+      "label": "recorded",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-2-reconstructed",
+      "family": "diffraction",
+      "label": "reconstructed",
+      "prediction": "reconstructed",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-0-reconstructed",
+      "family": "diffraction",
+      "label": "reconstructed",
+      "prediction": "reconstructed",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-1-unresolved",
+      "family": "diffraction",
+      "label": "unresolved",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    },
+    {
+      "id": "diffraction-2-unresolved",
+      "family": "diffraction",
+      "label": "unresolved",
+      "prediction": "recorded",
+      "generated_tokens": 3
+    }
+  ]
+}

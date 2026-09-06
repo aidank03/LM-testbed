@@ -1,0 +1,164 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:57:18.157073+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_478b9c6bfd0cb5bbf2f81dd5"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "cca94baa4dc0fcc87e300078040bca68695c72ca676d2e4a20c3d82a9cc2a686"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:57:20.352324+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.1948467499996696,
+        "usage": {
+          "input_tokens": 1201,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.57788657625989,
+          "time_to_first_token_seconds": 1.943
+        },
+        "request_sha256": "7dbde8471302870783822dfabbae47e45c8d2f2d3426fcbe27e58163c4ca8ae3",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "cca94baa4dc0fcc87e300078040bca68695c72ca676d2e4a20c3d82a9cc2a686",
+    "hash": "798dadb795eed04af55e08b13fb7634f3d5eac74f661c29ad79ddba1ce78712a"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:57:20.354819+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_20c588cf6071ecd6c5048455",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "8cc397a1d02966e43fc04641",
+        "apparent_displacement_m": -1.0504136859033804e-08,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": {
+          "displacement_m": -5.8499565384413666e-08,
+          "sigma_m": 1e-09,
+          "residual_bound_m": 1e-09,
+          "noise_covariance_m2": 0.0
+        },
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "798dadb795eed04af55e08b13fb7634f3d5eac74f661c29ad79ddba1ce78712a",
+    "hash": "2df7fd5d89951c6c3883c7467520bb1446cb1f6d368040005575d407c5965851"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:57:24.909733+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_478b9c6bfd0cb5bbf2f81dd5"
+        ],
+        "explanation": "The observation shows an apparent displacement of -1.05e-08 m, while the reference displacement is -5.85e-08 m. The difference (residual) is approximately 4.8e-08 m, which exceeds the stated resolution limit of 1e-08 m and the residual bound of 1e-09 m. This indicates that the fixed-window measurement does not support compression beyond the stated resolution.",
+        "next_step": "No further measurements are required; the current data is sufficient to conclude that compression is not supported."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 4.553823707999982,
+        "usage": {
+          "input_tokens": 1456,
+          "total_output_tokens": 171,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.50678556452649,
+          "time_to_first_token_seconds": 1.263
+        },
+        "request_sha256": "5845eeb1c4b9abcfb450bdfc6bb1aa99b689587b4479f1246c60ea52f1a98765",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "2df7fd5d89951c6c3883c7467520bb1446cb1f6d368040005575d407c5965851",
+    "hash": "c51b0d571658da9192748b14949cb879b301610916f787563e8b4effcc131ff7"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:57:24.911113+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_478b9c6bfd0cb5bbf2f81dd5"
+      ],
+      "explanation": "The observation shows an apparent displacement of -1.05e-08 m, while the reference displacement is -5.85e-08 m. The difference (residual) is approximately 4.8e-08 m, which exceeds the stated resolution limit of 1e-08 m and the residual bound of 1e-09 m. This indicates that the fixed-window measurement does not support compression beyond the stated resolution.",
+      "next_step": "No further measurements are required; the current data is sufficient to conclude that compression is not supported."
+    },
+    "previous_hash": "c51b0d571658da9192748b14949cb879b301610916f787563e8b4effcc131ff7",
+    "hash": "83684e2843f6d9f57c748699bb0e4d731c3b3fdceac66f698dc4626699a5741b"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:57:24.911870+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 6.757521458000156
+      },
+      "cleanup": []
+    },
+    "previous_hash": "83684e2843f6d9f57c748699bb0e4d731c3b3fdceac66f698dc4626699a5741b",
+    "hash": "94967760bcc5e94fbe6db143b2f437a4175b2d6e49aad79657ee0213d56dc210"
+  }
+]

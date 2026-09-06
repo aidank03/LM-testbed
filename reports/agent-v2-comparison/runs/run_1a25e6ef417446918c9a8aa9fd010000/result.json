@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_1a25e6ef417446918c9a8aa9fd010000",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_1a25e6ef417446918c9a8aa9fd010000",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "ambiguous",
+    "evidence_ids": [
+      "artifact_d7f69cd74a2aea1b7f855213"
+    ],
+    "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The 95% Gaussian confidence set cannot be enlarged by a finite nuisance bound.",
+    "next_step": "Acquire a reference measurement to establish optical drift and a finite residual bound for conditional reconstruction."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 1,
+    "tool_calls": 1,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 1344,
+    "output_tokens": 121,
+    "elapsed_seconds": 3.184171874999265
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_bf414379d2a365072b40fdc1": {
+      "id": "artifact_bf414379d2a365072b40fdc1",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_bf414379d2a365072b40fdc1.json",
+      "sha256": "8e22da4571c2bbe1cce174e650218107d27fe0fe5fdaa9f8b83c6e356e60d3ce"
+    },
+    "artifact_d7f69cd74a2aea1b7f855213": {
+      "id": "artifact_d7f69cd74a2aea1b7f855213",
+      "kind": "observation",
+      "path": "artifacts/artifact_d7f69cd74a2aea1b7f855213.json",
+      "sha256": "b905f67238c9a204bf3e208a2006e77760e71e8433e5b9761091b9a8cc52dae9"
+    },
+    "artifact_5e2bc34234731d7b93638ec7": {
+      "id": "artifact_5e2bc34234731d7b93638ec7",
+      "kind": "request",
+      "path": "artifacts/artifact_5e2bc34234731d7b93638ec7.json",
+      "sha256": "0857c01ce5e2ecc716cb9044d903b4a1dee5b684a6a85ee7324fb898d1226042"
+    }
+  }
+}

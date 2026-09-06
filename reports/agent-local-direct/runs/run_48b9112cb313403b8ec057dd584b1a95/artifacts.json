@@ -1,0 +1,20 @@
+{
+  "artifact_9a9f4e2b8a3cf4c50cd2994b": {
+    "id": "artifact_9a9f4e2b8a3cf4c50cd2994b",
+    "kind": "run_manifest",
+    "path": "artifacts/artifact_9a9f4e2b8a3cf4c50cd2994b.json",
+    "sha256": "aea5bb13b505f7ba6aa9218b64f7b2a756556bcb9f4b9111c5a774f2646d9bdd"
+  },
+  "artifact_a2e24372fb3ad458174d0972": {
+    "id": "artifact_a2e24372fb3ad458174d0972",
+    "kind": "observation",
+    "path": "artifacts/artifact_a2e24372fb3ad458174d0972.json",
+    "sha256": "c0acd4e1b06f19d393a36136b7481315f6e93ff57348d059b633c4f31ed51fbf"
+  },
+  "artifact_32374b9fe15ffcc72aa3c3e7": {
+    "id": "artifact_32374b9fe15ffcc72aa3c3e7",
+    "kind": "request",
+    "path": "artifacts/artifact_32374b9fe15ffcc72aa3c3e7.json",
+    "sha256": "ec1674b796d40586c55db753adc844728172da49e71fa202cd93c280cbbc031e"
+  }
+}

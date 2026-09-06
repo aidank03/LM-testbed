@@ -1,0 +1,49 @@
+{
+  "schema_version": "factor-result/1",
+  "run_id": "run_210a662641064eeb9ada8cf47dd810b5",
+  "run_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/factor/reports/agent-v2-comparison/runs/run_210a662641064eeb9ada8cf47dd810b5",
+  "execution": "completed",
+  "failure": null,
+  "final": {
+    "decision": "compression_supported",
+    "evidence_ids": [
+      "artifact_8782acceb77e79f37ea5cdcf"
+    ],
+    "explanation": "The conditional displacement interval is [-1.046e-08, -1.046e-08] meters, which lies entirely below the resolution threshold of 1e-08 m (T = -1e-08). This supports inward compression.",
+    "next_step": "No further action required; decision is final."
+  },
+  "numerical_result": null,
+  "usage": {
+    "model_calls": 2,
+    "tool_calls": 2,
+    "cloud_cost_usd": 0.0,
+    "cloud_reserved_unknown_usd": 0.0,
+    "accounting_complete": true,
+    "input_tokens": 2963,
+    "output_tokens": 319,
+    "elapsed_seconds": 5.459137709000061
+  },
+  "jobs": [],
+  "hypotheses": [],
+  "cleanup": [],
+  "artifacts": {
+    "artifact_4b4c492c337df8fade6bd05c": {
+      "id": "artifact_4b4c492c337df8fade6bd05c",
+      "kind": "run_manifest",
+      "path": "artifacts/artifact_4b4c492c337df8fade6bd05c.json",
+      "sha256": "51e3819a1478248089e441f2b1d61728868bcdbc822b128c2aacdd324aa0570f"
+    },
+    "artifact_8782acceb77e79f37ea5cdcf": {
+      "id": "artifact_8782acceb77e79f37ea5cdcf",
+      "kind": "observation",
+      "path": "artifacts/artifact_8782acceb77e79f37ea5cdcf.json",
+      "sha256": "392f6085d9f5bae3cebf26b7967a9cb0a848ae32a02e1cb0e471c74c02d0c180"
+    },
+    "artifact_50c7c9af5bc53de057ae92d8": {
+      "id": "artifact_50c7c9af5bc53de057ae92d8",
+      "kind": "request",
+      "path": "artifacts/artifact_50c7c9af5bc53de057ae92d8.json",
+      "sha256": "4ee62d07aa7e88091dfabc0f5d1f8af27b344784416c8888ffad61b0ba71ede1"
+    }
+  }
+}

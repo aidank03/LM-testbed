@@ -1,0 +1,94 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:58:23.431123+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_76046dbc89dc3cf262dfe6b7"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "d1699a7775734e9fcbd963b500c40eff0b82c606f7ea6bc196010e7f089cf472"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:58:28.573087+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_76046dbc89dc3cf262dfe6b7"
+        ],
+        "explanation": "The apparent displacement (1.98e-08 m) is smaller than the stated resolution (1e-08 m) but larger than the noise floor (1e-09 m). However, the reference displacement (3.34e-08 m) exceeds the resolution limit. Since the observation does not resolve the full reference displacement within the fixed window and remains bounded by the resolution constraint, it does not support compression beyond the stated resolution.",
+        "next_step": "Request a higher-resolution calibration or reduce the window size to improve sensitivity."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.14134062499943,
+        "usage": {
+          "input_tokens": 1216,
+          "total_output_tokens": 166,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.45847347970618,
+          "time_to_first_token_seconds": 1.941
+        },
+        "request_sha256": "4ad2b3df2ad48ed559b15e2c101faf46fd36e8657761a33e85c883e1466e7eba",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "d1699a7775734e9fcbd963b500c40eff0b82c606f7ea6bc196010e7f089cf472",
+    "hash": "8cde0182285e80dabf50d909eeb19c209d54b09abbed5f90a8e2e4604e48a750"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:58:28.575093+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_76046dbc89dc3cf262dfe6b7"
+      ],
+      "explanation": "The apparent displacement (1.98e-08 m) is smaller than the stated resolution (1e-08 m) but larger than the noise floor (1e-09 m). However, the reference displacement (3.34e-08 m) exceeds the resolution limit. Since the observation does not resolve the full reference displacement within the fixed window and remains bounded by the resolution constraint, it does not support compression beyond the stated resolution.",
+      "next_step": "Request a higher-resolution calibration or reduce the window size to improve sensitivity."
+    },
+    "previous_hash": "8cde0182285e80dabf50d909eeb19c209d54b09abbed5f90a8e2e4604e48a750",
+    "hash": "557552c1a0c40220257c66e048da1439c89a8e8a23041d7c413d7066d9f51a5a"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:58:28.576264+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 5.149436083000182
+      },
+      "cleanup": []
+    },
+    "previous_hash": "557552c1a0c40220257c66e048da1439c89a8e8a23041d7c413d7066d9f51a5a",
+    "hash": "c6426d42dc5285a9547d898a13bc00e30d054cd5265c53ec7bfe76b89a79a8d9"
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "focused_tests_passed": 7,
+  "device": "mps:0",
+  "torch": "2.8.0",
+  "real_training_steps": 2,
+  "saved_adapter_reload": "passed",
+  "reloaded_example_label": "unresolved",
+  "reloaded_example_seconds": 0.291,
+  "original_adapter_hash_unchanged": true,
+  "cloud_calls": 0,
+  "final_test_accessed": false,
+  "module_source_sha256": "a65571315b372d58f0e1eca6785bd6c5f080f1271210d758e1cafdb0c549d3e3"
+}

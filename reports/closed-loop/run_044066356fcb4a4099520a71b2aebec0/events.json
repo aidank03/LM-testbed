@@ -1,0 +1,603 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:05:18.958357+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_4d151cc809d79abcb48c0d37"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "c5cf961b2541ecb9cd48b416672c38cf891affd89084b307e94a51d0855c972e"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:05:24.256265+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "submit_simulation",
+      "arguments": {
+        "backend": "local",
+        "cases_per_scenario": 2,
+        "seed": 1701
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-loop",
+        "returned_model": "factor-qwen35-loop",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.2969436670000505,
+        "usage": {
+          "input_tokens": 2465,
+          "total_output_tokens": 50,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 48.66566686861263,
+          "time_to_first_token_seconds": 4.314
+        },
+        "request_sha256": "ab124011b674254f76dcb63e9b6a32b29f5c8cf572de600dc0e91c03d8c50cc4",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-loop",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2465,
+        "output_tokens": 50
+      }
+    },
+    "previous_hash": "c5cf961b2541ecb9cd48b416672c38cf891affd89084b307e94a51d0855c972e",
+    "hash": "81c392fc7f89b130520e33bb983b0de56be66f8d4d6f9d6427cef49e0b2c35ca"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:05:24.447275+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "submit_simulation",
+      "ok": true,
+      "artifact_id": "artifact_91a4201106329c66c0f2d27e",
+      "result": {
+        "job_id": "job_97afbc96ecf0432786265a2363518874",
+        "backend": "local",
+        "status": "submitted"
+      }
+    },
+    "previous_hash": "81c392fc7f89b130520e33bb983b0de56be66f8d4d6f9d6427cef49e0b2c35ca",
+    "hash": "5697a7ab44fe4cbb485195d17ea1eb16d7b7acedc122f6cc4522d26945d9c5c1"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:05:29.589284+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "job_status",
+      "arguments": {
+        "job_id": "job_97afbc96ecf0432786265a2363518874"
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-loop",
+        "returned_model": "factor-qwen35-loop",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.141513790999852,
+        "usage": {
+          "input_tokens": 2561,
+          "total_output_tokens": 61,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.75278041812796,
+          "time_to_first_token_seconds": 3.971
+        },
+        "request_sha256": "479a78691c7e430b722c656fa2383b179720bf45f66828264e17a0d220ea4c41",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-loop",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2561,
+        "output_tokens": 61
+      }
+    },
+    "previous_hash": "5697a7ab44fe4cbb485195d17ea1eb16d7b7acedc122f6cc4522d26945d9c5c1",
+    "hash": "bf3538c719193ce422740b140230a046e0e64e4f01c8fc9e421b7e2cef5865db"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:05:31.595561+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "job_status",
+      "ok": true,
+      "artifact_id": "artifact_cf09ce64da8f82ef790a076e",
+      "result": {
+        "job_id": "job_97afbc96ecf0432786265a2363518874",
+        "backend": "local",
+        "status": "running"
+      }
+    },
+    "previous_hash": "bf3538c719193ce422740b140230a046e0e64e4f01c8fc9e421b7e2cef5865db",
+    "hash": "ed83e641c2bbc4f04ae6e379dad871cf9d3eecbda69a17a96ce323e6de31038f"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T21:05:36.975041+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "job_status",
+      "arguments": {
+        "job_id": "job_97afbc96ecf0432786265a2363518874"
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-loop",
+        "returned_model": "factor-qwen35-loop",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.378723374999936,
+        "usage": {
+          "input_tokens": 2653,
+          "total_output_tokens": 61,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.06848027862962,
+          "time_to_first_token_seconds": 4.192
+        },
+        "request_sha256": "11c214d8d2425ef4a16a3a666e4adbb2ce73c1e26ff24809d868cde56791e9ce",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-loop",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2653,
+        "output_tokens": 61
+      }
+    },
+    "previous_hash": "ed83e641c2bbc4f04ae6e379dad871cf9d3eecbda69a17a96ce323e6de31038f",
+    "hash": "3bfb4fd65af2584243c4b089b4c2f67896b7a3a4a0e7cc53b01fdea2b5bb411e"
+  },
+  {
+    "sequence": 6,
+    "timestamp": "2026-09-05T21:05:36.979156+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "job_status",
+      "ok": true,
+      "artifact_id": "artifact_c4055dc747fbe56f2bbb5e8c",
+      "result": {
+        "job_id": "job_97afbc96ecf0432786265a2363518874",
+        "backend": "local",
+        "status": "completed"
+      }
+    },
+    "previous_hash": "3bfb4fd65af2584243c4b089b4c2f67896b7a3a4a0e7cc53b01fdea2b5bb411e",
+    "hash": "686e180cdc96a0de923bdd703e98e29c050d478ad4d7ed9f22ef25339d6dd6da"
+  },
+  {
+    "sequence": 7,
+    "timestamp": "2026-09-05T21:05:42.436517+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "job_collect",
+      "arguments": {
+        "job_id": "job_97afbc96ecf0432786265a2363518874"
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-loop",
+        "returned_model": "factor-qwen35-loop",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 5.456398332999925,
+        "usage": {
+          "input_tokens": 2744,
+          "total_output_tokens": 61,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.776886361328316,
+          "time_to_first_token_seconds": 4.271
+        },
+        "request_sha256": "c4fd31fae1504cedb199ed3ba9bc6f8ec4a2d1cb967f1d6aaad44c3622a0e3e7",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-loop",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 2744,
+        "output_tokens": 61
+      }
+    },
+    "previous_hash": "686e180cdc96a0de923bdd703e98e29c050d478ad4d7ed9f22ef25339d6dd6da",
+    "hash": "7f22165b2616df8b70893a52d22697e74cd6adc986d2bf3b9277a03e16a988b9"
+  },
+  {
+    "sequence": 8,
+    "timestamp": "2026-09-05T21:05:42.454140+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "job_collect",
+      "ok": true,
+      "artifact_id": "artifact_fa94c6b5b139e74755b74f5f",
+      "result": {
+        "job_id": "job_97afbc96ecf0432786265a2363518874",
+        "status": "completed",
+        "diagnostics_available": true,
+        "scope": "Independent synthetic development job, not evidence of motion in the supplied observation. Latent truth used by this job's evaluator is only truth within its simulator.",
+        "summary": {
+          "blurred": {
+            "n_cases": 2,
+            "compression_nm": {
+              "unit": "nm",
+              "n_answered": 2,
+              "answer_rate": 1.0,
+              "mae": 0.16703706275960428,
+              "rmse": 0.22628862388427082,
+              "coverage90": 1.0,
+              "coverage95_wilson": [
+                0.34238022750665303,
+                1.0
+              ],
+              "mean_width90": 1.2896818738786635,
+              "mean_interval_score90": 1.2896818738786635,
+              "conservative_bound_count": 0
+            }
+          },
+          "no_structure": {
+            "n_cases": 2,
+            "compression_nm": {
+              "unit": "nm",
+              "n_answered": 2,
+              "answer_rate": 1.0,
+              "mae": 0.22507333365356708,
+              "rmse": 0.2431316379351083,
+              "coverage90": 1.0,
+              "coverage95_wilson": [
+                0.34238022750665303,
+                1.0
+              ],
+              "mean_width90": 1.1438870903529335,
+              "mean_interval_score90": 1.1438870903529335,
+              "conservative_bound_count": 0
+            }
+          },
+          "nominal": {
+            "n_cases": 2,
+            "compression_nm": {
+              "unit": "nm",
+              "n_answered": 2,
+              "answer_rate": 1.0,
+              "mae": 0.3747691677737457,
+              "rmse": 0.5071979935200834,
+              "coverage90": 0.5,
+              "coverage95_wilson": [
+                0.09453120573423074,
+                0.9054687942657693
+              ],
+              "mean_width90": 1.1206976386827137,
+              "mean_interval_score90": 2.61224777295881,
+              "conservative_bound_count": 0
+            }
+          },
+          "omitted_optical_drift": {
+            "n_cases": 2,
+            "compression_nm": {
+              "unit": "nm",
+              "n_answered": 2,
+              "answer_rate": 1.0,
+              "mae": 3.429569407562786,
+              "rmse": 3.43700715684447,
+              "coverage90": 0.0,
+              "coverage95_wilson": [
+                0.0,
+                0.6576197724933469
+              ],
+              "mean_width90": 1.183316720488346,
+              "mean_interval_score90": 57.94153766686061,
+              "conservative_bound_count": 0
+            }
+          },
+          "pdv_dropout": {
+            "n_cases": 2,
+            "compression_nm": {
+              "unit": "nm",
+              "n_answered": 0,
+              "answer_rate": 0.0
+            }
+          },
+          "timing_jitter": {
+            "n_cases": 2,
+            "compression_nm": {
+              "unit": "nm",
+              "n_answered": 2,
+              "answer_rate": 1.0,
+              "mae": 0.554613621723286,
+              "rmse": 0.5625197906410473,
+              "coverage90": 1.0,
+              "coverage95_wilson": [
+                0.34238022750665303,
+                1.0
+              ],
+              "mean_width90": 1.4581410805597095,
+              "mean_interval_score90": 1.4581410805597095,
+              "conservative_bound_count": 0
+            }
+          }
+        },
+        "metrics_sha256": "7060fa8b7198a247db843d0957208b39f62bbddd740fec59d8ed11f2ddb62354",
+        "artifact_count": 27
+      }
+    },
+    "previous_hash": "7f22165b2616df8b70893a52d22697e74cd6adc986d2bf3b9277a03e16a988b9",
+    "hash": "e1921e02c8a867b47941472e576d8fbc3aa56061df82000236876f7119169ee3"
+  },
+  {
+    "sequence": 9,
+    "timestamp": "2026-09-05T21:05:49.188398+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "infer_motion",
+      "arguments": {
+        "method": "bounded"
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-loop",
+        "returned_model": "factor-qwen35-loop",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 6.733482958999957,
+        "usage": {
+          "input_tokens": 3957,
+          "total_output_tokens": 30,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.39639370357884,
+          "time_to_first_token_seconds": 6.164
+        },
+        "request_sha256": "3e5db1ae94f22a6db2a9627fe32c3e37a9d3ffc2440b0e5b32beaac93b8ff09f",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-loop",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 3957,
+        "output_tokens": 30
+      }
+    },
+    "previous_hash": "e1921e02c8a867b47941472e576d8fbc3aa56061df82000236876f7119169ee3",
+    "hash": "399aac97c2bff99998b33b02bbf84f969c26759d5f57c881f0dfcc5a5b0c3ec9"
+  },
+  {
+    "sequence": 10,
+    "timestamp": "2026-09-05T21:05:49.191514+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "infer_motion",
+      "ok": true,
+      "artifact_id": "artifact_9443d7b3b4cd1e18613a674d",
+      "result": {
+        "schema_version": "motion-result/1",
+        "task": "motion.fixed_window/1",
+        "method": "bounded",
+        "information_track": "signal_only",
+        "unit": "m",
+        "window_s": [
+          3e-08,
+          6e-08
+        ],
+        "resolution_m": 5e-09,
+        "point_m": null,
+        "interval_m": null,
+        "nominal_noise_coverage": 0.95,
+        "interval_kind": "gaussian_confidence_set_widened_by_nuisance_bound",
+        "inference": "ambiguous",
+        "decision": "ambiguous",
+        "assumptions": [
+          "Known unit gain and fixed-window reconstruction.",
+          "Known zero-mean Gaussian measurement noise.",
+          "Supplied drift bound covers all equivalent non-motion displacement."
+        ],
+        "limitations": [
+          "Not validated on independent real data.",
+          "Unseen violations of nuisance/calibration assumptions may be undetectable.",
+          "No phase, instability mechanism, or causal inference."
+        ],
+        "next_measurement": "A calibrated drift witness with a defensible residual mismatch bound.",
+        "reason": "Unbounded nuisance: different material motions yield identical allowed observations."
+      }
+    },
+    "previous_hash": "399aac97c2bff99998b33b02bbf84f969c26759d5f57c881f0dfcc5a5b0c3ec9",
+    "hash": "dfd14b5083575b1422c30a90f6be9f0f415b73de0e3daa746f8a09981eebee75"
+  },
+  {
+    "sequence": 11,
+    "timestamp": "2026-09-05T21:06:02.402996+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "update_hypothesis",
+      "arguments": {
+        "hypothesis_id": "optical-drift",
+        "statement": "The synthetic development job (artifact_91a4201106329c66c0f2d27e) and its diagnostics (artifact_fa94c6b5b139e74755b74f5f) cannot determine the true material motion of the supplied observation (artifact_4d151cc809d79abcb48c0d37) or identify melting/ETI/MRTI mechanisms. The inference (artifact_9443d7b3b4cd1e18613a674d) is ambiguous due to unbounded nuisance parameters and lack of causal inference.",
+        "state": "unresolved",
+        "evidence_ids": [
+          "artifact_4d151cc809d79abcb48c0d37",
+          "artifact_91a4201106329c66c0f2d27e",
+          "artifact_fa94c6b5b139e74755b74f5f",
+          "artifact_9443d7b3b4cd1e18613a674d"
+        ]
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-loop",
+        "returned_model": "factor-qwen35-loop",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 13.209400624999944,
+        "usage": {
+          "input_tokens": 4235,
+          "total_output_tokens": 328,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.163968678661114,
+          "time_to_first_token_seconds": 6.739
+        },
+        "request_sha256": "cfa279ec732c61b675506761b7e74255dfe3f552149c73795178cf3619f138aa",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-loop",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 4235,
+        "output_tokens": 328
+      }
+    },
+    "previous_hash": "dfd14b5083575b1422c30a90f6be9f0f415b73de0e3daa746f8a09981eebee75",
+    "hash": "a0abc192eb4c2fd0ccf58f0efbcb1c4944c04309dab1265e14d84ee0fd22e7e4"
+  },
+  {
+    "sequence": 12,
+    "timestamp": "2026-09-05T21:06:02.406038+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "update_hypothesis",
+      "ok": true,
+      "artifact_id": "artifact_2d12f1736652d0768f6b997c",
+      "result": {
+        "hypothesis_id": "optical-drift",
+        "statement": "The synthetic development job (artifact_91a4201106329c66c0f2d27e) and its diagnostics (artifact_fa94c6b5b139e74755b74f5f) cannot determine the true material motion of the supplied observation (artifact_4d151cc809d79abcb48c0d37) or identify melting/ETI/MRTI mechanisms. The inference (artifact_9443d7b3b4cd1e18613a674d) is ambiguous due to unbounded nuisance parameters and lack of causal inference.",
+        "state": "unresolved",
+        "evidence_ids": [
+          "artifact_4d151cc809d79abcb48c0d37",
+          "artifact_91a4201106329c66c0f2d27e",
+          "artifact_fa94c6b5b139e74755b74f5f",
+          "artifact_9443d7b3b4cd1e18613a674d"
+        ],
+        "scope": "conditional_synthetic_development",
+        "version": 1
+      }
+    },
+    "previous_hash": "a0abc192eb4c2fd0ccf58f0efbcb1c4944c04309dab1265e14d84ee0fd22e7e4",
+    "hash": "c7c8c8519f5fe58197661e2a3c6094de09c17592ce44f899cfd524a6e4f403e9"
+  },
+  {
+    "sequence": 13,
+    "timestamp": "2026-09-05T21:06:15.283524+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_4d151cc809d79abcb48c0d37",
+          "artifact_91a4201106329c66c0f2d27e",
+          "artifact_fa94c6b5b139e74755b74f5f",
+          "artifact_9443d7b3b4cd1e18613a674d"
+        ],
+        "explanation": "The synthetic development job (artifact_91a4201106329c66c0f2d27e) and its diagnostics (artifact_fa94c6b5b139e74755b74f5f) cannot determine the true material motion of the supplied observation (artifact_4d151cc809d79abcb48c0d37) or identify melting/ETI/MRTI mechanisms. The inference (artifact_9443d7b3b4cd1e18613a674d) is ambiguous due to unbounded nuisance parameters and lack of causal inference.",
+        "next_step": "A calibrated drift witness with a defensible residual mismatch bound."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-loop",
+        "returned_model": "factor-qwen35-loop",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 12.875930749999497,
+        "usage": {
+          "input_tokens": 4584,
+          "total_output_tokens": 287,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.232774461516954,
+          "time_to_first_token_seconds": 7.177
+        },
+        "request_sha256": "8c8f6971fd3e8283c0efacd4e69fb883ff4868ce9c375a9c430d05affc010c8f",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-loop",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 4584,
+        "output_tokens": 287
+      }
+    },
+    "previous_hash": "c7c8c8519f5fe58197661e2a3c6094de09c17592ce44f899cfd524a6e4f403e9",
+    "hash": "09b4e27761531eb243279474bb7b9fb151caf0d41ecbf3400015992f23a49ea7"
+  },
+  {
+    "sequence": 14,
+    "timestamp": "2026-09-05T21:06:15.284356+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_4d151cc809d79abcb48c0d37",
+        "artifact_91a4201106329c66c0f2d27e",
+        "artifact_fa94c6b5b139e74755b74f5f",
+        "artifact_9443d7b3b4cd1e18613a674d"
+      ],
+      "explanation": "The synthetic development job (artifact_91a4201106329c66c0f2d27e) and its diagnostics (artifact_fa94c6b5b139e74755b74f5f) cannot determine the true material motion of the supplied observation (artifact_4d151cc809d79abcb48c0d37) or identify melting/ETI/MRTI mechanisms. The inference (artifact_9443d7b3b4cd1e18613a674d) is ambiguous due to unbounded nuisance parameters and lack of causal inference.",
+      "next_step": "A calibrated drift witness with a defensible residual mismatch bound."
+    },
+    "previous_hash": "09b4e27761531eb243279474bb7b9fb151caf0d41ecbf3400015992f23a49ea7",
+    "hash": "f86b3137323eb7cce9eacc61091a379c30a7d1935735f9129da3a505028c503d"
+  },
+  {
+    "sequence": 15,
+    "timestamp": "2026-09-05T21:06:15.285273+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 7,
+        "tool_calls": 7,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 23199,
+        "output_tokens": 878,
+        "elapsed_seconds": 56.336772000000565
+      },
+      "cleanup": [
+        {
+          "job_id": "job_97afbc96ecf0432786265a2363518874",
+          "status": "completed"
+        }
+      ]
+    },
+    "previous_hash": "f86b3137323eb7cce9eacc61091a379c30a7d1935735f9129da3a505028c503d",
+    "hash": "48784e2c78d67b91c8a2e7059f5d0374b0f1a109183f60eff3edf238aa707e8b"
+  },
+  {
+    "sequence": 16,
+    "timestamp": "2026-09-05T21:06:15.286202+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "8a8cd08e1ceaf0385156b7400683f493b54a6a1c29514c04bdc6c09354e9ee11"
+    },
+    "previous_hash": "48784e2c78d67b91c8a2e7059f5d0374b0f1a109183f60eff3edf238aa707e8b",
+    "hash": "0114eefde967582ae33033c293cf0e6aee3ca87477853239ad60ab285d50494f"
+  }
+]

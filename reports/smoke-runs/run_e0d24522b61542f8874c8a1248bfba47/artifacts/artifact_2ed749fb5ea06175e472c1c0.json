@@ -1,0 +1,20 @@
+{
+  "question": "Does this reconstructed fixed-window measurement support radial compression greater than 5 nm? Explain the optical-drift ambiguity and the next useful measurement. Do not infer melting.",
+  "observation": {
+    "schema_version": "motion-observation/1",
+    "observation_id": "example-motion-001",
+    "apparent_displacement_m": -3e-08,
+    "noise_sigma_m": 1e-09,
+    "drift_bound_m": null,
+    "reference": null,
+    "window_s": [
+      3e-08,
+      6e-08
+    ],
+    "resolution_m": 5e-09,
+    "source_kind": "synthetic_reconstructed",
+    "calibration_id": "example-calibration-unbounded-drift"
+  },
+  "max_steps": null,
+  "schema_version": "factor-request/1"
+}

@@ -1,0 +1,24 @@
+{
+  "contract": {
+    "schema_version": "factor-evaluation-contract/1",
+    "task": "motion.fixed_window/1",
+    "quantity": "signed radial displacement over [0, 100 ns]; inward is negative",
+    "resolution_m": 1e-08,
+    "noise_coverage": 0.95,
+    "allowed_information": "Only public observation and question; no truth, condition, or generator seed.",
+    "label_rule": "Unbounded nuisance => ambiguous. Otherwise Gaussian 95% interval enlarged by the supplied nuisance bound; upper <= -resolution => compression_supported; lower > -resolution => compression_not_supported; else ambiguous.",
+    "mismatch_rule": "Contract decision uses advertised information even under undetectable mismatch; physical false confidence is scored separately.",
+    "acceptance_status": "provisional engineering gates; no facility decision requirement available",
+    "gates": {
+      "matched_mae_nm_max": 10,
+      "matched_abs_bias_nm_max": 3,
+      "matched_coverage_min": 0.9,
+      "wrong_decisive_rate_max": 0.05,
+      "contract_decision_accuracy_min": 0.95,
+      "structural_abstention_min": 1.0,
+      "clean_decisive_rate_min": 0.9
+    },
+    "interpretation": "No weighted score. Confidence sets conditional on supplied noise/bounds. No melting, mechanism, raw-PDV, liner-transfer, or real-data validation claim."
+  },
+  "contract_hash": "702662170407f6fa0f3e8c57f84709afc19af48b56a1b3f2b30e9ef3e920bb29"
+}

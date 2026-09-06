@@ -1,0 +1,159 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T20:58:53.929258+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_5f2a5e5568e73876d9f25ad8"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "14e084634352347f2b636533e2a89359b75be7be888c352a35027cd65d88997a"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T20:58:56.014155+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "inspect_observation",
+      "arguments": {},
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 2.084533416999875,
+        "usage": {
+          "input_tokens": 1141,
+          "total_output_tokens": 14,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 50.99899178916231,
+          "time_to_first_token_seconds": 1.837
+        },
+        "request_sha256": "b903553df34803ee90161d91cd6a0710b5442ec510b90983586e49301e473f67",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "14e084634352347f2b636533e2a89359b75be7be888c352a35027cd65d88997a",
+    "hash": "c76db75b7ab6f4242351efb8d9253476e20e077805e8b32bc9399b7a7527dd32"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T20:58:56.015174+00:00",
+    "kind": "tool_result",
+    "data": {
+      "tool": "inspect_observation",
+      "ok": true,
+      "artifact_id": "artifact_c8e0a5341eba77f188e833f2",
+      "result": {
+        "schema_version": "motion-observation/1",
+        "observation_id": "80aed0317b7c8c0698b42400",
+        "apparent_displacement_m": -4.553090750511521e-09,
+        "noise_sigma_m": 1e-09,
+        "drift_bound_m": null,
+        "reference": null,
+        "window_s": [
+          0.0,
+          1e-07
+        ],
+        "resolution_m": 1e-08,
+        "source_kind": "synthetic_reconstructed",
+        "calibration_id": "synthetic-contract-calibration/1"
+      }
+    },
+    "previous_hash": "c76db75b7ab6f4242351efb8d9253476e20e077805e8b32bc9399b7a7527dd32",
+    "hash": "9ff6cceb3162df6abea5618fb9a83dca792ea79153b02bd0095ca6892df3eb7c"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T20:59:00.710935+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_not_supported",
+        "evidence_ids": [
+          "artifact_5f2a5e5568e73876d9f25ad8"
+        ],
+        "explanation": "The apparent displacement (-4.55 nm) is approximately 4.5 times the resolution limit (10 nm). However, the noise sigma is 1 nm, meaning the signal is only ~4.5 sigma above zero. More critically, the observation source is 'synthetic_reconstructed' with no drift bound and no reference mismatch correction available. Without a bounded drift model or reference to distinguish true compression from reconstruction artifacts or uncorrected drift, the displacement cannot be attributed to physical compression beyond the stated resolution.",
+        "next_step": "Acquire a measurement with a known reference or apply a bounded drift calibration to isolate true radial displacement."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 4.695304166999449,
+        "usage": {
+          "input_tokens": 1332,
+          "total_output_tokens": 186,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 52.261806224522374,
+          "time_to_first_token_seconds": 1.168
+        },
+        "request_sha256": "f2df6bb0d0a8efad80135b9183e3a273f85d550c921b0e87dfef04b505b6ab7d",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0.0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": null,
+        "output_tokens": null
+      }
+    },
+    "previous_hash": "9ff6cceb3162df6abea5618fb9a83dca792ea79153b02bd0095ca6892df3eb7c",
+    "hash": "c563768062a60b0a010bb278bc74cf56ea62bf6fc2943e0756fdb8c828d24c0b"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T20:59:00.711388+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_not_supported",
+      "evidence_ids": [
+        "artifact_5f2a5e5568e73876d9f25ad8"
+      ],
+      "explanation": "The apparent displacement (-4.55 nm) is approximately 4.5 times the resolution limit (10 nm). However, the noise sigma is 1 nm, meaning the signal is only ~4.5 sigma above zero. More critically, the observation source is 'synthetic_reconstructed' with no drift bound and no reference mismatch correction available. Without a bounded drift model or reference to distinguish true compression from reconstruction artifacts or uncorrected drift, the displacement cannot be attributed to physical compression beyond the stated resolution.",
+      "next_step": "Acquire a measurement with a known reference or apply a bounded drift calibration to isolate true radial displacement."
+    },
+    "previous_hash": "c563768062a60b0a010bb278bc74cf56ea62bf6fc2943e0756fdb8c828d24c0b",
+    "hash": "3faccdb5f322140e0bbbbd6f293bb507c62f8426ea314529d72e0e9d8f264298"
+  },
+  {
+    "sequence": 5,
+    "timestamp": "2026-09-05T20:59:00.712361+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 2,
+        "tool_calls": 2,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 0,
+        "output_tokens": 0,
+        "elapsed_seconds": 6.784916333000183
+      },
+      "cleanup": []
+    },
+    "previous_hash": "3faccdb5f322140e0bbbbd6f293bb507c62f8426ea314529d72e0e9d8f264298",
+    "hash": "90d1874f759c036ab689009ee67f1a7731c8bc0754938dd0648563cc7bf097c5"
+  }
+]

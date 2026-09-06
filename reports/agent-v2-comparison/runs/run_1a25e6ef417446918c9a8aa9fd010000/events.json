@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:13:46.429423+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_d7f69cd74a2aea1b7f855213"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "64e4983b4b34a96486289f1469b2940ef797b1f190def5ab358f8e4cebb994b9"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:13:49.607303+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "ambiguous",
+        "evidence_ids": [
+          "artifact_d7f69cd74a2aea1b7f855213"
+        ],
+        "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The 95% Gaussian confidence set cannot be enlarged by a finite nuisance bound.",
+        "next_step": "Acquire a reference measurement to establish optical drift and a finite residual bound for conditional reconstruction."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 3.1774000420000448,
+        "usage": {
+          "input_tokens": 1344,
+          "total_output_tokens": 121,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 49.79381212296747,
+          "time_to_first_token_seconds": 0.772
+        },
+        "request_sha256": "92604ffeac9496667e6ec1175675cc5c55885615f25e71c890eae7d0eb5ec02e",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1344,
+        "output_tokens": 121
+      }
+    },
+    "previous_hash": "64e4983b4b34a96486289f1469b2940ef797b1f190def5ab358f8e4cebb994b9",
+    "hash": "e4da1677827d8e9ee0f4d00f21578250f22db09b7bf25a46d955bee302211c00"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:13:49.609085+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "ambiguous",
+      "evidence_ids": [
+        "artifact_d7f69cd74a2aea1b7f855213"
+      ],
+      "explanation": "The observation has no reference (null) and a null drift_bound_m. Per the contract, when B is null, different material motions can explain the same measurement, requiring an 'ambiguous' decision. The 95% Gaussian confidence set cannot be enlarged by a finite nuisance bound.",
+      "next_step": "Acquire a reference measurement to establish optical drift and a finite residual bound for conditional reconstruction."
+    },
+    "previous_hash": "e4da1677827d8e9ee0f4d00f21578250f22db09b7bf25a46d955bee302211c00",
+    "hash": "ba7c3aaf10cd1a8c719df0093fec787d9520b6dad567c103fe08914cc25034d5"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:13:49.610386+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1344,
+        "output_tokens": 121,
+        "elapsed_seconds": 3.184171874999265
+      },
+      "cleanup": []
+    },
+    "previous_hash": "ba7c3aaf10cd1a8c719df0093fec787d9520b6dad567c103fe08914cc25034d5",
+    "hash": "8f41cf01b81655f6690b0954d816435567928e84b8375a67830dfc79abea4b36"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:13:49.611990+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "5ee232590848accf7d386c6da0f679d28c9e9ec435b1b347d546d7510224b9fa"
+    },
+    "previous_hash": "8f41cf01b81655f6690b0954d816435567928e84b8375a67830dfc79abea4b36",
+    "hash": "82e678f33ce80f4c86a3d448dee872b622cd879e9bca213b52a56e1f124fa1d7"
+  }
+]

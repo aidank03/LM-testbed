@@ -1,0 +1,11 @@
+{
+  "enabled": false,
+  "host": "",
+  "account": "",
+  "partition": "",
+  "remote_workdir": "",
+  "python_executable": "",
+  "cpus": 1,
+  "memory_mb": 2048,
+  "wall_minutes": 10
+}

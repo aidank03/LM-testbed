@@ -1,0 +1,166 @@
+{
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "3.11.1",
+    "package": "0.2.0",
+    "package_import_path": "/Users/operator/.codex/.chatgpt-projects/g-p-6a9c774029e08191958c8c7f5fa7e384/.factor-verification-venv/lib/python3.12/site-packages/liner_stability/__init__.py",
+    "uses_bundled_system_site_packages": true
+  },
+  "original_environment": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0",
+    "matplotlib": "not_recorded"
+  },
+  "comparisons": {
+    "truth.jsonl": {
+      "byte_identical": false,
+      "json_identical": false,
+      "numerical_tolerance": {
+        "rtol": 1e-09,
+        "atol": 1e-12
+      },
+      "max_absolute_numeric_difference": 7.105427357601002e-15,
+      "outside_tolerance": []
+    },
+    "predictions_simple.jsonl": {
+      "byte_identical": false,
+      "json_identical": false,
+      "numerical_tolerance": {
+        "rtol": 1e-09,
+        "atol": 1e-12
+      },
+      "max_absolute_numeric_difference": 4.2083669882231334e-11,
+      "outside_tolerance": []
+    },
+    "predictions_calibrated.jsonl": {
+      "byte_identical": false,
+      "json_identical": false,
+      "numerical_tolerance": {
+        "rtol": 1e-09,
+        "atol": 1e-12
+      },
+      "max_absolute_numeric_difference": 4.416378374116903e-11,
+      "outside_tolerance": []
+    },
+    "metrics.json": {
+      "byte_identical": false,
+      "json_identical": false,
+      "numerical_tolerance": {
+        "rtol": 1e-09,
+        "atol": 1e-12
+      },
+      "max_absolute_numeric_difference": 7.484945996338865e-11,
+      "outside_tolerance": []
+    }
+  },
+  "compression_metrics": {
+    "all": {
+      "n_cases": 240,
+      "unit": "nm",
+      "n_answered": 200,
+      "answer_rate": 0.8333333333333334,
+      "mae": 0.925730038640626,
+      "rmse": 1.581220006415247,
+      "coverage90": 0.725,
+      "coverage95_wilson": [
+        0.6593166064233035,
+        0.7822029967069265
+      ],
+      "mean_width90": 1.2165669353519935,
+      "mean_interval_score90": 12.70705808080388,
+      "conservative_bound_count": 0
+    },
+    "blurred": {
+      "n_cases": 40,
+      "unit": "nm",
+      "n_answered": 40,
+      "answer_rate": 1.0,
+      "mae": 0.25023597905935613,
+      "rmse": 0.3143279426026413,
+      "coverage90": 0.95,
+      "coverage95_wilson": [
+        0.8349612263085903,
+        0.9861793326138516
+      ],
+      "mean_width90": 1.2200685597250698,
+      "mean_interval_score90": 1.4138587474840194,
+      "conservative_bound_count": 0
+    },
+    "no_structure": {
+      "n_cases": 40,
+      "unit": "nm",
+      "n_answered": 40,
+      "answer_rate": 1.0,
+      "mae": 0.3598054323591963,
+      "rmse": 0.42700375340259045,
+      "coverage90": 0.875,
+      "coverage95_wilson": [
+        0.738878801611489,
+        0.945404997490546
+      ],
+      "mean_width90": 1.2160386043038702,
+      "mean_interval_score90": 1.6539542675163297,
+      "conservative_bound_count": 0
+    },
+    "nominal": {
+      "n_cases": 40,
+      "unit": "nm",
+      "n_answered": 40,
+      "answer_rate": 1.0,
+      "mae": 0.23498879621428825,
+      "rmse": 0.2967481477648924,
+      "coverage90": 0.925,
+      "coverage95_wilson": [
+        0.8013576647568946,
+        0.9741639742254119
+      ],
+      "mean_width90": 1.2039252484595202,
+      "mean_interval_score90": 1.3555156706696294,
+      "conservative_bound_count": 0
+    },
+    "omitted_optical_drift": {
+      "n_cases": 40,
+      "unit": "nm",
+      "n_answered": 40,
+      "answer_rate": 1.0,
+      "mae": 3.4174063973096303,
+      "rmse": 3.4573731569675603,
+      "coverage90": 0.0,
+      "coverage95_wilson": [
+        0.0,
+        0.08762160119728664
+      ],
+      "mean_width90": 1.2089852800837455,
+      "mean_interval_score90": 57.467260425438894,
+      "conservative_bound_count": 0
+    },
+    "pdv_dropout": {
+      "n_cases": 40,
+      "unit": "nm",
+      "n_answered": 0,
+      "answer_rate": 0.0
+    },
+    "timing_jitter": {
+      "n_cases": 40,
+      "unit": "nm",
+      "n_answered": 40,
+      "answer_rate": 1.0,
+      "mae": 0.3662135882606597,
+      "rmse": 0.4226827093657039,
+      "coverage90": 0.875,
+      "coverage95_wilson": [
+        0.738878801611489,
+        0.945404997490546
+      ],
+      "mean_width90": 1.2338169841877609,
+      "mean_interval_score90": 1.6447012929105214,
+      "conservative_bound_count": 0
+    }
+  },
+  "source_files_changed": [],
+  "n_cases": 240,
+  "scope": "Reproduction of exposed synthetic development results; no real data or live LLM."
+}

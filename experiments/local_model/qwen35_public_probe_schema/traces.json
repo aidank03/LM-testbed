@@ -1,0 +1,1154 @@
+[
+  {
+    "case_id": "A01",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-7kztn8tvpxwhkuc0plx2p",
+        "object": "chat.completion",
+        "created": 1788641274,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 104,
+          "completion_tokens": 33,
+          "total_tokens": 137,
+          "completion_tokens_details": {
+            "reasoning_tokens": 32
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 1.2274349589997655,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 104,
+        "completion_tokens": 33,
+        "total_tokens": 137,
+        "completion_tokens_details": {
+          "reasoning_tokens": 32
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A02",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-65v6i3j4g6dtcmqqb3toq",
+        "object": "chat.completion",
+        "created": 1788641275,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 89,
+          "completion_tokens": 42,
+          "total_tokens": 131,
+          "completion_tokens_details": {
+            "reasoning_tokens": 41
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 1.084644708000269,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 89,
+        "completion_tokens": 42,
+        "total_tokens": 131,
+        "completion_tokens_details": {
+          "reasoning_tokens": 41
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A03",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-oq77wb99z9imgfthsvfvy",
+        "object": "chat.completion",
+        "created": 1788641276,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 131,
+          "completion_tokens": 20,
+          "total_tokens": 151,
+          "completion_tokens_details": {
+            "reasoning_tokens": 19
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.6868466249998164,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 131,
+        "completion_tokens": 20,
+        "total_tokens": 151,
+        "completion_tokens_details": {
+          "reasoning_tokens": 19
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A04",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-achrs2nmwddp2pf6ttwnjp",
+        "object": "chat.completion",
+        "created": 1788641277,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 95,
+          "completion_tokens": 39,
+          "total_tokens": 134,
+          "completion_tokens_details": {
+            "reasoning_tokens": 38
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.9856966249999459,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 95,
+        "completion_tokens": 39,
+        "total_tokens": 134,
+        "completion_tokens_details": {
+          "reasoning_tokens": 38
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A05",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-qzh2314f6hemeiuflaufj",
+        "object": "chat.completion",
+        "created": 1788641278,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 63,
+          "completion_tokens": 31,
+          "total_tokens": 94,
+          "completion_tokens_details": {
+            "reasoning_tokens": 30
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.7854979580006329,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 63,
+        "completion_tokens": 31,
+        "total_tokens": 94,
+        "completion_tokens_details": {
+          "reasoning_tokens": 30
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A06",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-kqqyhf8aa28mbznt7fn2x",
+        "object": "chat.completion",
+        "created": 1788641278,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 90,
+          "completion_tokens": 25,
+          "total_tokens": 115,
+          "completion_tokens_details": {
+            "reasoning_tokens": 24
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.73671933300011,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 90,
+        "completion_tokens": 25,
+        "total_tokens": 115,
+        "completion_tokens_details": {
+          "reasoning_tokens": 24
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A07",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-4m6bm4lrqq355wplbziizx",
+        "object": "chat.completion",
+        "created": 1788641279,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 84,
+          "completion_tokens": 19,
+          "total_tokens": 103,
+          "completion_tokens_details": {
+            "reasoning_tokens": 18
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.6913681250007357,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 84,
+        "completion_tokens": 19,
+        "total_tokens": 103,
+        "completion_tokens_details": {
+          "reasoning_tokens": 18
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A08",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-mcvtuc8g9usrl0g7ogpzb",
+        "object": "chat.completion",
+        "created": 1788641280,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 77,
+          "completion_tokens": 19,
+          "total_tokens": 96,
+          "completion_tokens_details": {
+            "reasoning_tokens": 18
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.5970349999997779,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 77,
+        "completion_tokens": 19,
+        "total_tokens": 96,
+        "completion_tokens_details": {
+          "reasoning_tokens": 18
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A09",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-6yovq57zekpvejcde6xz",
+        "object": "chat.completion",
+        "created": 1788641280,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 76,
+          "completion_tokens": 18,
+          "total_tokens": 94,
+          "completion_tokens_details": {
+            "reasoning_tokens": 17
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.5768039999993562,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 76,
+        "completion_tokens": 18,
+        "total_tokens": 94,
+        "completion_tokens_details": {
+          "reasoning_tokens": 17
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A10",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-rbxegx7985a1ju5rf0o4h",
+        "object": "chat.completion",
+        "created": 1788641281,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 75,
+          "completion_tokens": 22,
+          "total_tokens": 97,
+          "completion_tokens_details": {
+            "reasoning_tokens": 21
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.6485360420001598,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 75,
+        "completion_tokens": 22,
+        "total_tokens": 97,
+        "completion_tokens_details": {
+          "reasoning_tokens": 21
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A11",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-vnp6t5895wdysussq60ff8",
+        "object": "chat.completion",
+        "created": 1788641282,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 83,
+          "completion_tokens": 22,
+          "total_tokens": 105,
+          "completion_tokens_details": {
+            "reasoning_tokens": 21
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.6498060000003534,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 83,
+        "completion_tokens": 22,
+        "total_tokens": 105,
+        "completion_tokens_details": {
+          "reasoning_tokens": 21
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  },
+  {
+    "case_id": "A12",
+    "completion": {
+      "text": "",
+      "raw_response": {
+        "id": "chatcmpl-4tgtehooj5vp7n8esq3h9c",
+        "object": "chat.completion",
+        "created": 1788641282,
+        "model": "factor-qwen35-9b",
+        "choices": [
+          {
+            "index": 0,
+            "message": {
+              "role": "assistant",
+              "content": "",
+              "tool_calls": [],
+              "reasoning_present_redacted": true
+            },
+            "logprobs": null,
+            "finish_reason": "stop"
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 122,
+          "completion_tokens": 17,
+          "total_tokens": 139,
+          "completion_tokens_details": {
+            "reasoning_tokens": 16
+          }
+        },
+        "stats": {},
+        "system_fingerprint": "factor-qwen35-9b"
+      },
+      "elapsed_seconds": 0.6112722910002049,
+      "model": "factor-qwen35-9b",
+      "usage": {
+        "prompt_tokens": 122,
+        "completion_tokens": 17,
+        "total_tokens": 139,
+        "completion_tokens_details": {
+          "reasoning_tokens": 16
+        }
+      },
+      "finish_reason": "stop",
+      "request_settings": {
+        "model": "factor-qwen35-9b",
+        "max_tokens": 256,
+        "temperature": 0.0,
+        "seed": 20260905,
+        "stream": false,
+        "chat_template_kwargs": {
+          "enable_thinking": false
+        },
+        "response_format": {
+          "type": "json_schema",
+          "json_schema": {
+            "name": "benchmark_answer",
+            "strict": true,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "answer": {
+                  "anyOf": [
+                    {
+                      "type": "number"
+                    },
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                },
+                "unit": {
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "answer",
+                "unit"
+              ],
+              "additionalProperties": false
+            }
+          }
+        }
+      }
+    }
+  }
+]

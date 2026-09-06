@@ -1,0 +1,144 @@
+{
+  "audit": "Saved predictions re-scored independently; no model run or retuning",
+  "family_scores": [
+    {
+      "family": "neutrons",
+      "n_dependent_variants": 12,
+      "before_correct": 3,
+      "after_correct": 9,
+      "difference": 0.5
+    },
+    {
+      "family": "reflectometry",
+      "n_dependent_variants": 12,
+      "before_correct": 3,
+      "after_correct": 6,
+      "difference": 0.25
+    },
+    {
+      "family": "strain",
+      "n_dependent_variants": 12,
+      "before_correct": 3,
+      "after_correct": 6,
+      "difference": 0.25
+    },
+    {
+      "family": "velocimetry",
+      "n_dependent_variants": 12,
+      "before_correct": 6,
+      "after_correct": 12,
+      "difference": 0.5
+    }
+  ],
+  "n_family_groups": 4,
+  "all_family_means_improved": true,
+  "regressions": [
+    {
+      "id": "reflectometry-2-reconstructed",
+      "expected": "reconstructed",
+      "before": "reconstructed",
+      "after": "recorded",
+      "text": "Synthetic record, replicate 3, acquisition time 31 ns. What status belongs to a reflectance curve? The acquired file contains returned optical intensities. A numerical diagnostic inversion produces a reflectance curve; agreement with a selected material simulation suggests a layer thickness. A confident caption attributes everything to surface delamination, unsupported by an intervention or distinctive prediction."
+    },
+    {
+      "id": "reflectometry-1-reconstructed",
+      "expected": "reconstructed",
+      "before": "reconstructed",
+      "after": "recorded",
+      "text": "Synthetic record, replicate 2, acquisition time 24 ns. What status belongs to a reflectance curve? The acquired file contains returned optical intensities. A numerical diagnostic inversion produces a reflectance curve; agreement with a selected material simulation suggests a layer thickness. A confident caption attributes everything to surface delamination, unsupported by an intervention or distinctive prediction."
+    }
+  ],
+  "remaining_errors": [
+    {
+      "id": "reflectometry-0-model_inferred",
+      "family": "reflectometry",
+      "expected": "model_inferred",
+      "after": "recorded"
+    },
+    {
+      "id": "neutrons-0-model_inferred",
+      "family": "neutrons",
+      "expected": "model_inferred",
+      "after": "reconstructed"
+    },
+    {
+      "id": "reflectometry-2-reconstructed",
+      "family": "reflectometry",
+      "expected": "reconstructed",
+      "after": "recorded"
+    },
+    {
+      "id": "reflectometry-0-reconstructed",
+      "family": "reflectometry",
+      "expected": "reconstructed",
+      "after": "recorded"
+    },
+    {
+      "id": "strain-2-model_inferred",
+      "family": "strain",
+      "expected": "model_inferred",
+      "after": "reconstructed"
+    },
+    {
+      "id": "strain-2-reconstructed",
+      "family": "strain",
+      "expected": "reconstructed",
+      "after": "recorded"
+    },
+    {
+      "id": "neutrons-1-model_inferred",
+      "family": "neutrons",
+      "expected": "model_inferred",
+      "after": "reconstructed"
+    },
+    {
+      "id": "reflectometry-2-model_inferred",
+      "family": "reflectometry",
+      "expected": "model_inferred",
+      "after": "recorded"
+    },
+    {
+      "id": "neutrons-2-model_inferred",
+      "family": "neutrons",
+      "expected": "model_inferred",
+      "after": "reconstructed"
+    },
+    {
+      "id": "strain-0-reconstructed",
+      "family": "strain",
+      "expected": "reconstructed",
+      "after": "recorded"
+    },
+    {
+      "id": "strain-1-model_inferred",
+      "family": "strain",
+      "expected": "model_inferred",
+      "after": "reconstructed"
+    },
+    {
+      "id": "strain-1-reconstructed",
+      "family": "strain",
+      "expected": "reconstructed",
+      "after": "recorded"
+    },
+    {
+      "id": "reflectometry-1-reconstructed",
+      "family": "reflectometry",
+      "expected": "reconstructed",
+      "after": "recorded"
+    },
+    {
+      "id": "reflectometry-1-model_inferred",
+      "family": "reflectometry",
+      "expected": "model_inferred",
+      "after": "recorded"
+    },
+    {
+      "id": "strain-0-model_inferred",
+      "family": "strain",
+      "expected": "model_inferred",
+      "after": "reconstructed"
+    }
+  ],
+  "uncertainty": "Four authored families do not support a reliable population or seed-variability claim; do not treat48 variants as48 independent experiments"
+}

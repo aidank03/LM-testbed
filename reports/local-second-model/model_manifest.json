@@ -1,0 +1,52 @@
+{
+  "status": "LOADED_AND_NEUTRAL_PROBE_PASSED_NOT_SCIENTIFIC_EVALUATION",
+  "model_identifier": "factor-nemotron4b",
+  "lmstudio_model_key": "nvidia/nemotron-3-nano-4b",
+  "base_model": "nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "model_card": "https://huggingface.co/nvidia/NVIDIA-Nemotron-3-Nano-4B-BF16",
+  "model_card_license": "NVIDIA Nemotron Open Model License",
+  "quantized_repository": "lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF",
+  "quantized_repository_license_label": "nvidia-open-model-license",
+  "quantized_file_commit": "2a5be5ca635ed930b4629b3f3600a7c8a1c3c84b",
+  "quantized_file_commit_url": "https://huggingface.co/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/commit/2a5be5ca635ed930b4629b3f3600a7c8a1c3c84b",
+  "local_file": "/Users/operator/.lmstudio/models/lmstudio-community/NVIDIA-Nemotron-3-Nano-4B-GGUF/NVIDIA-Nemotron-3-Nano-4B-Q4_K_M.gguf",
+  "quantization": "Q4_K_M",
+  "file_bytes": 2837072896,
+  "local_sha256": "083af225449463dd7c38bebc888f9dcad187b834d8b15e08c297dda37c968b50",
+  "repository_file_sha256": "083af225449463dd7c38bebc888f9dcad187b834d8b15e08c297dda37c968b50",
+  "local_matches_repository_file": true,
+  "weights_downloaded_for_this_task": false,
+  "cloud_inference_or_training_used": false,
+  "shared_source_files_changed": false,
+  "load_settings": {
+    "context_length": 4096,
+    "gpu": "max",
+    "idle_ttl_seconds": 3600,
+    "reported_load_seconds": 16.94,
+    "reported_loaded_gib": 2.64
+  },
+  "inference_settings": {
+    "endpoint": "http://127.0.0.1:1234/api/v1/chat",
+    "transport": "lmstudio-native",
+    "reasoning": "off",
+    "temperature": 0,
+    "store": false,
+    "neutral_probe_max_output_tokens": 64
+  },
+  "neutral_probe": {
+    "file": "neutral_probe.json",
+    "expected": {"ok": true},
+    "actual": {"ok": true},
+    "input_tokens": 33,
+    "output_tokens": 6,
+    "reasoning_output_tokens": 0,
+    "elapsed_seconds": 0.45551412500026345,
+    "evaluation_cases_accessed": false
+  },
+  "hardware": {
+    "processor": "Apple M4 Max",
+    "physical_cpu_cores": 14,
+    "unified_memory_bytes": 38654705664
+  },
+  "comparison_scope": "Ready for the root agent's same frozen v2 motion workflow evaluation. This neutral probe supplies no scientific-performance score."
+}

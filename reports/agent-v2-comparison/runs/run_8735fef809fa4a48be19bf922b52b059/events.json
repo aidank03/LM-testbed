@@ -1,0 +1,104 @@
+[
+  {
+    "sequence": 0,
+    "timestamp": "2026-09-05T21:15:46.556019+00:00",
+    "kind": "started",
+    "data": {
+      "observation_artifact_id": "artifact_40ecda42268e11a0944ed9b2"
+    },
+    "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "hash": "65996d1a2667d7906e2a9574b3480ff0514486b92921a745d71b166b4bbec11a"
+  },
+  {
+    "sequence": 1,
+    "timestamp": "2026-09-05T21:15:54.453861+00:00",
+    "kind": "model_action",
+    "data": {
+      "tool": "finish",
+      "arguments": {
+        "decision": "compression_supported",
+        "evidence_ids": [
+          "artifact_40ecda42268e11a0944ed9b2"
+        ],
+        "explanation": "With a reference, center = apparent_displacement_m - reference.displacement_m = -5.938e-09 - (-2.333e-08) = 1.739e-08 m. sigma = sqrt(1e-18 + 1e-18 - 0) = 1.414e-09 m. B = reference.residual_bound_m = 1e-09 m. h = 1.959963984540054*sigma + B = 2.77e-09 + 1e-09 = 3.77e-09 m. The 95% interval is [center-h, center+h] = [1.362e-08, 2.116e-08] m. Resolution T = -resolution_m = -1e-08 m. Since upper (2.116e-08) <= T (-1e-08) is false and lower (1.362e-08) > T (-1e-08) is true, the entire interval lies above T, ruling out inward motion beyond resolution. Thus compression_not_supported.",
+        "next_step": "Report compression_not_supported with interval [1.36e-08, 2.12e-08] m and next step: acquire a reference-free observation to cross-check optical drift contribution."
+      },
+      "metadata": {
+        "provider": "local",
+        "model": "factor-qwen35-9b",
+        "returned_model": "factor-qwen35-9b",
+        "cost_usd": 0.0,
+        "accounting_complete": true,
+        "elapsed_seconds": 7.897424458999922,
+        "usage": {
+          "input_tokens": 1411,
+          "total_output_tokens": 366,
+          "reasoning_output_tokens": 0,
+          "tokens_per_second": 51.84629632786178,
+          "time_to_first_token_seconds": 0.866
+        },
+        "request_sha256": "d2683594d9ed439d18b2189bc6ae42f0632a4006ea369ddb15aba834bc55d9de",
+        "finish_reason": "stop",
+        "settings": {
+          "model": "factor-qwen35-9b",
+          "reasoning": "off",
+          "temperature": 0,
+          "max_output_tokens": 700,
+          "stream": false,
+          "store": false
+        },
+        "input_tokens": 1411,
+        "output_tokens": 366
+      }
+    },
+    "previous_hash": "65996d1a2667d7906e2a9574b3480ff0514486b92921a745d71b166b4bbec11a",
+    "hash": "b4ccf996806c1cd982b469d2ffa26b9ed82b9ab13e91b772358c7947e0d21d5c"
+  },
+  {
+    "sequence": 2,
+    "timestamp": "2026-09-05T21:15:54.454328+00:00",
+    "kind": "decision",
+    "data": {
+      "decision": "compression_supported",
+      "evidence_ids": [
+        "artifact_40ecda42268e11a0944ed9b2"
+      ],
+      "explanation": "With a reference, center = apparent_displacement_m - reference.displacement_m = -5.938e-09 - (-2.333e-08) = 1.739e-08 m. sigma = sqrt(1e-18 + 1e-18 - 0) = 1.414e-09 m. B = reference.residual_bound_m = 1e-09 m. h = 1.959963984540054*sigma + B = 2.77e-09 + 1e-09 = 3.77e-09 m. The 95% interval is [center-h, center+h] = [1.362e-08, 2.116e-08] m. Resolution T = -resolution_m = -1e-08 m. Since upper (2.116e-08) <= T (-1e-08) is false and lower (1.362e-08) > T (-1e-08) is true, the entire interval lies above T, ruling out inward motion beyond resolution. Thus compression_not_supported.",
+      "next_step": "Report compression_not_supported with interval [1.36e-08, 2.12e-08] m and next step: acquire a reference-free observation to cross-check optical drift contribution."
+    },
+    "previous_hash": "b4ccf996806c1cd982b469d2ffa26b9ed82b9ab13e91b772358c7947e0d21d5c",
+    "hash": "5cc9072e7914a2ae5b01a1aa31b56bbf676cc5ba674e57bedc107a213e3689de"
+  },
+  {
+    "sequence": 3,
+    "timestamp": "2026-09-05T21:15:54.454580+00:00",
+    "kind": "ended",
+    "data": {
+      "execution": "completed",
+      "failure": null,
+      "usage": {
+        "model_calls": 1,
+        "tool_calls": 1,
+        "cloud_cost_usd": 0.0,
+        "cloud_reserved_unknown_usd": 0.0,
+        "accounting_complete": true,
+        "input_tokens": 1411,
+        "output_tokens": 366,
+        "elapsed_seconds": 7.90069266699993
+      },
+      "cleanup": []
+    },
+    "previous_hash": "5cc9072e7914a2ae5b01a1aa31b56bbf676cc5ba674e57bedc107a213e3689de",
+    "hash": "c787ca0cef636edfe3b53b1ffbce82b6e8b85c0a9a29aeefae15c039d9ac047e"
+  },
+  {
+    "sequence": 4,
+    "timestamp": "2026-09-05T21:15:54.455190+00:00",
+    "kind": "result_written",
+    "data": {
+      "result_sha256": "30a97155c4fc7056ff7257958fab1efc5e09a03737b51844e9ece6ba8dcbd29a"
+    },
+    "previous_hash": "c787ca0cef636edfe3b53b1ffbce82b6e8b85c0a9a29aeefae15c039d9ac047e",
+    "hash": "f28461f90bbcac783206f577d056580b1e77a448533e9d2c5a8591a0327bd171"
+  }
+]

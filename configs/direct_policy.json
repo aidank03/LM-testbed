@@ -1,0 +1,12 @@
+{
+  "max_steps": 2,
+  "max_tool_calls": 2,
+  "max_seconds": 120,
+  "max_cloud_cost_usd": 0,
+  "allowed_providers": ["local"],
+  "allowed_tools": ["finish"],
+  "data_egress": false,
+  "max_payload_bytes": 40000,
+  "max_output_tokens": 700,
+  "allow_hpc": false
+}

@@ -1,0 +1,7 @@
+{
+  "local_root": "runs/hpc-local",
+  "max_jobs": 4,
+  "max_cases_per_scenario": 10,
+  "wall_seconds": 180,
+  "artifact_max_bytes": 50000000
+}
