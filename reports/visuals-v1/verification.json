@@ -1,0 +1,84 @@
+{
+  "total_static_figures": 54,
+  "added_static_figures": 27,
+  "animations": [
+    "06_differentiable_machine_and_liner.ipynb",
+    "12_tiny_language_model_for_tool_calls.ipynb"
+  ],
+  "execution": [
+    {
+      "notebook": "05_experiment_contract_and_config.ipynb",
+      "status": "passed",
+      "seconds": 1.75,
+      "code_cells": 9
+    },
+    {
+      "notebook": "06_differentiable_machine_and_liner.ipynb",
+      "status": "passed",
+      "seconds": 3.63,
+      "code_cells": 10
+    },
+    {
+      "notebook": "07_synthetic_diagnostic_suite.ipynb",
+      "status": "passed",
+      "seconds": 2.34,
+      "code_cells": 10
+    },
+    {
+      "notebook": "08_joint_inference_and_identifiability.ipynb",
+      "status": "passed",
+      "seconds": 15.05,
+      "code_cells": 9
+    },
+    {
+      "notebook": "09_amortized_probabilistic_inference.ipynb",
+      "status": "passed",
+      "seconds": 2.26,
+      "code_cells": 8
+    },
+    {
+      "notebook": "10_learned_dynamics_world_model.ipynb",
+      "status": "passed",
+      "seconds": 2.5,
+      "code_cells": 8
+    },
+    {
+      "notebook": "11_multimodal_attention_and_missing_data.ipynb",
+      "status": "passed",
+      "seconds": 2.56,
+      "code_cells": 8
+    },
+    {
+      "notebook": "12_tiny_language_model_for_tool_calls.ipynb",
+      "status": "passed",
+      "seconds": 2.46,
+      "code_cells": 9
+    },
+    {
+      "notebook": "13_language_model_tools_and_evaluation.ipynb",
+      "status": "passed",
+      "seconds": 2.22,
+      "code_cells": 9
+    },
+    {
+      "notebook": "14_closed_loop_experiment_world.ipynb",
+      "status": "passed",
+      "seconds": 2.57,
+      "code_cells": 13
+    }
+  ],
+  "earlier_notebook_hashes_unchanged": true,
+  "original_course_source_cells_preserved": true,
+  "numerical_metrics_unchanged": {
+    "05": true,
+    "06": true,
+    "07": true,
+    "08": true,
+    "09": true,
+    "10": true,
+    "11": true,
+    "12": true,
+    "13": true,
+    "14": true
+  }
+}

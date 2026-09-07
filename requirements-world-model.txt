@@ -1,0 +1,11 @@
+# Tested numerical/notebook stack; Python 3.12.
+numpy==2.5.3
+scipy==1.18.1
+matplotlib==3.11.1
+torch==2.14.0
+nbformat==5.11.1
+nbclient==0.11.0
+ipykernel>=6
+jupyterlab>=4
+# Needed only by scripts/inspect_notebook_figures.py:
+pillow>=10

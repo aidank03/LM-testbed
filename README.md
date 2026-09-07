@@ -97,3 +97,10 @@ See [the build report](reports/BUILD_REPORT.md), [the model comparison](reports/
 The automatic captions for [the requested interview](https://www.youtube.com/watch?v=xgkjtF89-44) informed the design: define outcomes and call paths, build a complete small slice, then evaluate the feedback and review process. Notes contain timestamped paraphrases and source limitations.
 
 Next external inputs: a permitted API project and total spending cap, a scheduler/account with resource ceilings, and eventually one complete diagnostic/calibration record. Factor never operates laboratory equipment or changes facility settings.
+
+
+## LM-testbed world-model course
+
+Continue the PyTorch notebooks with ten new lessons, **05–14**, building a synthetic experiment environment and the language-model tools around it. The progression covers machine dynamics, diagnostic response, joint inference, uncertainty, learned world models, attention, a tiny causal LM and a complete synthetic inference loop.
+
+[Start the course](START_WORLD_MODEL.md) · [Open notebook 05](notebooks/05_experiment_contract_and_config.ipynb) · [Course guide](docs/WORLD_MODEL_COURSE.md)

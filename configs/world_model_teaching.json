@@ -1,0 +1,41 @@
+{
+  "schema_version": "world-request-v1",
+  "machine": {
+    "charge": 1.0,
+    "mass": 1.0,
+    "resistance": 0.22,
+    "growth": 0.6,
+    "capacitance": 1.0,
+    "inductance": 0.7,
+    "coupling": 0.12,
+    "damping": 0.08,
+    "thermal_loss": 0.15,
+    "end_time": 1.4,
+    "samples": 96
+  },
+  "diagnostics": {
+    "gain": 1.0,
+    "clock_shift": 0.0,
+    "blur_samples": 0.6,
+    "noise": 0.015,
+    "pdv_wavelength": 0.01,
+    "pdv_window": 64,
+    "image_psf_pixels": 1.0,
+    "image_exposure": 0.04,
+    "radiation_response": 1.0,
+    "missing": []
+  },
+  "inference": {
+    "parameters": [
+      "charge",
+      "mass"
+    ],
+    "resistance_fixed": 0.22,
+    "likelihood": "independent Gaussian reconstructed summaries",
+    "grid_size": 41
+  },
+  "agent": {
+    "max_tool_calls": 2,
+    "provider": "tiny_local_teaching_LM"
+  }
+}

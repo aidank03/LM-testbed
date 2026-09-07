@@ -1,0 +1,18 @@
+test_runner_selects_only_new_course_notebooks (test_world_model.RunnerScope.test_runner_selects_only_new_course_notebooks) ... ok
+test_all_required_data_can_produce_estimate (test_world_model.WorldContracts.test_all_required_data_can_produce_estimate) ... ok
+test_causal_mask_blocks_future_tokens (test_world_model.WorldContracts.test_causal_mask_blocks_future_tokens) ... ok
+test_configuration_validation (test_world_model.WorldContracts.test_configuration_validation) ... ok
+test_disjoint_semantic_partitions (test_world_model.WorldContracts.test_disjoint_semantic_partitions) ... ok
+test_grid_recovers_noiseless_on_grid_parameters (test_world_model.WorldContracts.test_grid_recovers_noiseless_on_grid_parameters) ... ok
+test_invalid_and_extra_tool_keys_rejected (test_world_model.WorldContracts.test_invalid_and_extra_tool_keys_rejected) ... ok
+test_missing_diagnostic_is_absent (test_world_model.WorldContracts.test_missing_diagnostic_is_absent) ... ok
+test_missing_summary_never_becomes_estimate (test_world_model.WorldContracts.test_missing_summary_never_becomes_estimate) ... ok
+test_more_mass_reduces_inward_motion (test_world_model.WorldContracts.test_more_mass_reduces_inward_motion) ... ok
+test_same_config_and_seed_reproduce_raw_data (test_world_model.WorldContracts.test_same_config_and_seed_reproduce_raw_data) ... ok
+test_summary_operator_cannot_observe_growth (test_world_model.WorldContracts.test_summary_operator_cannot_observe_growth) ... ok
+test_zero_coupling_limit_approach (test_world_model.WorldContracts.test_zero_coupling_limit_approach) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.778s
+
+OK

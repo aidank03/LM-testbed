@@ -1,0 +1,8 @@
+{
+  "total_static_figures": 54,
+  "added_static_figures": 27,
+  "animations": [
+    "06_differentiable_machine_and_liner.ipynb",
+    "12_tiny_language_model_for_tool_calls.ipynb"
+  ]
+}

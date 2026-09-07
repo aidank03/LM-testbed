@@ -1,0 +1,748 @@
+{
+  "05": {
+    "lesson": "05",
+    "created_unix": 1788814577.32228,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "schema_version": "world-request-v1",
+      "question": "infer charge and mass",
+      "machine": {
+        "charge": 1.0,
+        "mass": 1.0,
+        "resistance": 0.22,
+        "growth": 0.6,
+        "capacitance": 1.0,
+        "inductance": 0.7,
+        "coupling": 0.12,
+        "damping": 0.08,
+        "thermal_loss": 0.15,
+        "end_time": 1.4,
+        "samples": 96
+      },
+      "diagnostics": {
+        "gain": 1.0,
+        "clock_shift": 0.0,
+        "blur_samples": 0.6,
+        "noise": 0.015,
+        "pdv_wavelength": 0.01,
+        "pdv_window": 64,
+        "image_psf_pixels": 1.0,
+        "image_exposure": 0.04,
+        "radiation_response": 1.0,
+        "missing": []
+      },
+      "inference": {
+        "method": "discrete_grid",
+        "parameters": [
+          "charge",
+          "mass"
+        ],
+        "prior": "uniform within declared bounds",
+        "calibration": "assumed known"
+      },
+      "agent": {
+        "max_tool_calls": 3,
+        "allowed_tools": [
+          "infer",
+          "align",
+          "request_image"
+        ]
+      }
+    },
+    "metrics": {
+      "channels": [
+        "bdot",
+        "pdv",
+        "radiation",
+        "spectrum",
+        "image"
+      ],
+      "state_shape": [
+        1,
+        96,
+        6
+      ]
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/05_experiment_contract_and_config.ipynb": "62d99c6bc281bf055737b3befa7b43dea1d207c0435e06bac38444994a1e9bf8"
+    }
+  },
+  "06": {
+    "lesson": "06",
+    "created_unix": 1788814580.939411,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "charge": 1.0,
+      "mass": 1.0,
+      "resistance": 0.22,
+      "growth": 0.6,
+      "capacitance": 1.0,
+      "inductance": 0.7,
+      "coupling": 0.12,
+      "damping": 0.08,
+      "thermal_loss": 0.15,
+      "end_time": 1.4,
+      "samples": 96
+    },
+    "metrics": {
+      "gradient_error": 1.960815503021518e-10,
+      "grid_error": 8.443695811988228e-10,
+      "energy_residual": 1.2365166583983012e-06
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/06_differentiable_machine_and_liner.ipynb": "2e222fb4900f57c99780a5f9b7089e5568ac9b3f9ca45e5bae8bd52223ee64aa"
+    }
+  },
+  "07": {
+    "lesson": "07",
+    "created_unix": 1788814583.141702,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "gain": 1.0,
+      "clock_shift": 0.0,
+      "blur_samples": 0.6,
+      "noise": 0.012,
+      "pdv_wavelength": 0.01,
+      "pdv_window": 64,
+      "image_psf_pixels": 1.0,
+      "image_exposure": 0.04,
+      "radiation_response": 1.0,
+      "missing": []
+    },
+    "metrics": {
+      "bdot_MAE": 0.0005533655869832078,
+      "pdv_window_scan": [
+        {
+          "window": 32,
+          "MAE": 0.019565588304235156
+        },
+        {
+          "window": 64,
+          "MAE": 0.01378625727489834
+        },
+        {
+          "window": 128,
+          "MAE": 0.007445926520634723
+        }
+      ],
+      "image_blur_scan": [
+        {
+          "PSF_pixels": 0.25,
+          "radius": 0.9830480686110118,
+          "amplitude": 0.015449924684724066
+        },
+        {
+          "PSF_pixels": 1.0,
+          "radius": 0.9826575813750352,
+          "amplitude": 0.01517794989247738
+        },
+        {
+          "PSF_pixels": 3.0,
+          "radius": 0.9799462975362913,
+          "amplitude": 0.01185801030894628
+        },
+        {
+          "PSF_pixels": 6.0,
+          "radius": 0.9816550453995774,
+          "amplitude": 0.003550778637574736
+        }
+      ]
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/07_synthetic_diagnostic_suite.ipynb": "9444f2073759685117dbb1f0cc4cc2f03b5c3b5e32927204e5773b569d83af8f"
+    }
+  },
+  "08": {
+    "lesson": "08",
+    "created_unix": 1788814598.236862,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "likelihood": "reconstructed summaries, independent Gaussian except timing control",
+      "resistance_fixed": 0.22
+    },
+    "metrics": {
+      "posterior_mean": [
+        1.0920398235321045,
+        0.8782865405082703,
+        0.2199999988079071,
+        0.6000000238418579
+      ],
+      "scaled_singular_values": [
+        61.19774627685547,
+        23.31101417541504,
+        20.166778564453125,
+        0.0
+      ],
+      "fixed_gain_fit": {
+        "charge": 1.1856346130371094,
+        "mass": 1.072866439819336,
+        "gain": 1.0,
+        "loss": 22.994985580444336
+      },
+      "free_gain_fit": {
+        "charge": 1.0966209173202515,
+        "mass": 0.9193795919418335,
+        "gain": 1.0987162590026855,
+        "loss": 5.095314025878906
+      },
+      "max_standardized_residual": 1.759066104888916
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/08_joint_inference_and_identifiability.ipynb": "248965681eb68a0cc2f2674a0d25904bbfe0ac462a5c3166e482f0bee1aa8c7d"
+    }
+  },
+  "09": {
+    "lesson": "09",
+    "created_unix": 1788814600.4222631,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "train": 384,
+      "tuning": 96,
+      "calibration": 128,
+      "evaluation": 128,
+      "steps": 280
+    },
+    "metrics": {
+      "matched": {
+        "MAE": [
+          0.007762310095131397,
+          0.035951100289821625,
+          0.008461596444249153
+        ],
+        "coverage90": [
+          0.9140625,
+          0.890625,
+          0.859375
+        ],
+        "mean_width90": [
+          0.03281395882368088,
+          0.14615212380886078,
+          0.03637887164950371
+        ]
+      },
+      "model_mismatch": {
+        "MAE": [
+          0.01082792691886425,
+          0.3508770763874054,
+          0.018458392471075058
+        ],
+        "coverage90": [
+          0.7265625,
+          0.0,
+          0.390625
+        ],
+        "mean_width90": [
+          0.03173793479800224,
+          0.10485351085662842,
+          0.030296288430690765
+        ]
+      },
+      "prior_midpoint_MAE": [
+        0.10664784908294678,
+        0.14385345578193665,
+        0.04658207669854164
+      ],
+      "calibration_multiplier": [
+        1.6588321924209595,
+        1.853328824043274,
+        1.9681823253631592
+      ]
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/09_amortized_probabilistic_inference.ipynb": "ca38b9e005ff8b83eb4bb570321430c2abfc20acc4f7925394aea6066c9534a4"
+    }
+  },
+  "10": {
+    "lesson": "10",
+    "created_unix": 1788814602.907899,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "dt": 0.04516128823161125,
+      "steps": 260,
+      "state_information": "full simulator state"
+    },
+    "metrics": {
+      "learned_matched": 0.2266288548707962,
+      "Euler_matched": 0.057060204446315765,
+      "persistence_matched": 1.5134094953536987,
+      "learned_shifted": 1.0369161367416382,
+      "one_step_delta_MSE": 4.5607415813719854e-05,
+      "invalid_radius_fraction": 0.0
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/10_learned_dynamics_world_model.ipynb": "69d97923eb5c07600f2af2b6cd70fba9314f3199372392ae10d22e2bc78e9bac"
+    }
+  },
+  "11": {
+    "lesson": "11",
+    "created_unix": 1788814605.4570901,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "train_shots": 384,
+      "steps": 220,
+      "inputs": "four summary tokens"
+    },
+    "metrics": {
+      "ablation": {
+        "all_available": {
+          "attention_MAE": [
+            0.011086692102253437,
+            0.03978370502591133,
+            0.010965419933199883
+          ],
+          "ridge_MAE": [
+            0.02171354554593563,
+            0.07422717660665512,
+            0.01502469927072525
+          ]
+        },
+        "random_missing": {
+          "attention_MAE": [
+            0.020623281598091125,
+            0.07209043204784393,
+            0.01923377625644207
+          ],
+          "ridge_MAE": [
+            0.03107968345284462,
+            0.09998217225074768,
+            0.02123710885643959
+          ]
+        },
+        "without_current": {
+          "attention_MAE": [
+            0.03862674534320831,
+            0.11048366129398346,
+            0.024117372930049896
+          ],
+          "ridge_MAE": [
+            0.04812531918287277,
+            0.12298014760017395,
+            0.03209039568901062
+          ]
+        },
+        "without_speed": {
+          "attention_MAE": [
+            0.011711700819432735,
+            0.11898526549339294,
+            0.013068244792521
+          ],
+          "ridge_MAE": [
+            0.012797987088561058,
+            0.11220681667327881,
+            0.015704160556197166
+          ]
+        },
+        "without_radius": {
+          "attention_MAE": [
+            0.012612061575055122,
+            0.04143907129764557,
+            0.013646421954035759
+          ],
+          "ridge_MAE": [
+            0.014747911132872105,
+            0.1031421646475792,
+            0.01460347045212984
+          ]
+        },
+        "without_thermal_proxy": {
+          "attention_MAE": [
+            0.03067941777408123,
+            0.04649350792169571,
+            0.04024946689605713
+          ],
+          "ridge_MAE": [
+            0.03356979042291641,
+            0.07948268949985504,
+            0.031404800713062286
+          ]
+        }
+      },
+      "masked_value_invariance": 0.0
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/11_multimodal_attention_and_missing_data.ipynb": "72c7213ab0181f5ee46da6a0b5fc2dab8ef3b4b3357a7ad872630fbdc68c8f28"
+    }
+  },
+  "12": {
+    "lesson": "12",
+    "created_unix": 1788814608.013581,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "steps": 220,
+      "seed": 12,
+      "train_cases": 16,
+      "tuning_cases": 4,
+      "evaluation_cases": 4
+    },
+    "metrics": {
+      "valid": 1.0,
+      "raw_correct": 0.75,
+      "constrained_correct": 0.75,
+      "always_infer_correct": 0.25,
+      "evaluation_cases": 4
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/12_tiny_language_model_for_tool_calls.ipynb": "f3ff7a2427d4afdd22d6c535e0dc9dc6744fd2805b285d3b3a7c05de920f1675"
+    }
+  },
+  "13": {
+    "lesson": "13",
+    "created_unix": 1788814610.214389,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "max_calls": 2,
+      "policy_model": "tiny causal Transformer",
+      "evaluation_cases": 4
+    },
+    "metrics": {
+      "rule": {
+        "tool_accuracy": 1.0,
+        "estimated_cases": 1
+      },
+      "always infer": {
+        "tool_accuracy": 0.25,
+        "estimated_cases": 1
+      },
+      "raw LM": {
+        "tool_accuracy": 0.75,
+        "estimated_cases": 0
+      },
+      "constrained LM": {
+        "tool_accuracy": 0.75,
+        "estimated_cases": 0
+      }
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/13_language_model_tools_and_evaluation.ipynb": "d16218db425e0461992d0ea19a7fb1001f84c8e48cb9a04c301f127f6da13e08"
+    }
+  },
+  "14": {
+    "lesson": "14",
+    "created_unix": 1788814612.809116,
+    "python": "3.12.14",
+    "torch": "2.14.0",
+    "numpy": "2.5.3",
+    "device": "cpu",
+    "scope": "exposed synthetic development evidence",
+    "config": {
+      "machine": {
+        "charge": 1.0,
+        "mass": 1.0,
+        "resistance": 0.22,
+        "growth": 0.6,
+        "capacitance": 1.0,
+        "inductance": 0.7,
+        "coupling": 0.12,
+        "damping": 0.08,
+        "thermal_loss": 0.15,
+        "end_time": 1.4,
+        "samples": 96
+      },
+      "diagnostics": {
+        "gain": 1.0,
+        "clock_shift": 0.0,
+        "blur_samples": 0.6,
+        "noise": 0.015,
+        "pdv_wavelength": 0.01,
+        "pdv_window": 64,
+        "image_psf_pixels": 1.0,
+        "image_exposure": 0.04,
+        "radiation_response": 1.0,
+        "missing": []
+      },
+      "inference": {
+        "parameters": [
+          "charge",
+          "mass"
+        ],
+        "resistance_fixed": 0.22,
+        "grid": 41,
+        "likelihood": "Gaussian reconstructed summaries"
+      },
+      "design": {
+        "objective": "joint entropy reduction per synthetic cost",
+        "candidates": {
+          "speed": {
+            "indices": [
+              3,
+              4,
+              5
+            ],
+            "cost": 1.0
+          },
+          "radius": {
+            "indices": [
+              6,
+              7,
+              8
+            ],
+            "cost": 1.2
+          },
+          "thermal_proxy": {
+            "indices": [
+              9,
+              10,
+              11
+            ],
+            "cost": 0.8
+          }
+        },
+        "MC_draws": 48
+      }
+    },
+    "metrics": {
+      "selected_diagnostic": "speed",
+      "design_scores": [
+        {
+          "diagnostic": "speed",
+          "expected_gain_nats": 1.6324070692062378,
+          "MC_standard_error": 0.05439824238419533,
+          "cost": 1.0,
+          "gain_per_cost": 1.6324070692062378
+        },
+        {
+          "diagnostic": "radius",
+          "expected_gain_nats": 0.8056921362876892,
+          "MC_standard_error": 0.06039123237133026,
+          "cost": 1.2,
+          "gain_per_cost": 0.6714101135730743
+        },
+        {
+          "diagnostic": "thermal_proxy",
+          "expected_gain_nats": 0.07033130526542664,
+          "MC_standard_error": 0.0007395389256998897,
+          "cost": 0.8,
+          "gain_per_cost": 0.0879141315817833
+        }
+      ],
+      "actual_entropy_reduction": 1.9769251346588135,
+      "posterior_mean": [
+        1.0627626180648804,
+        0.8157744407653809,
+        0.2200000137090683,
+        0.6000000238418579
+      ],
+      "predictive_check_z": [
+        -2.2701022624969482,
+        -0.5726829171180725,
+        0.29139113426208496,
+        -1.3357445001602173,
+        1.1361767053604126,
+        -0.491401344537735
+      ],
+      "mismatch_check_z": [
+        -0.13371072709560394,
+        -1.7216346263885498,
+        -6.149710178375244,
+        0.024615364149212837,
+        0.12402602285146713,
+        0.1648416519165039
+      ],
+      "study": {
+        "current": {
+          "mass_coverage90": 1.0,
+          "mean_mass_interval_width": 0.6416667153437933,
+          "mass_MAE": 0.15424518783887228,
+          "shots": 24
+        },
+        "augmented": {
+          "mass_coverage90": 0.9166666666666666,
+          "mean_mass_interval_width": 0.14802083124717078,
+          "mass_MAE": 0.028807227810223896,
+          "shots": 24
+        }
+      },
+      "LM_result": {
+        "final": {
+          "status": "conditional_estimate",
+          "parameter": "mass",
+          "mean": 0.8201441764831543,
+          "interval90": [
+            0.7666666507720947,
+            0.8600000143051147
+          ],
+          "max_residual_sigma": 1.7304271459579468,
+          "evidence": [
+            "obs-8829f38bd72f2bd4"
+          ],
+          "assumptions": [
+            "dimensionless reduced model",
+            "resistance fixed at .22",
+            "uniform bounded prior",
+            "known gains and aligned clocks",
+            "Gaussian reconstructed-summary likelihood"
+          ]
+        },
+        "trace": [
+          {
+            "call": {
+              "tool": "infer"
+            },
+            "result": {
+              "status": "conditional_estimate",
+              "parameter": "mass",
+              "mean": 0.8201441764831543,
+              "interval90": [
+                0.7666666507720947,
+                0.8600000143051147
+              ],
+              "max_residual_sigma": 1.7304271459579468,
+              "evidence": [
+                "obs-8829f38bd72f2bd4"
+              ],
+              "assumptions": [
+                "dimensionless reduced model",
+                "resistance fixed at .22",
+                "uniform bounded prior",
+                "known gains and aligned clocks",
+                "Gaussian reconstructed-summary likelihood"
+              ]
+            }
+          }
+        ],
+        "calls": 1,
+        "budget": 2
+      },
+      "rule_result": {
+        "final": {
+          "status": "conditional_estimate",
+          "parameter": "mass",
+          "mean": 0.8201441764831543,
+          "interval90": [
+            0.7666666507720947,
+            0.8600000143051147
+          ],
+          "max_residual_sigma": 1.7304271459579468,
+          "evidence": [
+            "obs-8829f38bd72f2bd4"
+          ],
+          "assumptions": [
+            "dimensionless reduced model",
+            "resistance fixed at .22",
+            "uniform bounded prior",
+            "known gains and aligned clocks",
+            "Gaussian reconstructed-summary likelihood"
+          ]
+        },
+        "trace": [
+          {
+            "call": {
+              "tool": "infer"
+            },
+            "result": {
+              "status": "conditional_estimate",
+              "parameter": "mass",
+              "mean": 0.8201441764831543,
+              "interval90": [
+                0.7666666507720947,
+                0.8600000143051147
+              ],
+              "max_residual_sigma": 1.7304271459579468,
+              "evidence": [
+                "obs-8829f38bd72f2bd4"
+              ],
+              "assumptions": [
+                "dimensionless reduced model",
+                "resistance fixed at .22",
+                "uniform bounded prior",
+                "known gains and aligned clocks",
+                "Gaussian reconstructed-summary likelihood"
+              ]
+            }
+          }
+        ],
+        "calls": 1,
+        "budget": 2
+      }
+    },
+    "source_sha256": {
+      "lm_testbed/world.py": "dd48de2bd43cd289505fe12f0477043ba171c7f8d8caba0d3aea700ce9ee6e90",
+      "lm_testbed/__init__.py": "80cda52a2a1e77cf47eeebbdf62cd707a5e2f74880787619f54700fceef6dc58",
+      "lm_testbed/runtime.py": "c160870633bc8164278480e1bd6eab6f137fed5e970bfad6282dfd7efc99152a",
+      "lm_testbed/language.py": "5f85a252795076546f2d2619806637e920d41578bde60af8ea81c0af3f60aae4",
+      "lm_testbed/learning.py": "0efb3e162f620171417d9c7fc54daf1a52b026638bd914e454eee596cdd2ef84",
+      "notebooks/14_closed_loop_experiment_world.ipynb": "590f989e353c7044d35de36b5683c09d5e4c923978e76a7fe1d9c86961a68171"
+    }
+  }
+}
