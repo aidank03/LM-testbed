@@ -3,10 +3,20 @@ from pathlib import Path
 import tempfile
 import unittest
 
-from factor.learn.experiments import choose_device, run_experiment
 from factor.learn.store import LearningRun
 
+try:
+    from factor.learn.experiments import choose_device, run_experiment
+except ModuleNotFoundError as exc:
+    if exc.name != "torch":
+        raise
+    choose_device = run_experiment = None
 
+
+HAS_TORCH = run_experiment is not None
+
+
+@unittest.skipUnless(HAS_TORCH, "Optional PyTorch dependency not installed")
 class LearningExperimentsTest(unittest.TestCase):
     def test_line_fit_passes_frozen_gate_without_using_test_for_training(self):
         events = []

@@ -12,13 +12,15 @@ Continue with [`notebooks/02_pdv_stft_neural_benchmark.ipynb`](notebooks/02_pdv_
 
 Then use [`notebooks/03_physics_informed_motion_pinn.ipynb`](notebooks/03_physics_informed_motion_pinn.ipynb) to compare an ordinary trajectory network with a physics-informed neural network using the same architecture and measurements. A negative control deliberately supplies the PINN with a wrong motion equation so the notebook demonstrates both the value and the risk of physics constraints.
 
+The development draft [`notebooks/04_robust_pdv_tracking_draft.ipynb`](notebooks/04_robust_pdv_tracking_draft.ipynb) adds harder diagnostic regimes, a continuity-aware conventional baseline, a residual CNN, repeated seeds, uncertainty, ambiguity prediction, and a locked-test switch that remains off by default.
+
 The older browser lesson remains available by double-clicking `Learn.command`. [Learning Lab guide](docs/LEARNING_LAB.md) · [Learning Lab code](src/factor/learn/)
 
 The page runs on this computer at `127.0.0.1`; it does not call a cloud model. Every experiment saves an evidence folder under `runs/learning-lab/`. JAX is an explicitly optional next step and no JAX result is claimed until its parity lesson is installed and run.
 
 ## Try the PyTorch module
 
-Run `./PyTorch.command` for the interactive local model, or `./PyTorch.command train --steps 8` for a small training experiment. [Beginner tutorial](docs/PYTORCH_FOR_BEGINNERS.md) · [Cool experiments](docs/COOL_PYTORCH_EXPERIMENTS.md) · [Open the code](src/factor/torch_lab.py) · [Technical guide](docs/PYTORCH_LAB.md). Uses the prepared `.venv-local` environment and current checkout.
+Run `./PyTorch.command` for the interactive local model, or `./PyTorch.command train --steps 8` for a small training experiment. On a fresh machine, install the optional learning dependency with `python -m pip install '.[learning]'`. [Beginner tutorial](docs/PYTORCH_FOR_BEGINNERS.md) · [Cool experiments](docs/COOL_PYTORCH_EXPERIMENTS.md) · [Open the code](src/factor/torch_lab.py) · [Technical guide](docs/PYTORCH_LAB.md). Uses the prepared `.venv-local` environment and current checkout.
 
 ## Run one complete local example
 
